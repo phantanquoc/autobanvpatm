@@ -1,0 +1,42 @@
+[13:14:34] 
+Nhân vật: upthuinao
+Xu giao dịch: 10 xu
+Biến động: 2.890.849 -> 2.890.839
+Vật phẩm nhận: Bình MP lớn (1), 
+==========================================
+[11:23:09] 
+Nhân vật: fullcu17
+Xu giao dịch: 356.712 xu
+Biến động: 3.247.561 -> 2.890.849
+Vật phẩm nhận: Bình MP cực lớn (22222), Bình MP cực lớn (7504), 
+==========================================
+[11:07:11] 
+Nhân vật: emxin5k
+Xu giao dịch: 98.424 xu
+Biến động: 3.345.985 -> 3.247.561
+Vật phẩm nhận: Bình MP cực lớn (8202), 
+==========================================
+[11:03:45] 
+Nhân vật: hungho2x
+Xu giao dịch: 253.212 xu
+Biến động: 3.599.197 -> 3.345.985
+Vật phẩm nhận: Bình MP cực lớn (21101), 
+==========================================
+[10:44:44] 
+Nhân vật: fankiemsv1
+Xu giao dịch: 271.032 xu
+Biến động: 3.870.229 -> 3.599.197
+Vật phẩm nhận: Bình MP cực lớn (22586), 
+==========================================
+[10:36:13] 
+Nhân vật: teamsakur1
+Xu giao dịch: 1.009.584 xu
+Biến động: 4.879.813 -> 3.870.229
+Vật phẩm nhận: Bình MP cực lớn (6544), Bình MP cực lớn (24751), Bình MP cực lớn (22222), Bình MP cực lớn (8393), Bình MP cực lớn (22222), 
+==========================================
+[06:38:57] 
+Nhân vật: igchapsv1
+Xu giao dịch: 1.870 xu
+Biến động: 4.881.683 -> 4.879.813
+Vật phẩm nhận: Bình MP lớn (187), 
+==========================================

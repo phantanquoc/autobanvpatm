@@ -1,0 +1,36 @@
+[22:43:40] 
+Nhân vật: s2lamtrum
+Xu giao dịch: 22.000 xu
+Biến động: 5.313.860 -> 5.291.860
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), 
+==========================================
+[19:56:23] 
+Nhân vật: bossteam77
+Xu giao dịch: 20.000 xu
+Biến động: 5.333.860 -> 5.313.860
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), 
+==========================================
+[18:58:07] 
+Nhân vật: bossteam77
+Xu giao dịch: 12.000 xu
+Biến động: 5.345.860 -> 5.333.860
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), 
+==========================================
+[10:52:27] 
+Nhân vật: fuckmisyou
+Xu giao dịch: 6.000 xu
+Biến động: 5.351.860 -> 5.345.860
+Vật phẩm nhận: Tôm hùm (1), Gà Tây (1), Gà Tây (1), 
+==========================================
+[10:38:03] 
+Nhân vật: em4hust5
+Xu giao dịch: 24.000 xu
+Biến động: 5.375.860 -> 5.351.860
+Vật phẩm nhận: Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), 
+==========================================
+[06:54:36] 
+Nhân vật: bossteam77
+Xu giao dịch: 14.000 xu
+Biến động: 5.389.860 -> 5.375.860
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), 
+==========================================

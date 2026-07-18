@@ -1,0 +1,12 @@
+[17:58:26] 
+Nhân vật: vihana150
+Xu giao dịch: 24.000 xu
+Biến động: 8.899.787 -> 8.875.787
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), 
+==========================================
+[17:57:54] 
+Nhân vật: vihana150
+Xu giao dịch: 24.000 xu
+Biến động: 8.923.787 -> 8.899.787
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), 
+==========================================

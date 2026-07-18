@@ -1,0 +1,12 @@
+[11:11:07] 
+Nhân vật: kingzegion
+Xu giao dịch: 24.000 xu
+Biến động: 4.026.498 -> 4.002.498
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), 
+==========================================
+[11:09:28] 
+Nhân vật: 0lswatl0
+Xu giao dịch: 16.000 xu
+Biến động: 4.042.498 -> 4.026.498
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), 
+==========================================

@@ -1,0 +1,2 @@
+[SV]6[/SV][TK]2021111[/TK][MK]noname[/MK][NV][/NV][MAP]22:23[/MAP][POS]700:216[/POS][ITEM]sv6_da[/ITEM]
+[SV]6[/SV][TK]s2huuthos2[/TK][MK]monter[/MK][NV][/NV][MAP]22:23[/MAP][POS]720:216[/POS][ITEM]sv6_hp[/ITEM]

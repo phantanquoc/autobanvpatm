@@ -1,0 +1,54 @@
+[15:51:54] 
+Nhân vật: admxinchao
+Xu giao dịch: 10 xu
+Biến động: 6.463.407 -> 6.463.397
+Vật phẩm nhận: Bình MP lớn (1), 
+==========================================
+[14:42:38] 
+Nhân vật: beconnnn
+Xu giao dịch: 270.000 xu
+Biến động: 6.733.407 -> 6.463.407
+Vật phẩm nhận: Bình MP lớn (27000), 
+==========================================
+[12:34:13] 
+Nhân vật: thiennet7
+Xu giao dịch: 2.190 xu
+Biến động: 6.735.597 -> 6.733.407
+Vật phẩm nhận: Bình MP lớn (219), 
+==========================================
+[12:33:28] 
+Nhân vật: thiennet3
+Xu giao dịch: 5.860 xu
+Biến động: 6.741.457 -> 6.735.597
+Vật phẩm nhận: Bình MP lớn (586), 
+==========================================
+[12:32:53] 
+Nhân vật: thienviptt
+Xu giao dịch: 4.380 xu
+Biến động: 6.745.837 -> 6.741.457
+Vật phẩm nhận: Bình MP lớn (438), 
+==========================================
+[12:32:22] 
+Nhân vật: thienvipt1
+Xu giao dịch: 8.050 xu
+Biến động: 6.753.887 -> 6.745.837
+Vật phẩm nhận: Bình MP lớn (805), 
+==========================================
+[12:31:36] 
+Nhân vật: ninjia2010
+Xu giao dịch: 20 xu
+Biến động: 6.753.907 -> 6.753.887
+Vật phẩm nhận: Bình MP lớn (2), 
+==========================================
+[03:40:49] 
+Nhân vật: rainboww
+Xu giao dịch: 30 xu
+Biến động: 6.753.937 -> 6.753.907
+Vật phẩm nhận: Bình MP lớn (3), 
+==========================================
+[01:03:12] 
+Nhân vật: zilko
+Xu giao dịch: 640.000 xu
+Biến động: 7.393.937 -> 6.753.937
+Vật phẩm nhận: Bình MP lớn (12000), Bình MP lớn (10000), Bình MP lớn (10000), Bình MP lớn (12000), Bình MP lớn (10000), Bình MP lớn (10000), 
+==========================================

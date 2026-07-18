@@ -1,0 +1,18 @@
+[22:45:33] 
+Nhân vật: yumata
+Xu giao dịch: 380.154 xu
+Biến động: 9.403.649 -> 9.023.495
+Vật phẩm nhận: Bình MP cực lớn (11111), Bình MP cực lớn (11111), Bình MP cực lớn (11111), Bình MP cực lớn (11111), Bình MP cực lớn (9778), Bình MP cực lớn (9137), 
+==========================================
+[22:44:38] 
+Nhân vật: yumata
+Xu giao dịch: 40.182 xu
+Biến động: 9.443.831 -> 9.403.649
+Vật phẩm nhận: Bình MP cực lớn (6697), 
+==========================================
+[20:59:30] 
+Nhân vật: meliodaskx
+Xu giao dịch: 107.160 xu
+Biến động: 9.550.991 -> 9.443.831
+Vật phẩm nhận: Bình MP lớn (18194), Bình MP lớn (17526), 
+==========================================

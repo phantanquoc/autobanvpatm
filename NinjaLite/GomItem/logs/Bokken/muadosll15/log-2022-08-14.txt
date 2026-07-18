@@ -1,0 +1,54 @@
+[22:25:56] 
+Nhân vật: lysookiu
+Xu giao dịch: 14.000 xu
+Biến động: 4.960.352 -> 4.946.352
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), 
+==========================================
+[21:58:12] 
+Nhân vật: s2lamtrum
+Xu giao dịch: 4.000 xu
+Biến động: 4.964.352 -> 4.960.352
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), 
+==========================================
+[21:57:56] 
+Nhân vật: s2lamtrum
+Xu giao dịch: 24.000 xu
+Biến động: 4.988.352 -> 4.964.352
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), 
+==========================================
+[21:48:39] 
+Nhân vật: s2lamtrum
+Xu giao dịch: 4.000 xu
+Biến động: 4.992.352 -> 4.988.352
+Vật phẩm nhận: Tôm hùm (1), Gà Tây (1), 
+==========================================
+[20:59:48] 
+Nhân vật: s2lamtrum
+Xu giao dịch: 8.000 xu
+Biến động: 5.000.352 -> 4.992.352
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), 
+==========================================
+[20:34:23] 
+Nhân vật: s2lamtrum
+Xu giao dịch: 6.000 xu
+Biến động: 5.006.352 -> 5.000.352
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Gà Tây (1), 
+==========================================
+[20:34:04] 
+Nhân vật: s2lamtrum
+Xu giao dịch: 24.000 xu
+Biến động: 5.030.352 -> 5.006.352
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), 
+==========================================
+[14:33:32] 
+Nhân vật: em4hust5
+Xu giao dịch: 22.000 xu
+Biến động: 5.052.352 -> 5.030.352
+Vật phẩm nhận: Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), 
+==========================================
+[13:59:26] 
+Nhân vật: duomaa
+Xu giao dịch: 16.000 xu
+Biến động: 5.068.352 -> 5.052.352
+Vật phẩm nhận: Tôm hùm (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), 
+==========================================

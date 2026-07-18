@@ -1,0 +1,12 @@
+[10:10:18] 
+Nhân vật: zzwatwatzz
+Xu giao dịch: 24.000 xu
+Biến động: 8.898.886 -> 8.874.886
+Vật phẩm nhận: Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), 
+==========================================
+[10:09:52] 
+Nhân vật: zzwatwatzz
+Xu giao dịch: 24.000 xu
+Biến động: 8.922.886 -> 8.898.886
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), 
+==========================================

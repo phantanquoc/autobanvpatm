@@ -1,0 +1,5 @@
+# Con 1 (2021111): ban da cap 7/8/9
+# Format: id:don_gia:so_luong_toi_da:ma_vp
+6:20000:999:d7
+7:40000:999:d8
+8:100000:999:d9

@@ -1,0 +1,3 @@
+# Con 2 (s2huuthos2): ban binh HP 3x
+# Format: id:don_gia:so_luong_toi_da:ma_vp
+15:100:999:hp3x

@@ -1,0 +1,10150 @@
+ID: 0
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 1
+DESCRIPTION: Đá vụn, dùng nâng cấp trang bị
+LEVEL: 1
+ICON ID: 188
+PART: -1
+UP TOP: false
+=============================
+ID: 1
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 2
+DESCRIPTION: Đá thường, dùng nâng cấp trang bị
+LEVEL: 1
+ICON ID: 189
+PART: -1
+UP TOP: false
+=============================
+ID: 2
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 3
+DESCRIPTION: Đá tì vết, dùng nâng cấp trang bị
+LEVEL: 1
+ICON ID: 190
+PART: -1
+UP TOP: false
+=============================
+ID: 3
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 4
+DESCRIPTION: Đá hoàn thiện, trông rất đẹp
+LEVEL: 1
+ICON ID: 191
+PART: -1
+UP TOP: false
+=============================
+ID: 4
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 5
+DESCRIPTION: Đá tự nhiên, ở sâu trong lòng đất
+LEVEL: 1
+ICON ID: 192
+PART: -1
+UP TOP: false
+=============================
+ID: 5
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 6
+DESCRIPTION: Đá tinh khiết, không bị lẫn tạp chất
+LEVEL: 1
+ICON ID: 193
+PART: -1
+UP TOP: false
+=============================
+ID: 6
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 7
+DESCRIPTION: Đá lâu năm, cực kỳ rắn chắc
+LEVEL: 1
+ICON ID: 194
+PART: -1
+UP TOP: false
+=============================
+ID: 7
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 8
+DESCRIPTION: Đá óng ánh, có thể phát sáng
+LEVEL: 1
+ICON ID: 195
+PART: -1
+UP TOP: false
+=============================
+ID: 8
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 9
+DESCRIPTION: Đá tinh xảo, giá trị không rẻ
+LEVEL: 1
+ICON ID: 196
+PART: -1
+UP TOP: false
+=============================
+ID: 9
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 10
+DESCRIPTION: Đá ngũ sắc, phát quang nhiều màu
+LEVEL: 1
+ICON ID: 197
+PART: -1
+UP TOP: false
+=============================
+ID: 10
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 11
+DESCRIPTION: Đá toàn mỹ, thế gian khó tìm
+LEVEL: 1
+ICON ID: 496
+PART: -1
+UP TOP: false
+=============================
+ID: 11
+TYPE: 26
+GENDER: 2
+NAME: Đá cấp 12
+DESCRIPTION: Đá thiên thạch, không rõ nguồn gốc
+LEVEL: 1
+ICON ID: 497
+PART: -1
+UP TOP: false
+=============================
+ID: 12
+TYPE: 19
+GENDER: 2
+NAME: Yên
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 493
+PART: -1
+UP TOP: false
+=============================
+ID: 13
+TYPE: 16
+GENDER: 2
+NAME: Bình HP cực tiểu
+DESCRIPTION: Nữa giây phục hồi 25 HP, duy trì 3 giây
+LEVEL: 1
+ICON ID: 959
+PART: -1
+UP TOP: true
+=============================
+ID: 14
+TYPE: 16
+GENDER: 2
+NAME: Bình HP tiểu
+DESCRIPTION: Nữa giây phục hồi 90 HP, duy trì 3 giây
+LEVEL: 10
+ICON ID: 213
+PART: -1
+UP TOP: true
+=============================
+ID: 15
+TYPE: 16
+GENDER: 2
+NAME: Bình HP vừa
+DESCRIPTION: Nữa giây phục hồi 230 HP, duy trì 3 giây
+LEVEL: 30
+ICON ID: 214
+PART: -1
+UP TOP: true
+=============================
+ID: 16
+TYPE: 16
+GENDER: 2
+NAME: Bình HP lớn
+DESCRIPTION: Nữa giây phục hồi 400 HP, duy trì 3 giây
+LEVEL: 50
+ICON ID: 215
+PART: -1
+UP TOP: true
+=============================
+ID: 17
+TYPE: 16
+GENDER: 2
+NAME: Bình HP cực lớn
+DESCRIPTION: Nữa giây phục hồi 650 HP, duy trì 3 giây
+LEVEL: 70
+ICON ID: 961
+PART: -1
+UP TOP: true
+=============================
+ID: 18
+TYPE: 17
+GENDER: 2
+NAME: Bình MP cực tiểu
+DESCRIPTION: Phục hồi 150 MP
+LEVEL: 1
+ICON ID: 958
+PART: -1
+UP TOP: true
+=============================
+ID: 19
+TYPE: 17
+GENDER: 2
+NAME: Bình MP tiểu
+DESCRIPTION: Phục hồi 500 MP
+LEVEL: 10
+ICON ID: 216
+PART: -1
+UP TOP: true
+=============================
+ID: 20
+TYPE: 17
+GENDER: 2
+NAME: Bình MP vừa
+DESCRIPTION: Phục hồi 1000 MP
+LEVEL: 30
+ICON ID: 217
+PART: -1
+UP TOP: true
+=============================
+ID: 21
+TYPE: 17
+GENDER: 2
+NAME: Bình MP lớn
+DESCRIPTION: Phục hồi 2000 MP
+LEVEL: 50
+ICON ID: 218
+PART: -1
+UP TOP: true
+=============================
+ID: 22
+TYPE: 17
+GENDER: 2
+NAME: Bình MP cực lớn
+DESCRIPTION: Phục hồi 3500 MP
+LEVEL: 70
+ICON ID: 960
+PART: -1
+UP TOP: true
+=============================
+ID: 23
+TYPE: 18
+GENDER: 2
+NAME: Cơm nắm
+DESCRIPTION: Nữa giây phục hồi 3 HP, MP duy trì 30 phút
+LEVEL: 1
+ICON ID: 953
+PART: 12
+UP TOP: false
+=============================
+ID: 24
+TYPE: 18
+GENDER: 2
+NAME: Tempura
+DESCRIPTION: Nữa giây phục hồi 20 HP, MP duy trì 30 phút
+LEVEL: 10
+ICON ID: 954
+PART: -1
+UP TOP: false
+=============================
+ID: 25
+TYPE: 18
+GENDER: 2
+NAME: Katsudon
+DESCRIPTION: Nữa giây phục hồi 30 HP, MP duy trì 30 phút
+LEVEL: 20
+ICON ID: 955
+PART: -1
+UP TOP: false
+=============================
+ID: 26
+TYPE: 18
+GENDER: 2
+NAME: Sashimi
+DESCRIPTION: Nữa giây phục hồi 40 HP, MP duy trì 30 phút
+LEVEL: 30
+ICON ID: 956
+PART: -1
+UP TOP: false
+=============================
+ID: 27
+TYPE: 18
+GENDER: 2
+NAME: Gà quay
+DESCRIPTION: Nữa giây phục hồi 50 HP, MP duy trì 30 phút
+LEVEL: 40
+ICON ID: 957
+PART: -1
+UP TOP: false
+=============================
+ID: 28
+TYPE: 27
+GENDER: 2
+NAME: Nhân sâm ngàn năm
+DESCRIPTION: Tăng 10% kinh nghiệm của level hiện tại
+LEVEL: 1
+ICON ID: 1002
+PART: -1
+UP TOP: true
+=============================
+ID: 29
+TYPE: 18
+GENDER: 2
+NAME: Đùi heo sữa
+DESCRIPTION: Nữa giây phục hồi 60 HP, MP duy trì 30 phút
+LEVEL: 50
+ICON ID: 1249
+PART: -1
+UP TOP: false
+=============================
+ID: 30
+TYPE: 18
+GENDER: 2
+NAME: Đùi heo sữa cao cấp
+DESCRIPTION: Nữa giây phục hồi 60 HP, MP duy trì 3 ngày
+LEVEL: 50
+ICON ID: 1249
+PART: -1
+UP TOP: false
+=============================
+ID: 31
+TYPE: 6
+GENDER: 1
+NAME: quần xanh nam
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 187
+PART: 8
+UP TOP: false
+=============================
+ID: 32
+TYPE: 6
+GENDER: 1
+NAME: quần đỏ nam
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 184
+PART: 4
+UP TOP: false
+=============================
+ID: 33
+TYPE: 6
+GENDER: 1
+NAME: quần vàng nam
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 185
+PART: 6
+UP TOP: false
+=============================
+ID: 34
+TYPE: 27
+GENDER: 2
+NAME: Bách biến lệnh
+DESCRIPTION: Di chuyển nhanh về tọa độ mặc định
+LEVEL: 1
+ICON ID: 491
+PART: -1
+UP TOP: false
+=============================
+ID: 35
+TYPE: 27
+GENDER: 2
+NAME: Khả di lệnh
+DESCRIPTION: Di chuyển nhanh qua các làng, trường
+LEVEL: 1
+ICON ID: 494
+PART: -1
+UP TOP: false
+=============================
+ID: 36
+TYPE: 27
+GENDER: 2
+NAME: Vô hạn bách biến lệnh
+DESCRIPTION: Di chuyển nhanh về tọa độ mặc định
+LEVEL: 1
+ICON ID: 492
+PART: -1
+UP TOP: false
+=============================
+ID: 37
+TYPE: 27
+GENDER: 2
+NAME: Vô hạn khả di lệnh
+DESCRIPTION: Di chuyển nhanh qua các làng, trường
+LEVEL: 1
+ICON ID: 490
+PART: -1
+UP TOP: false
+=============================
+ID: 38
+TYPE: 27
+GENDER: 2
+NAME: Phúc nang nhẫn giả
+DESCRIPTION: Sẽ có bất ngờ khi mở ra
+LEVEL: 1
+ICON ID: 495
+PART: -1
+UP TOP: true
+=============================
+ID: 39
+TYPE: 8
+GENDER: 1
+NAME: Giầy cấp 1 nam
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 198
+PART: -1
+UP TOP: false
+=============================
+ID: 40
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Hiyoko
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 819
+PART: -1
+UP TOP: false
+=============================
+ID: 41
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Amagedon
+DESCRIPTION: 
+LEVEL: 15
+ICON ID: 819
+PART: -1
+UP TOP: false
+=============================
+ID: 42
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Jizokuzan
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 819
+PART: -1
+UP TOP: false
+=============================
+ID: 43
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kakyuu
+DESCRIPTION: 
+LEVEL: 25
+ICON ID: 819
+PART: -1
+UP TOP: false
+=============================
+ID: 44
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công X Zangeki
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 819
+PART: -1
+UP TOP: false
+=============================
+ID: 45
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Raikou
+DESCRIPTION: 
+LEVEL: 35
+ICON ID: 819
+PART: -1
+UP TOP: false
+=============================
+ID: 46
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Hihebun
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 819
+PART: -1
+UP TOP: false
+=============================
+ID: 47
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Shuurai
+DESCRIPTION: 
+LEVEL: 45
+ICON ID: 819
+PART: -1
+UP TOP: false
+=============================
+ID: 48
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Choukouhirenzo
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 819
+PART: -1
+UP TOP: false
+=============================
+ID: 49
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Otama
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 821
+PART: -1
+UP TOP: false
+=============================
+ID: 50
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Itotama
+DESCRIPTION: 
+LEVEL: 15
+ICON ID: 821
+PART: -1
+UP TOP: false
+=============================
+ID: 51
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kasoushuriken
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 821
+PART: -1
+UP TOP: false
+=============================
+ID: 52
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Taiyoutama
+DESCRIPTION: 
+LEVEL: 25
+ICON ID: 821
+PART: -1
+UP TOP: false
+=============================
+ID: 53
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Bikoushuriken
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 821
+PART: -1
+UP TOP: false
+=============================
+ID: 54
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Hoshitama
+DESCRIPTION: 
+LEVEL: 35
+ICON ID: 821
+PART: -1
+UP TOP: false
+=============================
+ID: 55
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Hinotama
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 821
+PART: -1
+UP TOP: false
+=============================
+ID: 56
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Hijoukai
+DESCRIPTION: 
+LEVEL: 45
+ICON ID: 821
+PART: -1
+UP TOP: false
+=============================
+ID: 57
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Choukou shuriken
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 821
+PART: -1
+UP TOP: false
+=============================
+ID: 58
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Yokobatan
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 816
+PART: -1
+UP TOP: false
+=============================
+ID: 59
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Akaiame
+DESCRIPTION: 
+LEVEL: 15
+ICON ID: 816
+PART: -1
+UP TOP: false
+=============================
+ID: 60
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Mizuibatan
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 816
+PART: -1
+UP TOP: false
+=============================
+ID: 61
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Aoiame
+DESCRIPTION: 
+LEVEL: 25
+ICON ID: 816
+PART: -1
+UP TOP: false
+=============================
+ID: 62
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Uzubatan
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 816
+PART: -1
+UP TOP: false
+=============================
+ID: 63
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Hibikou
+DESCRIPTION: 
+LEVEL: 35
+ICON ID: 816
+PART: -1
+UP TOP: false
+=============================
+ID: 64
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kogoeru
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 816
+PART: -1
+UP TOP: false
+=============================
+ID: 65
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Jotente
+DESCRIPTION: 
+LEVEL: 45
+ICON ID: 816
+PART: -1
+UP TOP: false
+=============================
+ID: 66
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Choukoukogo
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 816
+PART: -1
+UP TOP: false
+=============================
+ID: 67
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Uzusa
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 820
+PART: -1
+UP TOP: false
+=============================
+ID: 68
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Washihitomi
+DESCRIPTION: 
+LEVEL: 15
+ICON ID: 820
+PART: -1
+UP TOP: false
+=============================
+ID: 69
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kinkinsa
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 820
+PART: -1
+UP TOP: false
+=============================
+ID: 70
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Sogekihei
+DESCRIPTION: 
+LEVEL: 25
+ICON ID: 820
+PART: -1
+UP TOP: false
+=============================
+ID: 71
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Nikinkinsa
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 820
+PART: -1
+UP TOP: false
+=============================
+ID: 72
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Joutenhitomi
+DESCRIPTION: 
+LEVEL: 35
+ICON ID: 820
+PART: -1
+UP TOP: false
+=============================
+ID: 73
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kogosa
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 820
+PART: -1
+UP TOP: false
+=============================
+ID: 74
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kyshouma
+DESCRIPTION: 
+LEVEL: 45
+ICON ID: 820
+PART: -1
+UP TOP: false
+=============================
+ID: 75
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Chousoukinkinsa
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 820
+PART: -1
+UP TOP: false
+=============================
+ID: 76
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Enchokuto
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 817
+PART: -1
+UP TOP: false
+=============================
+ID: 77
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Konoitoame
+DESCRIPTION: 
+LEVEL: 15
+ICON ID: 817
+PART: -1
+UP TOP: false
+=============================
+ID: 78
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Maroyakato
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 817
+PART: -1
+UP TOP: false
+=============================
+ID: 79
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Magumandari
+DESCRIPTION: 
+LEVEL: 25
+ICON ID: 817
+PART: -1
+UP TOP: false
+=============================
+ID: 80
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Chousouto
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 817
+PART: -1
+UP TOP: false
+=============================
+ID: 81
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Aisubaagu
+DESCRIPTION: 
+LEVEL: 35
+ICON ID: 817
+PART: -1
+UP TOP: false
+=============================
+ID: 82
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Hayateto
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 817
+PART: -1
+UP TOP: false
+=============================
+ID: 83
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Zenpanteki
+DESCRIPTION: 
+LEVEL: 45
+ICON ID: 817
+PART: -1
+UP TOP: false
+=============================
+ID: 84
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Raikouto
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 817
+PART: -1
+UP TOP: false
+=============================
+ID: 85
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Ouchia
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 818
+PART: -1
+UP TOP: false
+=============================
+ID: 86
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Suishou
+DESCRIPTION: 
+LEVEL: 15
+ICON ID: 818
+PART: -1
+UP TOP: false
+=============================
+ID: 87
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Oouchia
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 818
+PART: -1
+UP TOP: false
+=============================
+ID: 88
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kusenmono
+DESCRIPTION: 
+LEVEL: 25
+ICON ID: 818
+PART: -1
+UP TOP: false
+=============================
+ID: 89
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Bakkuuchiha
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 818
+PART: -1
+UP TOP: false
+=============================
+ID: 90
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Hayatemi
+DESCRIPTION: 
+LEVEL: 35
+ICON ID: 818
+PART: -1
+UP TOP: false
+=============================
+ID: 91
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Bousouhayate
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 818
+PART: -1
+UP TOP: false
+=============================
+ID: 92
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Toruneedo
+DESCRIPTION: 
+LEVEL: 45
+ICON ID: 818
+PART: -1
+UP TOP: false
+=============================
+ID: 93
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Tatsumaki
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 818
+PART: -1
+UP TOP: false
+=============================
+ID: 94
+TYPE: 1
+GENDER: 2
+NAME: Bạch Hạc Kiếm
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 155
+PART: 12
+UP TOP: false
+=============================
+ID: 95
+TYPE: 1
+GENDER: 2
+NAME: Đả Lôi Kiếm
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 156
+PART: 12
+UP TOP: false
+=============================
+ID: 96
+TYPE: 1
+GENDER: 2
+NAME: Trấn Ma Kiếm
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 157
+PART: 12
+UP TOP: false
+=============================
+ID: 97
+TYPE: 1
+GENDER: 2
+NAME: Sinh Tử Kiếm
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 158
+PART: 12
+UP TOP: false
+=============================
+ID: 98
+TYPE: 1
+GENDER: 2
+NAME: Mộ Danh Kiếm
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 159
+PART: 12
+UP TOP: false
+=============================
+ID: 99
+TYPE: 1
+GENDER: 2
+NAME: Hắc Nanh Dao
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 160
+PART: 41
+UP TOP: false
+=============================
+ID: 100
+TYPE: 1
+GENDER: 2
+NAME: Xà Nhãn Dao
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 161
+PART: 41
+UP TOP: false
+=============================
+ID: 101
+TYPE: 1
+GENDER: 2
+NAME: Hộ Công Dao
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 162
+PART: 41
+UP TOP: false
+=============================
+ID: 102
+TYPE: 1
+GENDER: 2
+NAME: Vô Ảnh Dao
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 163
+PART: 41
+UP TOP: false
+=============================
+ID: 103
+TYPE: 1
+GENDER: 2
+NAME: Phượng Hoàng Dao
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 164
+PART: 41
+UP TOP: false
+=============================
+ID: 104
+TYPE: 1
+GENDER: 2
+NAME: Trãm Mã Đao
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 165
+PART: 13
+UP TOP: false
+=============================
+ID: 105
+TYPE: 1
+GENDER: 2
+NAME: Trãm Hổ Đao
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 166
+PART: 13
+UP TOP: false
+=============================
+ID: 106
+TYPE: 1
+GENDER: 2
+NAME: Khổng Đao
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 167
+PART: 13
+UP TOP: false
+=============================
+ID: 107
+TYPE: 1
+GENDER: 2
+NAME: Nộ Thiên Đao
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 168
+PART: 13
+UP TOP: false
+=============================
+ID: 108
+TYPE: 1
+GENDER: 2
+NAME: Thanh Long Đao
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 169
+PART: 13
+UP TOP: false
+=============================
+ID: 109
+TYPE: 1
+GENDER: 2
+NAME: Minh Nguyệt Cung
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 170
+PART: 14
+UP TOP: false
+=============================
+ID: 110
+TYPE: 1
+GENDER: 2
+NAME: Đằng Vân Cung
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 171
+PART: 14
+UP TOP: false
+=============================
+ID: 111
+TYPE: 1
+GENDER: 2
+NAME: Phụng Tiễn Cung
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 172
+PART: 14
+UP TOP: false
+=============================
+ID: 112
+TYPE: 1
+GENDER: 2
+NAME: Trác Tâm Cung
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 173
+PART: 14
+UP TOP: false
+=============================
+ID: 113
+TYPE: 1
+GENDER: 2
+NAME: Thiên Ý Cung
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 174
+PART: 14
+UP TOP: false
+=============================
+ID: 114
+TYPE: 1
+GENDER: 2
+NAME: Phàm Ý Tiêu
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 175
+PART: 15
+UP TOP: false
+=============================
+ID: 115
+TYPE: 1
+GENDER: 2
+NAME: Ưng nhãn Tiêu
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 176
+PART: 15
+UP TOP: false
+=============================
+ID: 116
+TYPE: 1
+GENDER: 2
+NAME: Mạc Sầu Tiêu
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 177
+PART: 15
+UP TOP: false
+=============================
+ID: 117
+TYPE: 1
+GENDER: 2
+NAME: Triệt Tà Tiêu
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 178
+PART: 15
+UP TOP: false
+=============================
+ID: 118
+TYPE: 1
+GENDER: 2
+NAME: Nhất Dương Tiêu
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 179
+PART: 15
+UP TOP: false
+=============================
+ID: 119
+TYPE: 1
+GENDER: 2
+NAME: Phong Ý Quạt
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 203
+PART: 16
+UP TOP: false
+=============================
+ID: 120
+TYPE: 1
+GENDER: 2
+NAME: Vũ Đan Quạt
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 204
+PART: 16
+UP TOP: false
+=============================
+ID: 121
+TYPE: 1
+GENDER: 2
+NAME: Phong Linh Quạt
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 205
+PART: 16
+UP TOP: false
+=============================
+ID: 122
+TYPE: 1
+GENDER: 2
+NAME: Vấn Thiên Quạt
+DESCRIPTION: 
+LEVEL: 40
+ICON ID: 206
+PART: 16
+UP TOP: false
+=============================
+ID: 123
+TYPE: 1
+GENDER: 2
+NAME: Phong Vũ Lôi Quạt
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 207
+PART: 16
+UP TOP: false
+=============================
+ID: 124
+TYPE: 8
+GENDER: 1
+NAME: Giày Thô Bố
+DESCRIPTION: 
+LEVEL: 11
+ICON ID: 896
+PART: -1
+UP TOP: false
+=============================
+ID: 125
+TYPE: 8
+GENDER: 0
+NAME: Giày Thô Bố
+DESCRIPTION: 
+LEVEL: 11
+ICON ID: 892
+PART: -1
+UP TOP: false
+=============================
+ID: 126
+TYPE: 8
+GENDER: 1
+NAME: Giày Thô Ma
+DESCRIPTION: 
+LEVEL: 21
+ICON ID: 897
+PART: -1
+UP TOP: false
+=============================
+ID: 127
+TYPE: 8
+GENDER: 0
+NAME: Giày Thô Ma
+DESCRIPTION: 
+LEVEL: 21
+ICON ID: 893
+PART: -1
+UP TOP: false
+=============================
+ID: 128
+TYPE: 8
+GENDER: 1
+NAME: Giày Thiên Tằm
+DESCRIPTION: 
+LEVEL: 31
+ICON ID: 898
+PART: -1
+UP TOP: false
+=============================
+ID: 129
+TYPE: 8
+GENDER: 0
+NAME: Giày Thiên Tằm
+DESCRIPTION: 
+LEVEL: 31
+ICON ID: 894
+PART: -1
+UP TOP: false
+=============================
+ID: 130
+TYPE: 8
+GENDER: 1
+NAME: Hoắc Giáp Ngoa
+DESCRIPTION: 
+LEVEL: 41
+ICON ID: 902
+PART: -1
+UP TOP: false
+=============================
+ID: 131
+TYPE: 8
+GENDER: 0
+NAME: Hoắc Giáp Ngoa
+DESCRIPTION: 
+LEVEL: 41
+ICON ID: 904
+PART: -1
+UP TOP: false
+=============================
+ID: 132
+TYPE: 8
+GENDER: 1
+NAME: Kim Giáp Ngoa
+DESCRIPTION: 
+LEVEL: 51
+ICON ID: 903
+PART: -1
+UP TOP: false
+=============================
+ID: 133
+TYPE: 8
+GENDER: 0
+NAME: Kim Giáp Ngoa
+DESCRIPTION: 
+LEVEL: 51
+ICON ID: 951
+PART: -1
+UP TOP: false
+=============================
+ID: 134
+TYPE: 6
+GENDER: 1
+NAME: Quần Thố
+DESCRIPTION: 
+LEVEL: 13
+ICON ID: 187
+PART: 8
+UP TOP: false
+=============================
+ID: 135
+TYPE: 6
+GENDER: 0
+NAME: Quần Thố
+DESCRIPTION: 
+LEVEL: 13
+ICON ID: 888
+PART: 21
+UP TOP: false
+=============================
+ID: 136
+TYPE: 6
+GENDER: 1
+NAME: Quần Vải Bông
+DESCRIPTION: 
+LEVEL: 23
+ICON ID: 184
+PART: 4
+UP TOP: false
+=============================
+ID: 137
+TYPE: 6
+GENDER: 0
+NAME: Quần Vải Bông
+DESCRIPTION: 
+LEVEL: 23
+ICON ID: 889
+PART: 19
+UP TOP: false
+=============================
+ID: 138
+TYPE: 6
+GENDER: 1
+NAME: Quần Tơ Tằm
+DESCRIPTION: 
+LEVEL: 33
+ICON ID: 185
+PART: 6
+UP TOP: false
+=============================
+ID: 139
+TYPE: 6
+GENDER: 0
+NAME: Quần Tơ Tằm
+DESCRIPTION: 
+LEVEL: 33
+ICON ID: 890
+PART: 17
+UP TOP: false
+=============================
+ID: 140
+TYPE: 6
+GENDER: 1
+NAME: Hoắc Giáp
+DESCRIPTION: 
+LEVEL: 43
+ICON ID: 933
+PART: 37
+UP TOP: false
+=============================
+ID: 141
+TYPE: 6
+GENDER: 0
+NAME: Hoắc Giáp
+DESCRIPTION: 
+LEVEL: 43
+ICON ID: 935
+PART: 39
+UP TOP: false
+=============================
+ID: 142
+TYPE: 6
+GENDER: 1
+NAME: Kim Giáp
+DESCRIPTION: 
+LEVEL: 53
+ICON ID: 934
+PART: 33
+UP TOP: false
+=============================
+ID: 143
+TYPE: 6
+GENDER: 0
+NAME: Kim Giáp
+DESCRIPTION: 
+LEVEL: 53
+ICON ID: 936
+PART: 43
+UP TOP: false
+=============================
+ID: 144
+TYPE: 4
+GENDER: 1
+NAME: Thanh Mã Thủ
+DESCRIPTION: 
+LEVEL: 15
+ICON ID: 948
+PART: -1
+UP TOP: false
+=============================
+ID: 145
+TYPE: 4
+GENDER: 0
+NAME: Thanh Mã Thủ
+DESCRIPTION: 
+LEVEL: 15
+ICON ID: 944
+PART: -1
+UP TOP: false
+=============================
+ID: 146
+TYPE: 4
+GENDER: 1
+NAME: Huyết Hổ Thủ
+DESCRIPTION: 
+LEVEL: 25
+ICON ID: 949
+PART: -1
+UP TOP: false
+=============================
+ID: 147
+TYPE: 4
+GENDER: 0
+NAME: Huyết Hổ Thủ
+DESCRIPTION: 
+LEVEL: 25
+ICON ID: 945
+PART: -1
+UP TOP: false
+=============================
+ID: 148
+TYPE: 4
+GENDER: 1
+NAME: Kim Long Thủ
+DESCRIPTION: 
+LEVEL: 35
+ICON ID: 950
+PART: -1
+UP TOP: false
+=============================
+ID: 149
+TYPE: 4
+GENDER: 0
+NAME: Kim Long Thủ
+DESCRIPTION: 
+LEVEL: 35
+ICON ID: 946
+PART: -1
+UP TOP: false
+=============================
+ID: 150
+TYPE: 4
+GENDER: 1
+NAME: Hoắc Thiết Thủ
+DESCRIPTION: 
+LEVEL: 45
+ICON ID: 939
+PART: -1
+UP TOP: false
+=============================
+ID: 151
+TYPE: 4
+GENDER: 0
+NAME: Hoắc Thiết Thủ
+DESCRIPTION: 
+LEVEL: 45
+ICON ID: 937
+PART: -1
+UP TOP: false
+=============================
+ID: 152
+TYPE: 4
+GENDER: 1
+NAME: Kim Triền Thủ
+DESCRIPTION: 
+LEVEL: 55
+ICON ID: 940
+PART: -1
+UP TOP: false
+=============================
+ID: 153
+TYPE: 4
+GENDER: 0
+NAME: Kim Triền Thủ
+DESCRIPTION: 
+LEVEL: 55
+ICON ID: 938
+PART: -1
+UP TOP: false
+=============================
+ID: 154
+TYPE: 2
+GENDER: 1
+NAME: Áo Thố
+DESCRIPTION: 
+LEVEL: 17
+ICON ID: 183
+PART: 7
+UP TOP: false
+=============================
+ID: 155
+TYPE: 2
+GENDER: 0
+NAME: Áo Thố
+DESCRIPTION: 
+LEVEL: 17
+ICON ID: 884
+PART: 22
+UP TOP: false
+=============================
+ID: 156
+TYPE: 2
+GENDER: 1
+NAME: Áo Vải Bông
+DESCRIPTION: 
+LEVEL: 27
+ICON ID: 180
+PART: 3
+UP TOP: false
+=============================
+ID: 157
+TYPE: 2
+GENDER: 0
+NAME: Áo Vải Bông
+DESCRIPTION: 
+LEVEL: 27
+ICON ID: 885
+PART: 20
+UP TOP: false
+=============================
+ID: 158
+TYPE: 2
+GENDER: 1
+NAME: Áo Tơ Tằm
+DESCRIPTION: 
+LEVEL: 37
+ICON ID: 181
+PART: 5
+UP TOP: false
+=============================
+ID: 159
+TYPE: 2
+GENDER: 0
+NAME: Áo Tơ Tằm
+DESCRIPTION: 
+LEVEL: 37
+ICON ID: 886
+PART: 18
+UP TOP: false
+=============================
+ID: 160
+TYPE: 2
+GENDER: 1
+NAME: Hoắc Giáp Y
+DESCRIPTION: 
+LEVEL: 47
+ICON ID: 899
+PART: 36
+UP TOP: false
+=============================
+ID: 161
+TYPE: 2
+GENDER: 0
+NAME: Hoắc Giáp Y
+DESCRIPTION: 
+LEVEL: 47
+ICON ID: 952
+PART: 38
+UP TOP: false
+=============================
+ID: 162
+TYPE: 2
+GENDER: 1
+NAME: Kim Giáp Y
+DESCRIPTION: 
+LEVEL: 57
+ICON ID: 900
+PART: 32
+UP TOP: false
+=============================
+ID: 163
+TYPE: 2
+GENDER: 0
+NAME: Kim Giáp Y
+DESCRIPTION: 
+LEVEL: 57
+ICON ID: 901
+PART: 42
+UP TOP: false
+=============================
+ID: 164
+TYPE: 0
+GENDER: 1
+NAME: Dây Thanh Tuyến
+DESCRIPTION: 
+LEVEL: 19
+ICON ID: 210
+PART: -1
+UP TOP: false
+=============================
+ID: 165
+TYPE: 0
+GENDER: 0
+NAME: Thanh Ngọc Trâm
+DESCRIPTION: 
+LEVEL: 19
+ICON ID: 199
+PART: -1
+UP TOP: false
+=============================
+ID: 166
+TYPE: 0
+GENDER: 1
+NAME: Dây Huyết Tuyến
+DESCRIPTION: 
+LEVEL: 29
+ICON ID: 211
+PART: -1
+UP TOP: false
+=============================
+ID: 167
+TYPE: 0
+GENDER: 0
+NAME: Hồng Bảo Trâm
+DESCRIPTION: 
+LEVEL: 29
+ICON ID: 198
+PART: -1
+UP TOP: false
+=============================
+ID: 168
+TYPE: 0
+GENDER: 1
+NAME: Dây Kim Tuyến
+DESCRIPTION: 
+LEVEL: 39
+ICON ID: 212
+PART: -1
+UP TOP: false
+=============================
+ID: 169
+TYPE: 0
+GENDER: 0
+NAME: Kim Lân Trâm
+DESCRIPTION: 
+LEVEL: 39
+ICON ID: 201
+PART: -1
+UP TOP: false
+=============================
+ID: 170
+TYPE: 0
+GENDER: 1
+NAME: Dây Hoắc Tuyến
+DESCRIPTION: 
+LEVEL: 49
+ICON ID: 990
+PART: -1
+UP TOP: false
+=============================
+ID: 171
+TYPE: 0
+GENDER: 0
+NAME: Bích Hoa Trâm
+DESCRIPTION: 
+LEVEL: 49
+ICON ID: 202
+PART: -1
+UP TOP: false
+=============================
+ID: 172
+TYPE: 0
+GENDER: 1
+NAME: Ngân Bội Tuyến
+DESCRIPTION: 
+LEVEL: 59
+ICON ID: 991
+PART: -1
+UP TOP: false
+=============================
+ID: 173
+TYPE: 0
+GENDER: 0
+NAME: Ngân Hoa Trâm
+DESCRIPTION: 
+LEVEL: 59
+ICON ID: 208
+PART: -1
+UP TOP: false
+=============================
+ID: 174
+TYPE: 9
+GENDER: 2
+NAME: Bùa Hộ Thân
+DESCRIPTION: 
+LEVEL: 12
+ICON ID: 920
+PART: -1
+UP TOP: false
+=============================
+ID: 175
+TYPE: 9
+GENDER: 2
+NAME: Bùa Kháng Ma
+DESCRIPTION: 
+LEVEL: 22
+ICON ID: 921
+PART: -1
+UP TOP: false
+=============================
+ID: 176
+TYPE: 9
+GENDER: 2
+NAME: Bùa Phúc Mệnh
+DESCRIPTION: 
+LEVEL: 32
+ICON ID: 922
+PART: -1
+UP TOP: false
+=============================
+ID: 177
+TYPE: 9
+GENDER: 2
+NAME: Bùa Thánh Ý
+DESCRIPTION: 
+LEVEL: 42
+ICON ID: 923
+PART: -1
+UP TOP: false
+=============================
+ID: 178
+TYPE: 9
+GENDER: 2
+NAME: Bùa Vạn Phước
+DESCRIPTION: 
+LEVEL: 52
+ICON ID: 924
+PART: -1
+UP TOP: false
+=============================
+ID: 179
+TYPE: 7
+GENDER: 2
+NAME: Cẩm Thạch Bội 
+DESCRIPTION: 
+LEVEL: 14
+ICON ID: 915
+PART: -1
+UP TOP: false
+=============================
+ID: 180
+TYPE: 7
+GENDER: 2
+NAME: Phỉ Thúy Bội
+DESCRIPTION: 
+LEVEL: 24
+ICON ID: 916
+PART: -1
+UP TOP: false
+=============================
+ID: 181
+TYPE: 7
+GENDER: 2
+NAME: Bạch Ngọc Bội 
+DESCRIPTION: 
+LEVEL: 34
+ICON ID: 917
+PART: -1
+UP TOP: false
+=============================
+ID: 182
+TYPE: 7
+GENDER: 2
+NAME: Ngọc Bội Hổ Phách
+DESCRIPTION: 
+LEVEL: 44
+ICON ID: 918
+PART: -1
+UP TOP: false
+=============================
+ID: 183
+TYPE: 7
+GENDER: 2
+NAME: Thạch Anh Bội 
+DESCRIPTION: 
+LEVEL: 54
+ICON ID: 919
+PART: -1
+UP TOP: false
+=============================
+ID: 184
+TYPE: 5
+GENDER: 2
+NAME: Nhẫn Bạc
+DESCRIPTION: 
+LEVEL: 16
+ICON ID: 910
+PART: -1
+UP TOP: false
+=============================
+ID: 185
+TYPE: 5
+GENDER: 2
+NAME: Nhẫn Mắt Mèo
+DESCRIPTION: 
+LEVEL: 26
+ICON ID: 911
+PART: -1
+UP TOP: false
+=============================
+ID: 186
+TYPE: 5
+GENDER: 2
+NAME: Nhẫn Thạch Lam
+DESCRIPTION: 
+LEVEL: 36
+ICON ID: 912
+PART: -1
+UP TOP: false
+=============================
+ID: 187
+TYPE: 5
+GENDER: 2
+NAME: Nhẫn Opal
+DESCRIPTION: 
+LEVEL: 46
+ICON ID: 913
+PART: -1
+UP TOP: false
+=============================
+ID: 188
+TYPE: 5
+GENDER: 2
+NAME: Nhẫn Kim cương
+DESCRIPTION: 
+LEVEL: 56
+ICON ID: 914
+PART: -1
+UP TOP: false
+=============================
+ID: 189
+TYPE: 3
+GENDER: 2
+NAME: Dây Chuyền Bạc
+DESCRIPTION: 
+LEVEL: 18
+ICON ID: 905
+PART: -1
+UP TOP: false
+=============================
+ID: 190
+TYPE: 3
+GENDER: 2
+NAME: Dây Chuyền Bạch Kim
+DESCRIPTION: 
+LEVEL: 28
+ICON ID: 906
+PART: -1
+UP TOP: false
+=============================
+ID: 191
+TYPE: 3
+GENDER: 2
+NAME: Dây Chuyền Vàng
+DESCRIPTION: 
+LEVEL: 38
+ICON ID: 907
+PART: -1
+UP TOP: false
+=============================
+ID: 192
+TYPE: 3
+GENDER: 2
+NAME: Dây Chuyền Lục Bảo
+DESCRIPTION: 
+LEVEL: 48
+ICON ID: 908
+PART: -1
+UP TOP: false
+=============================
+ID: 193
+TYPE: 3
+GENDER: 2
+NAME: Dây Chuyền Hồng Bảo
+DESCRIPTION: 
+LEVEL: 58
+ICON ID: 909
+PART: -1
+UP TOP: false
+=============================
+ID: 194
+TYPE: 1
+GENDER: 2
+NAME: Kiếm Gỗ
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 867
+PART: 12
+UP TOP: false
+=============================
+ID: 195
+TYPE: 8
+GENDER: 1
+NAME: Giày
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 895
+PART: -1
+UP TOP: false
+=============================
+ID: 196
+TYPE: 8
+GENDER: 0
+NAME: Giày
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 891
+PART: -1
+UP TOP: false
+=============================
+ID: 197
+TYPE: 6
+GENDER: 1
+NAME: Quần Da Thú
+DESCRIPTION: 
+LEVEL: 3
+ICON ID: 186
+PART: 0
+UP TOP: false
+=============================
+ID: 198
+TYPE: 6
+GENDER: 0
+NAME: Quần Da Thú
+DESCRIPTION: 
+LEVEL: 3
+ICON ID: 887
+PART: 9
+UP TOP: false
+=============================
+ID: 199
+TYPE: 4
+GENDER: 1
+NAME: Găng Tay
+DESCRIPTION: 
+LEVEL: 5
+ICON ID: 947
+PART: -1
+UP TOP: false
+=============================
+ID: 200
+TYPE: 4
+GENDER: 0
+NAME: Găng Tay
+DESCRIPTION: 
+LEVEL: 5
+ICON ID: 943
+PART: -1
+UP TOP: false
+=============================
+ID: 201
+TYPE: 2
+GENDER: 1
+NAME: Áo Da Thú
+DESCRIPTION: 
+LEVEL: 7
+ICON ID: 182
+PART: 1
+UP TOP: false
+=============================
+ID: 202
+TYPE: 2
+GENDER: 0
+NAME: Áo Da Thú
+DESCRIPTION: 
+LEVEL: 7
+ICON ID: 883
+PART: 10
+UP TOP: false
+=============================
+ID: 203
+TYPE: 0
+GENDER: 1
+NAME: Dây Bạch Tuyến
+DESCRIPTION: 
+LEVEL: 9
+ICON ID: 209
+PART: -1
+UP TOP: false
+=============================
+ID: 204
+TYPE: 0
+GENDER: 0
+NAME: Trâm Cài
+DESCRIPTION: 
+LEVEL: 9
+ICON ID: 200
+PART: -1
+UP TOP: false
+=============================
+ID: 205
+TYPE: 9
+GENDER: 2
+NAME: Bùa Bình An
+DESCRIPTION: 
+LEVEL: 2
+ICON ID: 1020
+PART: -1
+UP TOP: false
+=============================
+ID: 206
+TYPE: 7
+GENDER: 2
+NAME: Ngọc Bội
+DESCRIPTION: 
+LEVEL: 4
+ICON ID: 1032
+PART: -1
+UP TOP: false
+=============================
+ID: 207
+TYPE: 5
+GENDER: 2
+NAME: Nhẫn
+DESCRIPTION: 
+LEVEL: 6
+ICON ID: 1034
+PART: -1
+UP TOP: false
+=============================
+ID: 208
+TYPE: 3
+GENDER: 2
+NAME: Dây Chuyền
+DESCRIPTION: 
+LEVEL: 8
+ICON ID: 1033
+PART: -1
+UP TOP: false
+=============================
+ID: 209
+TYPE: 25
+GENDER: 2
+NAME: Lông nhím
+DESCRIPTION: Trưởng làng cần vật phẩm này
+LEVEL: 1
+ICON ID: 1053
+PART: -1
+UP TOP: true
+=============================
+ID: 210
+TYPE: 25
+GENDER: 2
+NAME: Da thỏ
+DESCRIPTION: Trưởng làng cần vật phẩm này
+LEVEL: 1
+ICON ID: 1052
+PART: -1
+UP TOP: true
+=============================
+ID: 211
+TYPE: 25
+GENDER: 2
+NAME: Bông thảo dược
+DESCRIPTION: Dùng để chế thuốc
+LEVEL: 1
+ICON ID: 1054
+PART: -1
+UP TOP: true
+=============================
+ID: 212
+TYPE: 25
+GENDER: 2
+NAME: Khoáng thạch
+DESCRIPTION: Dùng làm đồ trang sức
+LEVEL: 1
+ICON ID: 1131
+PART: -1
+UP TOP: true
+=============================
+ID: 213
+TYPE: 25
+GENDER: 2
+NAME: Vỏ Ốc Đá
+DESCRIPTION: Dùng làm đồ trang sức
+LEVEL: 1
+ICON ID: 1132
+PART: -1
+UP TOP: true
+=============================
+ID: 214
+TYPE: 23
+GENDER: 2
+NAME: Thư liên lạc
+DESCRIPTION: Vật phẩm nhiệm vụ
+LEVEL: 1
+ICON ID: 1134
+PART: -1
+UP TOP: true
+=============================
+ID: 215
+TYPE: 27
+GENDER: 2
+NAME: Túi vải cấp 1
+DESCRIPTION: Mở thêm 6 ô trong hành trang
+LEVEL: 1
+ICON ID: 1133
+PART: -1
+UP TOP: false
+=============================
+ID: 216
+TYPE: 25
+GENDER: 2
+NAME: Nhị hầu tửu
+DESCRIPTION: Nguyên liệu đặc biệt chữa vết thương
+LEVEL: 1
+ICON ID: 1163
+PART: -1
+UP TOP: true
+=============================
+ID: 217
+TYPE: 25
+GENDER: 2
+NAME: Xác Châu Chấu
+DESCRIPTION: Nguyên liệu đặc biệt chữa vết thương
+LEVEL: 1
+ICON ID: 1162
+PART: -1
+UP TOP: true
+=============================
+ID: 218
+TYPE: 21
+GENDER: 2
+NAME: Sushi
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 1164
+PART: -1
+UP TOP: true
+=============================
+ID: 219
+TYPE: 24
+GENDER: 2
+NAME: Bình rỗng
+DESCRIPTION: Dùng để chứa nước
+LEVEL: 1
+ICON ID: 1169
+PART: -1
+UP TOP: true
+=============================
+ID: 220
+TYPE: 23
+GENDER: 2
+NAME: Bình nước
+DESCRIPTION: Bên trong chứa đầy nước
+LEVEL: 1
+ICON ID: 1168
+PART: -1
+UP TOP: true
+=============================
+ID: 221
+TYPE: 23
+GENDER: 2
+NAME: Rìu Bạc
+DESCRIPTION: Vật trấn ngư chi bảo Làng Chài
+LEVEL: 1
+ICON ID: 1170
+PART: -1
+UP TOP: false
+=============================
+ID: 222
+TYPE: 22
+GENDER: 2
+NAME: Ngọc 1 sao
+DESCRIPTION: Hội tụ 7 viên sẽ được phần thưởng giá trị
+LEVEL: 1
+ICON ID: 1173
+PART: -1
+UP TOP: false
+=============================
+ID: 223
+TYPE: 22
+GENDER: 2
+NAME: Ngọc 2 sao
+DESCRIPTION: Hội tụ 7 viên sẽ được phần thưởng giá trị
+LEVEL: 1
+ICON ID: 1174
+PART: -1
+UP TOP: false
+=============================
+ID: 224
+TYPE: 22
+GENDER: 2
+NAME: Ngọc 3 sao
+DESCRIPTION: Hội tụ 7 viên sẽ được phần thưởng giá trị
+LEVEL: 1
+ICON ID: 1175
+PART: -1
+UP TOP: false
+=============================
+ID: 225
+TYPE: 22
+GENDER: 2
+NAME: Ngọc 4 sao
+DESCRIPTION: Hội tụ 7 viên sẽ được phần thưởng giá trị
+LEVEL: 1
+ICON ID: 1176
+PART: -1
+UP TOP: false
+=============================
+ID: 226
+TYPE: 22
+GENDER: 2
+NAME: Ngọc 5 sao
+DESCRIPTION: Hội tụ 7 viên sẽ được phần thưởng giá trị
+LEVEL: 1
+ICON ID: 1177
+PART: -1
+UP TOP: false
+=============================
+ID: 227
+TYPE: 22
+GENDER: 2
+NAME: Ngọc 6 sao
+DESCRIPTION: Hội tụ 7 viên sẽ được phần thưởng giá trị
+LEVEL: 1
+ICON ID: 1178
+PART: -1
+UP TOP: false
+=============================
+ID: 228
+TYPE: 22
+GENDER: 2
+NAME: Ngọc 7 sao
+DESCRIPTION: Hội tụ 7 viên sẽ được phần thưởng giá trị
+LEVEL: 1
+ICON ID: 1179
+PART: -1
+UP TOP: false
+=============================
+ID: 229
+TYPE: 27
+GENDER: 2
+NAME: Túi vải cấp 2
+DESCRIPTION: Mở thêm 6 ô trong hành trang
+LEVEL: 5
+ICON ID: 1194
+PART: -1
+UP TOP: false
+=============================
+ID: 230
+TYPE: 25
+GENDER: 2
+NAME: Chìa khóa cơ quan
+DESCRIPTION: Vật phẩm nhiệm vụ
+LEVEL: 34
+ICON ID: 653
+PART: -1
+UP TOP: true
+=============================
+ID: 231
+TYPE: 25
+GENDER: 2
+NAME: Chìa khóa cơ quan
+DESCRIPTION: Dùng để mở cửa địa đạo
+LEVEL: 34
+ICON ID: 653
+PART: -1
+UP TOP: false
+=============================
+ID: 232
+TYPE: 23
+GENDER: 2
+NAME: Địa đồ
+DESCRIPTION: Vật phẩm nhiệm vụ
+LEVEL: 35
+ICON ID: 656
+PART: -1
+UP TOP: false
+=============================
+ID: 233
+TYPE: 24
+GENDER: 2
+NAME: Địa đồ
+DESCRIPTION: Khi sử dụng sẽ cho biết tọa độ cần đến
+LEVEL: 35
+ICON ID: 656
+PART: -1
+UP TOP: false
+=============================
+ID: 234
+TYPE: 24
+GENDER: 2
+NAME: Địa đồ
+DESCRIPTION: Khi sử dụng sẽ cho biết tọa độ cần đến
+LEVEL: 35
+ICON ID: 656
+PART: -1
+UP TOP: false
+=============================
+ID: 235
+TYPE: 24
+GENDER: 2
+NAME: Địa đồ
+DESCRIPTION: Khi sử dụng sẽ cho biết tọa độ cần đến
+LEVEL: 35
+ICON ID: 656
+PART: -1
+UP TOP: false
+=============================
+ID: 236
+TYPE: 23
+GENDER: 2
+NAME: Tinh thể băng
+DESCRIPTION: Vật phẩm nhiệm vụ
+LEVEL: 1
+ICON ID: 657
+PART: -1
+UP TOP: true
+=============================
+ID: 237
+TYPE: 23
+GENDER: 2
+NAME: Tinh thể băng
+DESCRIPTION: Có thể trung hòa nhiệt độ
+LEVEL: 1
+ICON ID: 657
+PART: -1
+UP TOP: true
+=============================
+ID: 238
+TYPE: 23
+GENDER: 2
+NAME: Xác dơi lửa
+DESCRIPTION: 
+LEVEL: 41
+ICON ID: 659
+PART: -1
+UP TOP: true
+=============================
+ID: 239
+TYPE: 23
+GENDER: 2
+NAME: Xác dơi lửa
+DESCRIPTION: Đã bị đóng băng
+LEVEL: 41
+ICON ID: 661
+PART: -1
+UP TOP: true
+=============================
+ID: 240
+TYPE: 27
+GENDER: 2
+NAME: Giấy phép tẩy tiềm năng
+DESCRIPTION: Sử dụng sẽ tăng 1 lần tẩy tiềm năng
+LEVEL: 10
+ICON ID: 663
+PART: -1
+UP TOP: false
+=============================
+ID: 241
+TYPE: 27
+GENDER: 2
+NAME: Giấy phép tẩy kỹ năng
+DESCRIPTION: Sử dụng sẽ tăng 1 lần tẩy kỹ năng
+LEVEL: 10
+ICON ID: 727
+PART: -1
+UP TOP: false
+=============================
+ID: 242
+TYPE: 28
+GENDER: 2
+NAME: Bảo hiểm sơ cấp
+DESCRIPTION: Bảo hiểm nâng cấp trang bị từ cấp 1 đến cấp 8
+LEVEL: 1
+ICON ID: 674
+PART: -1
+UP TOP: false
+=============================
+ID: 243
+TYPE: 27
+GENDER: 2
+NAME: Chuyển hóa y phục
+DESCRIPTION: Chuyển cấp độ từ y phục qua y phục
+LEVEL: 1
+ICON ID: 669
+PART: -1
+UP TOP: false
+=============================
+ID: 244
+TYPE: 27
+GENDER: 2
+NAME: Chuyển hóa trang sức
+DESCRIPTION: Chuyển cấp độ từ trang sức qua trang sức
+LEVEL: 1
+ICON ID: 667
+PART: -1
+UP TOP: false
+=============================
+ID: 245
+TYPE: 27
+GENDER: 2
+NAME: Chuyển hóa vũ khí
+DESCRIPTION: Chuyển cấp độ từ vũ khí qua vũ khí
+LEVEL: 1
+ICON ID: 668
+PART: -1
+UP TOP: false
+=============================
+ID: 246
+TYPE: 10
+GENDER: 2
+NAME: Dơi đen
+DESCRIPTION: Hỗ trợ tấn công quái
+LEVEL: 1
+ICON ID: 670
+PART: -1
+UP TOP: false
+=============================
+ID: 247
+TYPE: 27
+GENDER: 2
+NAME: Thỏi bạc
+DESCRIPTION: Có thể đổi lấy xu hoặc yên
+LEVEL: 1
+ICON ID: 698
+PART: -1
+UP TOP: false
+=============================
+ID: 248
+TYPE: 27
+GENDER: 2
+NAME: Nấm linh chi
+DESCRIPTION: Nhân 2 kinh nghiệm đánh quái. Duy trì 5h, cộng dồn khi sử dụng.
+LEVEL: 1
+ICON ID: 1004
+PART: -1
+UP TOP: false
+=============================
+ID: 249
+TYPE: 18
+GENDER: 2
+NAME: Sashimi cao cấp
+DESCRIPTION: Nữa giây phục hồi 40 HP, MP duy trì 3 ngày
+LEVEL: 30
+ICON ID: 956
+PART: -1
+UP TOP: false
+=============================
+ID: 250
+TYPE: 18
+GENDER: 2
+NAME: Gà quay cao cấp
+DESCRIPTION: Nữa giây phục hồi 50 HP, MP duy trì 3 ngày
+LEVEL: 40
+ICON ID: 957
+PART: -1
+UP TOP: false
+=============================
+ID: 251
+TYPE: 27
+GENDER: 2
+NAME: Mảnh giấy vụn
+DESCRIPTION: Dùng để đổi sách tiềm năng hoặc sách kỹ năng
+LEVEL: 1
+ICON ID: 1201
+PART: -1
+UP TOP: true
+=============================
+ID: 252
+TYPE: 27
+GENDER: 2
+NAME: Sách kỹ năng sơ cấp
+DESCRIPTION: Học xong sẽ tăng 1 điểm kỹ năng, được học tối đa 3 quyển
+LEVEL: 10
+ICON ID: 1202
+PART: -1
+UP TOP: false
+=============================
+ID: 253
+TYPE: 27
+GENDER: 2
+NAME: Sách tiềm năng sơ cấp
+DESCRIPTION: Học xong sẽ tăng 10 điểm tiềm năng, được học tối đa 3 quyển
+LEVEL: 10
+ICON ID: 1203
+PART: -1
+UP TOP: false
+=============================
+ID: 254
+TYPE: 27
+GENDER: 2
+NAME: Hoàn cốt chi chú sơ cấp
+DESCRIPTION: Xóa sạch kinh nghiệm âm dưới cấp 30
+LEVEL: 1
+ICON ID: 1204
+PART: -1
+UP TOP: true
+=============================
+ID: 255
+TYPE: 27
+GENDER: 2
+NAME: Hoàn cốt chi chú trung cấp
+DESCRIPTION: Xóa sạch kinh nghiệm âm dưới cấp 60
+LEVEL: 30
+ICON ID: 1207
+PART: -1
+UP TOP: true
+=============================
+ID: 256
+TYPE: 27
+GENDER: 2
+NAME: Hoàn cốt chi chú cao cấp
+DESCRIPTION: Xóa sạch kinh nghiệm âm cấp 60 trở lên
+LEVEL: 60
+ICON ID: 1206
+PART: -1
+UP TOP: true
+=============================
+ID: 257
+TYPE: 27
+GENDER: 2
+NAME: Hoàn lương chi thảo
+DESCRIPTION: Mỗi lần sử dụng giảm 5 điểm hiếu chiến
+LEVEL: 1
+ICON ID: 1205
+PART: -1
+UP TOP: true
+=============================
+ID: 258
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ Sasuke
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 10
+ICON ID: 1208
+PART: 112
+UP TOP: false
+=============================
+ID: 259
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ Muramasa
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 10
+ICON ID: 1209
+PART: 113
+UP TOP: false
+=============================
+ID: 260
+TYPE: 27
+GENDER: 2
+NAME: Chìa khóa Lãnh Địa Gia Tộc
+DESCRIPTION: Dùng để mở cơ quan lãnh địa gia tộc
+LEVEL: 1
+ICON ID: 653
+PART: -1
+UP TOP: false
+=============================
+ID: 261
+TYPE: 27
+GENDER: 2
+NAME: Lam Thảo dược
+DESCRIPTION: Giúp tập trung thị lực
+LEVEL: 1
+ICON ID: 1225
+PART: -1
+UP TOP: false
+=============================
+ID: 262
+TYPE: 20
+GENDER: 2
+NAME: Đồng tiền gia tộc
+DESCRIPTION: Dùng để đổi túi quà gia tộc
+LEVEL: 1
+ICON ID: 1226
+PART: -1
+UP TOP: true
+=============================
+ID: 263
+TYPE: 27
+GENDER: 2
+NAME: Túi quà gia tộc
+DESCRIPTION: Nếu may mắn có thể sẽ mở ra hoán chuyển sơ cấp
+LEVEL: 1
+ICON ID: 1227
+PART: -1
+UP TOP: true
+=============================
+ID: 264
+TYPE: 25
+GENDER: 2
+NAME: Giỏ Cá hổ
+DESCRIPTION: Bên trong chứa Cá hổ
+LEVEL: 1
+ICON ID: 1229
+PART: -1
+UP TOP: true
+=============================
+ID: 265
+TYPE: 25
+GENDER: 2
+NAME: Giỏ Rắn tía
+DESCRIPTION: Bên trong chứa Rắn tía
+LEVEL: 1
+ICON ID: 1230
+PART: -1
+UP TOP: true
+=============================
+ID: 266
+TYPE: 24
+GENDER: 2
+NAME: Cần câu
+DESCRIPTION: Vật phẩm nhiệm vụ
+LEVEL: 49
+ICON ID: 1231
+PART: -1
+UP TOP: false
+=============================
+ID: 267
+TYPE: 25
+GENDER: 2
+NAME: Guốc gỗ
+DESCRIPTION: Đồ dùng của Soba
+LEVEL: 1
+ICON ID: 1232
+PART: -1
+UP TOP: false
+=============================
+ID: 268
+TYPE: 27
+GENDER: 2
+NAME: Tà thú lệnh
+DESCRIPTION: Dùng để tăng số lần truy bắt tà thú, mỗi ngày dùng tối đa 2 lần
+LEVEL: 1
+ICON ID: 1228
+PART: -1
+UP TOP: false
+=============================
+ID: 269
+TYPE: 27
+GENDER: 2
+NAME: Hoán chuyển sơ cấp
+DESCRIPTION: Chuyển hóa trang bị từ cấp 1 đến cấp 10
+LEVEL: 1
+ICON ID: 669
+PART: -1
+UP TOP: false
+=============================
+ID: 270
+TYPE: 27
+GENDER: 2
+NAME: Hoán chuyển trung cấp
+DESCRIPTION: Chuyển hóa trang bị từ cấp 1 đến cấp 13
+LEVEL: 1
+ICON ID: 667
+PART: -1
+UP TOP: false
+=============================
+ID: 271
+TYPE: 27
+GENDER: 2
+NAME: Hoán chuyển cao cấp
+DESCRIPTION: Chuyển hóa trang bị từ cấp 1 đến cấp 16
+LEVEL: 1
+ICON ID: 668
+PART: -1
+UP TOP: false
+=============================
+ID: 272
+TYPE: 27
+GENDER: 2
+NAME: Rương may mắn
+DESCRIPTION: Nếu may mắn có thể sẽ mở ra bảo hiểm nâng cấp
+LEVEL: 1
+ICON ID: 1233
+PART: -1
+UP TOP: true
+=============================
+ID: 273
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ sát thủ
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 20
+ICON ID: 1238
+PART: 124
+UP TOP: false
+=============================
+ID: 274
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ trinh sát
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 20
+ICON ID: 1239
+PART: 125
+UP TOP: false
+=============================
+ID: 275
+TYPE: 27
+GENDER: 2
+NAME: Minh Mẫn Đan
+DESCRIPTION: Tăng 500 độ chính xác duy trì 10 phút
+LEVEL: 20
+ICON ID: 1245
+PART: -1
+UP TOP: true
+=============================
+ID: 276
+TYPE: 27
+GENDER: 2
+NAME: Long Lực Đan
+DESCRIPTION: Tăng 500% tấn công cơ bản duy trì 10 phút
+LEVEL: 20
+ICON ID: 1248
+PART: -1
+UP TOP: true
+=============================
+ID: 277
+TYPE: 27
+GENDER: 2
+NAME: Kháng Thể Đan
+DESCRIPTION: Tăng 100 kháng tất cả duy trì 10 phút
+LEVEL: 20
+ICON ID: 1247
+PART: -1
+UP TOP: true
+=============================
+ID: 278
+TYPE: 27
+GENDER: 2
+NAME: Sinh Mệnh Đan
+DESCRIPTION: Tăng 1000 HP duy trì 10 phút
+LEVEL: 20
+ICON ID: 1246
+PART: -1
+UP TOP: true
+=============================
+ID: 279
+TYPE: 27
+GENDER: 2
+NAME: Vạn biến lệnh
+DESCRIPTION: Di chuyển nhanh tới người chơi khác
+LEVEL: 10
+ICON ID: 1244
+PART: -1
+UP TOP: false
+=============================
+ID: 280
+TYPE: 27
+GENDER: 2
+NAME: Lệnh bài hang động
+DESCRIPTION: Tăng thêm 1 lần vào hang động, mỗi ngày sử dụng tối đa 1 cái
+LEVEL: 20
+ICON ID: 1242
+PART: -1
+UP TOP: false
+=============================
+ID: 281
+TYPE: 27
+GENDER: 2
+NAME: Lệnh bài gia tộc
+DESCRIPTION: Tăng thêm 1 lần vào lãnh địa gia tộc, mỗi tuần sử dụng tối đa 4 cái, sẽ khóa sau khi mua.
+LEVEL: 20
+ICON ID: 1243
+PART: -1
+UP TOP: true
+=============================
+ID: 282
+TYPE: 27
+GENDER: 2
+NAME: Rương tinh xảo
+DESCRIPTION: Bên trong chứa đầy vật phẩm có giá trị
+LEVEL: 20
+ICON ID: 1250
+PART: -1
+UP TOP: true
+=============================
+ID: 283
+TYPE: 27
+GENDER: 2
+NAME: Túi vải cấp 3
+DESCRIPTION: Mở thêm 12 ô trong hành trang
+LEVEL: 1
+ICON ID: 1252
+PART: -1
+UP TOP: false
+=============================
+ID: 284
+TYPE: 28
+GENDER: 2
+NAME: Bảo hiểm trung cấp
+DESCRIPTION: Bảo hiểm nâng cấp trang bị từ cấp 1 đến cấp 12
+LEVEL: 1
+ICON ID: 1251
+PART: -1
+UP TOP: false
+=============================
+ID: 285
+TYPE: 28
+GENDER: 2
+NAME: Bảo hiểm cao cấp
+DESCRIPTION: Bảo hiểm nâng cấp trang bị từ cấp 1 đến cấp 14
+LEVEL: 1
+ICON ID: 1253
+PART: -1
+UP TOP: false
+=============================
+ID: 286
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ Koumou
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 30
+ICON ID: 1258
+PART: 126
+UP TOP: false
+=============================
+ID: 287
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ Ryokuhatsu
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 30
+ICON ID: 1259
+PART: 127
+UP TOP: false
+=============================
+ID: 288
+TYPE: 27
+GENDER: 2
+NAME: Thất thú thú bảo
+DESCRIPTION: Chứa đựng phần quà bất ngờ
+LEVEL: 20
+ICON ID: 1266
+PART: -1
+UP TOP: true
+=============================
+ID: 289
+TYPE: 27
+GENDER: 2
+NAME: Thẻ bài sơ
+DESCRIPTION: Tăng 1 điểm tinh tú
+LEVEL: 20
+ICON ID: 1261
+PART: -1
+UP TOP: true
+=============================
+ID: 290
+TYPE: 27
+GENDER: 2
+NAME: Thẻ bài trung
+DESCRIPTION: Tăng 3 điểm tinh tú
+LEVEL: 20
+ICON ID: 1260
+PART: -1
+UP TOP: true
+=============================
+ID: 291
+TYPE: 27
+GENDER: 2
+NAME: Thẻ bài cao
+DESCRIPTION: Tăng 9 điểm tinh tú
+LEVEL: 20
+ICON ID: 1262
+PART: -1
+UP TOP: true
+=============================
+ID: 292
+TYPE: 27
+GENDER: 2
+NAME: Bột mì
+DESCRIPTION: Nguyên liệu làm bánh
+LEVEL: 20
+ICON ID: 1271
+PART: -1
+UP TOP: true
+=============================
+ID: 293
+TYPE: 27
+GENDER: 2
+NAME: Trứng
+DESCRIPTION: Nguyên liệu làm bánh
+LEVEL: 20
+ICON ID: 1284
+PART: -1
+UP TOP: true
+=============================
+ID: 294
+TYPE: 27
+GENDER: 2
+NAME: Đường
+DESCRIPTION: Nguyên liệu làm bánh
+LEVEL: 20
+ICON ID: 1272
+PART: -1
+UP TOP: true
+=============================
+ID: 295
+TYPE: 27
+GENDER: 2
+NAME: Hạt sen
+DESCRIPTION: Nguyên liệu làm bánh
+LEVEL: 20
+ICON ID: 1282
+PART: -1
+UP TOP: true
+=============================
+ID: 296
+TYPE: 27
+GENDER: 2
+NAME: Đậu xanh
+DESCRIPTION: Nguyên liệu làm bánh
+LEVEL: 20
+ICON ID: 1273
+PART: -1
+UP TOP: true
+=============================
+ID: 297
+TYPE: 27
+GENDER: 2
+NAME: Mứt
+DESCRIPTION: Nguyên liệu làm bánh
+LEVEL: 20
+ICON ID: 1283
+PART: -1
+UP TOP: true
+=============================
+ID: 298
+TYPE: 27
+GENDER: 2
+NAME: Bánh thập cẩm
+DESCRIPTION: Sử dụng sẽ nhận được kinh nghiệm
+LEVEL: 20
+ICON ID: 1268
+PART: -1
+UP TOP: true
+=============================
+ID: 299
+TYPE: 27
+GENDER: 2
+NAME: Bánh dẻo
+DESCRIPTION: Sử dụng sẽ nhận được kinh nghiệm
+LEVEL: 20
+ICON ID: 1269
+PART: -1
+UP TOP: true
+=============================
+ID: 300
+TYPE: 27
+GENDER: 2
+NAME: Bánh đậu xanh
+DESCRIPTION: Sử dụng sẽ nhận được kinh nghiệm
+LEVEL: 20
+ICON ID: 1270
+PART: -1
+UP TOP: true
+=============================
+ID: 301
+TYPE: 27
+GENDER: 2
+NAME: Bánh Pía
+DESCRIPTION: Sử dụng sẽ nhận được kinh nghiệm
+LEVEL: 20
+ICON ID: 1274
+PART: -1
+UP TOP: true
+=============================
+ID: 302
+TYPE: 27
+GENDER: 2
+NAME: Hộp bánh thường
+DESCRIPTION: Vật phẩm sự kiện trung thu
+LEVEL: 20
+ICON ID: 1281
+PART: -1
+UP TOP: true
+=============================
+ID: 303
+TYPE: 27
+GENDER: 2
+NAME: Hộp bánh thượng hạng
+DESCRIPTION: Vật phẩm sự kiện trung thu
+LEVEL: 20
+ICON ID: 1280
+PART: -1
+UP TOP: true
+=============================
+ID: 304
+TYPE: 27
+GENDER: 2
+NAME: Giấy gói thường
+DESCRIPTION: Dùng làm hộp bánh
+LEVEL: 20
+ICON ID: 1277
+PART: -1
+UP TOP: true
+=============================
+ID: 305
+TYPE: 27
+GENDER: 2
+NAME: Giấy gói cao cấp
+DESCRIPTION: Dùng làm hộp bánh
+LEVEL: 20
+ICON ID: 1278
+PART: -1
+UP TOP: true
+=============================
+ID: 306
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ Hannya
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 30
+ICON ID: 1317
+PART: 139
+UP TOP: false
+=============================
+ID: 307
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ Hannya
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 30
+ICON ID: 1316
+PART: 137
+UP TOP: false
+=============================
+ID: 308
+TYPE: 27
+GENDER: 2
+NAME: Bánh trung thu phong lôi
+DESCRIPTION: Tăng 1 điểm kỹ năng, sử dụng tối đa 10 cái
+LEVEL: 20
+ICON ID: 1275
+PART: -1
+UP TOP: false
+=============================
+ID: 309
+TYPE: 27
+GENDER: 2
+NAME: Bánh trung thu băng hỏa
+DESCRIPTION: Tăng 10 điểm tiềm năng, sử dụng tối đa 10 cái
+LEVEL: 20
+ICON ID: 1276
+PART: -1
+UP TOP: false
+=============================
+ID: 310
+TYPE: 27
+GENDER: 2
+NAME: Hộp diêm
+DESCRIPTION: Dùng để thấp đèn trung thu
+LEVEL: 20
+ICON ID: 1279
+PART: -1
+UP TOP: true
+=============================
+ID: 311
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Pawaraikou
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 819
+PART: -1
+UP TOP: false
+=============================
+ID: 312
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Totogai
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 821
+PART: -1
+UP TOP: false
+=============================
+ID: 313
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kitsukemaguma
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 816
+PART: -1
+UP TOP: false
+=============================
+ID: 314
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Totaaigo
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 820
+PART: -1
+UP TOP: false
+=============================
+ID: 315
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Ikennotto
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 817
+PART: -1
+UP TOP: false
+=============================
+ID: 316
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Ooenjo
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 818
+PART: -1
+UP TOP: false
+=============================
+ID: 317
+TYPE: 8
+GENDER: 1
+NAME: Huyền Thiết Ngoa
+DESCRIPTION: 
+LEVEL: 61
+ICON ID: 1334
+PART: -1
+UP TOP: false
+=============================
+ID: 318
+TYPE: 9
+GENDER: 2
+NAME: Bùa Huyền Kỹ
+DESCRIPTION: 
+LEVEL: 62
+ICON ID: 1327
+PART: -1
+UP TOP: false
+=============================
+ID: 319
+TYPE: 6
+GENDER: 1
+NAME: Huyền Thiết Hạ Giáp
+DESCRIPTION: 
+LEVEL: 63
+ICON ID: 1332
+PART: 30
+UP TOP: false
+=============================
+ID: 320
+TYPE: 7
+GENDER: 2
+NAME: Huyền Kỹ Bội
+DESCRIPTION: 
+LEVEL: 64
+ICON ID: 1326
+PART: -1
+UP TOP: false
+=============================
+ID: 321
+TYPE: 4
+GENDER: 1
+NAME: Huyền Thiết Thủ
+DESCRIPTION: 
+LEVEL: 65
+ICON ID: 1333
+PART: -1
+UP TOP: false
+=============================
+ID: 322
+TYPE: 5
+GENDER: 2
+NAME: Nhẫn Huyền Kỹ
+DESCRIPTION: 
+LEVEL: 66
+ICON ID: 1325
+PART: -1
+UP TOP: false
+=============================
+ID: 323
+TYPE: 2
+GENDER: 1
+NAME: Huyền Thiết Thượng Giáp
+DESCRIPTION: 
+LEVEL: 67
+ICON ID: 1331
+PART: 29
+UP TOP: false
+=============================
+ID: 324
+TYPE: 3
+GENDER: 2
+NAME: Dây Chuyền Huyền Kỹ
+DESCRIPTION: 
+LEVEL: 68
+ICON ID: 1323
+PART: -1
+UP TOP: false
+=============================
+ID: 325
+TYPE: 0
+GENDER: 1
+NAME: Huyền Thiết Tuyến
+DESCRIPTION: 
+LEVEL: 69
+ICON ID: 1339
+PART: -1
+UP TOP: false
+=============================
+ID: 326
+TYPE: 8
+GENDER: 0
+NAME: Huyền Thiết Ngoa
+DESCRIPTION: 
+LEVEL: 61
+ICON ID: 1334
+PART: -1
+UP TOP: false
+=============================
+ID: 327
+TYPE: 6
+GENDER: 0
+NAME: Huyền Thiết Hạ Giáp
+DESCRIPTION: 
+LEVEL: 63
+ICON ID: 1336
+PART: 142
+UP TOP: false
+=============================
+ID: 328
+TYPE: 4
+GENDER: 0
+NAME: Huyền Thiết Thủ
+DESCRIPTION: 
+LEVEL: 65
+ICON ID: 1333
+PART: -1
+UP TOP: false
+=============================
+ID: 329
+TYPE: 2
+GENDER: 0
+NAME: Huyền Thiết Thượng Giáp
+DESCRIPTION: 
+LEVEL: 67
+ICON ID: 1335
+PART: 141
+UP TOP: false
+=============================
+ID: 330
+TYPE: 0
+GENDER: 0
+NAME: Huyền Thiết Trâm
+DESCRIPTION: 
+LEVEL: 69
+ICON ID: 1330
+PART: -1
+UP TOP: false
+=============================
+ID: 331
+TYPE: 1
+GENDER: 2
+NAME: Ly Hỏa kiếm
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 1320
+PART: 12
+UP TOP: false
+=============================
+ID: 332
+TYPE: 1
+GENDER: 2
+NAME: Thái dương tiêu
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 1329
+PART: 15
+UP TOP: false
+=============================
+ID: 333
+TYPE: 1
+GENDER: 2
+NAME: Long khảm Dao
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 1328
+PART: 41
+UP TOP: false
+=============================
+ID: 334
+TYPE: 1
+GENDER: 2
+NAME: Đoạt tâm cung
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 1322
+PART: 14
+UP TOP: false
+=============================
+ID: 335
+TYPE: 1
+GENDER: 2
+NAME: Chấn thiên Đao
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 1321
+PART: 13
+UP TOP: false
+=============================
+ID: 336
+TYPE: 1
+GENDER: 2
+NAME: Âm phong quạt
+DESCRIPTION: 
+LEVEL: 60
+ICON ID: 1324
+PART: 16
+UP TOP: false
+=============================
+ID: 337
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ thỏ
+DESCRIPTION: Chỉ xuất hiên trong mùa trung thu, số lượng có hạn
+LEVEL: 20
+ICON ID: 1318
+PART: 140
+UP TOP: false
+=============================
+ID: 338
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ thỏ
+DESCRIPTION: Chỉ xuất hiên trong mùa trung thu, số lượng có hạn
+LEVEL: 20
+ICON ID: 1319
+PART: 138
+UP TOP: false
+=============================
+ID: 339
+TYPE: 27
+GENDER: 2
+NAME: Điện thoại  LG T375
+DESCRIPTION: Liên hệ đường dây nóng 19006610 để biết thêm về cách nhận thưởng.
+LEVEL: 1
+ICON ID: 1371
+PART: -1
+UP TOP: false
+=============================
+ID: 340
+TYPE: 27
+GENDER: 2
+NAME: Phiếu may mắn
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 1409
+PART: -1
+UP TOP: true
+=============================
+ID: 341
+TYPE: 27
+GENDER: 2
+NAME: Điện thoại Nokia Asha
+DESCRIPTION: Liên hệ đường dây nóng 19006610 để biết thêm về cách nhận thưởng.
+LEVEL: 1
+ICON ID: 1406
+PART: -1
+UP TOP: false
+=============================
+ID: 342
+TYPE: 27
+GENDER: 2
+NAME: Điện thoại Nokia lumia 520
+DESCRIPTION: Liên hệ đường dây nóng 19006610 để biết thêm về cách nhận thưởng.
+LEVEL: 1
+ICON ID: 1407
+PART: -1
+UP TOP: false
+=============================
+ID: 343
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ fasshon
+DESCRIPTION: Dùng để thay đổi diện mạo
+LEVEL: 30
+ICON ID: 1430
+PART: 148
+UP TOP: false
+=============================
+ID: 344
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ kinmou
+DESCRIPTION: Dùng để thay đổi diện mạo
+LEVEL: 40
+ICON ID: 1420
+PART: 146
+UP TOP: false
+=============================
+ID: 345
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ fasshon
+DESCRIPTION: Dùng để thay đổi diện mạo
+LEVEL: 30
+ICON ID: 1429
+PART: 149
+UP TOP: false
+=============================
+ID: 346
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ kinmou
+DESCRIPTION: Dùng để thay đổi diện mạo
+LEVEL: 40
+ICON ID: 1419
+PART: 147
+UP TOP: false
+=============================
+ID: 347
+TYPE: 25
+GENDER: 2
+NAME: Cây nấm
+DESCRIPTION: Vật phẩm nhiệm vụ
+LEVEL: 1
+ICON ID: 1435
+PART: -1
+UP TOP: true
+=============================
+ID: 348
+TYPE: 25
+GENDER: 2
+NAME: Oan hồn
+DESCRIPTION: Vật phẩm nhiệm vụ
+LEVEL: 1
+ICON ID: 1433
+PART: -1
+UP TOP: true
+=============================
+ID: 349
+TYPE: 25
+GENDER: 2
+NAME: Lồng đèn ma
+DESCRIPTION: Vật phẩm nhiệm vụ
+LEVEL: 1
+ICON ID: 1436
+PART: -1
+UP TOP: true
+=============================
+ID: 350
+TYPE: 25
+GENDER: 2
+NAME: Cánh bướm
+DESCRIPTION: Vật phẩm nhiệm vụ
+LEVEL: 1
+ICON ID: 1437
+PART: -1
+UP TOP: true
+=============================
+ID: 351
+TYPE: 11
+GENDER: 1
+NAME: Mũ noel
+DESCRIPTION: Dùng để thay đổi diện mạo
+LEVEL: 10
+ICON ID: 1443
+PART: 150
+UP TOP: true
+=============================
+ID: 352
+TYPE: 11
+GENDER: 0
+NAME: Mũ noel
+DESCRIPTION: Dùng để thay đổi diện mạo
+LEVEL: 10
+ICON ID: 1448
+PART: 151
+UP TOP: true
+=============================
+ID: 353
+TYPE: 11
+GENDER: 1
+NAME: Mũ thời trang
+DESCRIPTION: Dùng để thay đổi diện mạo
+LEVEL: 10
+ICON ID: 1442
+PART: 152
+UP TOP: true
+=============================
+ID: 354
+TYPE: 11
+GENDER: 0
+NAME: Mũ thời trang
+DESCRIPTION: Dùng để thay đổi diện mạo
+LEVEL: 10
+ICON ID: 1449
+PART: 153
+UP TOP: true
+=============================
+ID: 355
+TYPE: 8
+GENDER: 1
+NAME: Bạch ngân Ngoa
+DESCRIPTION: 
+LEVEL: 71
+ICON ID: 1540
+PART: -1
+UP TOP: false
+=============================
+ID: 356
+TYPE: 9
+GENDER: 2
+NAME: Bùa Bạch ngân
+DESCRIPTION: 
+LEVEL: 72
+ICON ID: 1526
+PART: -1
+UP TOP: false
+=============================
+ID: 357
+TYPE: 6
+GENDER: 1
+NAME: Bạch ngân Hạ Giáp
+DESCRIPTION: 
+LEVEL: 73
+ICON ID: 1538
+PART: 155
+UP TOP: false
+=============================
+ID: 358
+TYPE: 7
+GENDER: 2
+NAME: Bạch ngân Bội
+DESCRIPTION: 
+LEVEL: 74
+ICON ID: 1529
+PART: -1
+UP TOP: false
+=============================
+ID: 359
+TYPE: 4
+GENDER: 1
+NAME: Bạch ngân Thủ
+DESCRIPTION: 
+LEVEL: 75
+ICON ID: 1539
+PART: -1
+UP TOP: false
+=============================
+ID: 360
+TYPE: 5
+GENDER: 2
+NAME: Nhẫn Bạch ngân
+DESCRIPTION: 
+LEVEL: 76
+ICON ID: 1528
+PART: -1
+UP TOP: false
+=============================
+ID: 361
+TYPE: 2
+GENDER: 1
+NAME: Bạch ngân Thượng Giáp
+DESCRIPTION: 
+LEVEL: 77
+ICON ID: 1537
+PART: 154
+UP TOP: false
+=============================
+ID: 362
+TYPE: 3
+GENDER: 2
+NAME: Dây Chuyền Bạch ngân
+DESCRIPTION: 
+LEVEL: 78
+ICON ID: 1536
+PART: -1
+UP TOP: false
+=============================
+ID: 363
+TYPE: 0
+GENDER: 1
+NAME: Bạch ngân Tuyến
+DESCRIPTION: 
+LEVEL: 79
+ICON ID: 1545
+PART: -1
+UP TOP: false
+=============================
+ID: 364
+TYPE: 8
+GENDER: 0
+NAME: Bạch ngân Ngoa
+DESCRIPTION: 
+LEVEL: 71
+ICON ID: 1544
+PART: -1
+UP TOP: false
+=============================
+ID: 365
+TYPE: 6
+GENDER: 0
+NAME: Bạch ngân Hạ Giáp
+DESCRIPTION: 
+LEVEL: 73
+ICON ID: 1542
+PART: 157
+UP TOP: false
+=============================
+ID: 366
+TYPE: 4
+GENDER: 0
+NAME: Bạch ngân Thủ
+DESCRIPTION: 
+LEVEL: 75
+ICON ID: 1543
+PART: -1
+UP TOP: false
+=============================
+ID: 367
+TYPE: 2
+GENDER: 0
+NAME: Bạch ngân Thượng Giáp
+DESCRIPTION: 
+LEVEL: 77
+ICON ID: 1541
+PART: 156
+UP TOP: false
+=============================
+ID: 368
+TYPE: 0
+GENDER: 0
+NAME: Bạch ngân Trâm
+DESCRIPTION: 
+LEVEL: 79
+ICON ID: 1527
+PART: -1
+UP TOP: false
+=============================
+ID: 369
+TYPE: 1
+GENDER: 2
+NAME: Thiên hỏa kiếm
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 1530
+PART: 12
+UP TOP: false
+=============================
+ID: 370
+TYPE: 1
+GENDER: 2
+NAME: Hỏa phong tiêu
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 1534
+PART: 15
+UP TOP: false
+=============================
+ID: 371
+TYPE: 1
+GENDER: 2
+NAME: Thủy chấn dao
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 1533
+PART: 41
+UP TOP: false
+=============================
+ID: 372
+TYPE: 1
+GENDER: 2
+NAME: Băng thần cung
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 1531
+PART: 14
+UP TOP: false
+=============================
+ID: 373
+TYPE: 1
+GENDER: 2
+NAME: Đồ thần đao
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 1535
+PART: 13
+UP TOP: false
+=============================
+ID: 374
+TYPE: 1
+GENDER: 2
+NAME: Âm dương quạt
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 1532
+PART: 16
+UP TOP: false
+=============================
+ID: 375
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Maajizangeki
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 819
+PART: -1
+UP TOP: false
+=============================
+ID: 376
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Baaningufukiya
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 821
+PART: -1
+UP TOP: false
+=============================
+ID: 377
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Furiizukatto
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 816
+PART: -1
+UP TOP: false
+=============================
+ID: 378
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Furoozunkyuusen
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 820
+PART: -1
+UP TOP: false
+=============================
+ID: 379
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Baasutosutoomu
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 817
+PART: -1
+UP TOP: false
+=============================
+ID: 380
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kougekitenrai
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 818
+PART: -1
+UP TOP: false
+=============================
+ID: 381
+TYPE: 27
+GENDER: 2
+NAME: Bao lì xì nhỏ
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1559
+PART: -1
+UP TOP: true
+=============================
+ID: 382
+TYPE: 27
+GENDER: 2
+NAME: Bao lì xì lớn
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1560
+PART: -1
+UP TOP: true
+=============================
+ID: 383
+TYPE: 27
+GENDER: 2
+NAME: Bát bảo
+DESCRIPTION: Sau khi sử dụng sẽ ra ngẫu nhiên trang bị+12
+LEVEL: 20
+ICON ID: 1564
+PART: -1
+UP TOP: false
+=============================
+ID: 384
+TYPE: 27
+GENDER: 2
+NAME: Rương bạch ngân
+DESCRIPTION: Sau khi sử dụng sẽ ra ngẫu nhiên trang bị+14
+LEVEL: 20
+ICON ID: 1563
+PART: -1
+UP TOP: false
+=============================
+ID: 385
+TYPE: 27
+GENDER: 2
+NAME: Rương Huyền bí
+DESCRIPTION: Sau khi sử dụng sẽ ra ngẫu nhiên trang bị+16
+LEVEL: 20
+ICON ID: 1566
+PART: -1
+UP TOP: false
+=============================
+ID: 386
+TYPE: 27
+GENDER: 2
+NAME: Hoa hồng đỏ
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1568
+PART: -1
+UP TOP: true
+=============================
+ID: 387
+TYPE: 27
+GENDER: 2
+NAME: Hoa hồng vàng
+DESCRIPTION: Vật phẩm sự kiện 8/3
+LEVEL: 20
+ICON ID: 1569
+PART: -1
+UP TOP: true
+=============================
+ID: 388
+TYPE: 27
+GENDER: 2
+NAME: Hoa hồng xanh
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1570
+PART: -1
+UP TOP: true
+=============================
+ID: 389
+TYPE: 27
+GENDER: 2
+NAME: Bó hoa hồng đỏ
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1571
+PART: -1
+UP TOP: true
+=============================
+ID: 390
+TYPE: 27
+GENDER: 2
+NAME: Bó hoa hồng vàng
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1573
+PART: -1
+UP TOP: true
+=============================
+ID: 391
+TYPE: 27
+GENDER: 2
+NAME: Bó hoa hồng xanh
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1572
+PART: -1
+UP TOP: true
+=============================
+ID: 392
+TYPE: 27
+GENDER: 2
+NAME: Giỏ hoa 8/3
+DESCRIPTION: Vật phẩm sự kiện 8/3
+LEVEL: 20
+ICON ID: 1576
+PART: -1
+UP TOP: true
+=============================
+ID: 393
+TYPE: 27
+GENDER: 2
+NAME: Giấy màu
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1575
+PART: -1
+UP TOP: true
+=============================
+ID: 394
+TYPE: 27
+GENDER: 2
+NAME: Ruy băng
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1567
+PART: -1
+UP TOP: true
+=============================
+ID: 395
+TYPE: 27
+GENDER: 2
+NAME: Khung tre
+DESCRIPTION: Vật phẩm sự kiện 8/3
+LEVEL: 20
+ICON ID: 1574
+PART: -1
+UP TOP: true
+=============================
+ID: 396
+TYPE: 27
+GENDER: 2
+NAME: Thẻ bài gia tộc
+DESCRIPTION: Dùng trong hoạt động gia tộc
+LEVEL: 20
+ICON ID: 1577
+PART: -1
+UP TOP: true
+=============================
+ID: 397
+TYPE: 15
+GENDER: 2
+NAME: Bí kíp Kiếm Thuật
+DESCRIPTION: Nâng cao kỹ năng chiêu thức môn phái
+LEVEL: 60
+ICON ID: 1580
+PART: -1
+UP TOP: false
+=============================
+ID: 398
+TYPE: 15
+GENDER: 2
+NAME: Bí kíp Tiêu Thuật
+DESCRIPTION: Nâng cao kỹ năng chiêu thức môn phái
+LEVEL: 60
+ICON ID: 1581
+PART: -1
+UP TOP: false
+=============================
+ID: 399
+TYPE: 15
+GENDER: 2
+NAME: Bí kíp Kunai
+DESCRIPTION: Nâng cao kỹ năng chiêu thức môn phái
+LEVEL: 60
+ICON ID: 1578
+PART: -1
+UP TOP: false
+=============================
+ID: 400
+TYPE: 15
+GENDER: 2
+NAME: Bí kíp Cung
+DESCRIPTION: Nâng cao kỹ năng chiêu thức môn phái
+LEVEL: 60
+ICON ID: 1579
+PART: -1
+UP TOP: false
+=============================
+ID: 401
+TYPE: 15
+GENDER: 2
+NAME: Bí kíp Đao
+DESCRIPTION: Nâng cao kỹ năng chiêu thức môn phái
+LEVEL: 60
+ICON ID: 1582
+PART: -1
+UP TOP: false
+=============================
+ID: 402
+TYPE: 15
+GENDER: 2
+NAME: Bí kíp Quạt
+DESCRIPTION: Nâng cao kỹ năng chiêu thức môn phái
+LEVEL: 60
+ICON ID: 1583
+PART: -1
+UP TOP: false
+=============================
+ID: 403
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ Vegeta
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 40
+ICON ID: 1601
+PART: 158
+UP TOP: false
+=============================
+ID: 404
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ Kunoichi
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 40
+ICON ID: 1598
+PART: 162
+UP TOP: false
+=============================
+ID: 405
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ Broly
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 40
+ICON ID: 1600
+PART: 160
+UP TOP: false
+=============================
+ID: 406
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ Buruma
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 40
+ICON ID: 1605
+PART: 161
+UP TOP: false
+=============================
+ID: 407
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ Super Broly
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 40
+ICON ID: 1602
+PART: 159
+UP TOP: false
+=============================
+ID: 408
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ Onna Bugeisha
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 40
+ICON ID: 1599
+PART: 163
+UP TOP: false
+=============================
+ID: 409
+TYPE: 18
+GENDER: 2
+NAME: Gà Tây
+DESCRIPTION: Nữa giây phục hồi 150 HP, MP duy trì 1 ngày
+LEVEL: 60
+ICON ID: 1606
+PART: -1
+UP TOP: false
+=============================
+ID: 410
+TYPE: 18
+GENDER: 2
+NAME: Tôm hùm
+DESCRIPTION: Nữa giây phục hồi 200 HP, MP duy trì 1 ngày
+LEVEL: 70
+ICON ID: 1607
+PART: -1
+UP TOP: false
+=============================
+ID: 411
+TYPE: 27
+GENDER: 2
+NAME: Cây kẹo mút
+DESCRIPTION: Vật phẩm sự kiện 1/6
+LEVEL: 20
+ICON ID: 1627
+PART: -1
+UP TOP: true
+=============================
+ID: 412
+TYPE: 27
+GENDER: 2
+NAME: Hộp bánh ngọt
+DESCRIPTION: Vật phẩm sự kiện 1/6
+LEVEL: 20
+ICON ID: 1629
+PART: -1
+UP TOP: true
+=============================
+ID: 413
+TYPE: 27
+GENDER: 2
+NAME: Quả bong bóng
+DESCRIPTION: Vật phẩm sự kiện 1/6
+LEVEL: 20
+ICON ID: 1628
+PART: -1
+UP TOP: true
+=============================
+ID: 414
+TYPE: 27
+GENDER: 2
+NAME: Giấy giới thiệu
+DESCRIPTION: Khi sử dụng sẽ tăng số lần nhận nhiệm vụ tìm trẻ lạc
+LEVEL: 20
+ICON ID: 1630
+PART: -1
+UP TOP: true
+=============================
+ID: 415
+TYPE: 27
+GENDER: 2
+NAME: Huy hiệu
+DESCRIPTION: Vật phẩm sự kiện 1/6
+LEVEL: 20
+ICON ID: 1631
+PART: -1
+UP TOP: true
+=============================
+ID: 416
+TYPE: 27
+GENDER: 2
+NAME: Nấm thần kỳ
+DESCRIPTION: Vật phẩm sự kiện 1/6
+LEVEL: 20
+ICON ID: 1625
+PART: -1
+UP TOP: true
+=============================
+ID: 417
+TYPE: 27
+GENDER: 2
+NAME: Ngôi sao nhỏ
+DESCRIPTION: Vật phẩm sự kiện 1/6
+LEVEL: 20
+ICON ID: 1624
+PART: -1
+UP TOP: true
+=============================
+ID: 418
+TYPE: 27
+GENDER: 2
+NAME: Ngôi sao may mắn
+DESCRIPTION: Vật phẩm sự kiện 1/6
+LEVEL: 20
+ICON ID: 1623
+PART: -1
+UP TOP: true
+=============================
+ID: 419
+TYPE: 10
+GENDER: 2
+NAME: Chim tinh anh
+DESCRIPTION: Hỗ trợ tấn công quái
+LEVEL: 20
+ICON ID: 1432
+PART: -1
+UP TOP: false
+=============================
+ID: 420
+TYPE: 12
+GENDER: 2
+NAME: Faiyaa yoroi
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 1640
+PART: -1
+UP TOP: false
+=============================
+ID: 421
+TYPE: 12
+GENDER: 2
+NAME: Mizu Yoroi
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 1639
+PART: -1
+UP TOP: false
+=============================
+ID: 422
+TYPE: 12
+GENDER: 2
+NAME: Windo Yoroi
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 1638
+PART: -1
+UP TOP: false
+=============================
+ID: 423
+TYPE: 13
+GENDER: 2
+NAME: Nhẫn thuật gia tộc cấp 1
+DESCRIPTION: Sau khi gia tộc đã khai mở vật phẩm này thì mới được phép mua sử dụng.
+LEVEL: 10
+ICON ID: 1692
+PART: -1
+UP TOP: true
+=============================
+ID: 424
+TYPE: 13
+GENDER: 2
+NAME: Nhẫn thuật gia tộc cấp 2
+DESCRIPTION: Sau khi gia tộc đã khai mở vật phẩm này thì mới được phép mua sử dụng.
+LEVEL: 20
+ICON ID: 1693
+PART: -1
+UP TOP: true
+=============================
+ID: 425
+TYPE: 13
+GENDER: 2
+NAME: Nhẫn thuật gia tộc cấp 3
+DESCRIPTION: Sau khi gia tộc đã khai mở vật phẩm này thì mới được phép mua sử dụng.
+LEVEL: 30
+ICON ID: 1694
+PART: -1
+UP TOP: true
+=============================
+ID: 426
+TYPE: 13
+GENDER: 2
+NAME: Nhẫn thuật gia tộc cấp 4
+DESCRIPTION: Sau khi gia tộc đã khai mở vật phẩm này thì mới được phép mua sử dụng.
+LEVEL: 40
+ICON ID: 1695
+PART: -1
+UP TOP: true
+=============================
+ID: 427
+TYPE: 13
+GENDER: 2
+NAME: Nhẫn thuật gia tộc cấp 5
+DESCRIPTION: Sau khi gia tộc đã khai mở vật phẩm này thì mới được phép mua sử dụng.
+LEVEL: 50
+ICON ID: 1696
+PART: -1
+UP TOP: true
+=============================
+ID: 428
+TYPE: 27
+GENDER: 2
+NAME: Tre
+DESCRIPTION: Vật phẩm sự kiện ngày hè
+LEVEL: 20
+ICON ID: 1701
+PART: -1
+UP TOP: true
+=============================
+ID: 429
+TYPE: 27
+GENDER: 2
+NAME: Dây
+DESCRIPTION: Vật phẩm sự kiện ngày hè
+LEVEL: 20
+ICON ID: 1699
+PART: -1
+UP TOP: true
+=============================
+ID: 430
+TYPE: 27
+GENDER: 2
+NAME: Giấy
+DESCRIPTION: Vật phẩm sự kiện ngày hè
+LEVEL: 20
+ICON ID: 1698
+PART: -1
+UP TOP: true
+=============================
+ID: 431
+TYPE: 27
+GENDER: 2
+NAME: Vải
+DESCRIPTION: Vật phẩm sự kiện ngày hè
+LEVEL: 20
+ICON ID: 1700
+PART: -1
+UP TOP: true
+=============================
+ID: 432
+TYPE: 27
+GENDER: 2
+NAME: Màu vẽ thô sơ
+DESCRIPTION: Vật phẩm sự kiện ngày hè
+LEVEL: 20
+ICON ID: 1707
+PART: -1
+UP TOP: true
+=============================
+ID: 433
+TYPE: 27
+GENDER: 2
+NAME: Màu vẽ cao cấp
+DESCRIPTION: Vật phẩm sự kiện ngày hè
+LEVEL: 20
+ICON ID: 1708
+PART: -1
+UP TOP: true
+=============================
+ID: 434
+TYPE: 27
+GENDER: 2
+NAME: Diều giấy
+DESCRIPTION: Vật phẩm sự kiện ngày hè
+LEVEL: 20
+ICON ID: 1702
+PART: -1
+UP TOP: true
+=============================
+ID: 435
+TYPE: 27
+GENDER: 2
+NAME: Diều vải
+DESCRIPTION: Vật phẩm sự kiện ngày hè
+LEVEL: 20
+ICON ID: 1703
+PART: -1
+UP TOP: true
+=============================
+ID: 436
+TYPE: 27
+GENDER: 2
+NAME: Thẻ bài kinh nghiệm gia tộc sơ
+DESCRIPTION: Yêu cầu gia tộc phải đạt trình độ cấp 5 trở lên
+LEVEL: 20
+ICON ID: 1704
+PART: -1
+UP TOP: true
+=============================
+ID: 437
+TYPE: 27
+GENDER: 2
+NAME: Thẻ bài kinh nghiệm gia tộc trung
+DESCRIPTION: Yêu cầu gia tộc phải đạt trình độ cấp 10 trở lên
+LEVEL: 20
+ICON ID: 1705
+PART: -1
+UP TOP: true
+=============================
+ID: 438
+TYPE: 27
+GENDER: 2
+NAME: Thẻ bài kinh nghiệm gia tộc cao
+DESCRIPTION: Yêu cầu gia tộc phải đạt trình độ cấp 15 trở lên
+LEVEL: 20
+ICON ID: 1706
+PART: -1
+UP TOP: true
+=============================
+ID: 439
+TYPE: 29
+GENDER: 2
+NAME: Thú trang
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 1748
+PART: -1
+UP TOP: false
+=============================
+ID: 440
+TYPE: 30
+GENDER: 2
+NAME: Giáp thú
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 1749
+PART: -1
+UP TOP: false
+=============================
+ID: 441
+TYPE: 31
+GENDER: 2
+NAME: Yên
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 1751
+PART: -1
+UP TOP: false
+=============================
+ID: 442
+TYPE: 32
+GENDER: 2
+NAME: Dây cương
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 1750
+PART: -1
+UP TOP: false
+=============================
+ID: 443
+TYPE: 33
+GENDER: 2
+NAME: Xích Nhãn Ngân Lang
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 1722
+PART: -1
+UP TOP: false
+=============================
+ID: 444
+TYPE: 27
+GENDER: 2
+NAME: Linh Lang Thảo
+DESCRIPTION: Thức ăn thú cưỡi, tăng 200 hp cho thú cưỡi
+LEVEL: 10
+ICON ID: 1721
+PART: -1
+UP TOP: false
+=============================
+ID: 445
+TYPE: 27
+GENDER: 2
+NAME: Chữ Vui
+DESCRIPTION: Tích lũy đủ 10 chữ vui, 10 chữ tết, 10 chữ trung, 10 chữ thu sẽ đổi được thú cưỡi
+LEVEL: 20
+ICON ID: 1729
+PART: -1
+UP TOP: true
+=============================
+ID: 446
+TYPE: 27
+GENDER: 2
+NAME: Chữ Tết
+DESCRIPTION: Tích lũy đủ 10 chữ vui, 10 chữ tết, 10 chữ trung, 10 chữ thu sẽ đổi được thú cưỡi
+LEVEL: 20
+ICON ID: 1730
+PART: -1
+UP TOP: true
+=============================
+ID: 447
+TYPE: 27
+GENDER: 2
+NAME: Chữ Trung
+DESCRIPTION: Tích lũy đủ 10 chữ vui, 10 chữ tết, 10 chữ trung, 10 chữ thu sẽ đổi được thú cưỡi
+LEVEL: 20
+ICON ID: 1731
+PART: -1
+UP TOP: true
+=============================
+ID: 448
+TYPE: 27
+GENDER: 2
+NAME: Chữ Thu
+DESCRIPTION: Tích lũy đủ 10 chữ vui, 10 chữ tết, 10 chữ trung, 10 chữ thu sẽ đổi được thú cưỡi
+LEVEL: 20
+ICON ID: 1732
+PART: -1
+UP TOP: true
+=============================
+ID: 449
+TYPE: 27
+GENDER: 2
+NAME: Lang hồn thảo
+DESCRIPTION: Tăng 5 kinh nghiệm thú cưỡi
+LEVEL: 20
+ICON ID: 1743
+PART: -1
+UP TOP: true
+=============================
+ID: 450
+TYPE: 27
+GENDER: 2
+NAME: Lang hồn mộc
+DESCRIPTION: Tăng 7 kinh nghiệm thú cưỡi
+LEVEL: 20
+ICON ID: 1744
+PART: -1
+UP TOP: true
+=============================
+ID: 451
+TYPE: 27
+GENDER: 2
+NAME: Địa lang thảo
+DESCRIPTION: Tăng 14 kinh nghiệm thú cưỡi
+LEVEL: 20
+ICON ID: 1745
+PART: -1
+UP TOP: true
+=============================
+ID: 452
+TYPE: 27
+GENDER: 2
+NAME: Tam lục diệp
+DESCRIPTION: Tăng 20 kinh nghiệm thú cưỡi
+LEVEL: 20
+ICON ID: 1746
+PART: -1
+UP TOP: true
+=============================
+ID: 453
+TYPE: 27
+GENDER: 2
+NAME: Xích lan hoa 
+DESCRIPTION: Tăng 25 kinh nghiệm thú cưỡi
+LEVEL: 20
+ICON ID: 1747
+PART: -1
+UP TOP: true
+=============================
+ID: 454
+TYPE: 27
+GENDER: 2
+NAME: Chuyển tinh thạch
+DESCRIPTION: Ẩn chứa tinh hoa của trời đất
+LEVEL: 20
+ICON ID: 1742
+PART: -1
+UP TOP: false
+=============================
+ID: 455
+TYPE: 27
+GENDER: 2
+NAME: Tử tinh thạch sơ cấp
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1739
+PART: -1
+UP TOP: false
+=============================
+ID: 456
+TYPE: 27
+GENDER: 2
+NAME: Tử tinh thạch trung cấp
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1740
+PART: -1
+UP TOP: false
+=============================
+ID: 457
+TYPE: 27
+GENDER: 2
+NAME: Tử tinh thạch cao cấp
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1741
+PART: -1
+UP TOP: false
+=============================
+ID: 458
+TYPE: 27
+GENDER: 2
+NAME: Kẹo ngọt
+DESCRIPTION: Vật phẩm trong chiến trường Kẹo
+LEVEL: 20
+ICON ID: 1776
+PART: -1
+UP TOP: true
+=============================
+ID: 459
+TYPE: 27
+GENDER: 2
+NAME: Kẹo đỏ
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1752
+PART: -1
+UP TOP: true
+=============================
+ID: 460
+TYPE: 27
+GENDER: 2
+NAME: Kẹo xanh
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1754
+PART: -1
+UP TOP: true
+=============================
+ID: 461
+TYPE: 27
+GENDER: 2
+NAME: Kẹo vàng
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1755
+PART: -1
+UP TOP: true
+=============================
+ID: 462
+TYPE: 27
+GENDER: 2
+NAME: Kẹo tím
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1753
+PART: -1
+UP TOP: true
+=============================
+ID: 463
+TYPE: 27
+GENDER: 2
+NAME: Giỏ tre
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1781
+PART: -1
+UP TOP: true
+=============================
+ID: 464
+TYPE: 27
+GENDER: 2
+NAME: Giỏ bí ngô
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1771
+PART: -1
+UP TOP: true
+=============================
+ID: 465
+TYPE: 27
+GENDER: 2
+NAME: Giỏ kẹo
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1770
+PART: -1
+UP TOP: true
+=============================
+ID: 466
+TYPE: 27
+GENDER: 2
+NAME: Giỏ kẹo bí ngô
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1782
+PART: -1
+UP TOP: true
+=============================
+ID: 467
+TYPE: 27
+GENDER: 2
+NAME: Bí ngô mặt quỷ nhỏ
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1732
+PART: -1
+UP TOP: true
+=============================
+ID: 468
+TYPE: 27
+GENDER: 2
+NAME: Bí ngô mặt quỷ lớn
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 20
+ICON ID: 1732
+PART: -1
+UP TOP: true
+=============================
+ID: 469
+TYPE: 27
+GENDER: 2
+NAME: Xăng A95
+DESCRIPTION: Tăng 200 nhiên liệu cho xe moto
+LEVEL: 20
+ICON ID: 1767
+PART: -1
+UP TOP: true
+=============================
+ID: 470
+TYPE: 27
+GENDER: 2
+NAME: Bộ cải thiện giảm xóc
+DESCRIPTION: Tăng 5 hiệu năng Xe moto
+LEVEL: 20
+ICON ID: 1772
+PART: -1
+UP TOP: true
+=============================
+ID: 471
+TYPE: 27
+GENDER: 2
+NAME: Bộ cải thiện đánh lửa
+DESCRIPTION: Tăng 14 hiệu năng Xe moto
+LEVEL: 20
+ICON ID: 1773
+PART: -1
+UP TOP: true
+=============================
+ID: 472
+TYPE: 27
+GENDER: 2
+NAME: Bộ cải thiện động cơ
+DESCRIPTION: Tăng 25 hiệu năng Xe moto
+LEVEL: 20
+ICON ID: 1774
+PART: -1
+UP TOP: true
+=============================
+ID: 473
+TYPE: 27
+GENDER: 2
+NAME: Xăng cấp 5
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1767
+PART: -1
+UP TOP: true
+=============================
+ID: 474
+TYPE: 27
+GENDER: 2
+NAME: Diệt quỷ phù
+DESCRIPTION: Cất giữ sức mạnh có thể tiêu diệt Bí ngô mặt quỷ
+LEVEL: 20
+ICON ID: 1768
+PART: -1
+UP TOP: true
+=============================
+ID: 475
+TYPE: 28
+GENDER: 2
+NAME: Bảo hiểm như ý
+DESCRIPTION: Bảo hiểm nâng cấp trang bị từ cấp 1 đến cấp 16
+LEVEL: 1
+ICON ID: 1769
+PART: -1
+UP TOP: false
+=============================
+ID: 476
+TYPE: 27
+GENDER: 2
+NAME: Rương kẹo
+DESCRIPTION: Chứa nhiều vật phẩm quý giá
+LEVEL: 20
+ICON ID: 1775
+PART: -1
+UP TOP: true
+=============================
+ID: 477
+TYPE: 27
+GENDER: 2
+NAME: Túi quà noel
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1765
+PART: -1
+UP TOP: true
+=============================
+ID: 478
+TYPE: 27
+GENDER: 2
+NAME: Hộp quà noel
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1766
+PART: -1
+UP TOP: true
+=============================
+ID: 479
+TYPE: 27
+GENDER: 2
+NAME: Thư đảm bảo
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1630
+PART: -1
+UP TOP: true
+=============================
+ID: 480
+TYPE: 27
+GENDER: 2
+NAME: Thiệp giáng sinh
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1762
+PART: -1
+UP TOP: true
+=============================
+ID: 481
+TYPE: 27
+GENDER: 2
+NAME: Trái châu
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1760
+PART: -1
+UP TOP: true
+=============================
+ID: 482
+TYPE: 27
+GENDER: 2
+NAME: Dây kim tuyến
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1761
+PART: -1
+UP TOP: true
+=============================
+ID: 483
+TYPE: 27
+GENDER: 2
+NAME: Chiếc kẹo gậy
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1764
+PART: -1
+UP TOP: true
+=============================
+ID: 484
+TYPE: 27
+GENDER: 2
+NAME: Bít tất may mắn
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 1763
+PART: -1
+UP TOP: true
+=============================
+ID: 485
+TYPE: 33
+GENDER: 2
+NAME: Xe máy
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 1787
+PART: -1
+UP TOP: false
+=============================
+ID: 486
+TYPE: 29
+GENDER: 2
+NAME: Bộ điều khiển
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 1786
+PART: -1
+UP TOP: false
+=============================
+ID: 487
+TYPE: 30
+GENDER: 2
+NAME: Động cơ V- Power
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 1784
+PART: -1
+UP TOP: false
+=============================
+ID: 488
+TYPE: 31
+GENDER: 2
+NAME: Định vị
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 1785
+PART: -1
+UP TOP: false
+=============================
+ID: 489
+TYPE: 32
+GENDER: 2
+NAME: Bình Nitro
+DESCRIPTION: 
+LEVEL: 10
+ICON ID: 1783
+PART: -1
+UP TOP: false
+=============================
+ID: 490
+TYPE: 27
+GENDER: 2
+NAME: Cổ lệnh
+DESCRIPTION: Dùng để dịch chuyển đến ngôi làng trong truyền thuyết
+LEVEL: 70
+ICON ID: 1799
+PART: -1
+UP TOP: false
+=============================
+ID: 491
+TYPE: 27
+GENDER: 2
+NAME: Nhiệm vụ bí ẩn
+DESCRIPTION: Sử dụng sẽ nhận được một nhiệm vụ ngẫu nhiên, chỉ dành cho ninja cấp độ 60 - 89.
+LEVEL: 60
+ICON ID: 1799
+PART: -1
+UP TOP: true
+=============================
+ID: 492
+TYPE: 0
+GENDER: 1
+NAME: Hắc Tử Tuyến
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2026
+PART: -1
+UP TOP: false
+=============================
+ID: 493
+TYPE: 0
+GENDER: 0
+NAME: Hắc Tử Trâm
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2027
+PART: -1
+UP TOP: false
+=============================
+ID: 494
+TYPE: 2
+GENDER: 1
+NAME: Hắc Tử Thượng Giáp
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2018
+PART: 180
+UP TOP: false
+=============================
+ID: 495
+TYPE: 2
+GENDER: 0
+NAME: Hắc Tử Thượng Giáp
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2022
+PART: 183
+UP TOP: false
+=============================
+ID: 496
+TYPE: 6
+GENDER: 1
+NAME: Hắc Tử Hạ Giáp
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2019
+PART: 181
+UP TOP: false
+=============================
+ID: 497
+TYPE: 6
+GENDER: 0
+NAME: Hắc Tử Hạ Giáp
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2023
+PART: 184
+UP TOP: false
+=============================
+ID: 498
+TYPE: 4
+GENDER: 1
+NAME: Hắc Tử Thủ
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2021
+PART: -1
+UP TOP: false
+=============================
+ID: 499
+TYPE: 4
+GENDER: 0
+NAME: Hắc Tử Thủ
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2025
+PART: -1
+UP TOP: false
+=============================
+ID: 500
+TYPE: 8
+GENDER: 1
+NAME: Hắc Tử Ngoa
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2020
+PART: -1
+UP TOP: false
+=============================
+ID: 501
+TYPE: 8
+GENDER: 0
+NAME: Hắc Tử Ngoa
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2024
+PART: -1
+UP TOP: false
+=============================
+ID: 502
+TYPE: 9
+GENDER: 2
+NAME: Bùa Hắc Tử
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2007
+PART: -1
+UP TOP: false
+=============================
+ID: 503
+TYPE: 7
+GENDER: 2
+NAME: Hắc Tử Bội
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2008
+PART: -1
+UP TOP: false
+=============================
+ID: 504
+TYPE: 5
+GENDER: 2
+NAME: Nhẫn Hắc Tử
+DESCRIPTION: 
+LEVEL: 85
+ICON ID: 2013
+PART: -1
+UP TOP: false
+=============================
+ID: 505
+TYPE: 3
+GENDER: 2
+NAME: Dây Chuyền Hắc Tử
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2010
+PART: -1
+UP TOP: false
+=============================
+ID: 506
+TYPE: 1
+GENDER: 2
+NAME: Huyết Ẩm Kiếm
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2015
+PART: 12
+UP TOP: false
+=============================
+ID: 507
+TYPE: 1
+GENDER: 2
+NAME: Thiêu Thủy Tiêu
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2011
+PART: 15
+UP TOP: false
+=============================
+ID: 508
+TYPE: 1
+GENDER: 2
+NAME: Lệ Hàn Dao
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2014
+PART: 41
+UP TOP: false
+=============================
+ID: 509
+TYPE: 1
+GENDER: 2
+NAME: Đại Hàn Cung
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2017
+PART: 14
+UP TOP: false
+=============================
+ID: 510
+TYPE: 1
+GENDER: 2
+NAME: Diệt Ma Đao
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2016
+PART: 13
+UP TOP: false
+=============================
+ID: 511
+TYPE: 1
+GENDER: 2
+NAME: Linh Phong Quạt
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2009
+PART: 16
+UP TOP: false
+=============================
+ID: 512
+TYPE: 11
+GENDER: 1
+NAME: Mũ Hắc Tử
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 85
+ICON ID: 2026
+PART: 179
+UP TOP: false
+=============================
+ID: 513
+TYPE: 11
+GENDER: 0
+NAME: Mũ Hắc Tử
+DESCRIPTION: Giúp thay đổi diện mạo
+LEVEL: 85
+ICON ID: 2027
+PART: 182
+UP TOP: false
+=============================
+ID: 514
+TYPE: 27
+GENDER: 2
+NAME: Thiệp chúc tết
+DESCRIPTION: Nhắn gởi yêu thương
+LEVEL: 20
+ICON ID: 2045
+PART: -1
+UP TOP: true
+=============================
+ID: 515
+TYPE: 27
+GENDER: 2
+NAME: Thiệp chúc tết đặc biệt
+DESCRIPTION: Cùng chung niềm vui, sẻ chia nụ cười.
+LEVEL: 20
+ICON ID: 2046
+PART: -1
+UP TOP: true
+=============================
+ID: 516
+TYPE: 27
+GENDER: 2
+NAME: Sung
+DESCRIPTION: Item sự kiện Tết nguyên đán 2015
+LEVEL: 20
+ICON ID: 2038
+PART: -1
+UP TOP: true
+=============================
+ID: 517
+TYPE: 27
+GENDER: 2
+NAME: Xoài
+DESCRIPTION: Item sự kiện Tết nguyên đán 2015
+LEVEL: 20
+ICON ID: 2041
+PART: -1
+UP TOP: true
+=============================
+ID: 518
+TYPE: 27
+GENDER: 2
+NAME: Đu đủ
+DESCRIPTION: Item sự kiện Tết nguyên đán 2015
+LEVEL: 20
+ICON ID: 2042
+PART: -1
+UP TOP: true
+=============================
+ID: 519
+TYPE: 27
+GENDER: 2
+NAME: Dừa
+DESCRIPTION: Item sự kiện Tết nguyên đán 2015
+LEVEL: 20
+ICON ID: 2039
+PART: -1
+UP TOP: true
+=============================
+ID: 520
+TYPE: 27
+GENDER: 2
+NAME: Mãng cầu
+DESCRIPTION: Item sự kiện Tết nguyên đán 2015
+LEVEL: 20
+ICON ID: 2040
+PART: -1
+UP TOP: true
+=============================
+ID: 521
+TYPE: 27
+GENDER: 2
+NAME: Mâm ngũ quả nhỏ
+DESCRIPTION: Item sự kiện Tết nguyên đán 2015
+LEVEL: 20
+ICON ID: 2044
+PART: -1
+UP TOP: true
+=============================
+ID: 522
+TYPE: 27
+GENDER: 2
+NAME: Mâm ngũ quả lớn
+DESCRIPTION: Item sự kiện Tết nguyên đán 2015
+LEVEL: 20
+ICON ID: 2043
+PART: -1
+UP TOP: true
+=============================
+ID: 523
+TYPE: 33
+GENDER: 2
+NAME: Huyết Sắc Hung Lang
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 2058
+PART: -1
+UP TOP: false
+=============================
+ID: 524
+TYPE: 33
+GENDER: 2
+NAME: Harley Davidson
+DESCRIPTION: Xe dành cho những ninja đích thực
+LEVEL: 60
+ICON ID: 2207
+PART: -1
+UP TOP: false
+=============================
+ID: 525
+TYPE: 27
+GENDER: 2
+NAME: 100 ván gạo nếp
+DESCRIPTION: Vật phẩm sự kiện Giổ tổ 2015
+LEVEL: 20
+ICON ID: 2163
+PART: -1
+UP TOP: true
+=============================
+ID: 526
+TYPE: 27
+GENDER: 2
+NAME: 100 nệp bánh chưng
+DESCRIPTION: Vật phẩm sự kiện Giổ tổ 2015
+LEVEL: 20
+ICON ID: 2164
+PART: -1
+UP TOP: true
+=============================
+ID: 527
+TYPE: 27
+GENDER: 2
+NAME: Voi 9 ngà
+DESCRIPTION: Vật phẩm sự kiện Giổ tổ 2015
+LEVEL: 20
+ICON ID: 2166
+PART: -1
+UP TOP: true
+=============================
+ID: 528
+TYPE: 27
+GENDER: 2
+NAME: Gà 9 cựa
+DESCRIPTION: Vật phẩm sự kiện Giổ tổ 2015
+LEVEL: 20
+ICON ID: 2165
+PART: -1
+UP TOP: true
+=============================
+ID: 529
+TYPE: 27
+GENDER: 2
+NAME: Ngựa 9 hồng mao
+DESCRIPTION: Vật phẩm sự kiện Giổ tổ 2015
+LEVEL: 20
+ICON ID: 2167
+PART: -1
+UP TOP: true
+=============================
+ID: 530
+TYPE: 27
+GENDER: 2
+NAME: Linh thạch
+DESCRIPTION: Vật phẩm sự kiện Giổ tổ 2015
+LEVEL: 20
+ICON ID: 2172
+PART: -1
+UP TOP: true
+=============================
+ID: 531
+TYPE: 27
+GENDER: 2
+NAME: Mâm bạc
+DESCRIPTION: Vật phẩm sự kiện Giổ tổ 2015
+LEVEL: 20
+ICON ID: 2169
+PART: -1
+UP TOP: true
+=============================
+ID: 532
+TYPE: 27
+GENDER: 2
+NAME: Mâm vàng
+DESCRIPTION: Vật phẩm sự kiện Giổ tổ 2015
+LEVEL: 20
+ICON ID: 2168
+PART: -1
+UP TOP: true
+=============================
+ID: 533
+TYPE: 27
+GENDER: 2
+NAME: Mâm lễ vật bạc
+DESCRIPTION: Vật phẩm sự kiện Giổ tổ 2015
+LEVEL: 20
+ICON ID: 2171
+PART: -1
+UP TOP: true
+=============================
+ID: 534
+TYPE: 27
+GENDER: 2
+NAME: Mâm lễ vật vàng
+DESCRIPTION: Vật phẩm sự kiện Giổ tổ 2015
+LEVEL: 20
+ICON ID: 2170
+PART: -1
+UP TOP: true
+=============================
+ID: 535
+TYPE: 27
+GENDER: 2
+NAME: Lang bảo
+DESCRIPTION: Sử dụng nhận được một vật phẩm ngẫu nhiên của Lang tộc.
+LEVEL: 60
+ICON ID: 2090
+PART: -1
+UP TOP: true
+=============================
+ID: 536
+TYPE: 27
+GENDER: 2
+NAME: Khí bảo
+DESCRIPTION: Sử dụng có cơ hội nhận được vật phẩm quý.
+LEVEL: 60
+ICON ID: 2091
+PART: -1
+UP TOP: true
+=============================
+ID: 537
+TYPE: 27
+GENDER: 2
+NAME: Khai nhãn phù
+DESCRIPTION: Tăng tỉ lệ ra đồ quý khi đánh quái.
+LEVEL: 60
+ICON ID: 2093
+PART: -1
+UP TOP: true
+=============================
+ID: 538
+TYPE: 27
+GENDER: 2
+NAME: Thiên nhãn phù
+DESCRIPTION: Tăng tỉ lệ ra đồ quý khi đánh quái.
+LEVEL: 60
+ICON ID: 2092
+PART: -1
+UP TOP: true
+=============================
+ID: 539
+TYPE: 27
+GENDER: 2
+NAME: Linh Chi Ngàn Năm
+DESCRIPTION: Sử dụng sẽ được nhân ba kinh nghiệm trong vòng 60 phút. Không cộng dồn.
+LEVEL: 50
+ICON ID: 2203
+PART: -1
+UP TOP: false
+=============================
+ID: 540
+TYPE: 27
+GENDER: 2
+NAME: Linh Chi Vạn Năm
+DESCRIPTION: Sử dụng sẽ được nhân bốn kinh nghiệm trong vòng 60 phút. Không cộng dồn
+LEVEL: 50
+ICON ID: 2204
+PART: -1
+UP TOP: false
+=============================
+ID: 541
+TYPE: 11
+GENDER: 2
+NAME: Thủy tinh
+DESCRIPTION: Sử dụng giúp thay đổi diện mạo
+LEVEL: 50
+ICON ID: 2201
+PART: 185
+UP TOP: false
+=============================
+ID: 542
+TYPE: 11
+GENDER: 2
+NAME: Sơn tinh
+DESCRIPTION: Sử dụng giúp thay đổi diện mạo
+LEVEL: 50
+ICON ID: 2202
+PART: 188
+UP TOP: false
+=============================
+ID: 543
+TYPE: 27
+GENDER: 2
+NAME: Thủy lệnh
+DESCRIPTION: Nhận lệnh tiêu diệt Sơn tinh
+LEVEL: 30
+ICON ID: 2208
+PART: -1
+UP TOP: true
+=============================
+ID: 544
+TYPE: 27
+GENDER: 2
+NAME: Sơn lệnh
+DESCRIPTION: Nhận lệnh tiêu diệt Thủy tinh
+LEVEL: 30
+ICON ID: 2209
+PART: -1
+UP TOP: true
+=============================
+ID: 545
+TYPE: 27
+GENDER: 2
+NAME: Phân thân lệnh
+DESCRIPTION: Sở hữu vật phẩm này cho phép triệu hồi phân thân
+LEVEL: 90
+ICON ID: 2216
+PART: -1
+UP TOP: false
+=============================
+ID: 546
+TYPE: 27
+GENDER: 2
+NAME: Nhân sâm vạn năm
+DESCRIPTION: Sử dụng sẽ được x2 kinh nghiệm trong 2 tiếng. Sử dụng cùng Nấm linh chi sẽ được x4.
+LEVEL: 40
+ICON ID: 2210
+PART: -1
+UP TOP: false
+=============================
+ID: 547
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kage Bunshin 
+DESCRIPTION:  
+LEVEL: 90
+ICON ID: 2214
+PART: -1
+UP TOP: false
+=============================
+ID: 548
+TYPE: 27
+GENDER: 2
+NAME: Cần câu vàng
+DESCRIPTION: Sử dụng tại sông hồ sẽ câu được phần thưởng bất ngờ.
+LEVEL: 20
+ICON ID: 2225
+PART: -1
+UP TOP: true
+=============================
+ID: 549
+TYPE: 27
+GENDER: 2
+NAME: Giày rách
+DESCRIPTION: Sử dụng sẽ nhận được một ít Yên.
+LEVEL: 10
+ICON ID: 2222
+PART: -1
+UP TOP: true
+=============================
+ID: 550
+TYPE: 27
+GENDER: 2
+NAME: Giày bạc
+DESCRIPTION: Sử dụng sẽ nhận được Yên.
+LEVEL: 10
+ICON ID: 2223
+PART: -1
+UP TOP: true
+=============================
+ID: 551
+TYPE: 27
+GENDER: 2
+NAME: Giày vàng
+DESCRIPTION: Sử dụng sẽ nhận được một số Yên ngẫu nhiên.
+LEVEL: 10
+ICON ID: 2224
+PART: -1
+UP TOP: true
+=============================
+ID: 552
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Ikkakujuu 
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2238
+PART: -1
+UP TOP: false
+=============================
+ID: 553
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Hibashiri
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2239
+PART: -1
+UP TOP: false
+=============================
+ID: 554
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Saihyoken
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2240
+PART: -1
+UP TOP: false
+=============================
+ID: 555
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Aisu Meiku
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2241
+PART: -1
+UP TOP: false
+=============================
+ID: 556
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kaminari
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2242
+PART: -1
+UP TOP: false
+=============================
+ID: 557
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kokaze
+DESCRIPTION: 
+LEVEL: 80
+ICON ID: 2243
+PART: -1
+UP TOP: false
+=============================
+ID: 558
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Enko Bakusatsu
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 2244
+PART: -1
+UP TOP: false
+=============================
+ID: 559
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Tsumabeni
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 2245
+PART: -1
+UP TOP: false
+=============================
+ID: 560
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Shabondama
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 2246
+PART: -1
+UP TOP: false
+=============================
+ID: 561
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kogoraseru
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 2247
+PART: -1
+UP TOP: false
+=============================
+ID: 562
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Raijin
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 2248
+PART: -1
+UP TOP: false
+=============================
+ID: 563
+TYPE: 27
+GENDER: 2
+NAME: Sách võ công Kamikaze
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 2249
+PART: -1
+UP TOP: false
+=============================
+ID: 564
+TYPE: 27
+GENDER: 2
+NAME: Thí Luyện Thiếp
+DESCRIPTION: Sử dụng sẽ được phiêu lưu 2 giờ trong Vùng Đất Ma Quỷ. Cộng dồn tối đa 10 giờ.
+LEVEL: 60
+ICON ID: 2260
+PART: -1
+UP TOP: true
+=============================
+ID: 565
+TYPE: 16
+GENDER: 2
+NAME: Bình HP Cao Cấp
+DESCRIPTION: Nữa giây phục hồi 1500 HP, duy trì 3 giây.
+LEVEL: 90
+ICON ID: 2261
+PART: -1
+UP TOP: true
+=============================
+ID: 566
+TYPE: 17
+GENDER: 2
+NAME: Bình MP Cao Cấp
+DESCRIPTION: Phục hồi 5000 MP.
+LEVEL: 90
+ICON ID: 2262
+PART: -1
+UP TOP: true
+=============================
+ID: 567
+TYPE: 18
+GENDER: 2
+NAME: Haggis
+DESCRIPTION: Nữa giây phục hồi 300 HP, MP duy trì 1 ngày
+LEVEL: 90
+ICON ID: 2263
+PART: -1
+UP TOP: false
+=============================
+ID: 568
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn tròn
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 2404
+PART: -1
+UP TOP: false
+=============================
+ID: 569
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn cá chép
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 2402
+PART: -1
+UP TOP: false
+=============================
+ID: 570
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn ngôi sao
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 2403
+PART: -1
+UP TOP: false
+=============================
+ID: 571
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn mặt trăng
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 2405
+PART: -1
+UP TOP: false
+=============================
+ID: 572
+TYPE: 27
+GENDER: 2
+NAME: Thiên biến lệnh
+DESCRIPTION: Nhẫn giả sở hữu vật phẩm này có thể tốc biến tấn công quái vật.
+LEVEL: 20
+ICON ID: 2406
+PART: -1
+UP TOP: false
+=============================
+ID: 573
+TYPE: 27
+GENDER: 2
+NAME: Lục thanh hoa
+DESCRIPTION: Tăng 200 điểm kinh nghiệm cho thú cưỡi.
+LEVEL: 50
+ICON ID: 2407
+PART: -1
+UP TOP: true
+=============================
+ID: 574
+TYPE: 27
+GENDER: 2
+NAME: Tử linh liên hoa
+DESCRIPTION: Tăng 400 điểm kinh nghiệm cho thú cưỡi.
+LEVEL: 60
+ICON ID: 2408
+PART: -1
+UP TOP: true
+=============================
+ID: 575
+TYPE: 27
+GENDER: 2
+NAME: Linh lang hồ điệp
+DESCRIPTION: Tăng 600 điểm kinh nghiệm cho thú cưỡi.
+LEVEL: 70
+ICON ID: 2409
+PART: -1
+UP TOP: true
+=============================
+ID: 576
+TYPE: 27
+GENDER: 2
+NAME: Bánh răng
+DESCRIPTION: Tăng 100 điểm hiệu năng cho Xe máy.
+LEVEL: 50
+ICON ID: 2410
+PART: -1
+UP TOP: true
+=============================
+ID: 577
+TYPE: 27
+GENDER: 2
+NAME: IK
+DESCRIPTION: Tăng 250 điểm hiệu năng cho Xe máy.
+LEVEL: 60
+ICON ID: 2411
+PART: -1
+UP TOP: true
+=============================
+ID: 578
+TYPE: 27
+GENDER: 2
+NAME: Thuốc cải tiến
+DESCRIPTION: Tăng 500 điểm hiệu năng cho Xe máy.
+LEVEL: 70
+ICON ID: 2412
+PART: -1
+UP TOP: true
+=============================
+ID: 579
+TYPE: 27
+GENDER: 2
+NAME: Giấy Cứng
+DESCRIPTION: Vật phẩm Sự kiện Tết 
+LEVEL: 20
+ICON ID: 2446
+PART: -1
+UP TOP: true
+=============================
+ID: 580
+TYPE: 27
+GENDER: 2
+NAME: Dây Mồi
+DESCRIPTION: Vật phẩm Sự kiện Tết 
+LEVEL: 20
+ICON ID: 2447
+PART: -1
+UP TOP: true
+=============================
+ID: 581
+TYPE: 27
+GENDER: 2
+NAME: Thuốc
+DESCRIPTION: Vật phẩm Sự kiện Tết 
+LEVEL: 20
+ICON ID: 2448
+PART: -1
+UP TOP: true
+=============================
+ID: 582
+TYPE: 27
+GENDER: 2
+NAME: Pháo Hoa
+DESCRIPTION: Vật phẩm Sự kiện Tết 2016
+LEVEL: 20
+ICON ID: 2449
+PART: -1
+UP TOP: true
+=============================
+ID: 583
+TYPE: 10
+GENDER: 2
+NAME: Hỏa long
+DESCRIPTION:  
+LEVEL: 70
+ICON ID: 2490
+PART: -1
+UP TOP: false
+=============================
+ID: 584
+TYPE: 10
+GENDER: 2
+NAME: Hải mã cấp 1
+DESCRIPTION:  
+LEVEL: 70
+ICON ID: 2484
+PART: -1
+UP TOP: false
+=============================
+ID: 585
+TYPE: 10
+GENDER: 2
+NAME: Hải mã cấp 2
+DESCRIPTION:  
+LEVEL: 70
+ICON ID: 2485
+PART: -1
+UP TOP: false
+=============================
+ID: 586
+TYPE: 10
+GENDER: 2
+NAME: Hải mã cấp 3
+DESCRIPTION:  
+LEVEL: 70
+ICON ID: 2486
+PART: -1
+UP TOP: false
+=============================
+ID: 587
+TYPE: 10
+GENDER: 2
+NAME: Dị Long cấp 1
+DESCRIPTION:  
+LEVEL: 70
+ICON ID: 2487
+PART: -1
+UP TOP: false
+=============================
+ID: 588
+TYPE: 10
+GENDER: 2
+NAME: Dị Long cấp 2
+DESCRIPTION:  
+LEVEL: 70
+ICON ID: 2488
+PART: -1
+UP TOP: false
+=============================
+ID: 589
+TYPE: 10
+GENDER: 2
+NAME: Dị Long cấp 3
+DESCRIPTION:  
+LEVEL: 70
+ICON ID: 2489
+PART: -1
+UP TOP: false
+=============================
+ID: 590
+TYPE: 27
+GENDER: 2
+NAME: Đốt tre xanh
+DESCRIPTION: Vật phẩm sử dụng trong sự kiện Giổ tổ 2017
+LEVEL: 20
+ICON ID: 2479
+PART: -1
+UP TOP: true
+=============================
+ID: 591
+TYPE: 27
+GENDER: 2
+NAME: Đốt tre vàng
+DESCRIPTION: Vật phẩm sử dụng trong sự kiện Giổ tổ 2017
+LEVEL: 20
+ICON ID: 2480
+PART: -1
+UP TOP: true
+=============================
+ID: 592
+TYPE: 27
+GENDER: 2
+NAME: Tre xanh trăm đốt
+DESCRIPTION: Về làng Tone gặp Vua Hùng
+LEVEL: 20
+ICON ID: 2481
+PART: -1
+UP TOP: true
+=============================
+ID: 593
+TYPE: 27
+GENDER: 2
+NAME: Tre vàng trăm đốt
+DESCRIPTION: Về làng Tone gặp Vua Hùng
+LEVEL: 20
+ICON ID: 2492
+PART: -1
+UP TOP: true
+=============================
+ID: 594
+TYPE: 11
+GENDER: 2
+NAME: Mặt nạ Thánh Gióng 
+DESCRIPTION: Sử dụng có thể hóa thân thành Thánh gióng.
+LEVEL: 50
+ICON ID: 2482
+PART: 205
+UP TOP: false
+=============================
+ID: 595
+TYPE: 27
+GENDER: 2
+NAME: Tín vật
+DESCRIPTION: Vật phẩm sử dụng trong sự kiện Giổ tổ 2017
+LEVEL: 20
+ICON ID: 2483
+PART: -1
+UP TOP: true
+=============================
+ID: 596
+TYPE: 27
+GENDER: 2
+NAME: Trứng Dị Long
+DESCRIPTION: Sau 7 ngày sẽ nở ra một Dị long con.
+LEVEL: 60
+ICON ID: 2493
+PART: -1
+UP TOP: false
+=============================
+ID: 597
+TYPE: 27
+GENDER: 2
+NAME: Vạn Ngư Câu
+DESCRIPTION: Sử dụng để câu cá tại làng chài.
+LEVEL: 60
+ICON ID: 2495
+PART: -1
+UP TOP: false
+=============================
+ID: 598
+TYPE: 27
+GENDER: 2
+NAME: Huyết long ngư
+DESCRIPTION: Thức ăn ưa thích của thần thú.
+LEVEL: 60
+ICON ID: 2496
+PART: -1
+UP TOP: true
+=============================
+ID: 599
+TYPE: 27
+GENDER: 2
+NAME: Tuyết sa ngư
+DESCRIPTION: Loài cá quý hiếm giúp thần thú mau chóng trưởng thành.
+LEVEL: 60
+ICON ID: 2497
+PART: -1
+UP TOP: true
+=============================
+ID: 600
+TYPE: 27
+GENDER: 2
+NAME: Linh tâm ngư
+DESCRIPTION: Là loài cá cổ rất hiếm ở làng Chài.
+LEVEL: 60
+ICON ID: 2498
+PART: -1
+UP TOP: true
+=============================
+ID: 601
+TYPE: 27
+GENDER: 2
+NAME: Trứng Hải Mã
+DESCRIPTION: Sau 7 ngày sẽ nở ra một Hải mã con.
+LEVEL: 60
+ICON ID: 2494
+PART: -1
+UP TOP: false
+=============================
+ID: 602
+TYPE: 27
+GENDER: 2
+NAME: Dế Cơm
+DESCRIPTION: Mồi câu cá.
+LEVEL: 60
+ICON ID: 2500
+PART: -1
+UP TOP: true
+=============================
+ID: 603
+TYPE: 27
+GENDER: 2
+NAME: Giun Đất
+DESCRIPTION: Mồi câu cá.
+LEVEL: 60
+ICON ID: 2501
+PART: -1
+UP TOP: true
+=============================
+ID: 604
+TYPE: 27
+GENDER: 2
+NAME: Triệu Hồi Thú Thần
+DESCRIPTION: Sử dụng để gọi ra thần thú giá tộc.
+LEVEL: 60
+ICON ID: 2510
+PART: -1
+UP TOP: false
+=============================
+ID: 605
+TYPE: 27
+GENDER: 2
+NAME: Tiến Hóa Đan
+DESCRIPTION: Có xác suất giúp thần thú tiến hóa.
+LEVEL: 60
+ICON ID: 2509
+PART: -1
+UP TOP: true
+=============================
+ID: 606
+TYPE: 27
+GENDER: 2
+NAME: Bí Ma
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 2526
+PART: 214
+UP TOP: true
+=============================
+ID: 607
+TYPE: 27
+GENDER: 2
+NAME: Xương Thú
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 2511
+PART: -1
+UP TOP: true
+=============================
+ID: 608
+TYPE: 27
+GENDER: 2
+NAME: Tàn Linh
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 2513
+PART: -1
+UP TOP: true
+=============================
+ID: 609
+TYPE: 27
+GENDER: 2
+NAME: Quả Táo
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 2514
+PART: -1
+UP TOP: true
+=============================
+ID: 610
+TYPE: 27
+GENDER: 2
+NAME: Mật Ong
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 2515
+PART: -1
+UP TOP: true
+=============================
+ID: 611
+TYPE: 27
+GENDER: 2
+NAME: Kẹo Táo
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 2516
+PART: -1
+UP TOP: true
+=============================
+ID: 612
+TYPE: 27
+GENDER: 2
+NAME: Hộp Ma Quỷ
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 2517
+PART: -1
+UP TOP: true
+=============================
+ID: 613
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ Jiraiya 
+DESCRIPTION: Sử dụng để thay đổi diện mạo
+LEVEL: 60
+ICON ID: 2518
+PART: 210
+UP TOP: false
+=============================
+ID: 614
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ Konan
+DESCRIPTION: Sử dụng để thay đổi diện mạo
+LEVEL: 60
+ICON ID: 2520
+PART: 211
+UP TOP: false
+=============================
+ID: 615
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ Deidara
+DESCRIPTION: Sử dụng để thay đổi diện mạo
+LEVEL: 80
+ICON ID: 2522
+PART: 212
+UP TOP: false
+=============================
+ID: 616
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ Tobi
+DESCRIPTION: Sử dụng để thay đổi diện mạo
+LEVEL: 80
+ICON ID: 2524
+PART: 213
+UP TOP: false
+=============================
+ID: 617
+TYPE: 27
+GENDER: 2
+NAME: Ma vật
+DESCRIPTION: Item sự kiện Halloween 2016
+LEVEL: 30
+ICON ID: 2512
+PART: -1
+UP TOP: true
+=============================
+ID: 618
+TYPE: 0
+GENDER: 1
+NAME: Thái Dương Cốt Ngọc Tuyến
+DESCRIPTION: 
+LEVEL: 99
+ICON ID: 2564
+PART: -1
+UP TOP: false
+=============================
+ID: 619
+TYPE: 0
+GENDER: 0
+NAME: Thái Dương Cốt Ngọc Trâm
+DESCRIPTION: 
+LEVEL: 99
+ICON ID: 2560
+PART: -1
+UP TOP: false
+=============================
+ID: 620
+TYPE: 2
+GENDER: 1
+NAME: Thái Dương Cốt Ngọc Giáp
+DESCRIPTION: 
+LEVEL: 97
+ICON ID: 2528
+PART: 197
+UP TOP: false
+=============================
+ID: 621
+TYPE: 2
+GENDER: 0
+NAME: Thái Dương Cốt Ngọc Giáp
+DESCRIPTION: 
+LEVEL: 97
+ICON ID: 2532
+PART: 199
+UP TOP: false
+=============================
+ID: 622
+TYPE: 6
+GENDER: 1
+NAME: Thái Dương Cốt Ngọc Hạ Giáp
+DESCRIPTION: 
+LEVEL: 93
+ICON ID: 2530
+PART: 198
+UP TOP: false
+=============================
+ID: 623
+TYPE: 6
+GENDER: 0
+NAME: Thái Dương Cốt Ngọc Hạ Giáp
+DESCRIPTION: 
+LEVEL: 93
+ICON ID: 2534
+PART: 200
+UP TOP: false
+=============================
+ID: 624
+TYPE: 4
+GENDER: 1
+NAME: Thái Dương Cốt Ngọc Thủ
+DESCRIPTION: 
+LEVEL: 95
+ICON ID: 2531
+PART: -1
+UP TOP: false
+=============================
+ID: 625
+TYPE: 4
+GENDER: 0
+NAME: Thái Dương Cốt Ngọc Thủ
+DESCRIPTION: 
+LEVEL: 95
+ICON ID: 2533
+PART: -1
+UP TOP: false
+=============================
+ID: 626
+TYPE: 8
+GENDER: 1
+NAME: Thái Dương Cốt Ngọc Ngoa
+DESCRIPTION: 
+LEVEL: 91
+ICON ID: 2529
+PART: -1
+UP TOP: false
+=============================
+ID: 627
+TYPE: 8
+GENDER: 0
+NAME: Thái Dương Cốt Ngọc Ngoa
+DESCRIPTION: 
+LEVEL: 91
+ICON ID: 2535
+PART: -1
+UP TOP: false
+=============================
+ID: 628
+TYPE: 9
+GENDER: 2
+NAME: Thái Dương Cốt Ngọc Phù
+DESCRIPTION: 
+LEVEL: 92
+ICON ID: 2561
+PART: -1
+UP TOP: false
+=============================
+ID: 629
+TYPE: 7
+GENDER: 2
+NAME: Thái Dương Cốt Ngọc Bội
+DESCRIPTION: 
+LEVEL: 94
+ICON ID: 2565
+PART: -1
+UP TOP: false
+=============================
+ID: 630
+TYPE: 5
+GENDER: 2
+NAME: Thái Dương Cốt Ngọc Giới
+DESCRIPTION: 
+LEVEL: 96
+ICON ID: 2563
+PART: -1
+UP TOP: false
+=============================
+ID: 631
+TYPE: 3
+GENDER: 2
+NAME: Thái Dương Cốt Ngọc Liên
+DESCRIPTION: 
+LEVEL: 98
+ICON ID: 2562
+PART: -1
+UP TOP: false
+=============================
+ID: 632
+TYPE: 1
+GENDER: 2
+NAME: Thái Dương Vô Cực Kiếm
+DESCRIPTION: 
+LEVEL: 90
+ICON ID: 2540
+PART: 12
+UP TOP: false
+=============================
+ID: 633
+TYPE: 1
+GENDER: 2
+NAME: Thái Dương Thiên Hỏa Tiêu
+DESCRIPTION: 
+LEVEL: 90
+ICON ID: 2541
+PART: 15
+UP TOP: false
+=============================
+ID: 634
+TYPE: 1
+GENDER: 2
+NAME: Thái Dương Táng Hồn Dao
+DESCRIPTION: 
+LEVEL: 90
+ICON ID: 2539
+PART: 41
+UP TOP: false
+=============================
+ID: 635
+TYPE: 1
+GENDER: 2
+NAME: Thái Dương Băng Thần Cung
+DESCRIPTION: 
+LEVEL: 90
+ICON ID: 2538
+PART: 14
+UP TOP: false
+=============================
+ID: 636
+TYPE: 1
+GENDER: 2
+NAME: Thái Dương Chiến Lục Đao
+DESCRIPTION: 
+LEVEL: 90
+ICON ID: 2536
+PART: 13
+UP TOP: false
+=============================
+ID: 637
+TYPE: 1
+GENDER: 2
+NAME: Thái Dương Hoàng Phong Phiến
+DESCRIPTION: 
+LEVEL: 90
+ICON ID: 2537
+PART: 16
+UP TOP: false
+=============================
+ID: 638
+TYPE: 27
+GENDER: 2
+NAME: Lá dong
+DESCRIPTION: Item sự kiện Tết Nguyên Đán 
+LEVEL: 30
+ICON ID: 2542
+PART: -1
+UP TOP: true
+=============================
+ID: 639
+TYPE: 27
+GENDER: 2
+NAME: Nếp
+DESCRIPTION: Item sự kiện Tết Nguyên Đán 
+LEVEL: 30
+ICON ID: 2545
+PART: -1
+UP TOP: true
+=============================
+ID: 640
+TYPE: 27
+GENDER: 2
+NAME: Thịt heo
+DESCRIPTION: Item sự kiện Tết Nguyên Đán
+LEVEL: 30
+ICON ID: 2547
+PART: -1
+UP TOP: true
+=============================
+ID: 641
+TYPE: 27
+GENDER: 2
+NAME: Đậu xanh
+DESCRIPTION: Item sự kiện Tết Nguyên Đán
+LEVEL: 30
+ICON ID: 2544
+PART: -1
+UP TOP: true
+=============================
+ID: 642
+TYPE: 27
+GENDER: 2
+NAME: Lạt tre
+DESCRIPTION: Item sự kiện Tết Nguyên Đán
+LEVEL: 30
+ICON ID: 2543
+PART: -1
+UP TOP: true
+=============================
+ID: 643
+TYPE: 27
+GENDER: 2
+NAME: Bánh Chưng
+DESCRIPTION: Item sự kiện Tết Nguyên Đán
+LEVEL: 30
+ICON ID: 2548
+PART: -1
+UP TOP: true
+=============================
+ID: 644
+TYPE: 27
+GENDER: 2
+NAME: Bánh Tét
+DESCRIPTION: Item sự kiện Tết Nguyên Đán
+LEVEL: 30
+ICON ID: 2549
+PART: -1
+UP TOP: true
+=============================
+ID: 645
+TYPE: 27
+GENDER: 2
+NAME: Túi Lộc Đầu Xuân
+DESCRIPTION: Item sự kiện Tết Nguyên Đán
+LEVEL: 30
+ICON ID: 2550
+PART: -1
+UP TOP: true
+=============================
+ID: 646
+TYPE: 27
+GENDER: 2
+NAME: Bùa May Mắn
+DESCRIPTION: Item sự kiện Tết Nguyên Đán
+LEVEL: 30
+ICON ID: 2546
+PART: -1
+UP TOP: true
+=============================
+ID: 647
+TYPE: 27
+GENDER: 2
+NAME: Rương Ma Quái
+DESCRIPTION: Chứa đựng rất nhiều vật phẩm giá trị.
+LEVEL: 90
+ICON ID: 2556
+PART: -1
+UP TOP: true
+=============================
+ID: 648
+TYPE: 27
+GENDER: 2
+NAME: Huy chương chiến công đồng
+DESCRIPTION: Item sự kiện
+LEVEL: 30
+ICON ID: 2569
+PART: -1
+UP TOP: true
+=============================
+ID: 649
+TYPE: 27
+GENDER: 2
+NAME: Huy chương chiến công bạc
+DESCRIPTION: Item sự kiện
+LEVEL: 30
+ICON ID: 2566
+PART: -1
+UP TOP: true
+=============================
+ID: 650
+TYPE: 27
+GENDER: 2
+NAME: Huy Chương chiến công vàng
+DESCRIPTION: Item sự kiện
+LEVEL: 30
+ICON ID: 2567
+PART: -1
+UP TOP: true
+=============================
+ID: 651
+TYPE: 27
+GENDER: 2
+NAME: Huy Chương chiến công bạch kim
+DESCRIPTION: Item sự kiện
+LEVEL: 30
+ICON ID: 2568
+PART: -1
+UP TOP: true
+=============================
+ID: 652
+TYPE: 34
+GENDER: 2
+NAME: Huyền Tinh Ngọc
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 2554
+PART: -1
+UP TOP: false
+=============================
+ID: 653
+TYPE: 34
+GENDER: 2
+NAME: Huyết Ngọc
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 2553
+PART: -1
+UP TOP: false
+=============================
+ID: 654
+TYPE: 34
+GENDER: 2
+NAME: Lam Tinh Ngọc
+DESCRIPTION: 
+LEVEL: 70
+ICON ID: 2555
+PART: -1
+UP TOP: false
+=============================
+ID: 655
+TYPE: 34
+GENDER: 2
+NAME: Lục Ngọc
+DESCRIPTION: 
+LEVEL: 50
+ICON ID: 2552
+PART: -1
+UP TOP: false
+=============================
+ID: 656
+TYPE: 27
+GENDER: 2
+NAME: Đá Năng Lượng Băng
+DESCRIPTION: Item sự kiện
+LEVEL: 40
+ICON ID: 2571
+PART: -1
+UP TOP: true
+=============================
+ID: 657
+TYPE: 27
+GENDER: 2
+NAME: Đá Năng Lượng Hỏa
+DESCRIPTION: Item sự kiện
+LEVEL: 40
+ICON ID: 2570
+PART: -1
+UP TOP: true
+=============================
+ID: 658
+TYPE: 27
+GENDER: 2
+NAME: Đá Năng Lượng Gió
+DESCRIPTION: Item sự kiện
+LEVEL: 40
+ICON ID: 2572
+PART: -1
+UP TOP: true
+=============================
+ID: 659
+TYPE: 27
+GENDER: 2
+NAME: Đá Ma Thuật
+DESCRIPTION: Item sự kiện
+LEVEL: 40
+ICON ID: 2573
+PART: -1
+UP TOP: true
+=============================
+ID: 660
+TYPE: 27
+GENDER: 2
+NAME: Truy Tung Phù
+DESCRIPTION: Item sự kiện
+LEVEL: 40
+ICON ID: 2574
+PART: -1
+UP TOP: true
+=============================
+ID: 661
+TYPE: 27
+GENDER: 2
+NAME: Truy Tung Lệnh
+DESCRIPTION: Item sự kiện
+LEVEL: 40
+ICON ID: 2575
+PART: -1
+UP TOP: true
+=============================
+ID: 662
+TYPE: 27
+GENDER: 2
+NAME: Lệnh bài năng động
+DESCRIPTION: Item mo rong
+LEVEL: 90
+ICON ID: 2575
+PART: -1
+UP TOP: true
+=============================
+ID: 663
+TYPE: 27
+GENDER: 2
+NAME: Lệnh bài hoàn thành
+DESCRIPTION: Dùng để hoàn thành tức thời nhiệm vụ matsurugi
+LEVEL: 90
+ICON ID: 2579
+PART: -1
+UP TOP: true
+=============================
+ID: 664
+TYPE: 27
+GENDER: 2
+NAME: Lồng đèn
+DESCRIPTION: Thắp đèn đêm trung thu
+LEVEL: 1
+ICON ID: 2580
+PART: -1
+UP TOP: true
+=============================
+ID: 665
+TYPE: 27
+GENDER: 2
+NAME: Giấy thông hành
+DESCRIPTION: Item sự kiện
+LEVEL: 1
+ICON ID: 2581
+PART: -1
+UP TOP: true
+=============================
+ID: 666
+TYPE: 27
+GENDER: 2
+NAME: Bơ
+DESCRIPTION: Bơ làm bánh
+LEVEL: 1
+ICON ID: 2613
+PART: -1
+UP TOP: true
+=============================
+ID: 667
+TYPE: 27
+GENDER: 2
+NAME: Kem
+DESCRIPTION: Kem làm bánh
+LEVEL: 1
+ICON ID: 2614
+PART: -1
+UP TOP: true
+=============================
+ID: 668
+TYPE: 27
+GENDER: 2
+NAME: Đường bột
+DESCRIPTION: Đường bột làm bánh
+LEVEL: 1
+ICON ID: 2617
+PART: -1
+UP TOP: true
+=============================
+ID: 669
+TYPE: 27
+GENDER: 2
+NAME: Chocolate
+DESCRIPTION: Socola làm bánh
+LEVEL: 1
+ICON ID: 2615
+PART: -1
+UP TOP: true
+=============================
+ID: 670
+TYPE: 27
+GENDER: 2
+NAME: Dâu tây
+DESCRIPTION: Dâu làm bánh
+LEVEL: 1
+ICON ID: 2616
+PART: -1
+UP TOP: true
+=============================
+ID: 671
+TYPE: 27
+GENDER: 2
+NAME: Bánh khúc cây chocolate
+DESCRIPTION: Bánh khúc cây
+LEVEL: 20
+ICON ID: 2618
+PART: -1
+UP TOP: true
+=============================
+ID: 672
+TYPE: 27
+GENDER: 2
+NAME: Bánh khúc cây dâu tây
+DESCRIPTION: Bánh khúc cây dâu tây
+LEVEL: 20
+ICON ID: 2619
+PART: -1
+UP TOP: true
+=============================
+ID: 673
+TYPE: 27
+GENDER: 2
+NAME: Quà trang trí
+DESCRIPTION: Quà trang trí cây thông
+LEVEL: 20
+ICON ID: 2580
+PART: -1
+UP TOP: true
+=============================
+ID: 674
+TYPE: 27
+GENDER: 2
+NAME: Mảnh pháo hoa
+DESCRIPTION: Nguyên liệu để ghép pháo hoa ngày tết
+LEVEL: 1
+ICON ID: 2622
+PART: -1
+UP TOP: true
+=============================
+ID: 675
+TYPE: 27
+GENDER: 2
+NAME: Dây pháo hoa
+DESCRIPTION: Sử dụng để bắn phóa hoa và nhận thưởng
+LEVEL: 1
+ICON ID: 2623
+PART: -1
+UP TOP: true
+=============================
+ID: 676
+TYPE: 27
+GENDER: 2
+NAME: Vui Xuân
+DESCRIPTION: Sử dụng để tìm kiếm hộp quà vui xuân
+LEVEL: 1
+ICON ID: 2624
+PART: -1
+UP TOP: true
+=============================
+ID: 677
+TYPE: 27
+GENDER: 2
+NAME: Miếng dưa hấu
+DESCRIPTION: Dưa hấu ăn dở
+LEVEL: 1
+ICON ID: 2628
+PART: -1
+UP TOP: true
+=============================
+ID: 678
+TYPE: 27
+GENDER: 2
+NAME: Dưa hấu dài
+DESCRIPTION: Dưa hấu dài
+LEVEL: 1
+ICON ID: 2629
+PART: -1
+UP TOP: true
+=============================
+ID: 679
+TYPE: 27
+GENDER: 2
+NAME: Dưa hấu tròn
+DESCRIPTION: Dưa hấu tròn
+LEVEL: 1
+ICON ID: 2627
+PART: -1
+UP TOP: true
+=============================
+ID: 680
+TYPE: 27
+GENDER: 2
+NAME: Giấy xác thực
+DESCRIPTION: Giấy xác thực
+LEVEL: 1
+ICON ID: 2626
+PART: -1
+UP TOP: true
+=============================
+ID: 681
+TYPE: 27
+GENDER: 2
+NAME: Giấy chứng nhận
+DESCRIPTION: Giấy chứng nhận
+LEVEL: 1
+ICON ID: 2625
+PART: -1
+UP TOP: true
+=============================
+ID: 682
+TYPE: 27
+GENDER: 2
+NAME: Đá mặt trăng
+DESCRIPTION: Mảnh đá mặt trăng
+LEVEL: 1
+ICON ID: 2632
+PART: -1
+UP TOP: true
+=============================
+ID: 683
+TYPE: 27
+GENDER: 2
+NAME: Cỏ ba lá
+DESCRIPTION: Cỏ ba lá
+LEVEL: 1
+ICON ID: 2631
+PART: -1
+UP TOP: true
+=============================
+ID: 684
+TYPE: 27
+GENDER: 2
+NAME: Cỏ bốn lá
+DESCRIPTION: Cỏ bốn lá
+LEVEL: 1
+ICON ID: 2630
+PART: -1
+UP TOP: true
+=============================
+ID: 685
+TYPE: 14
+GENDER: 2
+NAME: Geningan
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2633
+PART: -1
+UP TOP: false
+=============================
+ID: 686
+TYPE: 14
+GENDER: 2
+NAME: Chuuningan
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2634
+PART: -1
+UP TOP: false
+=============================
+ID: 687
+TYPE: 14
+GENDER: 2
+NAME: Jougan
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2635
+PART: -1
+UP TOP: false
+=============================
+ID: 688
+TYPE: 14
+GENDER: 2
+NAME: Seningan
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2636
+PART: -1
+UP TOP: false
+=============================
+ID: 689
+TYPE: 14
+GENDER: 2
+NAME: Kyubigan
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2637
+PART: -1
+UP TOP: false
+=============================
+ID: 690
+TYPE: 14
+GENDER: 2
+NAME: Rinnegan
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2638
+PART: -1
+UP TOP: false
+=============================
+ID: 691
+TYPE: 14
+GENDER: 2
+NAME: Sharingan
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2639
+PART: -1
+UP TOP: false
+=============================
+ID: 692
+TYPE: 14
+GENDER: 2
+NAME: Tenseigan
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2640
+PART: -1
+UP TOP: false
+=============================
+ID: 693
+TYPE: 14
+GENDER: 2
+NAME: Ketsuryugan
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2641
+PART: -1
+UP TOP: false
+=============================
+ID: 694
+TYPE: 14
+GENDER: 2
+NAME: Sukaigan
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2642
+PART: -1
+UP TOP: false
+=============================
+ID: 695
+TYPE: 27
+GENDER: 2
+NAME: Đá danh vọng cấp 1
+DESCRIPTION: Vật phẩm nâng cấp
+LEVEL: 1
+ICON ID: 2644
+PART: -1
+UP TOP: true
+=============================
+ID: 696
+TYPE: 27
+GENDER: 2
+NAME: Đá danh vọng cấp 2
+DESCRIPTION: Vật phẩm nâng cấp
+LEVEL: 1
+ICON ID: 2645
+PART: -1
+UP TOP: true
+=============================
+ID: 697
+TYPE: 27
+GENDER: 2
+NAME: Đá danh vọng cấp 3
+DESCRIPTION: Vật phẩm nâng cấp
+LEVEL: 1
+ICON ID: 2646
+PART: -1
+UP TOP: true
+=============================
+ID: 698
+TYPE: 27
+GENDER: 2
+NAME: Đá danh vọng cấp 4
+DESCRIPTION: Vật phẩm nâng cấp
+LEVEL: 1
+ICON ID: 2647
+PART: -1
+UP TOP: true
+=============================
+ID: 699
+TYPE: 27
+GENDER: 2
+NAME: Đá danh vọng cấp 5
+DESCRIPTION: Vật phẩm nâng cấp
+LEVEL: 1
+ICON ID: 2648
+PART: -1
+UP TOP: true
+=============================
+ID: 700
+TYPE: 27
+GENDER: 2
+NAME: Đá danh vọng cấp 6
+DESCRIPTION: Vật phẩm nâng cấp
+LEVEL: 1
+ICON ID: 2649
+PART: -1
+UP TOP: true
+=============================
+ID: 701
+TYPE: 27
+GENDER: 2
+NAME: Đá danh vọng cấp 7
+DESCRIPTION: Vật phẩm nâng cấp
+LEVEL: 1
+ICON ID: 2650
+PART: -1
+UP TOP: true
+=============================
+ID: 702
+TYPE: 27
+GENDER: 2
+NAME: Đá danh vọng cấp 8
+DESCRIPTION: Vật phẩm nâng cấp
+LEVEL: 1
+ICON ID: 2651
+PART: -1
+UP TOP: true
+=============================
+ID: 703
+TYPE: 27
+GENDER: 2
+NAME: Đá danh vọng cấp 9
+DESCRIPTION: Vật phẩm nâng cấp
+LEVEL: 1
+ICON ID: 2652
+PART: -1
+UP TOP: true
+=============================
+ID: 704
+TYPE: 27
+GENDER: 2
+NAME: Đá danh vọng cấp 10
+DESCRIPTION: Đá danh vọng cấp 10
+LEVEL: 1
+ICON ID: 2653
+PART: -1
+UP TOP: true
+=============================
+ID: 705
+TYPE: 27
+GENDER: 2
+NAME: Danh vọng phù
+DESCRIPTION: Tăng số lần làm nhiệm vụ danh vọng
+LEVEL: 1
+ICON ID: 2643
+PART: -1
+UP TOP: true
+=============================
+ID: 706
+TYPE: 27
+GENDER: 2
+NAME: Mảnh bản đồ
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 2654
+PART: -1
+UP TOP: true
+=============================
+ID: 707
+TYPE: 27
+GENDER: 2
+NAME: Bản đồ 1
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 2655
+PART: -1
+UP TOP: false
+=============================
+ID: 708
+TYPE: 27
+GENDER: 2
+NAME: Bản đồ 3
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 2656
+PART: -1
+UP TOP: false
+=============================
+ID: 709
+TYPE: 2
+GENDER: 1
+NAME: áo cam 1
+DESCRIPTION: áo cam 1
+LEVEL: 1
+ICON ID: 2656
+PART: 224
+UP TOP: false
+=============================
+ID: 710
+TYPE: 6
+GENDER: 1
+NAME: quần cam 1
+DESCRIPTION: quần cam 1
+LEVEL: 1
+ICON ID: 2656
+PART: 225
+UP TOP: false
+=============================
+ID: 711
+TYPE: 11
+GENDER: 1
+NAME: Mặt nạ Jirai 
+DESCRIPTION: tóc cam 1
+LEVEL: 1
+ICON ID: 2931
+PART: 223
+UP TOP: false
+=============================
+ID: 712
+TYPE: 2
+GENDER: 1
+NAME: Áo Jirai
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2923
+PART: 224
+UP TOP: false
+=============================
+ID: 713
+TYPE: 6
+GENDER: 1
+NAME: Quần Jirai 
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2940
+PART: 225
+UP TOP: false
+=============================
+ID: 714
+TYPE: 11
+GENDER: 0
+NAME: Mặt nạ Jumito
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2950
+PART: 226
+UP TOP: false
+=============================
+ID: 715
+TYPE: 2
+GENDER: 0
+NAME: Áo jumito
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2942
+PART: 227
+UP TOP: false
+=============================
+ID: 716
+TYPE: 6
+GENDER: 0
+NAME: Quần Jumito
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2959
+PART: 228
+UP TOP: false
+=============================
+ID: 717
+TYPE: 11
+GENDER: 2
+NAME: tóc 3
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 229
+UP TOP: false
+=============================
+ID: 718
+TYPE: 2
+GENDER: 2
+NAME: áo 4
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 233
+UP TOP: false
+=============================
+ID: 719
+TYPE: 6
+GENDER: 2
+NAME: quần 4
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 234
+UP TOP: false
+=============================
+ID: 720
+TYPE: 11
+GENDER: 2
+NAME: tóc 4
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 232
+UP TOP: false
+=============================
+ID: 721
+TYPE: 2
+GENDER: 2
+NAME: áo 5
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 236
+UP TOP: false
+=============================
+ID: 722
+TYPE: 6
+GENDER: 2
+NAME: quần 5
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 237
+UP TOP: false
+=============================
+ID: 723
+TYPE: 11
+GENDER: 2
+NAME: tóc 5
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 235
+UP TOP: false
+=============================
+ID: 724
+TYPE: 2
+GENDER: 2
+NAME: áo 6
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 239
+UP TOP: false
+=============================
+ID: 725
+TYPE: 6
+GENDER: 2
+NAME: quần 6
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 240
+UP TOP: false
+=============================
+ID: 726
+TYPE: 11
+GENDER: 2
+NAME: tóc 6
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 238
+UP TOP: false
+=============================
+ID: 727
+TYPE: 2
+GENDER: 2
+NAME: áo 7
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 242
+UP TOP: false
+=============================
+ID: 728
+TYPE: 6
+GENDER: 2
+NAME: quần 7
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 243
+UP TOP: false
+=============================
+ID: 729
+TYPE: 11
+GENDER: 2
+NAME: tóc 7
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 241
+UP TOP: false
+=============================
+ID: 730
+TYPE: 2
+GENDER: 2
+NAME: áo 8
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 245
+UP TOP: false
+=============================
+ID: 731
+TYPE: 6
+GENDER: 2
+NAME: quần 8
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 246
+UP TOP: false
+=============================
+ID: 732
+TYPE: 11
+GENDER: 2
+NAME: tóc 8
+DESCRIPTION:  
+LEVEL: 1
+ICON ID: 2656
+PART: 244
+UP TOP: false
+=============================
+ID: 733
+TYPE: 27
+GENDER: 1
+NAME: Mảnh Nón Jirai 
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2937
+PART: -1
+UP TOP: true
+=============================
+ID: 734
+TYPE: 27
+GENDER: 1
+NAME: Mảnh Găng tay Jirai 
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2928
+PART: -1
+UP TOP: true
+=============================
+ID: 735
+TYPE: 27
+GENDER: 1
+NAME: Mảnh Áo Jirai 
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2924
+PART: -1
+UP TOP: true
+=============================
+ID: 736
+TYPE: 27
+GENDER: 1
+NAME: Mảnh Quần Jirai 
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2941
+PART: -1
+UP TOP: true
+=============================
+ID: 737
+TYPE: 27
+GENDER: 1
+NAME: Mảnh Giày Jirai 
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2930
+PART: -1
+UP TOP: true
+=============================
+ID: 738
+TYPE: 27
+GENDER: 1
+NAME: Mảnh Dây chuyền Jirai 
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2926
+PART: -1
+UP TOP: true
+=============================
+ID: 739
+TYPE: 27
+GENDER: 1
+NAME: Mảnh Ngọc Bội Jirai 
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2933
+PART: -1
+UP TOP: true
+=============================
+ID: 740
+TYPE: 27
+GENDER: 1
+NAME: Mảnh Phù Jirai 
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2939
+PART: -1
+UP TOP: true
+=============================
+ID: 741
+TYPE: 27
+GENDER: 1
+NAME: Mảnh Nhẫn Jirai 
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2935
+PART: -1
+UP TOP: true
+=============================
+ID: 742
+TYPE: 10
+GENDER: 2
+NAME: Tuần Lộc
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2890
+PART: -1
+UP TOP: false
+=============================
+ID: 743
+TYPE: 24
+GENDER: 2
+NAME: Tuần Thú Lệnh
+DESCRIPTION: Sử dụng để triệu hồi Boss Tuần Lộc
+LEVEL: 40
+ICON ID: 2891
+PART: -1
+UP TOP: true
+=============================
+ID: 744
+TYPE: 10
+GENDER: 2
+NAME: Tuần Lộc
+DESCRIPTION: Chống đồ sát
+LEVEL: 1
+ICON ID: 2890
+PART: -1
+UP TOP: false
+=============================
+ID: 745
+TYPE: 11
+GENDER: 2
+NAME: Mặt nạ chuột
+DESCRIPTION: Dùng thay đổi diện mạo
+LEVEL: 40
+ICON ID: 2920
+PART: 258
+UP TOP: false
+=============================
+ID: 746
+TYPE: 0
+GENDER: 1
+NAME: Nón Jirai
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2936
+PART: -1
+UP TOP: false
+=============================
+ID: 747
+TYPE: 4
+GENDER: 1
+NAME: Găng Tay Jirai
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2927
+PART: -1
+UP TOP: false
+=============================
+ID: 748
+TYPE: 8
+GENDER: 1
+NAME: Giày Jirai
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2929
+PART: -1
+UP TOP: false
+=============================
+ID: 749
+TYPE: 5
+GENDER: 1
+NAME: Nhẫn Jirai
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2934
+PART: -1
+UP TOP: false
+=============================
+ID: 750
+TYPE: 9
+GENDER: 1
+NAME: Phù Jirai
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2938
+PART: -1
+UP TOP: false
+=============================
+ID: 751
+TYPE: 7
+GENDER: 1
+NAME: Ngọc Bội Jirai
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2932
+PART: -1
+UP TOP: false
+=============================
+ID: 752
+TYPE: 3
+GENDER: 1
+NAME: Dây Chuyền Jirai
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2925
+PART: -1
+UP TOP: false
+=============================
+ID: 753
+TYPE: 0
+GENDER: 0
+NAME: Nón Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2955
+PART: -1
+UP TOP: false
+=============================
+ID: 754
+TYPE: 4
+GENDER: 0
+NAME: Găng Tay Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2946
+PART: -1
+UP TOP: false
+=============================
+ID: 755
+TYPE: 8
+GENDER: 0
+NAME: Giày Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2948
+PART: -1
+UP TOP: false
+=============================
+ID: 756
+TYPE: 5
+GENDER: 0
+NAME: Nhẫn Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2953
+PART: -1
+UP TOP: false
+=============================
+ID: 757
+TYPE: 9
+GENDER: 0
+NAME: Phù Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2957
+PART: -1
+UP TOP: false
+=============================
+ID: 758
+TYPE: 7
+GENDER: 0
+NAME: Ngọc Bội Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2951
+PART: -1
+UP TOP: false
+=============================
+ID: 759
+TYPE: 3
+GENDER: 0
+NAME: Dây Chuyền Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2944
+PART: -1
+UP TOP: false
+=============================
+ID: 760
+TYPE: 27
+GENDER: 0
+NAME: Mảnh Nón Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2956
+PART: -1
+UP TOP: true
+=============================
+ID: 761
+TYPE: 27
+GENDER: 0
+NAME: Mảnh Găng tay Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2947
+PART: -1
+UP TOP: true
+=============================
+ID: 762
+TYPE: 27
+GENDER: 0
+NAME: Mảnh Áo Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2943
+PART: -1
+UP TOP: true
+=============================
+ID: 763
+TYPE: 27
+GENDER: 0
+NAME: Mảnh Quần Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2960
+PART: -1
+UP TOP: true
+=============================
+ID: 764
+TYPE: 27
+GENDER: 0
+NAME: Mảnh Giày Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2949
+PART: -1
+UP TOP: true
+=============================
+ID: 765
+TYPE: 27
+GENDER: 0
+NAME: Mảnh Dây chuyền Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2945
+PART: -1
+UP TOP: true
+=============================
+ID: 766
+TYPE: 27
+GENDER: 0
+NAME: Mảnh Ngọc Bội Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2952
+PART: -1
+UP TOP: true
+=============================
+ID: 767
+TYPE: 27
+GENDER: 0
+NAME: Mảnh Phù Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2958
+PART: -1
+UP TOP: true
+=============================
+ID: 768
+TYPE: 27
+GENDER: 0
+NAME: Mảnh Nhẫn Jumito
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 2954
+PART: -1
+UP TOP: true
+=============================
+ID: 769
+TYPE: 27
+GENDER: 2
+NAME: Nước diệt khuẩn
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 2921
+PART: -1
+UP TOP: true
+=============================
+ID: 770
+TYPE: 27
+GENDER: 2
+NAME: Viên thuốc thần kỳ
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 2922
+PART: -1
+UP TOP: true
+=============================
+ID: 771
+TYPE: 11
+GENDER: 2
+NAME: Jack Hollow
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3017
+PART: 258
+UP TOP: false
+=============================
+ID: 772
+TYPE: 10
+GENDER: 2
+NAME: Bí Rễ Hành
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3018
+PART: -1
+UP TOP: false
+=============================
+ID: 773
+TYPE: 10
+GENDER: 2
+NAME: Bí Rễ Hành
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3018
+PART: -1
+UP TOP: false
+=============================
+ID: 774
+TYPE: 11
+GENDER: 2
+NAME: Santa Claus
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3047
+PART: 267
+UP TOP: false
+=============================
+ID: 775
+TYPE: 27
+GENDER: 2
+NAME: Hoa tuyết
+DESCRIPTION: Dùng tạo và nâng cấp mặt nạ Santa claus
+LEVEL: 1
+ICON ID: 3048
+PART: -1
+UP TOP: true
+=============================
+ID: 776
+TYPE: 33
+GENDER: 2
+NAME: Hắc ngưu
+DESCRIPTION: Thú cưỡi
+LEVEL: 1
+ICON ID: 3069
+PART: -1
+UP TOP: false
+=============================
+ID: 777
+TYPE: 33
+GENDER: 2
+NAME: Kim ngưu
+DESCRIPTION: Thú cưỡi
+LEVEL: 1
+ICON ID: 3070
+PART: -1
+UP TOP: false
+=============================
+ID: 778
+TYPE: 27
+GENDER: 2
+NAME: Thông linh thảo
+DESCRIPTION: Tăng ngẫu nhiên 1-10 exp cho Trâu
+LEVEL: 1
+ICON ID: 3068
+PART: -1
+UP TOP: true
+=============================
+ID: 779
+TYPE: 27
+GENDER: 2
+NAME: Tượng linh thảo
+DESCRIPTION: Thức ăn cho Trâu. Hồi 100 hp
+LEVEL: 1
+ICON ID: 3067
+PART: -1
+UP TOP: true
+=============================
+ID: 780
+TYPE: 27
+GENDER: 2
+NAME: Tiến hoá thảo
+DESCRIPTION: Dùng tiến hoá cho Trâu
+LEVEL: 1
+ICON ID: 3066
+PART: -1
+UP TOP: true
+=============================
+ID: 781
+TYPE: 10
+GENDER: 2
+NAME: Pet Boru
+DESCRIPTION: Chống đồ sát
+LEVEL: 1
+ICON ID: 3195
+PART: -1
+UP TOP: false
+=============================
+ID: 782
+TYPE: 27
+GENDER: 2
+NAME: Bóng đồng
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3194
+PART: -1
+UP TOP: true
+=============================
+ID: 783
+TYPE: 27
+GENDER: 2
+NAME: Bóng
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3191
+PART: -1
+UP TOP: true
+=============================
+ID: 784
+TYPE: 27
+GENDER: 2
+NAME: Cúp bạc
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3193
+PART: -1
+UP TOP: true
+=============================
+ID: 785
+TYPE: 27
+GENDER: 2
+NAME: Cúp vàng
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3192
+PART: -1
+UP TOP: true
+=============================
+ID: 786
+TYPE: 11
+GENDER: 2
+NAME: Sumimura 
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3187
+PART: 270
+UP TOP: false
+=============================
+ID: 787
+TYPE: 11
+GENDER: 2
+NAME: Yukimura 
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3188
+PART: 276
+UP TOP: false
+=============================
+ID: 788
+TYPE: 27
+GENDER: 2
+NAME: Nham Thạch 
+DESCRIPTION: Dùng tạo cải trang Sumimura
+LEVEL: 1
+ICON ID: 3189
+PART: -1
+UP TOP: true
+=============================
+ID: 789
+TYPE: 27
+GENDER: 2
+NAME: Pha Lê
+DESCRIPTION: Dùng tạo cải trang Yukimura
+LEVEL: 1
+ICON ID: 3190
+PART: -1
+UP TOP: true
+=============================
+ID: 790
+TYPE: 27
+GENDER: 2
+NAME: Hoa sen trắng
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3197
+PART: -1
+UP TOP: true
+=============================
+ID: 791
+TYPE: 27
+GENDER: 2
+NAME: Hoa sen hồng
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3196
+PART: -1
+UP TOP: true
+=============================
+ID: 792
+TYPE: 27
+GENDER: 2
+NAME: Bó sen trắng
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3199
+PART: -1
+UP TOP: true
+=============================
+ID: 793
+TYPE: 27
+GENDER: 2
+NAME: Bó sen hồng
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3198
+PART: -1
+UP TOP: true
+=============================
+ID: 794
+TYPE: 27
+GENDER: 2
+NAME: Màu nhuộm
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 1707
+PART: -1
+UP TOP: true
+=============================
+ID: 795
+TYPE: 2
+GENDER: 0
+NAME: Thiên Nguyệt Chi Nữ
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3200
+PART: -1
+UP TOP: false
+=============================
+ID: 796
+TYPE: 2
+GENDER: 1
+NAME: Nhật Tử Lam Phong
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3201
+PART: -1
+UP TOP: false
+=============================
+ID: 797
+TYPE: 12
+GENDER: 2
+NAME: Hakairo Yoroi
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 3205
+PART: -1
+UP TOP: false
+=============================
+ID: 798
+TYPE: 33
+GENDER: 2
+NAME: Lân Sư Vũ
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 3204
+PART: -1
+UP TOP: false
+=============================
+ID: 799
+TYPE: 1
+GENDER: 1
+NAME: Gậy Mặt Trăng
+DESCRIPTION: Vũ khí thời trang
+LEVEL: 1
+ICON ID: 3203
+PART: -1
+UP TOP: false
+=============================
+ID: 800
+TYPE: 1
+GENDER: 0
+NAME: Gậy Trái tim
+DESCRIPTION: Vũ khí thời trang
+LEVEL: 1
+ICON ID: 3202
+PART: -1
+UP TOP: false
+=============================
+ID: 801
+TYPE: 33
+GENDER: 2
+NAME: Xích Tử Mã
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 3208
+PART: -1
+UP TOP: false
+=============================
+ID: 802
+TYPE: 33
+GENDER: 2
+NAME: Tà Linh Mã
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 3207
+PART: -1
+UP TOP: false
+=============================
+ID: 803
+TYPE: 33
+GENDER: 2
+NAME: Phong Thương Mã
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 3206
+PART: -1
+UP TOP: false
+=============================
+ID: 804
+TYPE: 2
+GENDER: 0
+NAME: Hajiro 
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3222
+PART: -1
+UP TOP: false
+=============================
+ID: 805
+TYPE: 2
+GENDER: 1
+NAME: Shiraiji
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3221
+PART: -1
+UP TOP: false
+=============================
+ID: 806
+TYPE: 27
+GENDER: 2
+NAME: H
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 3209
+PART: -1
+UP TOP: true
+=============================
+ID: 807
+TYPE: 27
+GENDER: 2
+NAME: A
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 3210
+PART: -1
+UP TOP: true
+=============================
+ID: 808
+TYPE: 27
+GENDER: 2
+NAME: L
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 3211
+PART: -1
+UP TOP: true
+=============================
+ID: 809
+TYPE: 27
+GENDER: 2
+NAME: O
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 3212
+PART: -1
+UP TOP: true
+=============================
+ID: 810
+TYPE: 27
+GENDER: 2
+NAME: W
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 3213
+PART: -1
+UP TOP: true
+=============================
+ID: 811
+TYPE: 27
+GENDER: 2
+NAME: E
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 3214
+PART: -1
+UP TOP: true
+=============================
+ID: 812
+TYPE: 27
+GENDER: 2
+NAME: N
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 3215
+PART: -1
+UP TOP: true
+=============================
+ID: 813
+TYPE: 11
+GENDER: 2
+NAME: Mặt nạ Shin Ah
+DESCRIPTION: Chỉ xuất hiên trong mùa Haloween, số lượng có hạn
+LEVEL: 20
+ICON ID: 3216
+PART: 0
+UP TOP: false
+=============================
+ID: 814
+TYPE: 11
+GENDER: 2
+NAME: Mặt nạ Vô Diện
+DESCRIPTION: Chỉ xuất hiên trong mùa Haloween, số lượng có hạn
+LEVEL: 20
+ICON ID: 3219
+PART: 0
+UP TOP: false
+=============================
+ID: 815
+TYPE: 11
+GENDER: 2
+NAME: Mặt nạ Oni
+DESCRIPTION: Chỉ xuất hiên trong mùa Haloween, số lượng có hạn
+LEVEL: 20
+ICON ID: 3218
+PART: 0
+UP TOP: false
+=============================
+ID: 816
+TYPE: 11
+GENDER: 2
+NAME: Mặt nạ Kuma
+DESCRIPTION: Chỉ xuất hiên trong mùa Haloween, số lượng có hạn
+LEVEL: 20
+ICON ID: 3220
+PART: 0
+UP TOP: false
+=============================
+ID: 817
+TYPE: 11
+GENDER: 2
+NAME: Mặt nạ Inu
+DESCRIPTION: Chỉ xuất hiên trong mùa Haloween, số lượng có hạn
+LEVEL: 20
+ICON ID: 3217
+PART: 0
+UP TOP: false
+=============================
+ID: 818
+TYPE: 27
+GENDER: 2
+NAME: Chìa khóa
+DESCRIPTION: Item sự kiện Halloween
+LEVEL: 30
+ICON ID: 653
+PART: -1
+UP TOP: true
+=============================
+ID: 819
+TYPE: 27
+GENDER: 2
+NAME: Đồng xu Đỏ
+DESCRIPTION: Item sự kiện
+LEVEL: 1
+ICON ID: 3223
+PART: -1
+UP TOP: false
+=============================
+ID: 820
+TYPE: 27
+GENDER: 2
+NAME: Đồng Xu Trắng
+DESCRIPTION: Dùng đổi vật phẩm Black friday
+LEVEL: 1
+ICON ID: 3224
+PART: -1
+UP TOP: false
+=============================
+ID: 821
+TYPE: 27
+GENDER: 2
+NAME: Đồng Xu Vàng
+DESCRIPTION: Item sự kiện
+LEVEL: 1
+ICON ID: 3225
+PART: -1
+UP TOP: false
+=============================
+ID: 822
+TYPE: 27
+GENDER: 2
+NAME: Đồng Xu Xanh
+DESCRIPTION: Item sự kiện
+LEVEL: 1
+ICON ID: 3226
+PART: -1
+UP TOP: false
+=============================
+ID: 823
+TYPE: 27
+GENDER: 2
+NAME: Đồng Xu Xanh Lá
+DESCRIPTION: Item sự kiện
+LEVEL: 1
+ICON ID: 3227
+PART: -1
+UP TOP: false
+=============================
+ID: 824
+TYPE: 27
+GENDER: 2
+NAME: Rương may mắn
+DESCRIPTION: Rương Black Friday.
+LEVEL: 1
+ICON ID: 3228
+PART: -1
+UP TOP: false
+=============================
+ID: 825
+TYPE: 10
+GENDER: 2
+NAME: Pet Bóng Ma
+DESCRIPTION: Item sự kiện
+LEVEL: 1
+ICON ID: 3229
+PART: -1
+UP TOP: false
+=============================
+ID: 826
+TYPE: 10
+GENDER: 2
+NAME: Pet Yêu Tinh
+DESCRIPTION: Item sự kiện
+LEVEL: 1
+ICON ID: 3230
+PART: -1
+UP TOP: false
+=============================
+ID: 827
+TYPE: 33
+GENDER: 2
+NAME: Phượng Hoàng Băng
+DESCRIPTION: 
+LEVEL: 30
+ICON ID: 3234
+PART: -1
+UP TOP: false
+=============================
+ID: 828
+TYPE: 27
+GENDER: 2
+NAME: Hộp quà Trang trí
+DESCRIPTION: Item sự kiện
+LEVEL: 1
+ICON ID: 3233
+PART: -1
+UP TOP: true
+=============================
+ID: 829
+TYPE: 27
+GENDER: 2
+NAME: Chuông Vàng
+DESCRIPTION: Item sự kiện
+LEVEL: 1
+ICON ID: 3231
+PART: -1
+UP TOP: true
+=============================
+ID: 830
+TYPE: 2
+GENDER: 2
+NAME: Mặt nạ hổ
+DESCRIPTION: Dùng thay đổi diện mạo
+LEVEL: 20
+ICON ID: 3236
+PART: 0
+UP TOP: false
+=============================
+ID: 831
+TYPE: 33
+GENDER: 2
+NAME: Bạch Hổ
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 3237
+PART: -1
+UP TOP: false
+=============================
+ID: 832
+TYPE: 10
+GENDER: 2
+NAME: Pet Ứng Long
+DESCRIPTION: Item sự kiện
+LEVEL: 1
+ICON ID: 3238
+PART: -1
+UP TOP: false
+=============================
+ID: 833
+TYPE: 10
+GENDER: 2
+NAME: Nhất Vĩ Li Mao Bảo Bảo Sơ Cấp
+DESCRIPTION: HỘ THỂ: Gây mù mắt đối thủ trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100:180/250/300. Thời gian hồi: 40s/35s/30s. Khi bị mù mắt tất cả các chiêu đều hụt.
+LEVEL: 1
+ICON ID: 3248
+PART: 247
+UP TOP: false
+=============================
+ID: 834
+TYPE: 10
+GENDER: 2
+NAME: Nhị Vĩ Ác Miêu Bảo Bảo Sơ Cấp
+DESCRIPTION: PHÁ TRIỀN: Gây hoảng sợ cho đối phương trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Hoảng sợ 50% hụt chiêu, khi chủ nhân đánh vào mục tiêu bị hoảng sợ thì mục tiêu sẽ nhận thêm 25% dame trong mỗi đòn đánh.
+LEVEL: 1
+ICON ID: 3249
+PART: 248
+UP TOP: false
+=============================
+ID: 835
+TYPE: 10
+GENDER: 2
+NAME: Tam Vĩ Khổng Quy Bảo Bảo Sơ Cấp
+DESCRIPTION: THỦY HỒN: Làm cho đối phương bị đuối nước trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Đuối nước giảm 50% sức mạnh và 50% hồi phục hp mp.
+LEVEL: 1
+ICON ID: 3250
+PART: 249
+UP TOP: false
+=============================
+ID: 836
+TYPE: 10
+GENDER: 2
+NAME: Tứ Vĩ Hầu Tôn Bảo Bảo Sơ Cấp
+DESCRIPTION: ĐOẠT MỆNH: Thiêu đốt mục tiêu trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Thiêu đốt mất 5% máu mỗi giây và giảm 30% khả năng hồi phục.
+LEVEL: 1
+ICON ID: 3251
+PART: 250
+UP TOP: false
+=============================
+ID: 837
+TYPE: 10
+GENDER: 2
+NAME: Ngũ Vĩ Mã Ngư Bảo Bảo Sơ Cấp
+DESCRIPTION: CÀN KHÔN: Phá giáp đối thủ trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Khi bị lôi phá mất 80% giáp.
+LEVEL: 1
+ICON ID: 3252
+PART: 251
+UP TOP: false
+=============================
+ID: 838
+TYPE: 10
+GENDER: 2
+NAME: Lục Vĩ Bạch Sên Bảo Bảo Sơ Cấp
+DESCRIPTION: ĐỘC KÍCH: Làm cho mục tiêu bị trúng độc trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Khi bị trúng độc mất 7% máu mỗi 1.5s và bị giảm 30% sức mạnh.
+LEVEL: 1
+ICON ID: 3253
+PART: 252
+UP TOP: false
+=============================
+ID: 839
+TYPE: 10
+GENDER: 2
+NAME: Thất Vĩ Cương Trùng Bảo Bảo Sơ Cấp
+DESCRIPTION: KIM CANG: Làm choáng đối thủ trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Bị choáng 5s trong thời gian bị choáng không thể hồi phục.
+LEVEL: 1
+ICON ID: 3254
+PART: 253
+UP TOP: false
+=============================
+ID: 840
+TYPE: 10
+GENDER: 2
+NAME: Bát Vĩ Khổng Ngưu Bảo Bảo Sơ Cấp
+DESCRIPTION: PHÍ HUYẾT: Gây vết thương sâu cho đối thủ trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Khi bị vết thương sâu trừ 5% máu mỗi giây, không thể hồi phục và nhận thêm 20% dame.
+LEVEL: 1
+ICON ID: 3255
+PART: 254
+UP TOP: false
+=============================
+ID: 841
+TYPE: 10
+GENDER: 2
+NAME: Cửu Vĩ Hồ Ly Bảo Bảo Sơ Cấp
+DESCRIPTION: TIÊN KHÍ: Buff hấp thụ cho chủ nhân trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Chủ nhân khi bị tấn công trong trạng thái hấp thụ sẽ nhận thêm máu =5% sát thương đánh vào, khi bị đánh 5 đòn liên tiếp trong 15s hấp thụ sẽ bộc phá gây sát thương bằng 15% máu đối thủ. Có thể hấp thụ sát thương từ kẻ thù , hấp thụ 1 lượng nhất định sẽ phun hỏa độn với một sức công phá rất lớn, dùng lửa để cường hóa sát thương lên 15% và giáp lên 10%, Cửu vĩ hồ không sợ bất cứ vĩ thú nào cả, kháng tất cả hiệu ứng của vĩ thú khác.
+LEVEL: 1
+ICON ID: 3256
+PART: 255
+UP TOP: false
+=============================
+ID: 842
+TYPE: 10
+GENDER: 2
+NAME: Nhất Vĩ Li Mao Sơ Cấp
+DESCRIPTION: HỘ THỂ: Gây mù mắt đối thủ trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100:180/250/300. Thời gian hồi: 40s/35s/30s. Khi bị mù mắt tất cả các chiêu đều hụt.
+LEVEL: 1
+ICON ID: 3239
+PART: 240
+UP TOP: false
+=============================
+ID: 843
+TYPE: 10
+GENDER: 2
+NAME: Nhị Vĩ Ác Miêu Sơ Cấp
+DESCRIPTION: PHÁ TRIỀN: Gây hoảng sợ cho đối phương trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Hoảng sợ 50% hụt chiêu, khi chủ nhân đánh vào mục tiêu bị hoảng sợ thì mục tiêu sẽ nhận thêm 25% dame trong mỗi đòn đánh.
+LEVEL: 1
+ICON ID: 3240
+PART: 239
+UP TOP: false
+=============================
+ID: 844
+TYPE: 10
+GENDER: 2
+NAME: Tam Vĩ Khổng Quy Sơ Cấp
+DESCRIPTION: THỦY HỒN: Làm cho đối phương bị đuối nước trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Đuối nước giảm 50% sức mạnh và 50% hồi phục hp mp.
+LEVEL: 1
+ICON ID: 3241
+PART: 241
+UP TOP: false
+=============================
+ID: 845
+TYPE: 10
+GENDER: 2
+NAME: Tứ Vĩ Hầu Tôn Sơ Cấp
+DESCRIPTION: ĐOẠT MỆNH: Thiêu đốt mục tiêu trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Thiêu đốt mất 5% máu mỗi giây và giảm 30% khả năng hồi phục.
+LEVEL: 1
+ICON ID: 3242
+PART: 242
+UP TOP: false
+=============================
+ID: 846
+TYPE: 10
+GENDER: 2
+NAME: Ngũ Vĩ Mã Ngư Sơ Cấp
+DESCRIPTION: CÀN KHÔN: Phá giáp đối thủ trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Khi bị lôi phá mất 80% giáp.
+LEVEL: 1
+ICON ID: 3243
+PART: 256
+UP TOP: false
+=============================
+ID: 847
+TYPE: 10
+GENDER: 2
+NAME: Lục Vĩ Bạch Sên Sơ Cấp
+DESCRIPTION: ĐỘC KÍCH: Làm cho mục tiêu bị trúng độc trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Khi bị trúng độc mất 7% máu mỗi 1.5s và bị giảm 30% sức mạnh.
+LEVEL: 1
+ICON ID: 3244
+PART: 243
+UP TOP: false
+=============================
+ID: 848
+TYPE: 10
+GENDER: 2
+NAME: Thất Vĩ Cương Trùng Sơ Cấp
+DESCRIPTION: KIM CANG: Làm choáng đối thủ trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Bị choáng 5s trong thời gian bị choáng không thể hồi phục.
+LEVEL: 1
+ICON ID: 3245
+PART: 244
+UP TOP: false
+=============================
+ID: 849
+TYPE: 10
+GENDER: 2
+NAME: Bát Vĩ Khổng Ngưu Sơ Cấp
+DESCRIPTION: PHÍ HUYẾT: Gây vết thương sâu cho đối thủ trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Khi bị vết thương sâu trừ 5% máu mỗi giây, không thể hồi phục và nhận thêm 20% dame.
+LEVEL: 1
+ICON ID: 3246
+PART: 245
+UP TOP: false
+=============================
+ID: 850
+TYPE: 10
+GENDER: 2
+NAME: Cửu Vĩ Hồ Ly Sơ Cấp
+DESCRIPTION: TIÊN KHÍ: Buff hấp thụ cho chủ nhân trong 5s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 180/250/300. Thời gian hồi: 40s/35s/30s. Chủ nhân khi bị tấn công trong trạng thái hấp thụ sẽ nhận thêm máu =5% sát thương đánh vào, khi bị đánh 5 đòn liên tiếp trong 15s hấp thụ sẽ bộc phá gây sát thương bằng 15% máu đối thủ. Có thể hấp thụ sát thương từ kẻ thù , hấp thụ 1 lượng nhất định sẽ phun hỏa độn với một sức công phá rất lớn, dùng lửa để cường hóa sát thương lên 15% và giáp lên 10%, Cửu vĩ hồ không sợ bất cứ vĩ thú nào cả, kháng tất cả hiệu ứng của vĩ thú khác.
+LEVEL: 1
+ICON ID: 3247
+PART: 246
+UP TOP: false
+=============================
+ID: 851
+TYPE: 27
+GENDER: 2
+NAME: Bùa Aitemu
+DESCRIPTION: Gia hạn vật phẩm không phải thú và thời trang
+LEVEL: 1
+ICON ID: 3257
+PART: -1
+UP TOP: false
+=============================
+ID: 852
+TYPE: 27
+GENDER: 2
+NAME: Bùa Sochi
+DESCRIPTION: Gia hạn trang bị, mặt nạ, thú nuôi,...
+LEVEL: 1
+ICON ID: 3258
+PART: -1
+UP TOP: false
+=============================
+ID: 853
+TYPE: 27
+GENDER: 2
+NAME: Bùa Noru
+DESCRIPTION: Gia hạn thú cưỡi
+LEVEL: 1
+ICON ID: 3259
+PART: -1
+UP TOP: false
+=============================
+ID: 854
+TYPE: 10
+GENDER: 2
+NAME: Pet Boru
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 3195
+PART: -1
+UP TOP: false
+=============================
+ID: 855
+TYPE: 27
+GENDER: 2
+NAME: Dây Nenshi
+DESCRIPTION: Dùng thu thập trứng vĩ thú
+LEVEL: 1
+ICON ID: 3260
+PART: -1
+UP TOP: false
+=============================
+ID: 856
+TYPE: 27
+GENDER: 2
+NAME: Túi vải cấp 4
+DESCRIPTION: Mở thêm 6 ô trong hành trang
+LEVEL: 1
+ICON ID: 3261
+PART: -1
+UP TOP: false
+=============================
+ID: 857
+TYPE: 29
+GENDER: 2
+NAME: Kim Thạc Hộ Phù
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 15
+ICON ID: 3263
+PART: -1
+UP TOP: false
+=============================
+ID: 858
+TYPE: 30
+GENDER: 2
+NAME: Kim Thạc Dị Trảo
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 18
+ICON ID: 3264
+PART: -1
+UP TOP: false
+=============================
+ID: 859
+TYPE: 31
+GENDER: 2
+NAME: Kim Thạc Thể Giáp
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 12
+ICON ID: 3265
+PART: -1
+UP TOP: false
+=============================
+ID: 860
+TYPE: 32
+GENDER: 2
+NAME: Kim Thạc Hạng Khuyên
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 10
+ICON ID: 3266
+PART: -1
+UP TOP: false
+=============================
+ID: 861
+TYPE: 29
+GENDER: 2
+NAME: Thuỷ Nguyên Hộ Phù
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 25
+ICON ID: 3267
+PART: -1
+UP TOP: false
+=============================
+ID: 862
+TYPE: 30
+GENDER: 2
+NAME: Thuỷ Nguyên Dị Trảo
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 28
+ICON ID: 3268
+PART: -1
+UP TOP: false
+=============================
+ID: 863
+TYPE: 31
+GENDER: 2
+NAME: Thuỷ Nguyên Thể Giáp
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 22
+ICON ID: 3269
+PART: -1
+UP TOP: false
+=============================
+ID: 864
+TYPE: 32
+GENDER: 2
+NAME: Thuỷ Nguyên Hạng Khuyên
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 20
+ICON ID: 3270
+PART: -1
+UP TOP: false
+=============================
+ID: 865
+TYPE: 29
+GENDER: 2
+NAME: Linh Tú Hộ Phù
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 35
+ICON ID: 3271
+PART: -1
+UP TOP: false
+=============================
+ID: 866
+TYPE: 30
+GENDER: 2
+NAME: Linh Tú Dị Trảo
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 38
+ICON ID: 3272
+PART: -1
+UP TOP: false
+=============================
+ID: 867
+TYPE: 31
+GENDER: 2
+NAME: Linh Tú Thể Giáp
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 32
+ICON ID: 3273
+PART: -1
+UP TOP: false
+=============================
+ID: 868
+TYPE: 32
+GENDER: 2
+NAME: Linh Tú Hạng Khuyên
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 30
+ICON ID: 3274
+PART: -1
+UP TOP: false
+=============================
+ID: 869
+TYPE: 29
+GENDER: 2
+NAME: Xích Tử Hộ Phù
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 45
+ICON ID: 3275
+PART: -1
+UP TOP: false
+=============================
+ID: 870
+TYPE: 30
+GENDER: 2
+NAME: Xích Tử Dị Trảo
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 48
+ICON ID: 3276
+PART: -1
+UP TOP: false
+=============================
+ID: 871
+TYPE: 31
+GENDER: 2
+NAME: Xích Tử Thể Giáp
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 42
+ICON ID: 3277
+PART: -1
+UP TOP: false
+=============================
+ID: 872
+TYPE: 32
+GENDER: 2
+NAME: Xích Tử Hạng Khuyên
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 40
+ICON ID: 3278
+PART: -1
+UP TOP: false
+=============================
+ID: 873
+TYPE: 29
+GENDER: 2
+NAME: Ngân Giác Hộ Phù
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 55
+ICON ID: 3279
+PART: -1
+UP TOP: false
+=============================
+ID: 874
+TYPE: 30
+GENDER: 2
+NAME: Ngân Giác Dị Trảo
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 58
+ICON ID: 3280
+PART: -1
+UP TOP: false
+=============================
+ID: 875
+TYPE: 31
+GENDER: 2
+NAME: Ngân Giác Thể Giáp
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 52
+ICON ID: 3281
+PART: -1
+UP TOP: false
+=============================
+ID: 876
+TYPE: 32
+GENDER: 2
+NAME: Ngân Giác Hạng Khuyên
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 50
+ICON ID: 3282
+PART: -1
+UP TOP: false
+=============================
+ID: 877
+TYPE: 29
+GENDER: 2
+NAME: Hồng Bảo Hộ Phù
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 65
+ICON ID: 3283
+PART: -1
+UP TOP: false
+=============================
+ID: 878
+TYPE: 30
+GENDER: 2
+NAME: Hồng Bảo Dị Trảo
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 68
+ICON ID: 3284
+PART: -1
+UP TOP: false
+=============================
+ID: 879
+TYPE: 31
+GENDER: 2
+NAME: Hồng Bảo Thể Giáp
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 62
+ICON ID: 3285
+PART: -1
+UP TOP: false
+=============================
+ID: 880
+TYPE: 32
+GENDER: 2
+NAME: Hồng Bảo Hạng Khuyên
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 60
+ICON ID: 3286
+PART: -1
+UP TOP: false
+=============================
+ID: 881
+TYPE: 29
+GENDER: 2
+NAME: Lục Huyễn Hộ Phù
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 75
+ICON ID: 3287
+PART: -1
+UP TOP: false
+=============================
+ID: 882
+TYPE: 30
+GENDER: 2
+NAME: Lục Huyễn Dị Trảo
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 78
+ICON ID: 3288
+PART: -1
+UP TOP: false
+=============================
+ID: 883
+TYPE: 31
+GENDER: 2
+NAME: Lục Huyễn Thể Giáp
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 72
+ICON ID: 3289
+PART: -1
+UP TOP: false
+=============================
+ID: 884
+TYPE: 32
+GENDER: 2
+NAME: Lục Huyễn Hạng Khuyên
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 70
+ICON ID: 3290
+PART: -1
+UP TOP: false
+=============================
+ID: 885
+TYPE: 29
+GENDER: 2
+NAME: Phi Huyết Hộ Phù
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 85
+ICON ID: 3291
+PART: -1
+UP TOP: false
+=============================
+ID: 886
+TYPE: 30
+GENDER: 2
+NAME: Phi Huyết Dị Trảo
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 88
+ICON ID: 3292
+PART: -1
+UP TOP: false
+=============================
+ID: 887
+TYPE: 31
+GENDER: 2
+NAME: Phi Huyết Thể Giáp
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 82
+ICON ID: 3293
+PART: -1
+UP TOP: false
+=============================
+ID: 888
+TYPE: 32
+GENDER: 2
+NAME: Phi Huyết Hạng Khuyên
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 80
+ICON ID: 3294
+PART: -1
+UP TOP: false
+=============================
+ID: 889
+TYPE: 29
+GENDER: 2
+NAME: Hổ Phách Hộ Phù
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 95
+ICON ID: 3295
+PART: -1
+UP TOP: false
+=============================
+ID: 890
+TYPE: 30
+GENDER: 2
+NAME: Hổ Phách Dị Trảo
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 98
+ICON ID: 3296
+PART: -1
+UP TOP: false
+=============================
+ID: 891
+TYPE: 31
+GENDER: 2
+NAME: Hổ Phách Thể Giáp
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 92
+ICON ID: 3297
+PART: -1
+UP TOP: false
+=============================
+ID: 892
+TYPE: 32
+GENDER: 2
+NAME: Hổ Phách Hạng Khuyên
+DESCRIPTION: Trang bị Vĩ Thú
+LEVEL: 90
+ICON ID: 3298
+PART: -1
+UP TOP: false
+=============================
+ID: 893
+TYPE: 27
+GENDER: 2
+NAME: Vĩ Thú Lệnh
+DESCRIPTION: Di chuyển tới Lối Vào Hang Karasumori 
+LEVEL: 1
+ICON ID: 3299
+PART: -1
+UP TOP: false
+=============================
+ID: 894
+TYPE: 27
+GENDER: 2
+NAME: Quả Chaka Xanh
+DESCRIPTION: Tăng 1-10 exp vĩ thú
+LEVEL: 1
+ICON ID: 3303
+PART: -1
+UP TOP: true
+=============================
+ID: 895
+TYPE: 27
+GENDER: 2
+NAME: Quả Chaka Vàng
+DESCRIPTION: Tăng 200 exp cho vĩ thú
+LEVEL: 1
+ICON ID: 3302
+PART: -1
+UP TOP: true
+=============================
+ID: 896
+TYPE: 27
+GENDER: 2
+NAME: Quả Chaka Tím
+DESCRIPTION: Tăng 300 exp cho vĩ thú
+LEVEL: 1
+ICON ID: 3301
+PART: -1
+UP TOP: true
+=============================
+ID: 897
+TYPE: 27
+GENDER: 2
+NAME: Ngũ Hành Quả
+DESCRIPTION: Nâng cấp vĩ thú lên cấp mới khi đạt 99%
+LEVEL: 1
+ICON ID: 3305
+PART: -1
+UP TOP: false
+=============================
+ID: 898
+TYPE: 27
+GENDER: 2
+NAME: Ngũ Hành Hoa
+DESCRIPTION: Hồi phục 150 thể lực vĩ thú
+LEVEL: 1
+ICON ID: 3304
+PART: -1
+UP TOP: true
+=============================
+ID: 899
+TYPE: 27
+GENDER: 2
+NAME: Tamamizu
+DESCRIPTION: Ấp ra vĩ thú sơ cấp
+LEVEL: 1
+ICON ID: 3307
+PART: -1
+UP TOP: false
+=============================
+ID: 900
+TYPE: 27
+GENDER: 2
+NAME: Tamakiro
+DESCRIPTION: Ấp ra vĩ thú trung cấp
+LEVEL: 1
+ICON ID: 3308
+PART: -1
+UP TOP: false
+=============================
+ID: 901
+TYPE: 27
+GENDER: 2
+NAME: Tamamura 
+DESCRIPTION: Ấp ra vĩ thú cao cấp
+LEVEL: 1
+ICON ID: 3309
+PART: -1
+UP TOP: false
+=============================
+ID: 902
+TYPE: 27
+GENDER: 2
+NAME: Tamadai 
+DESCRIPTION: Ấp ra vĩ thú siêu cấp
+LEVEL: 1
+ICON ID: 3310
+PART: -1
+UP TOP: false
+=============================
+ID: 903
+TYPE: 27
+GENDER: 2
+NAME: Trứng Vĩ Thú 
+DESCRIPTION: Cần 1tr yên để giải phong ấn
+LEVEL: 1
+ICON ID: 3306
+PART: -1
+UP TOP: false
+=============================
+ID: 904
+TYPE: 10
+GENDER: 2
+NAME: Nhất Vĩ Li Mao Bảo Bảo Trung Cấp
+DESCRIPTION: HỘ THỂ: Gây mù mắt đối thủ trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100:200/270/320. Thời gian hồi: 35s/30s/25s. Khi bị mù mắt tất cả các chiêu đều hụt.
+LEVEL: 1
+ICON ID: 3340
+PART: 247
+UP TOP: false
+=============================
+ID: 905
+TYPE: 10
+GENDER: 2
+NAME: Nhị Vĩ Ác Miêu Bảo Bảo Trung Cấp
+DESCRIPTION: PHÁ TRIỀN: Gây hoảng sợ cho đối phương trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Hoảng sợ 50% hụt chiêu, khi chủ nhân đánh vào mục tiêu bị hoảng sợ thì mục tiêu sẽ nhận thêm 25% dame trong mỗi đòn đánh.
+LEVEL: 1
+ICON ID: 3343
+PART: 248
+UP TOP: false
+=============================
+ID: 906
+TYPE: 10
+GENDER: 2
+NAME: Tam Vĩ Khổng Quy Bảo Bảo Trung Cấp
+DESCRIPTION: THỦY HỒN: Làm cho đối phương bị đuối nước trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Đuối nước giảm 50% sức mạnh và 50% hồi phục hp mp.
+LEVEL: 1
+ICON ID: 3346
+PART: 249
+UP TOP: false
+=============================
+ID: 907
+TYPE: 10
+GENDER: 2
+NAME: Tứ Vĩ Hầu Tôn Bảo Bảo Trung Cấp
+DESCRIPTION: ĐOẠT MỆNH: Thiêu đốt mục tiêu trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Thiêu đốt mất 5% máu mỗi giây và giảm 30% khả năng hồi phục.
+LEVEL: 1
+ICON ID: 3349
+PART: 250
+UP TOP: false
+=============================
+ID: 908
+TYPE: 10
+GENDER: 2
+NAME: Ngũ Vĩ Mã Ngư Bảo Bảo Trung Cấp
+DESCRIPTION: CÀN KHÔN: Phá giáp đối thủ trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Khi bị lôi phá mất 80% giáp.
+LEVEL: 1
+ICON ID: 3352
+PART: 251
+UP TOP: false
+=============================
+ID: 909
+TYPE: 10
+GENDER: 2
+NAME: Lục Vĩ Bạch Sên Bảo Bảo Trung Cấp
+DESCRIPTION: ĐỘC KÍCH: Làm cho mục tiêu bị trúng độc trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Khi bị trúng độc mất 7% máu mỗi 1.5s và bị giảm 30% sức mạnh.
+LEVEL: 1
+ICON ID: 3355
+PART: 252
+UP TOP: false
+=============================
+ID: 910
+TYPE: 10
+GENDER: 2
+NAME: Thất Vĩ Cương Trùng Bảo Bảo Trung Cấp
+DESCRIPTION: KIM CANG: Làm choáng đối thủ trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Bị choáng 5s trong thời gian bị choáng không thể hồi phục.
+LEVEL: 1
+ICON ID: 3358
+PART: 253
+UP TOP: false
+=============================
+ID: 911
+TYPE: 10
+GENDER: 2
+NAME: Bát Vĩ Khổng Ngưu Bảo Bảo Trung Cấp
+DESCRIPTION: PHÍ HUYẾT: Gây vết thương sâu cho đối thủ trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Khi bị vết thương sâu trừ 5% máu mỗi giây, không thể hồi phục và nhận thêm 20% dame.
+LEVEL: 1
+ICON ID: 3361
+PART: 254
+UP TOP: false
+=============================
+ID: 912
+TYPE: 10
+GENDER: 2
+NAME: Cửu Vĩ Hồ Ly Bảo Bảo Trung Cấp
+DESCRIPTION: TIÊN KHÍ: Buff hấp thụ cho chủ nhân trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Chủ nhân khi bị tấn công trong trạng thái hấp thụ sẽ nhận thêm máu =5% sát thương đánh vào, khi bị đánh 5 đòn liên tiếp trong 15s hấp thụ sẽ bộc phá gây sát thương bằng 15% máu đối thủ. Có thể hấp thụ sát thương từ kẻ thù , hấp thụ 1 lượng nhất định sẽ phun hỏa độn với một sức công phá rất lớn, dùng lửa để cường hóa sát thương lên 15% và giáp lên 10%, Cửu vĩ hồ không sợ bất cứ vĩ thú nào cả, kháng tất cả hiệu ứng của vĩ thú khác.
+LEVEL: 1
+ICON ID: 3364
+PART: 255
+UP TOP: false
+=============================
+ID: 913
+TYPE: 10
+GENDER: 2
+NAME: Nhất Vĩ Li Mao Trung Cấp
+DESCRIPTION: HỘ THỂ: Gây mù mắt đối thủ trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100:200/270/320. Thời gian hồi: 35s/30s/25s. Khi bị mù mắt tất cả các chiêu đều hụt.
+LEVEL: 1
+ICON ID: 3331
+PART: 240
+UP TOP: false
+=============================
+ID: 914
+TYPE: 10
+GENDER: 2
+NAME: Nhị Vĩ Ác Miêu Trung Cấp
+DESCRIPTION: PHÁ TRIỀN: Gây hoảng sợ cho đối phương trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Hoảng sợ 50% hụt chiêu, khi chủ nhân đánh vào mục tiêu bị hoảng sợ thì mục tiêu sẽ nhận thêm 25% dame trong mỗi đòn đánh.
+LEVEL: 1
+ICON ID: 3314
+PART: 239
+UP TOP: false
+=============================
+ID: 915
+TYPE: 10
+GENDER: 2
+NAME: Tam Vĩ Khổng Quy Trung Cấp
+DESCRIPTION: THỦY HỒN: Làm cho đối phương bị đuối nước trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Đuối nước giảm 50% sức mạnh và 50% hồi phục hp mp.
+LEVEL: 1
+ICON ID: 3317
+PART: 241
+UP TOP: false
+=============================
+ID: 916
+TYPE: 10
+GENDER: 2
+NAME: Tứ Vĩ Hầu Tôn Trung Cấp
+DESCRIPTION: ĐOẠT MỆNH: Thiêu đốt mục tiêu trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Thiêu đốt mất 5% máu mỗi giây và giảm 30% khả năng hồi phục.
+LEVEL: 1
+ICON ID: 3320
+PART: 242
+UP TOP: false
+=============================
+ID: 917
+TYPE: 10
+GENDER: 2
+NAME: Ngũ Vĩ Mã Ngư Trung Cấp
+DESCRIPTION: CÀN KHÔN: Phá giáp đối thủ trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Khi bị lôi phá mất 80% giáp.
+LEVEL: 1
+ICON ID: 3323
+PART: 256
+UP TOP: false
+=============================
+ID: 918
+TYPE: 10
+GENDER: 2
+NAME: Lục Vĩ Bạch Sên Trung Cấp
+DESCRIPTION: ĐỘC KÍCH: Làm cho mục tiêu bị trúng độc trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Khi bị trúng độc mất 7% máu mỗi 1.5s và bị giảm 30% sức mạnh.
+LEVEL: 1
+ICON ID: 3326
+PART: 243
+UP TOP: false
+=============================
+ID: 919
+TYPE: 10
+GENDER: 2
+NAME: Thất Vĩ Cương Trùng Trung Cấp
+DESCRIPTION: KIM CANG: Làm choáng đối thủ trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Bị choáng 5s trong thời gian bị choáng không thể hồi phục.
+LEVEL: 1
+ICON ID: 3329
+PART: 244
+UP TOP: false
+=============================
+ID: 920
+TYPE: 10
+GENDER: 2
+NAME: Bát Vĩ Khổng Ngưu Trung Cấp
+DESCRIPTION: PHÍ HUYẾT: Gây vết thương sâu cho đối thủ trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Khi bị vết thương sâu trừ 5% máu mỗi giây, không thể hồi phục và nhận thêm 20% dame.
+LEVEL: 1
+ICON ID: 3332
+PART: 245
+UP TOP: false
+=============================
+ID: 921
+TYPE: 10
+GENDER: 2
+NAME: Cửu Vĩ Hồ Ly Trung Cấp
+DESCRIPTION: TIÊN KHÍ: Buff hấp thụ cho chủ nhân trong 7s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 200/270/320. Thời gian hồi: 35s/30s/25s. Chủ nhân khi bị tấn công trong trạng thái hấp thụ sẽ nhận thêm máu =5% sát thương đánh vào, khi bị đánh 5 đòn liên tiếp trong 15s hấp thụ sẽ bộc phá gây sát thương bằng 15% máu đối thủ. Có thể hấp thụ sát thương từ kẻ thù , hấp thụ 1 lượng nhất định sẽ phun hỏa độn với một sức công phá rất lớn, dùng lửa để cường hóa sát thương lên 15% và giáp lên 10%, Cửu vĩ hồ không sợ bất cứ vĩ thú nào cả, kháng tất cả hiệu ứng của vĩ thú khác.
+LEVEL: 1
+ICON ID: 3335
+PART: 246
+UP TOP: false
+=============================
+ID: 922
+TYPE: 10
+GENDER: 2
+NAME: Nhất Vĩ Li Mao Bảo Bảo Cao Cấp
+DESCRIPTION: HỘ THỂ: Gây mù mắt đối thủ trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100:350/400/550. Thời gian hồi: 25s/20s/15s. Khi bị mù mắt tất cả các chiêu đều hụt.
+LEVEL: 1
+ICON ID: 3339
+PART: 247
+UP TOP: false
+=============================
+ID: 923
+TYPE: 10
+GENDER: 2
+NAME: Nhị Vĩ Ác Miêu Bảo Bảo Cao Cấp
+DESCRIPTION: PHÁ TRIỀN: Gây hoảng sợ cho đối phương trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Hoảng sợ 50% hụt chiêu, khi chủ nhân đánh vào mục tiêu bị hoảng sợ thì mục tiêu sẽ nhận thêm 25% dame trong mỗi đòn đánh.
+LEVEL: 1
+ICON ID: 3342
+PART: 248
+UP TOP: false
+=============================
+ID: 924
+TYPE: 10
+GENDER: 2
+NAME: Tam Vĩ Khổng Quy Bảo Bảo Cao Cấp
+DESCRIPTION: THỦY HỒN: Làm cho đối phương bị đuối nước trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Đuối nước giảm 50% sức mạnh và 50% hồi phục hp mp.
+LEVEL: 1
+ICON ID: 3345
+PART: 249
+UP TOP: false
+=============================
+ID: 925
+TYPE: 10
+GENDER: 2
+NAME: Tứ Vĩ Hầu Tôn Bảo Bảo Cao Cấp
+DESCRIPTION: ĐOẠT MỆNH: Thiêu đốt mục tiêu trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Thiêu đốt mất 5% máu mỗi giây và giảm 30% khả năng hồi phục.
+LEVEL: 1
+ICON ID: 3348
+PART: 250
+UP TOP: false
+=============================
+ID: 926
+TYPE: 10
+GENDER: 2
+NAME: Ngũ Vĩ Mã Ngư Bảo Bảo Cao Cấp
+DESCRIPTION: CÀN KHÔN: Phá giáp đối thủ trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Khi bị lôi phá mất 80% giáp.
+LEVEL: 1
+ICON ID: 3351
+PART: 251
+UP TOP: false
+=============================
+ID: 927
+TYPE: 10
+GENDER: 2
+NAME: Lục Vĩ Bạch Sên Bảo Bảo Cao Cấp
+DESCRIPTION: ĐỘC KÍCH: Làm cho mục tiêu bị trúng độc trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Khi bị trúng độc mất 7% máu mỗi 1.5s và bị giảm 30% sức mạnh.
+LEVEL: 1
+ICON ID: 3354
+PART: 252
+UP TOP: false
+=============================
+ID: 928
+TYPE: 10
+GENDER: 2
+NAME: Thất Vĩ Cương Trùng Bảo Bảo Cao Cấp
+DESCRIPTION: KIM CANG: Làm choáng đối thủ trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Bị choáng 5s trong thời gian bị choáng không thể hồi phục.
+LEVEL: 1
+ICON ID: 3357
+PART: 253
+UP TOP: false
+=============================
+ID: 929
+TYPE: 10
+GENDER: 2
+NAME: Bát Vĩ Khổng Ngưu Bảo Bảo Cao Cấp
+DESCRIPTION: PHÍ HUYẾT: Gây vết thương sâu cho đối thủ trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Khi bị vết thương sâu trừ 5% máu mỗi giây, không thể hồi phục và nhận thêm 20% dame.
+LEVEL: 1
+ICON ID: 3360
+PART: 254
+UP TOP: false
+=============================
+ID: 930
+TYPE: 10
+GENDER: 2
+NAME: Cửu Vĩ Hồ Ly Bảo Bảo Cao Cấp
+DESCRIPTION: TIÊN KHÍ: Buff hấp thụ cho chủ nhân trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Chủ nhân khi bị tấn công trong trạng thái hấp thụ sẽ nhận thêm máu =5% sát thương đánh vào, khi bị đánh 5 đòn liên tiếp trong 15s hấp thụ sẽ bộc phá gây sát thương bằng 15% máu đối thủ. Có thể hấp thụ sát thương từ kẻ thù , hấp thụ 1 lượng nhất định sẽ phun hỏa độn với một sức công phá rất lớn, dùng lửa để cường hóa sát thương lên 15% và giáp lên 10%, Cửu vĩ hồ không sợ bất cứ vĩ thú nào cả, kháng tất cả hiệu ứng của vĩ thú khác.
+LEVEL: 1
+ICON ID: 3363
+PART: 255
+UP TOP: false
+=============================
+ID: 931
+TYPE: 10
+GENDER: 2
+NAME: Nhất Vĩ Li Mao Cao Cấp
+DESCRIPTION: HỘ THỂ: Gây mù mắt đối thủ trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100:350/400/550. Thời gian hồi: 25s/20s/15s. Khi bị mù mắt tất cả các chiêu đều hụt.
+LEVEL: 1
+ICON ID: 3312
+PART: 240
+UP TOP: false
+=============================
+ID: 932
+TYPE: 10
+GENDER: 2
+NAME: Nhị Vĩ Ác Miêu Cao Cấp
+DESCRIPTION: PHÁ TRIỀN: Gây hoảng sợ cho đối phương trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Hoảng sợ 50% hụt chiêu, khi chủ nhân đánh vào mục tiêu bị hoảng sợ thì mục tiêu sẽ nhận thêm 25% dame trong mỗi đòn đánh.
+LEVEL: 1
+ICON ID: 3315
+PART: 239
+UP TOP: false
+=============================
+ID: 933
+TYPE: 10
+GENDER: 2
+NAME: Tam Vĩ Khổng Quy Cao Cấp
+DESCRIPTION: THỦY HỒN: Làm cho đối phương bị đuối nước trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Đuối nước giảm 50% sức mạnh và 50% hồi phục hp mp.
+LEVEL: 1
+ICON ID: 3318
+PART: 241
+UP TOP: false
+=============================
+ID: 934
+TYPE: 10
+GENDER: 2
+NAME: Tứ Vĩ Hầu Tôn Cao Cấp
+DESCRIPTION: ĐOẠT MỆNH: Thiêu đốt mục tiêu trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Thiêu đốt mất 5% máu mỗi giây và giảm 30% khả năng hồi phục.
+LEVEL: 1
+ICON ID: 3321
+PART: 242
+UP TOP: false
+=============================
+ID: 935
+TYPE: 10
+GENDER: 2
+NAME: Ngũ Vĩ Mã Ngư Cao Cấp
+DESCRIPTION: CÀN KHÔN: Phá giáp đối thủ trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Khi bị lôi phá mất 80% giáp.
+LEVEL: 1
+ICON ID: 3324
+PART: 256
+UP TOP: false
+=============================
+ID: 936
+TYPE: 10
+GENDER: 2
+NAME: Lục Vĩ Bạch Sên Cao Cấp
+DESCRIPTION: ĐỘC KÍCH: Làm cho mục tiêu bị trúng độc trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Khi bị trúng độc mất 7% máu mỗi 1.5s và bị giảm 30% sức mạnh.
+LEVEL: 1
+ICON ID: 3327
+PART: 243
+UP TOP: false
+=============================
+ID: 937
+TYPE: 10
+GENDER: 2
+NAME: Thất Vĩ Cương Trùng Cao Cấp
+DESCRIPTION: KIM CANG: Làm choáng đối thủ trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Bị choáng 5s trong thời gian bị choáng không thể hồi phục.
+LEVEL: 1
+ICON ID: 3330
+PART: 244
+UP TOP: false
+=============================
+ID: 938
+TYPE: 10
+GENDER: 2
+NAME: Bát Vĩ Khổng Ngưu Cao Cấp
+DESCRIPTION: PHÍ HUYẾT: Gây vết thương sâu cho đối thủ trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Khi bị vết thương sâu trừ 5% máu mỗi giây, không thể hồi phục và nhận thêm 20% dame.
+LEVEL: 1
+ICON ID: 3333
+PART: 245
+UP TOP: false
+=============================
+ID: 939
+TYPE: 10
+GENDER: 2
+NAME: Cửu Vĩ Hồ Ly Cao Cấp
+DESCRIPTION: TIÊN KHÍ: Buff hấp thụ cho chủ nhân trong 10s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 350/400/550. Thời gian hồi: 25s/20s/15s. Chủ nhân khi bị tấn công trong trạng thái hấp thụ sẽ nhận thêm máu =5% sát thương đánh vào, khi bị đánh 5 đòn liên tiếp trong 15s hấp thụ sẽ bộc phá gây sát thương bằng 15% máu đối thủ. Có thể hấp thụ sát thương từ kẻ thù , hấp thụ 1 lượng nhất định sẽ phun hỏa độn với một sức công phá rất lớn, dùng lửa để cường hóa sát thương lên 15% và giáp lên 10%, Cửu vĩ hồ không sợ bất cứ vĩ thú nào cả, kháng tất cả hiệu ứng của vĩ thú khác.
+LEVEL: 1
+ICON ID: 3336
+PART: 246
+UP TOP: false
+=============================
+ID: 940
+TYPE: 10
+GENDER: 2
+NAME: Nhất Vĩ Li Mao Bảo Bảo Siêu Cấp
+DESCRIPTION: HỘ THỂ: Gây mù mắt đối thủ trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100:500/550/700. Thời gian hồi: 15s/10s/5s. Khi bị mù mắt tất cả các chiêu đều hụt.
+LEVEL: 1
+ICON ID: 3338
+PART: 247
+UP TOP: false
+=============================
+ID: 941
+TYPE: 10
+GENDER: 2
+NAME: Nhị Vĩ Ác Miêu Bảo Bảo Siêu Cấp
+DESCRIPTION: PHÁ TRIỀN: Gây hoảng sợ cho đối phương trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Hoảng sợ 50% hụt chiêu, khi chủ nhân đánh vào mục tiêu bị hoảng sợ thì mục tiêu sẽ nhận thêm 25% dame trong mỗi đòn đánh.
+LEVEL: 1
+ICON ID: 3341
+PART: 248
+UP TOP: false
+=============================
+ID: 942
+TYPE: 10
+GENDER: 2
+NAME: Tam Vĩ Khổng Quy Bảo Bảo Siêu Cấp
+DESCRIPTION: THỦY HỒN: Làm cho đối phương bị đuối nước trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Đuối nước giảm 50% sức mạnh và 50% hồi phục hp mp.
+LEVEL: 1
+ICON ID: 3344
+PART: 249
+UP TOP: false
+=============================
+ID: 943
+TYPE: 10
+GENDER: 2
+NAME: Tứ Vĩ Hầu Tôn Bảo Bảo Siêu Cấp
+DESCRIPTION: ĐOẠT MỆNH: Thiêu đốt mục tiêu trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Thiêu đốt mất 5% máu mỗi giây và giảm 30% khả năng hồi phục.
+LEVEL: 1
+ICON ID: 3347
+PART: 250
+UP TOP: false
+=============================
+ID: 944
+TYPE: 10
+GENDER: 2
+NAME: Ngũ Vĩ Mã Ngư Bảo Bảo Siêu Cấp
+DESCRIPTION: CÀN KHÔN: Phá giáp đối thủ trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Khi bị lôi phá mất 80% giáp.
+LEVEL: 1
+ICON ID: 3350
+PART: 251
+UP TOP: false
+=============================
+ID: 945
+TYPE: 10
+GENDER: 2
+NAME: Lục Vĩ Bạch Sên Bảo Bảo Siêu Cấp
+DESCRIPTION: ĐỘC KÍCH: Làm cho mục tiêu bị trúng độc trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Khi bị trúng độc mất 7% máu mỗi 1.5s và bị giảm 30% sức mạnh.
+LEVEL: 1
+ICON ID: 3353
+PART: 252
+UP TOP: false
+=============================
+ID: 946
+TYPE: 10
+GENDER: 2
+NAME: Thất Vĩ Cương Trùng Bảo Bảo Siêu Cấp
+DESCRIPTION: KIM CANG: Làm choáng đối thủ trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Bị choáng 5s trong thời gian bị choáng không thể hồi phục.
+LEVEL: 1
+ICON ID: 3356
+PART: 253
+UP TOP: false
+=============================
+ID: 947
+TYPE: 10
+GENDER: 2
+NAME: Bát Vĩ Khổng Ngưu Bảo Bảo Siêu Cấp
+DESCRIPTION: PHÍ HUYẾT: Gây vết thương sâu cho đối thủ trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Khi bị vết thương sâu trừ 5% máu mỗi giây, không thể hồi phục và nhận thêm 20% dame.
+LEVEL: 1
+ICON ID: 3359
+PART: 254
+UP TOP: false
+=============================
+ID: 948
+TYPE: 10
+GENDER: 2
+NAME: Cửu Vĩ Hồ Ly Bảo Bảo Siêu Cấp
+DESCRIPTION: TIÊN KHÍ: Buff hấp thụ cho chủ nhân trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Chủ nhân khi bị tấn công trong trạng thái hấp thụ sẽ nhận thêm máu =5% sát thương đánh vào, khi bị đánh 5 đòn liên tiếp trong 15s hấp thụ sẽ bộc phá gây sát thương bằng 15% máu đối thủ. Có thể hấp thụ sát thương từ kẻ thù , hấp thụ 1 lượng nhất định sẽ phun hỏa độn với một sức công phá rất lớn, dùng lửa để cường hóa sát thương lên 15% và giáp lên 10%, Cửu vĩ hồ không sợ bất cứ vĩ thú nào cả, kháng tất cả hiệu ứng của vĩ thú khác.
+LEVEL: 1
+ICON ID: 3362
+PART: 255
+UP TOP: false
+=============================
+ID: 949
+TYPE: 10
+GENDER: 2
+NAME: Nhất Vĩ Li Mao Siêu Cấp
+DESCRIPTION: HỘ THỂ: Gây mù mắt đối thủ trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100:500/550/700. Thời gian hồi: 15s/10s/5s. Khi bị mù mắt tất cả các chiêu đều hụt.
+LEVEL: 1
+ICON ID: 3313
+PART: 240
+UP TOP: false
+=============================
+ID: 950
+TYPE: 10
+GENDER: 2
+NAME: Nhị Vĩ Ác Miêu Siêu Cấp
+DESCRIPTION: PHÁ TRIỀN: Gây hoảng sợ cho đối phương trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Hoảng sợ 50% hụt chiêu, khi chủ nhân đánh vào mục tiêu bị hoảng sợ thì mục tiêu sẽ nhận thêm 25% dame trong mỗi đòn đánh.
+LEVEL: 1
+ICON ID: 3316
+PART: 239
+UP TOP: false
+=============================
+ID: 951
+TYPE: 10
+GENDER: 2
+NAME: Tam Vĩ Khổng Quy Siêu Cấp
+DESCRIPTION: THỦY HỒN: Làm cho đối phương bị đuối nước trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Đuối nước giảm 50% sức mạnh và 50% hồi phục hp mp.
+LEVEL: 1
+ICON ID: 3319
+PART: 241
+UP TOP: false
+=============================
+ID: 952
+TYPE: 10
+GENDER: 2
+NAME: Tứ Vĩ Hầu Tôn Siêu Cấp
+DESCRIPTION: ĐOẠT MỆNH: Thiêu đốt mục tiêu trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Thiêu đốt mất 5% máu mỗi giây và giảm 30% khả năng hồi phục.
+LEVEL: 1
+ICON ID: 3322
+PART: 242
+UP TOP: false
+=============================
+ID: 953
+TYPE: 10
+GENDER: 2
+NAME: Ngũ Vĩ Mã Ngư Siêu Cấp
+DESCRIPTION: CÀN KHÔN: Phá giáp đối thủ trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Khi bị lôi phá mất 80% giáp.
+LEVEL: 1
+ICON ID: 3325
+PART: 256
+UP TOP: false
+=============================
+ID: 954
+TYPE: 10
+GENDER: 2
+NAME: Lục Vĩ Bạch Sên Siêu Cấp
+DESCRIPTION: ĐỘC KÍCH: Làm cho mục tiêu bị trúng độc trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Khi bị trúng độc mất 7% máu mỗi 1.5s và bị giảm 30% sức mạnh.
+LEVEL: 1
+ICON ID: 3328
+PART: 243
+UP TOP: false
+=============================
+ID: 955
+TYPE: 10
+GENDER: 2
+NAME: Thất Vĩ Cương Trùng Siêu Cấp
+DESCRIPTION: KIM CANG: Làm choáng đối thủ trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Bị choáng 5s trong thời gian bị choáng không thể hồi phục.
+LEVEL: 1
+ICON ID: 3331
+PART: 244
+UP TOP: false
+=============================
+ID: 956
+TYPE: 10
+GENDER: 2
+NAME: Bát Vĩ Khổng Ngưu Siêu Cấp
+DESCRIPTION: PHÍ HUYẾT: Gây vết thương sâu cho đối thủ trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Khi bị vết thương sâu trừ 5% máu mỗi giây, không thể hồi phục và nhận thêm 20% dame.
+LEVEL: 1
+ICON ID: 3334
+PART: 245
+UP TOP: false
+=============================
+ID: 957
+TYPE: 10
+GENDER: 2
+NAME: Cửu Vĩ Hồ Ly Siêu Cấp
+DESCRIPTION: TIÊN KHÍ: Buff hấp thụ cho chủ nhân trong 15s khi trưởng thành. Tỷ lệ xh tại các mốc 50/70/100: 500/550/700. Thời gian hồi: 15s/10s/5s. Chủ nhân khi bị tấn công trong trạng thái hấp thụ sẽ nhận thêm máu =5% sát thương đánh vào, khi bị đánh 5 đòn liên tiếp trong 15s hấp thụ sẽ bộc phá gây sát thương bằng 15% máu đối thủ. Có thể hấp thụ sát thương từ kẻ thù , hấp thụ 1 lượng nhất định sẽ phun hỏa độn với một sức công phá rất lớn, dùng lửa để cường hóa sát thương lên 15% và giáp lên 10%, Cửu vĩ hồ không sợ bất cứ vĩ thú nào cả, kháng tất cả hiệu ứng của vĩ thú khác.
+LEVEL: 1
+ICON ID: 3337
+PART: 246
+UP TOP: false
+=============================
+ID: 958
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn ngôi sao thời trang
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 3365
+PART: -1
+UP TOP: false
+=============================
+ID: 959
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn hoa sen thời trang
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 3366
+PART: -1
+UP TOP: false
+=============================
+ID: 960
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn kéo quân thời trang
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 3367
+PART: -1
+UP TOP: false
+=============================
+ID: 961
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn trái tim thời trang
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 3368
+PART: -1
+UP TOP: false
+=============================
+ID: 962
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn bươm bướm thời trang
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 3369
+PART: -1
+UP TOP: false
+=============================
+ID: 963
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn mặt trăng thời trang
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 3370
+PART: -1
+UP TOP: false
+=============================
+ID: 964
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn mặt trời thời trang
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 3371
+PART: -1
+UP TOP: false
+=============================
+ID: 965
+TYPE: 10
+GENDER: 2
+NAME: Lồng đèn tròn thời trang
+DESCRIPTION:  
+LEVEL: 40
+ICON ID: 3372
+PART: -1
+UP TOP: false
+=============================
+ID: 966
+TYPE: 27
+GENDER: 2
+NAME: Phục sinh phù
+DESCRIPTION: Tự động hồi sinh trong 30 phút. Chỉ có tác dụng trong hang Karasumori 
+LEVEL: 40
+ICON ID: 3373
+PART: -1
+UP TOP: false
+=============================
+ID: 967
+TYPE: 27
+GENDER: 2
+NAME: Lệnh bài Kamakura
+DESCRIPTION: Mở rương nhanh.
+LEVEL: 1
+ICON ID: 3374
+PART: -1
+UP TOP: false
+=============================
+ID: 968
+TYPE: 33
+GENDER: 2
+NAME: Hoả Kỳ Lân
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 3375
+PART: -1
+UP TOP: false
+=============================
+ID: 969
+TYPE: 27
+GENDER: 2
+NAME: Phiếu giảm giá 50%
+DESCRIPTION: 
+LEVEL: 20
+ICON ID: 3376
+PART: -1
+UP TOP: false
+=============================
+ID: 970
+TYPE: 27
+GENDER: 2
+NAME: Kim tước thảo
+DESCRIPTION: Tăng ngẫu nhiên 20-40 exp cho Trâu
+LEVEL: 50
+ICON ID: 3377
+PART: -1
+UP TOP: true
+=============================
+ID: 971
+TYPE: 27
+GENDER: 2
+NAME: Tử hoa địa đinh
+DESCRIPTION: Tăng ngẫu nhiên 50-150 exp cho Trâu
+LEVEL: 60
+ICON ID: 3378
+PART: -1
+UP TOP: true
+=============================
+ID: 972
+TYPE: 2
+GENDER: 1
+NAME: Áo dài nam
+DESCRIPTION: Dùng thay đổi diện mạo
+LEVEL: 20
+ICON ID: 3379
+PART: 0
+UP TOP: false
+=============================
+ID: 973
+TYPE: 2
+GENDER: 0
+NAME: Áo dài nữ
+DESCRIPTION: Dùng thay đổi diện mạo
+LEVEL: 20
+ICON ID: 3380
+PART: 0
+UP TOP: false
+=============================
+ID: 974
+TYPE: 0
+GENDER: 1
+NAME: Minh Giác Cốt Ngọc Tuyến
+DESCRIPTION: 
+LEVEL: 109
+ICON ID: 3408
+PART: -1
+UP TOP: false
+=============================
+ID: 975
+TYPE: 0
+GENDER: 0
+NAME: Minh Giác Cốt Ngọc Trâm
+DESCRIPTION: 
+LEVEL: 109
+ICON ID: 3404
+PART: -1
+UP TOP: false
+=============================
+ID: 976
+TYPE: 2
+GENDER: 1
+NAME: Minh Giác Cốt Ngọc Giáp
+DESCRIPTION: 
+LEVEL: 107
+ICON ID: 3396
+PART: -1
+UP TOP: false
+=============================
+ID: 977
+TYPE: 2
+GENDER: 0
+NAME: Minh Giác Cốt Ngọc Giáp
+DESCRIPTION: 
+LEVEL: 107
+ICON ID: 3400
+PART: -1
+UP TOP: false
+=============================
+ID: 978
+TYPE: 6
+GENDER: 1
+NAME: Minh Giác Cốt Ngọc Hạ Giáp
+DESCRIPTION: 
+LEVEL: 103
+ICON ID: 3398
+PART: -1
+UP TOP: false
+=============================
+ID: 979
+TYPE: 6
+GENDER: 0
+NAME: Minh Giác Cốt Ngọc Hạ Giáp
+DESCRIPTION: 
+LEVEL: 103
+ICON ID: 3402
+PART: -1
+UP TOP: false
+=============================
+ID: 980
+TYPE: 4
+GENDER: 1
+NAME: Minh Giác Cốt Ngọc Thủ
+DESCRIPTION: 
+LEVEL: 105
+ICON ID: 3399
+PART: -1
+UP TOP: false
+=============================
+ID: 981
+TYPE: 4
+GENDER: 0
+NAME: Minh Giác Cốt Ngọc Thủ
+DESCRIPTION: 
+LEVEL: 105
+ICON ID: 3401
+PART: -1
+UP TOP: false
+=============================
+ID: 982
+TYPE: 8
+GENDER: 1
+NAME: Minh Giác Cốt Ngọc Ngoa
+DESCRIPTION: 
+LEVEL: 101
+ICON ID: 3397
+PART: -1
+UP TOP: false
+=============================
+ID: 983
+TYPE: 8
+GENDER: 0
+NAME: Minh Giác Cốt Ngọc Ngoa
+DESCRIPTION: 
+LEVEL: 101
+ICON ID: 3403
+PART: -1
+UP TOP: false
+=============================
+ID: 984
+TYPE: 9
+GENDER: 2
+NAME: Minh Giác Cốt Ngọc Phù
+DESCRIPTION: 
+LEVEL: 102
+ICON ID: 3405
+PART: -1
+UP TOP: false
+=============================
+ID: 985
+TYPE: 7
+GENDER: 2
+NAME: Minh Giác Cốt Ngọc Bội
+DESCRIPTION: 
+LEVEL: 104
+ICON ID: 3406
+PART: -1
+UP TOP: false
+=============================
+ID: 986
+TYPE: 5
+GENDER: 2
+NAME: Minh Giác Cốt Ngọc Giới
+DESCRIPTION: 
+LEVEL: 106
+ICON ID: 3407
+PART: -1
+UP TOP: false
+=============================
+ID: 987
+TYPE: 3
+GENDER: 2
+NAME: Minh Giác Cốt Ngọc Liên
+DESCRIPTION: 
+LEVEL: 108
+ICON ID: 3409
+PART: -1
+UP TOP: false
+=============================
+ID: 988
+TYPE: 1
+GENDER: 2
+NAME: Minh Giác Vô Cực Kiếm
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 3393
+PART: 12
+UP TOP: false
+=============================
+ID: 989
+TYPE: 1
+GENDER: 2
+NAME: Minh Giác Thiên Hỏa Tiêu
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 3395
+PART: 15
+UP TOP: false
+=============================
+ID: 990
+TYPE: 1
+GENDER: 2
+NAME: Minh Giác Táng Hồn Dao
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 3391
+PART: 41
+UP TOP: false
+=============================
+ID: 991
+TYPE: 1
+GENDER: 2
+NAME: Minh Giác Băng Thần Cung
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 3390
+PART: 14
+UP TOP: false
+=============================
+ID: 992
+TYPE: 1
+GENDER: 2
+NAME: Minh Giác Chiến Lục Đao
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 3392
+PART: 13
+UP TOP: false
+=============================
+ID: 993
+TYPE: 1
+GENDER: 2
+NAME: Minh Giác Hoàng Phong Phiến
+DESCRIPTION: 
+LEVEL: 100
+ICON ID: 3394
+PART: 16
+UP TOP: false
+=============================
+ID: 994
+TYPE: 27
+GENDER: 2
+NAME: Thẻ đổi tên
+DESCRIPTION: Dùng đổi tên nhân vật
+LEVEL: 1
+ICON ID: 3381
+PART: -1
+UP TOP: true
+=============================
+ID: 995
+TYPE: 27
+GENDER: 2
+NAME: Thẻ dung hợp 1
+DESCRIPTION: Thẻ dung hợp
+LEVEL: 1
+ICON ID: 3382
+PART: -1
+UP TOP: true
+=============================
+ID: 996
+TYPE: 27
+GENDER: 2
+NAME: Thẻ dung hợp 2
+DESCRIPTION: Thẻ dung hợp
+LEVEL: 1
+ICON ID: 3383
+PART: -1
+UP TOP: true
+=============================
+ID: 997
+TYPE: 27
+GENDER: 2
+NAME: Thẻ dung hợp 3
+DESCRIPTION: Thẻ dung hợp
+LEVEL: 1
+ICON ID: 3384
+PART: -1
+UP TOP: true
+=============================
+ID: 998
+TYPE: 27
+GENDER: 2
+NAME: Thẻ dung hợp 4
+DESCRIPTION: Thẻ dung hợp
+LEVEL: 1
+ICON ID: 3385
+PART: -1
+UP TOP: true
+=============================
+ID: 999
+TYPE: 27
+GENDER: 2
+NAME: Thẻ dung hợp 5
+DESCRIPTION: Thẻ dung hợp
+LEVEL: 1
+ICON ID: 3386
+PART: -1
+UP TOP: true
+=============================
+ID: 1000
+TYPE: 27
+GENDER: 2
+NAME: Thẻ dung hợp 6
+DESCRIPTION: Thẻ dung hợp
+LEVEL: 1
+ICON ID: 3387
+PART: -1
+UP TOP: true
+=============================
+ID: 1001
+TYPE: 11
+GENDER: 2
+NAME: Akatsuki 
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3388
+PART: -1
+UP TOP: false
+=============================
+ID: 1002
+TYPE: 11
+GENDER: 2
+NAME: Akatsuki 
+DESCRIPTION: Vật phẩm sự kiện
+LEVEL: 1
+ICON ID: 3389
+PART: -1
+UP TOP: false
+=============================
+ID: 1003
+TYPE: 27
+GENDER: 2
+NAME: Chu tước hộ mệnh
+DESCRIPTION: Hồi 50% hp cho tượng, tăng 50% sát thương trụ trong 60s. Thời gian chờ 180s
+LEVEL: 1
+ICON ID: 3412
+PART: -1
+UP TOP: true
+=============================
+ID: 1004
+TYPE: 27
+GENDER: 2
+NAME: Huyền vũ hộ mệnh
+DESCRIPTION: Hồi 50% hp cho tượng, tăng 50% sát thương trụ trong 60s. Thời gian chờ 180s
+LEVEL: 1
+ICON ID: 3413
+PART: -1
+UP TOP: true
+=============================
+ID: 1005
+TYPE: 27
+GENDER: 2
+NAME: Bạch hổ hộ mệnh
+DESCRIPTION: Hồi 50% hp cho tượng, tăng 50% sát thương trụ trong 60s. Thời gian chờ 180s
+LEVEL: 1
+ICON ID: 3415
+PART: -1
+UP TOP: true
+=============================
+ID: 1006
+TYPE: 27
+GENDER: 2
+NAME: Thanh long hộ mệnh
+DESCRIPTION: Hồi 50% hp cho tượng, tăng 50% sát thương trụ trong 60s. Thời gian chờ 180s
+LEVEL: 1
+ICON ID: 3414
+PART: -1
+UP TOP: true
+=============================
+ID: 1007
+TYPE: 27
+GENDER: 2
+NAME: Tất sát phù
+DESCRIPTION: Tăng 30% sát thương lên tượng
+LEVEL: 1
+ICON ID: 3416
+PART: -1
+UP TOP: true
+=============================
+ID: 1008
+TYPE: 27
+GENDER: 2
+NAME: Đoạt mệnh phù
+DESCRIPTION: Tăng 40% sát thương lên tượng
+LEVEL: 1
+ICON ID: 3415
+PART: -1
+UP TOP: true
+=============================
+ID: 1009
+TYPE: 27
+GENDER: 2
+NAME: Sinh khí phù
+DESCRIPTION: Hồi 100% hp
+LEVEL: 1
+ICON ID: 3418
+PART: -1
+UP TOP: true
+=============================
+ID: 1010
+TYPE: 27
+GENDER: 2
+NAME: Linh khí phù
+DESCRIPTION: Hồi 100% mp
+LEVEL: 1
+ICON ID: 3417
+PART: -1
+UP TOP: true
+=============================
+ID: 1011
+TYPE: 27
+GENDER: 2
+NAME: Bảo hiểm dung hợp
+DESCRIPTION: Không tụt độ bền khi nâng cấp trang bị dung hợp. Tăng 50% tỷ lệ nâng cấp trang bị dung hợp.
+LEVEL: 1
+ICON ID: 3419
+PART: -1
+UP TOP: false
+=============================
+ID: 1012
+TYPE: 10
+GENDER: 2
+NAME: Pet Thanh Long
+DESCRIPTION: 
+LEVEL: 1
+ICON ID: 3420
+PART: -1
+UP TOP: false
+=============================
+ID: 1013
+TYPE: 2
+GENDER: 1
+NAME: Obito
+DESCRIPTION: Dùng thay đổi diện mạo
+LEVEL: 20
+ICON ID: 3422
+PART: 0
+UP TOP: false
+=============================
+ID: 1014
+TYPE: 2
+GENDER: 0
+NAME: Sakura
+DESCRIPTION: Dùng thay đổi diện mạo
+LEVEL: 20
+ICON ID: 3421
+PART: 0
+UP TOP: false
+=============================

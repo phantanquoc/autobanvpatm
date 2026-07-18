@@ -1,0 +1,108 @@
+[22:49:19] 
+Nhân vật: youtubii
+Xu giao dịch: 240.000 xu
+Biến động: 11.770.000 -> 11.530.000
+Vật phẩm nhận: Lồng đèn cá chép (1), Lồng đèn cá chép (1), 
+==========================================
+[22:18:43] 
+Nhân vật: youtubii
+Xu giao dịch: 240.000 xu
+Biến động: 12.010.000 -> 11.770.000
+Vật phẩm nhận: Lồng đèn cá chép (1), Lồng đèn cá chép (1), 
+==========================================
+[22:00:56] 
+Nhân vật: youtubii
+Xu giao dịch: 120.000 xu
+Biến động: 12.130.000 -> 12.010.000
+Vật phẩm nhận: Lồng đèn cá chép (1), 
+==========================================
+[21:55:51] 
+Nhân vật: youtubii
+Xu giao dịch: 600.000 xu
+Biến động: 12.730.000 -> 12.130.000
+Vật phẩm nhận: Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), 
+==========================================
+[21:47:38] 
+Nhân vật: youtubii
+Xu giao dịch: 500.000 xu
+Biến động: 13.230.000 -> 12.730.000
+Vật phẩm nhận: Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), 
+==========================================
+[21:38:15] 
+Nhân vật: youtubii
+Xu giao dịch: 50.000 xu
+Biến động: 13.280.000 -> 13.230.000
+Vật phẩm nhận: Mặt nạ Super Broly (1), 
+==========================================
+[21:36:04] 
+Nhân vật: youtubii
+Xu giao dịch: 480.000 xu
+Biến động: 13.760.000 -> 13.280.000
+Vật phẩm nhận: Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), 
+==========================================
+[21:08:00] 
+Nhân vật: youtubii
+Xu giao dịch: 390.000 xu
+Biến động: 14.150.000 -> 13.760.000
+Vật phẩm nhận: Lồng đèn cá chép (1), Lồng đèn cá chép (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), 
+==========================================
+[20:28:34] 
+Nhân vật: youtubii
+Xu giao dịch: 1.130.000 xu
+Biến động: 15.280.000 -> 14.150.000
+Vật phẩm nhận: Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Mặt nạ Super Broly (1), 
+==========================================
+[20:10:57] 
+Nhân vật: youtubii
+Xu giao dịch: 360.000 xu
+Biến động: 15.640.000 -> 15.280.000
+Vật phẩm nhận: Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), 
+==========================================
+[18:39:33] 
+Nhân vật: youtubii
+Xu giao dịch: 500.000 xu
+Biến động: 16.140.000 -> 15.640.000
+Vật phẩm nhận: Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), 
+==========================================
+[18:30:55] 
+Nhân vật: doanbattu
+Xu giao dịch: 440.000 xu
+Biến động: 16.580.000 -> 16.140.000
+Vật phẩm nhận: Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Lồng đèn cá chép (1), Mặt nạ Super Broly (1), Lồng đèn cá chép (1), 
+==========================================
+[18:29:26] 
+Nhân vật: doanbattu
+Xu giao dịch: 950.000 xu
+Biến động: 17.530.000 -> 16.580.000
+Vật phẩm nhận: Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Lồng đèn cá chép (1), Mặt nạ Super Broly (1), Lồng đèn cá chép (1), Mặt nạ Super Broly (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), 
+==========================================
+[18:07:20] 
+Nhân vật: doanbattu
+Xu giao dịch: 920.000 xu
+Biến động: 18.450.000 -> 17.530.000
+Vật phẩm nhận: Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), 
+==========================================
+[17:44:39] 
+Nhân vật: youtubii
+Xu giao dịch: 600.000 xu
+Biến động: 19.050.000 -> 18.450.000
+Vật phẩm nhận: Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), Mặt nạ Super Broly (1), 
+==========================================
+[17:42:48] 
+Nhân vật: youtubii
+Xu giao dịch: 300.000 xu
+Biến động: 19.350.000 -> 19.050.000
+Vật phẩm nhận: Mặt nạ Onna Bugeisha (1), Mặt nạ Onna Bugeisha (1), Mặt nạ Onna Bugeisha (1), Mặt nạ Onna Bugeisha (1), Mặt nạ Onna Bugeisha (1), Mặt nạ Onna Bugeisha (1), 
+==========================================
+[17:42:29] 
+Nhân vật: youtubii
+Xu giao dịch: 50.000 xu
+Biến động: 19.400.000 -> 19.350.000
+Vật phẩm nhận: Mặt nạ Onna Bugeisha (1), 
+==========================================
+[17:41:31] 
+Nhân vật: youtubii
+Xu giao dịch: 600.000 xu
+Biến động: 20.000.000 -> 19.400.000
+Vật phẩm nhận: Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), Lồng đèn cá chép (1), 
+==========================================

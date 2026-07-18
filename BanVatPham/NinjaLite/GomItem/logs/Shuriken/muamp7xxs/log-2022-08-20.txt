@@ -1,0 +1,12 @@
+[18:11:28] 
+Nhân vật: ngocah1
+Xu giao dịch: 24.000 xu
+Biến động: 4.337.147 -> 4.313.147
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), 
+==========================================
+[18:10:59] 
+Nhân vật: ngocah1
+Xu giao dịch: 24.000 xu
+Biến động: 4.361.147 -> 4.337.147
+Vật phẩm nhận: Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), 
+==========================================

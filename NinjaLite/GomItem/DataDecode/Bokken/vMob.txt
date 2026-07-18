@@ -1,0 +1,1785 @@
+ID: 0
+TYPE: 0
+NAME: Bù nhìn
+HP: 500000
+RANGE MOVE: 0
+SPEED: 1
+=============================
+ID: 1
+TYPE: 1
+NAME: Ốc sên
+HP: 300
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 2
+TYPE: 2
+NAME: Cóc xanh
+HP: 450
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 3
+TYPE: 1
+NAME: Nhím đá
+HP: 650
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 4
+TYPE: 2
+NAME: Thỏ xám
+HP: 750
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 5
+TYPE: 3
+NAME: Rùa vàng
+HP: 1100
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 6
+TYPE: 1
+NAME: Nhện đốm
+HP: 1350
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 7
+TYPE: 1
+NAME: Quỷ 1 mắt
+HP: 1700
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 8
+TYPE: 5
+NAME: Muỗi rừng
+HP: 2200
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 9
+TYPE: 2
+NAME: Quỷ 1 chân
+HP: 2750
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 10
+TYPE: 4
+NAME: Ong vàng
+HP: 1100
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 11
+TYPE: 5
+NAME: Cánh cam
+HP: 1350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 12
+TYPE: 2
+NAME: Cóc lục
+HP: 1700
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 13
+TYPE: 4
+NAME: Dơi
+HP: 2200
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 14
+TYPE: 4
+NAME: Bướm lửa
+HP: 2750
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 15
+TYPE: 1
+NAME: Ốc đá
+HP: 3250
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 16
+TYPE: 1
+NAME: Piranha
+HP: 3500
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 17
+TYPE: 1
+NAME: Kiếm quỷ
+HP: 3800
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 18
+TYPE: 3
+NAME: Bọ nón cối
+HP: 4300
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 19
+TYPE: 4
+NAME: Chuồn chuồn
+HP: 4850
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 20
+TYPE: 3
+NAME: Sâu xanh
+HP: 5600
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 21
+TYPE: 1
+NAME: Piranha đỏ
+HP: 5950
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 22
+TYPE: 1
+NAME: Chuột đồng
+HP: 6300
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 23
+TYPE: 1
+NAME: Bò cạp đá
+HP: 6650
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 24
+TYPE: 1
+NAME: Rắn lục
+HP: 7000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 25
+TYPE: 1
+NAME: Ốc bưu
+HP: 7400
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 26
+TYPE: 3
+NAME: Khỉ
+HP: 7750
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 27
+TYPE: 5
+NAME: Châu chấu
+HP: 8200
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 28
+TYPE: 5
+NAME: Muỗi vằn
+HP: 8750
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 29
+TYPE: 1
+NAME: Doeto
+HP: 9350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 30
+TYPE: 2
+NAME: Quỷ băng
+HP: 9900
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 31
+TYPE: 0
+NAME: Quỷ hoa
+HP: 10700
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 32
+TYPE: 4
+NAME: Bọ hung
+HP: 11400
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 33
+TYPE: 1
+NAME: Xương khô
+HP: 12200
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 34
+TYPE: 3
+NAME: Rùa tai xanh
+HP: 13800
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 35
+TYPE: 1
+NAME: Cua biển
+HP: 15200
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 36
+TYPE: 3
+NAME: Ma 1 mắt
+HP: 16600
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 37
+TYPE: 1
+NAME: Rết tinh
+HP: 18750
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 38
+TYPE: 4
+NAME: Dơi vàng
+HP: 20350
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 39
+TYPE: 1
+NAME: Heo vòi
+HP: 22140
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 40
+TYPE: 1
+NAME: Quỷ đầu lâu
+HP: 24400
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 41
+TYPE: 4
+NAME: Dơi lửa
+HP: 26850
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 42
+TYPE: 1
+NAME: Ốc ma
+HP: 29100
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 43
+TYPE: 1
+NAME: Chuột chũi
+HP: 31750
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 44
+TYPE: 2
+NAME: Dù ma
+HP: 34650
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 45
+TYPE: 1
+NAME: Mực
+HP: 36750
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 46
+TYPE: 1
+NAME: Nắp ấm bùn
+HP: 38525
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 47
+TYPE: 1
+NAME: Cá hổ
+HP: 41015
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 48
+TYPE: 3
+NAME: Rắn tía
+HP: 44275
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 49
+TYPE: 2
+NAME: Quỷ mọi
+HP: 47030
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 50
+TYPE: 1
+NAME: Cua đá
+HP: 49695
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 51
+TYPE: 3
+NAME: Mada
+HP: 52755
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 52
+TYPE: 3
+NAME: Mada con
+HP: 54875
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 53
+TYPE: 3
+NAME: Nấm độc
+HP: 57335
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 54
+TYPE: 0
+NAME: Thảo dược
+HP: 1000
+RANGE MOVE: 0
+SPEED: 1
+=============================
+ID: 55
+TYPE: 1
+NAME: Kappa
+HP: 60350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 56
+TYPE: 4
+NAME: Omalai
+HP: 62990
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 57
+TYPE: 4
+NAME: Oan hồn
+HP: 65780
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 58
+TYPE: 5
+NAME: Bọ xanh
+HP: 68680
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 59
+TYPE: 3
+NAME: Sên
+HP: 70700
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 60
+TYPE: 4
+NAME: Ma đêm
+HP: 73330
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 61
+TYPE: 4
+NAME: Bướm phấn
+HP: 76440
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 62
+TYPE: 1
+NAME: Cá đèn
+HP: 79550
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 63
+TYPE: 3
+NAME: Xác mù
+HP: 82650
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 64
+TYPE: 1
+NAME: Ốc gai
+HP: 85740
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 65
+TYPE: 1
+NAME: Bò cạp lửa
+HP: 88830
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 66
+TYPE: 0
+NAME: Hoa ăn thịt
+HP: 91200
+RANGE MOVE: 0
+SPEED: 1
+=============================
+ID: 67
+TYPE: 1
+NAME: Xương mắt đỏ
+HP: 94310
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 68
+TYPE: 4
+NAME: Ong lửa
+HP: 97420
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 69
+TYPE: 1
+NAME: Heo rừng
+HP: 50000
+RANGE MOVE: 120
+SPEED: 3
+=============================
+ID: 70
+TYPE: 4
+NAME: Dơi đen
+HP: 0
+RANGE MOVE: 0
+SPEED: 2
+=============================
+ID: 71
+TYPE: 1
+NAME: Heo mọi
+HP: 100000
+RANGE MOVE: 120
+SPEED: 3
+=============================
+ID: 72
+TYPE: 2
+NAME: Lửa ma
+HP: 1
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 73
+TYPE: 4
+NAME: Tử thần
+HP: 1
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 74
+TYPE: 4
+NAME: Dơi đầu lâu
+HP: 1
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 75
+TYPE: 1
+NAME: Bạo ngư
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 76
+TYPE: 0
+NAME: Quỷ mộc
+HP: 1
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 77
+TYPE: 4
+NAME: Ong tà ác
+HP: 1
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 78
+TYPE: 4
+NAME: Vẹt đỏ
+HP: 1
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 79
+TYPE: 1
+NAME: Mặt nạ sắt
+HP: 1
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 80
+TYPE: 2
+NAME: Dù lêu lêu
+HP: 1
+RANGE MOVE: 33
+SPEED: 4
+=============================
+ID: 81
+TYPE: 0
+NAME: Lam thảo
+HP: 1
+RANGE MOVE: 0
+SPEED: 1
+=============================
+ID: 82
+TYPE: 1
+NAME: Bạo quân
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 83
+TYPE: 4
+NAME: Dơi thủ hộ
+HP: 95350
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 84
+TYPE: 1
+NAME: Nhện hút máu
+HP: 89390
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 85
+TYPE: 4
+NAME: Ong đất
+HP: 147470
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 86
+TYPE: 1
+NAME: Bọ ngựa ma
+HP: 154140
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 87
+TYPE: 1
+NAME: Kỳ đà núi
+HP: 164060
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 88
+TYPE: 1
+NAME: Ninja hắc ám
+HP: 20350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 89
+TYPE: 1
+NAME: Thiên vương
+HP: 41030
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 90
+TYPE: 4
+NAME: Dơi xám
+HP: 15350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 91
+TYPE: 1
+NAME: Hắc bạch giả
+HP: 15350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 92
+TYPE: 4
+NAME: Quỷ tóc đỏ
+HP: 15350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 93
+TYPE: 1
+NAME: Nhím gai
+HP: 15350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 94
+TYPE: 1
+NAME: Nhện tinh
+HP: 15350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 95
+TYPE: 4
+NAME: Tử điệp
+HP: 15350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 96
+TYPE: 4
+NAME: Ong tử sĩ
+HP: 20700
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 97
+TYPE: 4
+NAME: Vẹt thủ hộ
+HP: 20700
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 98
+TYPE: 0
+NAME: Bạch Long trụ
+HP: 3000000
+RANGE MOVE: 0
+SPEED: 0
+=============================
+ID: 99
+TYPE: 0
+NAME: Hắc Long trụ
+HP: 3000000
+RANGE MOVE: 0
+SPEED: 0
+=============================
+ID: 100
+TYPE: 3
+NAME: Xích trùng
+HP: 180875
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 101
+TYPE: 3
+NAME: Lam hoàng xà
+HP: 180875
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 102
+TYPE: 1
+NAME: Ốc anh vũ
+HP: 392100
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 103
+TYPE: 3
+NAME: Xích long xà
+HP: 180875
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 104
+TYPE: 1
+NAME: Ngân lang
+HP: 452450
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 105
+TYPE: 1
+NAME: Ngân lang vương
+HP: 70700
+RANGE MOVE: 120
+SPEED: 3
+=============================
+ID: 106
+TYPE: 4
+NAME: Ong cánh trắng
+HP: 20350
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 107
+TYPE: 1
+NAME: Chuột ú
+HP: 20350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 108
+TYPE: 1
+NAME: Thạch giác
+HP: 20350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 109
+TYPE: 4
+NAME: Bọ cánh cứng
+HP: 20350
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 110
+TYPE: 3
+NAME: Ốc sên gai
+HP: 20350
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 111
+TYPE: 4
+NAME: Ma một mắt
+HP: 20350
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 112
+TYPE: 3
+NAME: Mực ống đỏ
+HP: 9000000
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 113
+TYPE: 0
+NAME: Mộc nhân
+HP: 200000
+RANGE MOVE: 0
+SPEED: 0
+=============================
+ID: 114
+TYPE: 1
+NAME: Thần thố
+HP: 80000000
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 115
+TYPE: 4
+NAME: Xích phiến thiên long
+HP: 60000000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 116
+TYPE: 1
+NAME: Samurai chiến tướng
+HP: 100000000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 117
+TYPE: 4
+NAME: Thiên long quỷ
+HP: 277420
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 118
+TYPE: 1
+NAME: Địa ngư quỷ
+HP: 87420
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 119
+TYPE: 4
+NAME: Kền kền quỷ
+HP: 277420
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 120
+TYPE: 1
+NAME: Trùng tam sắc
+HP: 117420
+RANGE MOVE: 33
+SPEED: 1
+=============================
+ID: 121
+TYPE: 0
+NAME: Lam thạch thảo
+HP: 117420
+RANGE MOVE: 33
+SPEED: 0
+=============================
+ID: 122
+TYPE: 4
+NAME: Chim tinh anh
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 123
+TYPE: 0
+NAME: Tử mộc
+HP: 570000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 124
+TYPE: 4
+NAME: Hỏa hồn
+HP: 590000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 125
+TYPE: 1
+NAME: Thạch trùng
+HP: 690000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 126
+TYPE: 3
+NAME: Thiên mộng tằm
+HP: 480000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 127
+TYPE: 4
+NAME: Độc phong
+HP: 390000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 128
+TYPE: 1
+NAME: Thiên quân nghĩ
+HP: 800000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 129
+TYPE: 2
+NAME: Nhất chân tộc
+HP: 119320
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 130
+TYPE: 2
+NAME: Lam tinh thử
+HP: 178200
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 131
+TYPE: 1
+NAME: Giao long tướng
+HP: 310980
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 132
+TYPE: 3
+NAME: Địa lam thụ
+HP: 137400
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 133
+TYPE: 1
+NAME: Thằn lằn đất
+HP: 382000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 134
+TYPE: 4
+NAME: Huyền nhãn phong
+HP: 201005
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 135
+TYPE: 2
+NAME: Hắc nhãn oa
+HP: 155680
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 136
+TYPE: 3
+NAME: Khô lâu tướng
+HP: 278400
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 137
+TYPE: 1
+NAME: Độc nhãn quỷ
+HP: 230050
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 138
+TYPE: 1
+NAME: Sơn vương
+HP: 120000000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 139
+TYPE: 1
+NAME: Hỏa ngưu vương
+HP: 150000000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 140
+TYPE: 4
+NAME: Tử Lôi Diệu Thiên Long
+HP: 100000000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 141
+TYPE: 1
+NAME: Hỏa Kỳ Lân
+HP: 80000000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 142
+TYPE: 0
+NAME: Giỏ kẹo trắng
+HP: 1000000000
+RANGE MOVE: 33
+SPEED: 0
+=============================
+ID: 143
+TYPE: 0
+NAME: Giỏ kẹo đen
+HP: 1000000000
+RANGE MOVE: 33
+SPEED: 0
+=============================
+ID: 144
+TYPE: 4
+NAME: Phù thủy Bí Ngô
+HP: 100000000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 145
+TYPE: 0
+NAME: Bí ngô mặt quỷ
+HP: 154800
+RANGE MOVE: 0
+SPEED: 3
+=============================
+ID: 146
+TYPE: 1
+NAME: Bò cạp đất
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 147
+TYPE: 1
+NAME: Địa tinh quỷ
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 148
+TYPE: 1
+NAME: Vô chi oa
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 149
+TYPE: 1
+NAME: Thực nhân hoa
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 150
+TYPE: 4
+NAME: Bí ngô câu hồn
+HP: 99695
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 151
+TYPE: 1
+NAME: Địa tâm thử
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 152
+TYPE: 4
+NAME: Ong đầu quỷ
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 153
+TYPE: 4
+NAME: Thiên độc trùng
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 154
+TYPE: 1
+NAME: Khô lâu thú
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 155
+TYPE: 4
+NAME: Hắc ma
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 156
+TYPE: 1
+NAME: Nhím nanh trắng
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 157
+TYPE: 4
+NAME: Gekkonidae
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 158
+TYPE: 1
+NAME: Độc thiên nhãn
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 159
+TYPE: 4
+NAME: Yêu hỏa
+HP: 4908000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 160
+TYPE: 1
+NAME: Bí ngô đại đầu quỷ
+HP: 100000000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 161
+TYPE: 4
+NAME: Tử Lôi Diệu Thiên Long
+HP: 150000000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 162
+TYPE: 1
+NAME: Hỏa Kỳ Lân
+HP: 150000000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 163
+TYPE: 4
+NAME: Phù thủy Bí Ngô
+HP: 150000000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 164
+TYPE: 1
+NAME: Băng Đế
+HP: 200000000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 165
+TYPE: 1
+NAME: Băng Vương
+HP: 100000000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 166
+TYPE: 1
+NAME: Sơn Tinh
+HP: 100000000
+RANGE MOVE: 33
+SPEED: 6
+=============================
+ID: 167
+TYPE: 1
+NAME: Thủy Tinh
+HP: 100000000
+RANGE MOVE: 33
+SPEED: 6
+=============================
+ID: 168
+TYPE: 1
+NAME: Tử thần
+HP: 492340
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 169
+TYPE: 0
+NAME: Thực hồn thảo
+HP: 272780
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 170
+TYPE: 4
+NAME: Kền kền xám
+HP: 194840
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 171
+TYPE: 4
+NAME: Hỏa nha
+HP: 6219600
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 172
+TYPE: 4
+NAME: Yêu trùng
+HP: 2609330
+RANGE MOVE: 33
+SPEED: 6
+=============================
+ID: 173
+TYPE: 3
+NAME: Thủy tộc
+HP: 12000000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 174
+TYPE: 1
+NAME: Thạch tộc
+HP: 100000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 175
+TYPE: 4
+NAME: Bạch diện yêu
+HP: 1088430
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 176
+TYPE: 0
+NAME: Tử hồn
+HP: 100000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 177
+TYPE: 1
+NAME: Bất diệt binh
+HP: 777450
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 178
+TYPE: 1
+NAME: Sói xanh
+HP: 311360
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 179
+TYPE: 4
+NAME: Kẻ săn tử thần
+HP: 6219600
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 180
+TYPE: 1
+NAME: Ma săn ninja
+HP: 1188430
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 181
+TYPE: 1
+NAME: Cá răng cưa
+HP: 462010
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 182
+TYPE: 1
+NAME: Cua mặt quỷ
+HP: 1663810
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 183
+TYPE: 0
+NAME: Tà tâm thủy
+HP: 100000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 184
+TYPE: 2
+NAME: Quỷ bùn
+HP: 177660
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 185
+TYPE: 1
+NAME: Khô lâu tí hon
+HP: 689280
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 186
+TYPE: 2
+NAME: Độc nhãn xà
+HP: 435910
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 187
+TYPE: 4
+NAME: Phong lôi thú
+HP: 1863800
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 188
+TYPE: 1
+NAME: Bọ cánh tím
+HP: 6563800
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 189
+TYPE: 1
+NAME: Tiểu sơn thử
+HP: 2869330
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 190
+TYPE: 1
+NAME: Thi quỷ
+HP: 4017070
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 191
+TYPE: 3
+NAME: Thực giả thú
+HP: 100000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 192
+TYPE: 3
+NAME: Quỷ hầu viên
+HP: 4617070
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 193
+TYPE: 1
+NAME: Độc nhãn quái
+HP: 6219600
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 194
+TYPE: 3
+NAME: Địa linh ngư
+HP: 6219600
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 195
+TYPE: 2
+NAME: Trùng phấn
+HP: 6219600
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 196
+TYPE: 1
+NAME: Bạt sơn nghĩ
+HP: 10000000
+RANGE MOVE: 33
+SPEED: 4
+=============================
+ID: 197
+TYPE: 3
+NAME: Độc thủy thú
+HP: 7232000
+RANGE MOVE: 33
+SPEED: 4
+=============================
+ID: 198
+TYPE: 1
+NAME: Lão Đại
+HP: 200000000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 199
+TYPE: 1
+NAME: Lão Tam
+HP: 200000000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 200
+TYPE: 1
+NAME: Lão Nhị
+HP: 200000000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 201
+TYPE: 4
+NAME: Kền Kền Vương
+HP: 200000000
+RANGE MOVE: 24
+SPEED: 3
+=============================
+ID: 202
+TYPE: 1
+NAME: Kền kền nhất tộc
+HP: 5000000
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 203
+TYPE: 1
+NAME: Đại Lực Sĩ
+HP: 200000000
+RANGE MOVE: 24
+SPEED: 3
+=============================
+ID: 204
+TYPE: 1
+NAME: U Minh Khuyển
+HP: 200000000
+RANGE MOVE: 24
+SPEED: 3
+=============================
+ID: 205
+TYPE: 4
+NAME: Lồng đèn tròn
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 206
+TYPE: 4
+NAME: Lồng đèn cá chép
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 207
+TYPE: 4
+NAME: Lồng đèn ngôi sao
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 208
+TYPE: 4
+NAME: Lồng đèn mặt trăng
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 209
+TYPE: 1
+NAME: Mỹ Hầu Tướng
+HP: 100000000
+RANGE MOVE: 24
+SPEED: 3
+=============================
+ID: 210
+TYPE: 1
+NAME: Mỹ Hầu Vương
+HP: 200000000
+RANGE MOVE: 24
+SPEED: 3
+=============================
+ID: 211
+TYPE: 4
+NAME: Hỏa Long
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 212
+TYPE: 4
+NAME: Hải mã cấp 1
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 213
+TYPE: 4
+NAME: Hải mã cấp 2
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 214
+TYPE: 4
+NAME: Hải mã cấp 3
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 215
+TYPE: 4
+NAME: Dị Long cấp 1
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 216
+TYPE: 4
+NAME: Dị Long cấp 2
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 217
+TYPE: 4
+NAME: Dị Long cấp 3
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 218
+TYPE: 1
+NAME: Tướng giặc
+HP: 100000000
+RANGE MOVE: 24
+SPEED: 3
+=============================
+ID: 219
+TYPE: 4
+NAME: Con ma
+HP: 1
+RANGE MOVE: 33
+SPEED: 0
+=============================
+ID: 220
+TYPE: 4
+NAME: Hắc Long
+HP: 100000
+RANGE MOVE: 24
+SPEED: 1
+=============================
+ID: 221
+TYPE: 1
+NAME: Tên trộm
+HP: 1000
+RANGE MOVE: 33
+SPEED: 3
+=============================
+ID: 222
+TYPE: 1
+NAME: Đầu lĩnh đạo tặc
+HP: 1000
+RANGE MOVE: 50
+SPEED: 3
+=============================
+ID: 223
+TYPE: 1
+NAME: Tử Hạ Ma Thần
+HP: 200000000
+RANGE MOVE: 70
+SPEED: 3
+=============================
+ID: 224
+TYPE: 1
+NAME: Người tuyết
+HP: 3000
+RANGE MOVE: 1
+SPEED: 0
+=============================
+ID: 225
+TYPE: 0
+NAME: Hộp bí ẩn
+HP: 100
+RANGE MOVE: 1
+SPEED: 0
+=============================
+ID: 226
+TYPE: 1
+NAME: Quái vật
+HP: 1000
+RANGE MOVE: 50
+SPEED: 3
+=============================
+ID: 227
+TYPE: 1
+NAME: King Heo
+HP: 150000
+RANGE MOVE: 50
+SPEED: 3
+=============================
+ID: 228
+TYPE: 1
+NAME: Hoả thạch vương
+HP: 1000
+RANGE MOVE: 70
+SPEED: 3
+=============================
+ID: 229
+TYPE: 4
+NAME: Tuần Lộc
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 230
+TYPE: 1
+NAME: Boss Tuần Lộc
+HP: 150000
+RANGE MOVE: 70
+SPEED: 1
+=============================
+ID: 231
+TYPE: 1
+NAME: Chuột Canh Tý
+HP: 150000
+RANGE MOVE: 70
+SPEED: 1
+=============================
+ID: 232
+TYPE: 1
+NAME: Koro king
+HP: 1000000
+RANGE MOVE: 70
+SPEED: 1
+=============================
+ID: 233
+TYPE: 1
+NAME: Koro
+HP: 10
+RANGE MOVE: 70
+SPEED: 4
+=============================
+ID: 234
+TYPE: 1
+NAME: Pet Bí Rễ Hành
+HP: 10
+RANGE MOVE: 70
+SPEED: 1
+=============================
+ID: 235
+TYPE: 4
+NAME: Pet Boru
+HP: 1
+RANGE MOVE: 33
+SPEED: 2
+=============================
+ID: 236
+TYPE: 4
+NAME: Vĩ thú 1
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 237
+TYPE: 4
+NAME: Juubi-Shinju
+HP: 900000000
+RANGE MOVE: 120
+SPEED: 0
+=============================
+ID: 238
+TYPE: 4
+NAME: Pet Cửu Vĩ
+HP: 1
+RANGE MOVE: 72
+SPEED: 2
+=============================
+ID: 239
+TYPE: 4
+NAME: Nhị vĩ
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 240
+TYPE: 4
+NAME: Nhất vĩ
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 241
+TYPE: 4
+NAME: Tam vĩ
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 242
+TYPE: 4
+NAME: Tứ vĩ
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 243
+TYPE: 4
+NAME: Lục vĩ
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 244
+TYPE: 4
+NAME: Thất vĩ
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 245
+TYPE: 4
+NAME: Bát vĩ
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 246
+TYPE: 4
+NAME: Cửu vĩ
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 247
+TYPE: 4
+NAME: Nhất vĩ bảo bảo
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 248
+TYPE: 4
+NAME: Nhị vĩ bảo bảo
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 249
+TYPE: 4
+NAME: Tam vĩ bảo bảo
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 250
+TYPE: 4
+NAME: Tứ vĩ bảo bảo
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 251
+TYPE: 4
+NAME: Ngũ vĩ bảo bảo
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 252
+TYPE: 4
+NAME: Lục vĩ bảo bảo
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 253
+TYPE: 4
+NAME: Thất vĩ bảo bảo
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================
+ID: 254
+TYPE: 4
+NAME: Bát vĩ bảo bảo
+HP: 1
+RANGE MOVE: 120
+SPEED: 2
+=============================

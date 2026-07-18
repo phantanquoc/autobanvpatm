@@ -1,0 +1,12 @@
+[23:01:59] 
+Nhân vật: cau3mayman
+Xu giao dịch: 20.000 xu
+Biến động: 8.025.986 -> 8.005.986
+Vật phẩm nhận: Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), 
+==========================================
+[23:01:35] 
+Nhân vật: cau3mayman
+Xu giao dịch: 20.000 xu
+Biến động: 8.045.986 -> 8.025.986
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), 
+==========================================

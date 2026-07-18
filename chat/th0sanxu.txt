@@ -1,0 +1,4 @@
+﻿[TIME]5[/TIME]
+[TXT]
+@th0sanxu mua tất cả item sự kiện giá cao
+[/TXT]

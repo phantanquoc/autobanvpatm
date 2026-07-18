@@ -1,0 +1,42 @@
+[21:34:11] 
+Nhân vật: trumtieu27
+Xu giao dịch: 14.000 xu
+Biến động: 126.847 -> 112.847
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), 
+==========================================
+[21:33:50] 
+Nhân vật: ann1997
+Xu giao dịch: 24.000 xu
+Biến động: 150.847 -> 126.847
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), 
+==========================================
+[20:50:04] 
+Nhân vật: ann1997
+Xu giao dịch: 18.000 xu
+Biến động: 168.847 -> 150.847
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), 
+==========================================
+[20:02:14] 
+Nhân vật: trumtieu27
+Xu giao dịch: 10.000 xu
+Biến động: 178.847 -> 168.847
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), 
+==========================================
+[19:53:02] 
+Nhân vật: trumtieu27
+Xu giao dịch: 6.000 xu
+Biến động: 184.847 -> 178.847
+Vật phẩm nhận: Gà Tây (1), Gà Tây (1), Gà Tây (1), 
+==========================================
+[19:40:17] 
+Nhân vật: tieukui25
+Xu giao dịch: 24.000 xu
+Biến động: 208.847 -> 184.847
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), 
+==========================================
+[19:30:15] 
+Nhân vật: trumtieu27
+Xu giao dịch: 8.000 xu
+Biến động: 216.847 -> 208.847
+Vật phẩm nhận: Tôm hùm (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), 
+==========================================

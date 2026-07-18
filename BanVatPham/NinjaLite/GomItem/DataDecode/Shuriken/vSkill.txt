@@ -1,0 +1,10244 @@
+
+   ID: 0
+   NAME: Chiêu cơ bản
+   MAX POINT: 0
+   TYPE: 1
+   ICON ID: 318
+   DESCRIPTION: Đòn đánh cơ bản sử dụng sức mạnh bản thân gây sát thương lên kẻ địch
+      ID: 0
+      POINT: 0
+      LEVEL: 1
+      MANA USE: 0
+      COOLDOWN: 500
+      DX: 28
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+-----------------------------
+
+   ID: 1
+   NAME: Chiêu Hiyoko
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 319
+   DESCRIPTION: Kiếm pháp nhập môn - vung kiếm vào một mục tiêu gây sát thương lên mục tiêu đó
+      ID: 1
+      POINT: 0
+      LEVEL: 10
+      MANA USE: 0
+      COOLDOWN: 550
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 2
+      POINT: 1
+      LEVEL: 10
+      MANA USE: 1
+      COOLDOWN: 500
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 3
+      POINT: 2
+      LEVEL: 11
+      MANA USE: 2
+      COOLDOWN: 500
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 4
+      POINT: 3
+      LEVEL: 12
+      MANA USE: 3
+      COOLDOWN: 500
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 5
+      POINT: 4
+      LEVEL: 13
+      MANA USE: 4
+      COOLDOWN: 450
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 6
+      POINT: 5
+      LEVEL: 14
+      MANA USE: 5
+      COOLDOWN: 450
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 7
+      POINT: 6
+      LEVEL: 15
+      MANA USE: 6
+      COOLDOWN: 450
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 8
+      POINT: 7
+      LEVEL: 16
+      MANA USE: 7
+      COOLDOWN: 400
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 9
+      POINT: 8
+      LEVEL: 17
+      MANA USE: 8
+      COOLDOWN: 400
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 10
+      POINT: 9
+      LEVEL: 18
+      MANA USE: 9
+      COOLDOWN: 400
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 11
+      POINT: 10
+      LEVEL: 19
+      MANA USE: 10
+      COOLDOWN: 350
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 12
+      POINT: 11
+      LEVEL: 20
+      MANA USE: 12
+      COOLDOWN: 350
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+      ID: 13
+      POINT: 12
+      LEVEL: 21
+      MANA USE: 15
+      COOLDOWN: 300
+      DX: 51
+      DY: 18
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 2
+   NAME: Chiêu Amagedon
+   MAX POINT: 6
+   TYPE: 0
+   ICON ID: 601
+   DESCRIPTION: Nhẫn thuật tâm pháp - nâng cao khả năng tấn công và phòng thủ
+      ID: 14
+      POINT: 0
+      LEVEL: 15
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 15
+      POINT: 1
+      LEVEL: 15
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 16
+      POINT: 2
+      LEVEL: 16
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 17
+      POINT: 3
+      LEVEL: 17
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 18
+      POINT: 4
+      LEVEL: 18
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 19
+      POINT: 5
+      LEVEL: 19
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 20
+      POINT: 6
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 3
+   NAME: Chiêu Jizokuzan
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 320
+   DESCRIPTION: Chém liên tục 3 nhát kiếm gây sát thương cho một mục tiêu nhất định
+      ID: 21
+      POINT: 0
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 1000
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 22
+      POINT: 1
+      LEVEL: 20
+      MANA USE: 31
+      COOLDOWN: 850
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 23
+      POINT: 2
+      LEVEL: 21
+      MANA USE: 32
+      COOLDOWN: 750
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 24
+      POINT: 3
+      LEVEL: 22
+      MANA USE: 33
+      COOLDOWN: 650
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 25
+      POINT: 4
+      LEVEL: 23
+      MANA USE: 34
+      COOLDOWN: 550
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 26
+      POINT: 5
+      LEVEL: 24
+      MANA USE: 35
+      COOLDOWN: 450
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 27
+      POINT: 6
+      LEVEL: 25
+      MANA USE: 36
+      COOLDOWN: 450
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 28
+      POINT: 7
+      LEVEL: 26
+      MANA USE: 37
+      COOLDOWN: 400
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 29
+      POINT: 8
+      LEVEL: 27
+      MANA USE: 38
+      COOLDOWN: 400
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 30
+      POINT: 9
+      LEVEL: 28
+      MANA USE: 39
+      COOLDOWN: 350
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 31
+      POINT: 10
+      LEVEL: 29
+      MANA USE: 40
+      COOLDOWN: 350
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 32
+      POINT: 11
+      LEVEL: 30
+      MANA USE: 41
+      COOLDOWN: 350
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 33
+      POINT: 12
+      LEVEL: 31
+      MANA USE: 42
+      COOLDOWN: 350
+      DX: 51
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 4
+   NAME: Chiêu Kakyuu
+   MAX POINT: 6
+   TYPE: 3
+   ICON ID: 602
+   DESCRIPTION: Sử dụng hỏa thuật thiêu đốt quái vật biến chúng thành thức ăn
+      ID: 34
+      POINT: 0
+      LEVEL: 25
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 35
+      POINT: 1
+      LEVEL: 25
+      MANA USE: 50
+      COOLDOWN: 25000
+      DX: 120
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+      ID: 36
+      POINT: 2
+      LEVEL: 26
+      MANA USE: 50
+      COOLDOWN: 25000
+      DX: 120
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+      ID: 37
+      POINT: 3
+      LEVEL: 27
+      MANA USE: 50
+      COOLDOWN: 25000
+      DX: 120
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+      ID: 38
+      POINT: 4
+      LEVEL: 28
+      MANA USE: 50
+      COOLDOWN: 25000
+      DX: 120
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+      ID: 39
+      POINT: 5
+      LEVEL: 29
+      MANA USE: 50
+      COOLDOWN: 25000
+      DX: 120
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+      ID: 40
+      POINT: 6
+      LEVEL: 30
+      MANA USE: 50
+      COOLDOWN: 25000
+      DX: 120
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 5
+   NAME: Chiêu X Zangeki
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 321
+   DESCRIPTION: Xuất ra đường kiếm nhanh nhẹn đan chéo gây sát thương tối đa lên 3 mục tiêu
+      ID: 41
+      POINT: 0
+      LEVEL: 30
+      MANA USE: 0
+      COOLDOWN: 750
+      DX: 63
+      DY: 25
+      MAX FIGHT: 1
+..........................
+
+      ID: 42
+      POINT: 1
+      LEVEL: 30
+      MANA USE: 46
+      COOLDOWN: 750
+      DX: 63
+      DY: 25
+      MAX FIGHT: 2
+..........................
+
+      ID: 43
+      POINT: 2
+      LEVEL: 31
+      MANA USE: 47
+      COOLDOWN: 700
+      DX: 63
+      DY: 25
+      MAX FIGHT: 2
+..........................
+
+      ID: 44
+      POINT: 3
+      LEVEL: 32
+      MANA USE: 48
+      COOLDOWN: 650
+      DX: 63
+      DY: 25
+      MAX FIGHT: 2
+..........................
+
+      ID: 45
+      POINT: 4
+      LEVEL: 33
+      MANA USE: 49
+      COOLDOWN: 600
+      DX: 63
+      DY: 25
+      MAX FIGHT: 2
+..........................
+
+      ID: 46
+      POINT: 5
+      LEVEL: 34
+      MANA USE: 50
+      COOLDOWN: 550
+      DX: 63
+      DY: 25
+      MAX FIGHT: 2
+..........................
+
+      ID: 47
+      POINT: 6
+      LEVEL: 35
+      MANA USE: 51
+      COOLDOWN: 500
+      DX: 63
+      DY: 25
+      MAX FIGHT: 3
+..........................
+
+      ID: 48
+      POINT: 7
+      LEVEL: 36
+      MANA USE: 52
+      COOLDOWN: 500
+      DX: 63
+      DY: 25
+      MAX FIGHT: 3
+..........................
+
+      ID: 49
+      POINT: 8
+      LEVEL: 37
+      MANA USE: 53
+      COOLDOWN: 450
+      DX: 63
+      DY: 25
+      MAX FIGHT: 3
+..........................
+
+      ID: 50
+      POINT: 9
+      LEVEL: 38
+      MANA USE: 54
+      COOLDOWN: 450
+      DX: 63
+      DY: 25
+      MAX FIGHT: 3
+..........................
+
+      ID: 51
+      POINT: 10
+      LEVEL: 39
+      MANA USE: 55
+      COOLDOWN: 400
+      DX: 63
+      DY: 25
+      MAX FIGHT: 3
+..........................
+
+      ID: 52
+      POINT: 11
+      LEVEL: 40
+      MANA USE: 56
+      COOLDOWN: 400
+      DX: 63
+      DY: 25
+      MAX FIGHT: 3
+..........................
+
+      ID: 53
+      POINT: 12
+      LEVEL: 41
+      MANA USE: 57
+      COOLDOWN: 350
+      DX: 63
+      DY: 25
+      MAX FIGHT: 3
+..........................
+
+=============================
+
+   ID: 6
+   NAME: Chiêu Raikou
+   MAX POINT: 6
+   TYPE: 2
+   ICON ID: 603
+   DESCRIPTION: Làm cho bản thân tàng hình trước kẻ thù đồng thời gây chí mạng ở nhát đánh đầu tiên trong trạng thái tàng hình
+      ID: 54
+      POINT: 0
+      LEVEL: 35
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 55
+      POINT: 1
+      LEVEL: 35
+      MANA USE: 50
+      COOLDOWN: 55000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 56
+      POINT: 2
+      LEVEL: 36
+      MANA USE: 60
+      COOLDOWN: 53000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 57
+      POINT: 3
+      LEVEL: 37
+      MANA USE: 70
+      COOLDOWN: 51000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 58
+      POINT: 4
+      LEVEL: 38
+      MANA USE: 80
+      COOLDOWN: 49000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 59
+      POINT: 5
+      LEVEL: 39
+      MANA USE: 90
+      COOLDOWN: 47000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 60
+      POINT: 6
+      LEVEL: 40
+      MANA USE: 100
+      COOLDOWN: 45000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 7
+   NAME: Chiêu Hihebun
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 322
+   DESCRIPTION: Tạo ra cơn mưa kiếm, gây sát thương cực lớn lên một mục tiêu
+      ID: 61
+      POINT: 0
+      LEVEL: 40
+      MANA USE: 0
+      COOLDOWN: 20000
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 62
+      POINT: 1
+      LEVEL: 40
+      MANA USE: 160
+      COOLDOWN: 19000
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 63
+      POINT: 2
+      LEVEL: 41
+      MANA USE: 170
+      COOLDOWN: 18500
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 64
+      POINT: 3
+      LEVEL: 42
+      MANA USE: 180
+      COOLDOWN: 18500
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 65
+      POINT: 4
+      LEVEL: 43
+      MANA USE: 190
+      COOLDOWN: 18000
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 66
+      POINT: 5
+      LEVEL: 44
+      MANA USE: 200
+      COOLDOWN: 18000
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 67
+      POINT: 6
+      LEVEL: 45
+      MANA USE: 210
+      COOLDOWN: 17500
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 68
+      POINT: 7
+      LEVEL: 46
+      MANA USE: 220
+      COOLDOWN: 17500
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 69
+      POINT: 8
+      LEVEL: 47
+      MANA USE: 230
+      COOLDOWN: 17000
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 70
+      POINT: 9
+      LEVEL: 48
+      MANA USE: 240
+      COOLDOWN: 17000
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 71
+      POINT: 10
+      LEVEL: 49
+      MANA USE: 250
+      COOLDOWN: 16500
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 72
+      POINT: 11
+      LEVEL: 50
+      MANA USE: 260
+      COOLDOWN: 16500
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+      ID: 73
+      POINT: 12
+      LEVEL: 51
+      MANA USE: 270
+      COOLDOWN: 16000
+      DX: 48
+      DY: 85
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 8
+   NAME: Chiêu Shuurai
+   MAX POINT: 6
+   TYPE: 0
+   ICON ID: 604
+   DESCRIPTION: Tăng khả năng kháng phong đồng thời giúp bản thân nhanh chóng hồi phục khi bị choáng
+      ID: 74
+      POINT: 0
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 75
+      POINT: 1
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 76
+      POINT: 2
+      LEVEL: 46
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 77
+      POINT: 3
+      LEVEL: 47
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 78
+      POINT: 4
+      LEVEL: 48
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 79
+      POINT: 5
+      LEVEL: 49
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 80
+      POINT: 6
+      LEVEL: 50
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 9
+   NAME: Chiêu Choukouhirenzo
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 323
+   DESCRIPTION: Xuất ra 3 hỏa kiếm cường mạnh gây sát thương trong một phạm vi nhất định, tối đa 4 mục tiêu
+      ID: 81
+      POINT: 0
+      LEVEL: 50
+      MANA USE: 0
+      COOLDOWN: 1000
+      DX: 65
+      DY: 25
+      MAX FIGHT: 1
+..........................
+
+      ID: 82
+      POINT: 1
+      LEVEL: 50
+      MANA USE: 88
+      COOLDOWN: 900
+      DX: 65
+      DY: 25
+      MAX FIGHT: 2
+..........................
+
+      ID: 83
+      POINT: 2
+      LEVEL: 51
+      MANA USE: 90
+      COOLDOWN: 850
+      DX: 65
+      DY: 25
+      MAX FIGHT: 2
+..........................
+
+      ID: 84
+      POINT: 3
+      LEVEL: 52
+      MANA USE: 92
+      COOLDOWN: 800
+      DX: 65
+      DY: 25
+      MAX FIGHT: 2
+..........................
+
+      ID: 85
+      POINT: 4
+      LEVEL: 53
+      MANA USE: 94
+      COOLDOWN: 750
+      DX: 65
+      DY: 25
+      MAX FIGHT: 2
+..........................
+
+      ID: 86
+      POINT: 5
+      LEVEL: 54
+      MANA USE: 96
+      COOLDOWN: 700
+      DX: 65
+      DY: 25
+      MAX FIGHT: 3
+..........................
+
+      ID: 87
+      POINT: 6
+      LEVEL: 55
+      MANA USE: 98
+      COOLDOWN: 650
+      DX: 65
+      DY: 25
+      MAX FIGHT: 3
+..........................
+
+      ID: 88
+      POINT: 7
+      LEVEL: 56
+      MANA USE: 100
+      COOLDOWN: 600
+      DX: 65
+      DY: 25
+      MAX FIGHT: 3
+..........................
+
+      ID: 89
+      POINT: 8
+      LEVEL: 57
+      MANA USE: 102
+      COOLDOWN: 550
+      DX: 65
+      DY: 25
+      MAX FIGHT: 3
+..........................
+
+      ID: 90
+      POINT: 9
+      LEVEL: 58
+      MANA USE: 104
+      COOLDOWN: 500
+      DX: 65
+      DY: 25
+      MAX FIGHT: 4
+..........................
+
+      ID: 91
+      POINT: 10
+      LEVEL: 59
+      MANA USE: 106
+      COOLDOWN: 450
+      DX: 65
+      DY: 25
+      MAX FIGHT: 4
+..........................
+
+      ID: 92
+      POINT: 11
+      LEVEL: 60
+      MANA USE: 108
+      COOLDOWN: 400
+      DX: 65
+      DY: 25
+      MAX FIGHT: 4
+..........................
+
+      ID: 93
+      POINT: 12
+      LEVEL: 61
+      MANA USE: 110
+      COOLDOWN: 350
+      DX: 65
+      DY: 25
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 55
+   NAME: Chiêu Pawaraikou
+   MAX POINT: 15
+   TYPE: 0
+   ICON ID: 1293
+   DESCRIPTION: Lấy hỏa làm gốc dung hợp vào nhát đánh đầu tiên gây nên sát thương cực lớn.
+      ID: 559
+      POINT: 0
+      LEVEL: 60
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 560
+      POINT: 1
+      LEVEL: 60
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 561
+      POINT: 2
+      LEVEL: 61
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 562
+      POINT: 3
+      LEVEL: 62
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 563
+      POINT: 4
+      LEVEL: 63
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 564
+      POINT: 5
+      LEVEL: 64
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 565
+      POINT: 6
+      LEVEL: 65
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 566
+      POINT: 7
+      LEVEL: 66
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 567
+      POINT: 8
+      LEVEL: 67
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 568
+      POINT: 9
+      LEVEL: 68
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 569
+      POINT: 10
+      LEVEL: 69
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 570
+      POINT: 11
+      LEVEL: 70
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 571
+      POINT: 12
+      LEVEL: 71
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 637
+      POINT: 13
+      LEVEL: 72
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 638
+      POINT: 14
+      LEVEL: 73
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 639
+      POINT: 15
+      LEVEL: 74
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+=============================
+
+   ID: 61
+   NAME: Chiêu Maajizangeki
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 1546
+   DESCRIPTION: Xuất ra tam hỏa kiếm hội tụ thành Cự Ảnh Kiếm bùng nổ tiêu diệt kẻ địch.
+      ID: 655
+      POINT: 0
+      LEVEL: 70
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 55
+      DY: 30
+      MAX FIGHT: 1
+..........................
+
+      ID: 656
+      POINT: 1
+      LEVEL: 70
+      MANA USE: 95
+      COOLDOWN: 700
+      DX: 55
+      DY: 30
+      MAX FIGHT: 1
+..........................
+
+      ID: 657
+      POINT: 2
+      LEVEL: 71
+      MANA USE: 98
+      COOLDOWN: 650
+      DX: 55
+      DY: 30
+      MAX FIGHT: 1
+..........................
+
+      ID: 658
+      POINT: 3
+      LEVEL: 72
+      MANA USE: 101
+      COOLDOWN: 650
+      DX: 55
+      DY: 30
+      MAX FIGHT: 1
+..........................
+
+      ID: 659
+      POINT: 4
+      LEVEL: 73
+      MANA USE: 104
+      COOLDOWN: 600
+      DX: 55
+      DY: 30
+      MAX FIGHT: 2
+..........................
+
+      ID: 660
+      POINT: 5
+      LEVEL: 74
+      MANA USE: 107
+      COOLDOWN: 600
+      DX: 55
+      DY: 30
+      MAX FIGHT: 2
+..........................
+
+      ID: 661
+      POINT: 6
+      LEVEL: 75
+      MANA USE: 110
+      COOLDOWN: 550
+      DX: 55
+      DY: 30
+      MAX FIGHT: 2
+..........................
+
+      ID: 662
+      POINT: 7
+      LEVEL: 76
+      MANA USE: 113
+      COOLDOWN: 550
+      DX: 55
+      DY: 30
+      MAX FIGHT: 3
+..........................
+
+      ID: 663
+      POINT: 8
+      LEVEL: 77
+      MANA USE: 116
+      COOLDOWN: 500
+      DX: 55
+      DY: 30
+      MAX FIGHT: 3
+..........................
+
+      ID: 664
+      POINT: 9
+      LEVEL: 78
+      MANA USE: 119
+      COOLDOWN: 450
+      DX: 55
+      DY: 30
+      MAX FIGHT: 3
+..........................
+
+      ID: 665
+      POINT: 10
+      LEVEL: 79
+      MANA USE: 122
+      COOLDOWN: 400
+      DX: 55
+      DY: 30
+      MAX FIGHT: 4
+..........................
+
+      ID: 666
+      POINT: 11
+      LEVEL: 80
+      MANA USE: 125
+      COOLDOWN: 350
+      DX: 55
+      DY: 30
+      MAX FIGHT: 4
+..........................
+
+      ID: 667
+      POINT: 12
+      LEVEL: 81
+      MANA USE: 128
+      COOLDOWN: 300
+      DX: 55
+      DY: 30
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 67
+   NAME: Nhẫn thuật Kage Bunshin 
+   MAX POINT: 10
+   TYPE: 2
+   ICON ID: 2215
+   DESCRIPTION: Nhẫn thuật cho phép tạo ra một bản sao hoàn hảo từ bản chính.
+      ID: 733
+      POINT: 0
+      LEVEL: 90
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 734
+      POINT: 1
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 735
+      POINT: 2
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 736
+      POINT: 3
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 737
+      POINT: 4
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 738
+      POINT: 5
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 739
+      POINT: 6
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 740
+      POINT: 7
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 741
+      POINT: 8
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 742
+      POINT: 9
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 743
+      POINT: 10
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 73
+   NAME: Chiêu Ikkakujuu 
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2226
+   DESCRIPTION: Vung kiếm tạo ra Hỏa kỳ lân đốt cháy kẻ thù.
+      ID: 799
+      POINT: 0
+      LEVEL: 80
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 800
+      POINT: 1
+      LEVEL: 80
+      MANA USE: 110
+      COOLDOWN: 500
+      DX: 120
+      DY: 46
+      MAX FIGHT: 2
+..........................
+
+      ID: 801
+      POINT: 2
+      LEVEL: 81
+      MANA USE: 112
+      COOLDOWN: 490
+      DX: 120
+      DY: 46
+      MAX FIGHT: 2
+..........................
+
+      ID: 802
+      POINT: 3
+      LEVEL: 82
+      MANA USE: 114
+      COOLDOWN: 480
+      DX: 120
+      DY: 46
+      MAX FIGHT: 2
+..........................
+
+      ID: 803
+      POINT: 4
+      LEVEL: 83
+      MANA USE: 116
+      COOLDOWN: 470
+      DX: 120
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 804
+      POINT: 5
+      LEVEL: 84
+      MANA USE: 118
+      COOLDOWN: 460
+      DX: 120
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 805
+      POINT: 6
+      LEVEL: 85
+      MANA USE: 120
+      COOLDOWN: 440
+      DX: 120
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 806
+      POINT: 7
+      LEVEL: 86
+      MANA USE: 122
+      COOLDOWN: 420
+      DX: 120
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 807
+      POINT: 8
+      LEVEL: 87
+      MANA USE: 124
+      COOLDOWN: 400
+      DX: 120
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 808
+      POINT: 9
+      LEVEL: 88
+      MANA USE: 126
+      COOLDOWN: 380
+      DX: 120
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 809
+      POINT: 10
+      LEVEL: 89
+      MANA USE: 128
+      COOLDOWN: 360
+      DX: 120
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+      ID: 810
+      POINT: 11
+      LEVEL: 90
+      MANA USE: 130
+      COOLDOWN: 330
+      DX: 120
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+      ID: 811
+      POINT: 12
+      LEVEL: 91
+      MANA USE: 132
+      COOLDOWN: 300
+      DX: 120
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+=============================
+
+   ID: 79
+   NAME: Chiêu Enko Bakusatsu
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2227
+   DESCRIPTION: Hỏa thuật Hỏa Long Xuất Thế
+      ID: 877
+      POINT: 0
+      LEVEL: 100
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 878
+      POINT: 1
+      LEVEL: 100
+      MANA USE: 128
+      COOLDOWN: 500
+      DX: 120
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 879
+      POINT: 2
+      LEVEL: 101
+      MANA USE: 130
+      COOLDOWN: 490
+      DX: 120
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 880
+      POINT: 3
+      LEVEL: 102
+      MANA USE: 132
+      COOLDOWN: 480
+      DX: 120
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 881
+      POINT: 4
+      LEVEL: 103
+      MANA USE: 134
+      COOLDOWN: 470
+      DX: 120
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 882
+      POINT: 5
+      LEVEL: 104
+      MANA USE: 136
+      COOLDOWN: 460
+      DX: 120
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 883
+      POINT: 6
+      LEVEL: 105
+      MANA USE: 138
+      COOLDOWN: 440
+      DX: 120
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 884
+      POINT: 7
+      LEVEL: 106
+      MANA USE: 140
+      COOLDOWN: 420
+      DX: 120
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 885
+      POINT: 8
+      LEVEL: 107
+      MANA USE: 142
+      COOLDOWN: 400
+      DX: 120
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 886
+      POINT: 9
+      LEVEL: 108
+      MANA USE: 144
+      COOLDOWN: 380
+      DX: 120
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+      ID: 887
+      POINT: 10
+      LEVEL: 109
+      MANA USE: 146
+      COOLDOWN: 360
+      DX: 120
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+      ID: 888
+      POINT: 11
+      LEVEL: 110
+      MANA USE: 148
+      COOLDOWN: 330
+      DX: 120
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+      ID: 889
+      POINT: 12
+      LEVEL: 111
+      MANA USE: 150
+      COOLDOWN: 300
+      DX: 120
+      DY: 46
+      MAX FIGHT: 6
+..........................
+
+=============================
+
+-----------------------------
+
+   ID: 10
+   NAME: Chiêu Otama
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 596
+   DESCRIPTION: Tiêu thuật nhập môn - phóng phi tiêu gây sát thương lên một mục tiêu nhất định
+      ID: 94
+      POINT: 0
+      LEVEL: 10
+      MANA USE: 0
+      COOLDOWN: 750
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 95
+      POINT: 1
+      LEVEL: 10
+      MANA USE: 2
+      COOLDOWN: 450
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 96
+      POINT: 2
+      LEVEL: 11
+      MANA USE: 4
+      COOLDOWN: 450
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 97
+      POINT: 3
+      LEVEL: 12
+      MANA USE: 6
+      COOLDOWN: 450
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 98
+      POINT: 4
+      LEVEL: 13
+      MANA USE: 8
+      COOLDOWN: 400
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 99
+      POINT: 5
+      LEVEL: 14
+      MANA USE: 10
+      COOLDOWN: 400
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 100
+      POINT: 6
+      LEVEL: 15
+      MANA USE: 12
+      COOLDOWN: 400
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 101
+      POINT: 7
+      LEVEL: 16
+      MANA USE: 14
+      COOLDOWN: 350
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 102
+      POINT: 8
+      LEVEL: 17
+      MANA USE: 16
+      COOLDOWN: 350
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 103
+      POINT: 9
+      LEVEL: 18
+      MANA USE: 18
+      COOLDOWN: 350
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 104
+      POINT: 10
+      LEVEL: 19
+      MANA USE: 20
+      COOLDOWN: 300
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 105
+      POINT: 11
+      LEVEL: 20
+      MANA USE: 21
+      COOLDOWN: 300
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 106
+      POINT: 12
+      LEVEL: 21
+      MANA USE: 22
+      COOLDOWN: 250
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 11
+   NAME: Chiêu Itotama
+   MAX POINT: 6
+   TYPE: 0
+   ICON ID: 621
+   DESCRIPTION: Nhẫn thuật tâm pháp - nâng cao khả năng tấn công và phản đòn
+      ID: 107
+      POINT: 0
+      LEVEL: 15
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 108
+      POINT: 1
+      LEVEL: 15
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 109
+      POINT: 2
+      LEVEL: 16
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 110
+      POINT: 3
+      LEVEL: 17
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 111
+      POINT: 4
+      LEVEL: 18
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 112
+      POINT: 5
+      LEVEL: 19
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 113
+      POINT: 6
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 12
+   NAME: Chiêu Kasoushuriken
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 597
+   DESCRIPTION: Phóng 2 phi tiêu liên tục gây sát thương cho một mục tiêu nhất định
+      ID: 114
+      POINT: 0
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 1000
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 115
+      POINT: 1
+      LEVEL: 20
+      MANA USE: 32
+      COOLDOWN: 750
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 116
+      POINT: 2
+      LEVEL: 21
+      MANA USE: 34
+      COOLDOWN: 650
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 117
+      POINT: 3
+      LEVEL: 22
+      MANA USE: 36
+      COOLDOWN: 650
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 118
+      POINT: 4
+      LEVEL: 23
+      MANA USE: 38
+      COOLDOWN: 550
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 119
+      POINT: 5
+      LEVEL: 24
+      MANA USE: 40
+      COOLDOWN: 550
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 120
+      POINT: 6
+      LEVEL: 25
+      MANA USE: 42
+      COOLDOWN: 500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 121
+      POINT: 7
+      LEVEL: 26
+      MANA USE: 44
+      COOLDOWN: 500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 122
+      POINT: 8
+      LEVEL: 27
+      MANA USE: 46
+      COOLDOWN: 450
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 123
+      POINT: 9
+      LEVEL: 28
+      MANA USE: 48
+      COOLDOWN: 450
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 124
+      POINT: 10
+      LEVEL: 29
+      MANA USE: 50
+      COOLDOWN: 400
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 125
+      POINT: 11
+      LEVEL: 30
+      MANA USE: 52
+      COOLDOWN: 350
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 126
+      POINT: 12
+      LEVEL: 31
+      MANA USE: 54
+      COOLDOWN: 300
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 13
+   NAME: Chiêu Taiyoutama
+   MAX POINT: 6
+   TYPE: 2
+   ICON ID: 622
+   DESCRIPTION: Sử dụng hỏa thuật triều hồi vòng lửa vô hình thiêu đốt các mục tiêu bản thân tấn công
+      ID: 127
+      POINT: 0
+      LEVEL: 25
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 128
+      POINT: 1
+      LEVEL: 25
+      MANA USE: 120
+      COOLDOWN: 45000
+      DX: 100
+      DY: 100
+      MAX FIGHT: 1
+..........................
+
+      ID: 129
+      POINT: 2
+      LEVEL: 26
+      MANA USE: 120
+      COOLDOWN: 45000
+      DX: 110
+      DY: 110
+      MAX FIGHT: 1
+..........................
+
+      ID: 130
+      POINT: 3
+      LEVEL: 27
+      MANA USE: 120
+      COOLDOWN: 45000
+      DX: 120
+      DY: 120
+      MAX FIGHT: 1
+..........................
+
+      ID: 131
+      POINT: 4
+      LEVEL: 28
+      MANA USE: 120
+      COOLDOWN: 45000
+      DX: 130
+      DY: 130
+      MAX FIGHT: 1
+..........................
+
+      ID: 132
+      POINT: 5
+      LEVEL: 29
+      MANA USE: 120
+      COOLDOWN: 45000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 133
+      POINT: 6
+      LEVEL: 30
+      MANA USE: 120
+      COOLDOWN: 45000
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 14
+   NAME: Chiêu Bikoushuriken
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 598
+   DESCRIPTION: Vận dụng hỏa thuật đốt cháy phi tiêu phóng đi gây sát thương tối đa lên 3 mục tiêu
+      ID: 134
+      POINT: 0
+      LEVEL: 30
+      MANA USE: 0
+      COOLDOWN: 750
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 135
+      POINT: 1
+      LEVEL: 30
+      MANA USE: 58
+      COOLDOWN: 750
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 136
+      POINT: 2
+      LEVEL: 31
+      MANA USE: 60
+      COOLDOWN: 700
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 137
+      POINT: 3
+      LEVEL: 32
+      MANA USE: 62
+      COOLDOWN: 700
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 138
+      POINT: 4
+      LEVEL: 33
+      MANA USE: 64
+      COOLDOWN: 650
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 139
+      POINT: 5
+      LEVEL: 34
+      MANA USE: 66
+      COOLDOWN: 650
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 140
+      POINT: 6
+      LEVEL: 35
+      MANA USE: 68
+      COOLDOWN: 600
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 141
+      POINT: 7
+      LEVEL: 36
+      MANA USE: 70
+      COOLDOWN: 600
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 142
+      POINT: 8
+      LEVEL: 37
+      MANA USE: 74
+      COOLDOWN: 550
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 143
+      POINT: 9
+      LEVEL: 38
+      MANA USE: 78
+      COOLDOWN: 500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 144
+      POINT: 10
+      LEVEL: 39
+      MANA USE: 82
+      COOLDOWN: 450
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 145
+      POINT: 11
+      LEVEL: 40
+      MANA USE: 86
+      COOLDOWN: 400
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 146
+      POINT: 12
+      LEVEL: 41
+      MANA USE: 90
+      COOLDOWN: 350
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+=============================
+
+   ID: 15
+   NAME: Chiêu Hoshitama
+   MAX POINT: 6
+   TYPE: 2
+   ICON ID: 623
+   DESCRIPTION: Sử dụng ẩn thân thuật để bản thân trở nên vô hình đồng thời hồi phục hp và mp trong một thời gian xác định
+      ID: 147
+      POINT: 0
+      LEVEL: 35
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 148
+      POINT: 1
+      LEVEL: 35
+      MANA USE: 50
+      COOLDOWN: 55000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 149
+      POINT: 2
+      LEVEL: 36
+      MANA USE: 70
+      COOLDOWN: 53000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 150
+      POINT: 3
+      LEVEL: 37
+      MANA USE: 90
+      COOLDOWN: 51000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 151
+      POINT: 4
+      LEVEL: 38
+      MANA USE: 110
+      COOLDOWN: 49000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 152
+      POINT: 5
+      LEVEL: 39
+      MANA USE: 130
+      COOLDOWN: 47000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 153
+      POINT: 6
+      LEVEL: 40
+      MANA USE: 150
+      COOLDOWN: 45000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 16
+   NAME: Chiêu Hinotama
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 599
+   DESCRIPTION: Trong chớp mắt phóng 2 phi tiêu bốc cháy về phía kẻ địch, gây ra lượng sát thương cực lớn
+      ID: 154
+      POINT: 0
+      LEVEL: 40
+      MANA USE: 0
+      COOLDOWN: 19000
+      DX: 150
+      DY: 160
+      MAX FIGHT: 1
+..........................
+
+      ID: 155
+      POINT: 1
+      LEVEL: 40
+      MANA USE: 435
+      COOLDOWN: 18000
+      DX: 150
+      DY: 160
+      MAX FIGHT: 1
+..........................
+
+      ID: 156
+      POINT: 2
+      LEVEL: 41
+      MANA USE: 450
+      COOLDOWN: 17500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 157
+      POINT: 3
+      LEVEL: 42
+      MANA USE: 465
+      COOLDOWN: 17500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 158
+      POINT: 4
+      LEVEL: 43
+      MANA USE: 480
+      COOLDOWN: 17000
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 159
+      POINT: 5
+      LEVEL: 44
+      MANA USE: 495
+      COOLDOWN: 17000
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 160
+      POINT: 6
+      LEVEL: 45
+      MANA USE: 510
+      COOLDOWN: 16500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 161
+      POINT: 7
+      LEVEL: 46
+      MANA USE: 525
+      COOLDOWN: 16500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 162
+      POINT: 8
+      LEVEL: 47
+      MANA USE: 540
+      COOLDOWN: 16000
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 163
+      POINT: 9
+      LEVEL: 48
+      MANA USE: 555
+      COOLDOWN: 16000
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 164
+      POINT: 10
+      LEVEL: 49
+      MANA USE: 570
+      COOLDOWN: 15500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 165
+      POINT: 11
+      LEVEL: 50
+      MANA USE: 585
+      COOLDOWN: 15500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 166
+      POINT: 12
+      LEVEL: 51
+      MANA USE: 600
+      COOLDOWN: 15000
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 17
+   NAME: Chiêu Hijoukai
+   MAX POINT: 6
+   TYPE: 0
+   ICON ID: 624
+   DESCRIPTION: Tăng khả năng kháng phong đồng thời giúp bản thân nhanh chóng hồi phục khi bị choáng
+      ID: 167
+      POINT: 0
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 168
+      POINT: 1
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 169
+      POINT: 2
+      LEVEL: 46
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 170
+      POINT: 3
+      LEVEL: 47
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 171
+      POINT: 4
+      LEVEL: 48
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 172
+      POINT: 5
+      LEVEL: 49
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 173
+      POINT: 6
+      LEVEL: 50
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 18
+   NAME: Chiêu Choukou shuriken
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 600
+   DESCRIPTION: Phóng ra một Phi Tiêu lớn kèm theo lửa gây sát thương trong một phạm vi nhất định, tối đa 4 mục tiêu
+      ID: 174
+      POINT: 0
+      LEVEL: 50
+      MANA USE: 0
+      COOLDOWN: 900
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 175
+      POINT: 1
+      LEVEL: 50
+      MANA USE: 98
+      COOLDOWN: 850
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 176
+      POINT: 2
+      LEVEL: 51
+      MANA USE: 100
+      COOLDOWN: 800
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 177
+      POINT: 3
+      LEVEL: 52
+      MANA USE: 102
+      COOLDOWN: 750
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 178
+      POINT: 4
+      LEVEL: 53
+      MANA USE: 104
+      COOLDOWN: 700
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 179
+      POINT: 5
+      LEVEL: 54
+      MANA USE: 106
+      COOLDOWN: 650
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 180
+      POINT: 6
+      LEVEL: 55
+      MANA USE: 108
+      COOLDOWN: 600
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 181
+      POINT: 7
+      LEVEL: 56
+      MANA USE: 110
+      COOLDOWN: 550
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 182
+      POINT: 8
+      LEVEL: 57
+      MANA USE: 112
+      COOLDOWN: 500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 183
+      POINT: 9
+      LEVEL: 58
+      MANA USE: 114
+      COOLDOWN: 450
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 184
+      POINT: 10
+      LEVEL: 59
+      MANA USE: 116
+      COOLDOWN: 400
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 185
+      POINT: 11
+      LEVEL: 60
+      MANA USE: 118
+      COOLDOWN: 350
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 186
+      POINT: 12
+      LEVEL: 61
+      MANA USE: 120
+      COOLDOWN: 300
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 56
+   NAME: Chiêu Totogai
+   MAX POINT: 15
+   TYPE: 0
+   ICON ID: 1297
+   DESCRIPTION: Hấp thu các hỏa chủng trong tự nhiên nâng cao sát thương đánh chí mạng.
+      ID: 572
+      POINT: 0
+      LEVEL: 60
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 573
+      POINT: 1
+      LEVEL: 60
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 574
+      POINT: 2
+      LEVEL: 61
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 575
+      POINT: 3
+      LEVEL: 62
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 576
+      POINT: 4
+      LEVEL: 63
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 577
+      POINT: 5
+      LEVEL: 64
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 578
+      POINT: 6
+      LEVEL: 65
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 579
+      POINT: 7
+      LEVEL: 66
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 580
+      POINT: 8
+      LEVEL: 67
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 581
+      POINT: 9
+      LEVEL: 68
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 582
+      POINT: 10
+      LEVEL: 69
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 583
+      POINT: 11
+      LEVEL: 70
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 584
+      POINT: 12
+      LEVEL: 71
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 640
+      POINT: 13
+      LEVEL: 72
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 641
+      POINT: 14
+      LEVEL: 73
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 642
+      POINT: 15
+      LEVEL: 74
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 62
+   NAME: Chiêu Baaningufukiya
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 1550
+   DESCRIPTION: Phóng một Cự Ảnh Tiêu hỏa diễm cuồn cuộn với hỏa sát đỉnh cấp về phía kẻ thù.
+      ID: 668
+      POINT: 0
+      LEVEL: 70
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 669
+      POINT: 1
+      LEVEL: 70
+      MANA USE: 105
+      COOLDOWN: 700
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 670
+      POINT: 2
+      LEVEL: 71
+      MANA USE: 109
+      COOLDOWN: 650
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 671
+      POINT: 3
+      LEVEL: 72
+      MANA USE: 113
+      COOLDOWN: 650
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 672
+      POINT: 4
+      LEVEL: 73
+      MANA USE: 117
+      COOLDOWN: 600
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 673
+      POINT: 5
+      LEVEL: 74
+      MANA USE: 121
+      COOLDOWN: 600
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 674
+      POINT: 6
+      LEVEL: 75
+      MANA USE: 125
+      COOLDOWN: 550
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 675
+      POINT: 7
+      LEVEL: 76
+      MANA USE: 129
+      COOLDOWN: 550
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 676
+      POINT: 8
+      LEVEL: 77
+      MANA USE: 133
+      COOLDOWN: 500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 677
+      POINT: 9
+      LEVEL: 78
+      MANA USE: 137
+      COOLDOWN: 500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 678
+      POINT: 10
+      LEVEL: 79
+      MANA USE: 141
+      COOLDOWN: 450
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 679
+      POINT: 11
+      LEVEL: 80
+      MANA USE: 145
+      COOLDOWN: 450
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 680
+      POINT: 12
+      LEVEL: 81
+      MANA USE: 149
+      COOLDOWN: 400
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 68
+   NAME: Nhẫn thuật Kage Bunshin 
+   MAX POINT: 10
+   TYPE: 2
+   ICON ID: 2215
+   DESCRIPTION: Nhẫn thuật cho phép tạo ra một bản sao hoàn hảo từ bản chính.
+      ID: 744
+      POINT: 0
+      LEVEL: 90
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 745
+      POINT: 1
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 746
+      POINT: 2
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 747
+      POINT: 3
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 748
+      POINT: 4
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 749
+      POINT: 5
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 750
+      POINT: 6
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 751
+      POINT: 7
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 752
+      POINT: 8
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 753
+      POINT: 9
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 754
+      POINT: 10
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 78
+   NAME: Chiêu Hibashiri
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2233
+   DESCRIPTION: Phóng một phi tiêu lửa tạo ra một vụ nổ lớn tiêu diệt kẻ địch.
+      ID: 812
+      POINT: 0
+      LEVEL: 80
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 150
+      DY: 150
+      MAX FIGHT: 0
+..........................
+
+      ID: 813
+      POINT: 1
+      LEVEL: 80
+      MANA USE: 160
+      COOLDOWN: 500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 814
+      POINT: 2
+      LEVEL: 81
+      MANA USE: 163
+      COOLDOWN: 490
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 815
+      POINT: 3
+      LEVEL: 82
+      MANA USE: 166
+      COOLDOWN: 480
+      DX: 150
+      DY: 150
+      MAX FIGHT: 2
+..........................
+
+      ID: 816
+      POINT: 4
+      LEVEL: 83
+      MANA USE: 169
+      COOLDOWN: 470
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 817
+      POINT: 5
+      LEVEL: 84
+      MANA USE: 172
+      COOLDOWN: 460
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 818
+      POINT: 6
+      LEVEL: 85
+      MANA USE: 175
+      COOLDOWN: 450
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 819
+      POINT: 7
+      LEVEL: 86
+      MANA USE: 178
+      COOLDOWN: 440
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 820
+      POINT: 8
+      LEVEL: 87
+      MANA USE: 181
+      COOLDOWN: 430
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 821
+      POINT: 9
+      LEVEL: 88
+      MANA USE: 184
+      COOLDOWN: 420
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 822
+      POINT: 10
+      LEVEL: 89
+      MANA USE: 187
+      COOLDOWN: 400
+      DX: 150
+      DY: 150
+      MAX FIGHT: 5
+..........................
+
+      ID: 823
+      POINT: 11
+      LEVEL: 90
+      MANA USE: 190
+      COOLDOWN: 380
+      DX: 150
+      DY: 150
+      MAX FIGHT: 5
+..........................
+
+      ID: 824
+      POINT: 12
+      LEVEL: 91
+      MANA USE: 193
+      COOLDOWN: 350
+      DX: 150
+      DY: 150
+      MAX FIGHT: 5
+..........................
+
+=============================
+
+   ID: 83
+   NAME: Chiêu Tsumabeni
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2232
+   DESCRIPTION: Tiêu thuật Vạn Lý Phi Tiêu
+      ID: 890
+      POINT: 0
+      LEVEL: 100
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 150
+      DY: 150
+      MAX FIGHT: 0
+..........................
+
+      ID: 891
+      POINT: 1
+      LEVEL: 100
+      MANA USE: 177
+      COOLDOWN: 500
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 892
+      POINT: 2
+      LEVEL: 101
+      MANA USE: 180
+      COOLDOWN: 490
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 893
+      POINT: 3
+      LEVEL: 102
+      MANA USE: 183
+      COOLDOWN: 480
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 894
+      POINT: 4
+      LEVEL: 103
+      MANA USE: 186
+      COOLDOWN: 470
+      DX: 150
+      DY: 150
+      MAX FIGHT: 3
+..........................
+
+      ID: 895
+      POINT: 5
+      LEVEL: 104
+      MANA USE: 189
+      COOLDOWN: 460
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 896
+      POINT: 6
+      LEVEL: 105
+      MANA USE: 192
+      COOLDOWN: 450
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 897
+      POINT: 7
+      LEVEL: 106
+      MANA USE: 195
+      COOLDOWN: 440
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 898
+      POINT: 8
+      LEVEL: 107
+      MANA USE: 198
+      COOLDOWN: 430
+      DX: 150
+      DY: 150
+      MAX FIGHT: 4
+..........................
+
+      ID: 899
+      POINT: 9
+      LEVEL: 108
+      MANA USE: 201
+      COOLDOWN: 420
+      DX: 150
+      DY: 150
+      MAX FIGHT: 5
+..........................
+
+      ID: 900
+      POINT: 10
+      LEVEL: 109
+      MANA USE: 204
+      COOLDOWN: 400
+      DX: 150
+      DY: 150
+      MAX FIGHT: 5
+..........................
+
+      ID: 901
+      POINT: 11
+      LEVEL: 110
+      MANA USE: 207
+      COOLDOWN: 380
+      DX: 150
+      DY: 150
+      MAX FIGHT: 5
+..........................
+
+      ID: 902
+      POINT: 12
+      LEVEL: 111
+      MANA USE: 210
+      COOLDOWN: 350
+      DX: 150
+      DY: 150
+      MAX FIGHT: 6
+..........................
+
+=============================
+
+-----------------------------
+
+   ID: 19
+   NAME: Chiêu Yokobatan
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 550
+   DESCRIPTION: Kunai nhập môn - tấn công gây sát thương lên một mục tiêu nhất định
+      ID: 187
+      POINT: 0
+      LEVEL: 10
+      MANA USE: 0
+      COOLDOWN: 600
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 188
+      POINT: 1
+      LEVEL: 10
+      MANA USE: 1
+      COOLDOWN: 500
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 189
+      POINT: 2
+      LEVEL: 11
+      MANA USE: 2
+      COOLDOWN: 500
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 190
+      POINT: 3
+      LEVEL: 12
+      MANA USE: 3
+      COOLDOWN: 500
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 191
+      POINT: 4
+      LEVEL: 13
+      MANA USE: 4
+      COOLDOWN: 450
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 192
+      POINT: 5
+      LEVEL: 14
+      MANA USE: 5
+      COOLDOWN: 450
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 193
+      POINT: 6
+      LEVEL: 15
+      MANA USE: 6
+      COOLDOWN: 400
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 194
+      POINT: 7
+      LEVEL: 16
+      MANA USE: 7
+      COOLDOWN: 400
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 195
+      POINT: 8
+      LEVEL: 17
+      MANA USE: 8
+      COOLDOWN: 350
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 196
+      POINT: 9
+      LEVEL: 18
+      MANA USE: 9
+      COOLDOWN: 350
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 197
+      POINT: 10
+      LEVEL: 19
+      MANA USE: 10
+      COOLDOWN: 300
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 198
+      POINT: 11
+      LEVEL: 20
+      MANA USE: 11
+      COOLDOWN: 300
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 199
+      POINT: 12
+      LEVEL: 21
+      MANA USE: 12
+      COOLDOWN: 250
+      DX: 35
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 20
+   NAME: Chiêu Akaiame
+   MAX POINT: 6
+   TYPE: 0
+   ICON ID: 605
+   DESCRIPTION: Nhẫn thuật tâm pháp - nâng cao khả năng tấn công độ chính xác và tốc độ di chuyển
+      ID: 200
+      POINT: 0
+      LEVEL: 15
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 201
+      POINT: 1
+      LEVEL: 15
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 202
+      POINT: 2
+      LEVEL: 16
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 203
+      POINT: 3
+      LEVEL: 17
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 204
+      POINT: 4
+      LEVEL: 18
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 205
+      POINT: 5
+      LEVEL: 19
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 206
+      POINT: 6
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 21
+   NAME: Chiêu Mizuibatan
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 577
+   DESCRIPTION: Chém liên tục vào mục tiêu gây sát thương lên mục tiêu đó
+      ID: 207
+      POINT: 0
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 1000
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 208
+      POINT: 1
+      LEVEL: 20
+      MANA USE: 31
+      COOLDOWN: 750
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 209
+      POINT: 2
+      LEVEL: 21
+      MANA USE: 32
+      COOLDOWN: 650
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 210
+      POINT: 3
+      LEVEL: 22
+      MANA USE: 33
+      COOLDOWN: 650
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 211
+      POINT: 4
+      LEVEL: 23
+      MANA USE: 34
+      COOLDOWN: 550
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 212
+      POINT: 5
+      LEVEL: 24
+      MANA USE: 35
+      COOLDOWN: 550
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 213
+      POINT: 6
+      LEVEL: 25
+      MANA USE: 36
+      COOLDOWN: 450
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 214
+      POINT: 7
+      LEVEL: 26
+      MANA USE: 37
+      COOLDOWN: 450
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 215
+      POINT: 8
+      LEVEL: 27
+      MANA USE: 38
+      COOLDOWN: 400
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 216
+      POINT: 9
+      LEVEL: 28
+      MANA USE: 39
+      COOLDOWN: 400
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 217
+      POINT: 10
+      LEVEL: 29
+      MANA USE: 40
+      COOLDOWN: 350
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 218
+      POINT: 11
+      LEVEL: 30
+      MANA USE: 41
+      COOLDOWN: 300
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+      ID: 219
+      POINT: 12
+      LEVEL: 31
+      MANA USE: 42
+      COOLDOWN: 250
+      DX: 38
+      DY: 33
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 22
+   NAME: Chiêu Aoiame
+   MAX POINT: 6
+   TYPE: 2
+   ICON ID: 606
+   DESCRIPTION: Tạo ra khúc gỗ thế thân chịu mọi sát thương thay cho bản thân
+      ID: 220
+      POINT: 0
+      LEVEL: 25
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 221
+      POINT: 1
+      LEVEL: 25
+      MANA USE: 35
+      COOLDOWN: 12000
+      DX: 150
+      DY: 90
+      MAX FIGHT: 1
+..........................
+
+      ID: 222
+      POINT: 2
+      LEVEL: 26
+      MANA USE: 35
+      COOLDOWN: 18000
+      DX: 150
+      DY: 90
+      MAX FIGHT: 1
+..........................
+
+      ID: 223
+      POINT: 3
+      LEVEL: 27
+      MANA USE: 35
+      COOLDOWN: 21000
+      DX: 150
+      DY: 90
+      MAX FIGHT: 1
+..........................
+
+      ID: 224
+      POINT: 4
+      LEVEL: 28
+      MANA USE: 35
+      COOLDOWN: 23000
+      DX: 150
+      DY: 90
+      MAX FIGHT: 1
+..........................
+
+      ID: 225
+      POINT: 5
+      LEVEL: 29
+      MANA USE: 35
+      COOLDOWN: 25000
+      DX: 150
+      DY: 90
+      MAX FIGHT: 1
+..........................
+
+      ID: 226
+      POINT: 6
+      LEVEL: 30
+      MANA USE: 35
+      COOLDOWN: 27000
+      DX: 150
+      DY: 90
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 23
+   NAME: Chiêu Uzubatan
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 578
+   DESCRIPTION: Kunai kết hợp băng thuật tạo ra vòng sát thương tác động lên các mục tiêu cạnh đó, tối đa 3 mục tiêu
+      ID: 227
+      POINT: 0
+      LEVEL: 30
+      MANA USE: 0
+      COOLDOWN: 750
+      DX: 42
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 228
+      POINT: 1
+      LEVEL: 30
+      MANA USE: 46
+      COOLDOWN: 750
+      DX: 42
+      DY: 34
+      MAX FIGHT: 2
+..........................
+
+      ID: 229
+      POINT: 2
+      LEVEL: 31
+      MANA USE: 47
+      COOLDOWN: 700
+      DX: 42
+      DY: 34
+      MAX FIGHT: 2
+..........................
+
+      ID: 230
+      POINT: 3
+      LEVEL: 32
+      MANA USE: 48
+      COOLDOWN: 700
+      DX: 42
+      DY: 34
+      MAX FIGHT: 2
+..........................
+
+      ID: 231
+      POINT: 4
+      LEVEL: 33
+      MANA USE: 49
+      COOLDOWN: 650
+      DX: 42
+      DY: 34
+      MAX FIGHT: 2
+..........................
+
+      ID: 232
+      POINT: 5
+      LEVEL: 34
+      MANA USE: 50
+      COOLDOWN: 600
+      DX: 42
+      DY: 34
+      MAX FIGHT: 2
+..........................
+
+      ID: 233
+      POINT: 6
+      LEVEL: 35
+      MANA USE: 51
+      COOLDOWN: 550
+      DX: 42
+      DY: 34
+      MAX FIGHT: 3
+..........................
+
+      ID: 234
+      POINT: 7
+      LEVEL: 36
+      MANA USE: 52
+      COOLDOWN: 500
+      DX: 42
+      DY: 34
+      MAX FIGHT: 3
+..........................
+
+      ID: 235
+      POINT: 8
+      LEVEL: 37
+      MANA USE: 53
+      COOLDOWN: 450
+      DX: 42
+      DY: 34
+      MAX FIGHT: 3
+..........................
+
+      ID: 236
+      POINT: 9
+      LEVEL: 38
+      MANA USE: 54
+      COOLDOWN: 400
+      DX: 42
+      DY: 34
+      MAX FIGHT: 3
+..........................
+
+      ID: 237
+      POINT: 10
+      LEVEL: 39
+      MANA USE: 55
+      COOLDOWN: 350
+      DX: 42
+      DY: 34
+      MAX FIGHT: 3
+..........................
+
+      ID: 238
+      POINT: 11
+      LEVEL: 40
+      MANA USE: 56
+      COOLDOWN: 300
+      DX: 42
+      DY: 34
+      MAX FIGHT: 3
+..........................
+
+      ID: 239
+      POINT: 12
+      LEVEL: 41
+      MANA USE: 57
+      COOLDOWN: 250
+      DX: 42
+      DY: 34
+      MAX FIGHT: 3
+..........................
+
+=============================
+
+   ID: 24
+   NAME: Chiêu Hibikou
+   MAX POINT: 6
+   TYPE: 1
+   ICON ID: 607
+   DESCRIPTION: Sử dụng cầm băng thuật trói chân kẻ địch trong một khoảng thời gian nhất định
+      ID: 240
+      POINT: 0
+      LEVEL: 35
+      MANA USE: 0
+      COOLDOWN: 60000
+      DX: 60
+      DY: 60
+      MAX FIGHT: 1
+..........................
+
+      ID: 241
+      POINT: 1
+      LEVEL: 35
+      MANA USE: 40
+      COOLDOWN: 55000
+      DX: 70
+      DY: 70
+      MAX FIGHT: 1
+..........................
+
+      ID: 242
+      POINT: 2
+      LEVEL: 36
+      MANA USE: 50
+      COOLDOWN: 50000
+      DX: 80
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+      ID: 243
+      POINT: 3
+      LEVEL: 37
+      MANA USE: 60
+      COOLDOWN: 45000
+      DX: 90
+      DY: 90
+      MAX FIGHT: 1
+..........................
+
+      ID: 244
+      POINT: 4
+      LEVEL: 38
+      MANA USE: 70
+      COOLDOWN: 40000
+      DX: 100
+      DY: 100
+      MAX FIGHT: 1
+..........................
+
+      ID: 245
+      POINT: 5
+      LEVEL: 39
+      MANA USE: 80
+      COOLDOWN: 35000
+      DX: 110
+      DY: 110
+      MAX FIGHT: 1
+..........................
+
+      ID: 246
+      POINT: 6
+      LEVEL: 40
+      MANA USE: 90
+      COOLDOWN: 30000
+      DX: 120
+      DY: 120
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 25
+   NAME: Chiêu Kogoeru
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 579
+   DESCRIPTION: Tạo 2 vòng băng quấn quanh mục tiêu, gây ra sát thương cực lớn
+      ID: 247
+      POINT: 0
+      LEVEL: 40
+      MANA USE: 0
+      COOLDOWN: 19000
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 248
+      POINT: 1
+      LEVEL: 40
+      MANA USE: 160
+      COOLDOWN: 18000
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 249
+      POINT: 2
+      LEVEL: 41
+      MANA USE: 170
+      COOLDOWN: 17500
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 250
+      POINT: 3
+      LEVEL: 42
+      MANA USE: 180
+      COOLDOWN: 17500
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 251
+      POINT: 4
+      LEVEL: 43
+      MANA USE: 190
+      COOLDOWN: 17000
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 252
+      POINT: 5
+      LEVEL: 44
+      MANA USE: 200
+      COOLDOWN: 17000
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 253
+      POINT: 6
+      LEVEL: 45
+      MANA USE: 210
+      COOLDOWN: 16500
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 254
+      POINT: 7
+      LEVEL: 46
+      MANA USE: 220
+      COOLDOWN: 16500
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 255
+      POINT: 8
+      LEVEL: 47
+      MANA USE: 230
+      COOLDOWN: 16000
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 256
+      POINT: 9
+      LEVEL: 48
+      MANA USE: 240
+      COOLDOWN: 16000
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 257
+      POINT: 10
+      LEVEL: 49
+      MANA USE: 250
+      COOLDOWN: 15500
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 258
+      POINT: 11
+      LEVEL: 50
+      MANA USE: 260
+      COOLDOWN: 15500
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+      ID: 259
+      POINT: 12
+      LEVEL: 51
+      MANA USE: 270
+      COOLDOWN: 15000
+      DX: 51
+      DY: 34
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 26
+   NAME: Chiêu Jotente
+   MAX POINT: 6
+   TYPE: 0
+   ICON ID: 608
+   DESCRIPTION: Tăng khả năng kháng hỏa đồng thời giúp bản thân nhanh chóng hồi phục khi bị bỏng
+      ID: 260
+      POINT: 0
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 261
+      POINT: 1
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 262
+      POINT: 2
+      LEVEL: 46
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 263
+      POINT: 3
+      LEVEL: 47
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 264
+      POINT: 4
+      LEVEL: 48
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 265
+      POINT: 5
+      LEVEL: 49
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 266
+      POINT: 6
+      LEVEL: 50
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 27
+   NAME: Chiêu Choukoukogo
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 580
+   DESCRIPTION: Tạo ra vòng băng cuộn về phía trước gây sát thương trong một phạm vi nhất định, tối đa 4 mục tiêu
+      ID: 267
+      POINT: 0
+      LEVEL: 50
+      MANA USE: 63
+      COOLDOWN: 900
+      DX: 46
+      DY: 46
+      MAX FIGHT: 1
+..........................
+
+      ID: 268
+      POINT: 1
+      LEVEL: 50
+      MANA USE: 73
+      COOLDOWN: 850
+      DX: 46
+      DY: 46
+      MAX FIGHT: 2
+..........................
+
+      ID: 269
+      POINT: 2
+      LEVEL: 51
+      MANA USE: 75
+      COOLDOWN: 800
+      DX: 46
+      DY: 46
+      MAX FIGHT: 2
+..........................
+
+      ID: 270
+      POINT: 3
+      LEVEL: 52
+      MANA USE: 77
+      COOLDOWN: 750
+      DX: 46
+      DY: 46
+      MAX FIGHT: 2
+..........................
+
+      ID: 271
+      POINT: 4
+      LEVEL: 53
+      MANA USE: 79
+      COOLDOWN: 700
+      DX: 46
+      DY: 46
+      MAX FIGHT: 2
+..........................
+
+      ID: 272
+      POINT: 5
+      LEVEL: 54
+      MANA USE: 81
+      COOLDOWN: 650
+      DX: 46
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 273
+      POINT: 6
+      LEVEL: 55
+      MANA USE: 83
+      COOLDOWN: 600
+      DX: 46
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 274
+      POINT: 7
+      LEVEL: 56
+      MANA USE: 85
+      COOLDOWN: 550
+      DX: 46
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 275
+      POINT: 8
+      LEVEL: 57
+      MANA USE: 87
+      COOLDOWN: 500
+      DX: 46
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 276
+      POINT: 9
+      LEVEL: 58
+      MANA USE: 89
+      COOLDOWN: 450
+      DX: 46
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 277
+      POINT: 10
+      LEVEL: 59
+      MANA USE: 91
+      COOLDOWN: 400
+      DX: 46
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 278
+      POINT: 11
+      LEVEL: 60
+      MANA USE: 93
+      COOLDOWN: 350
+      DX: 46
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 279
+      POINT: 12
+      LEVEL: 61
+      MANA USE: 95
+      COOLDOWN: 300
+      DX: 46
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 57
+   NAME: Chiêu Kitsukemaguma
+   MAX POINT: 15
+   TYPE: 0
+   ICON ID: 1295
+   DESCRIPTION: Khi bị tấn công, cơ thể sẽ tự động kêu gọi băng nguyên tố đóng băng kẻ địch.
+      ID: 585
+      POINT: 0
+      LEVEL: 60
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 586
+      POINT: 1
+      LEVEL: 60
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 587
+      POINT: 2
+      LEVEL: 61
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 588
+      POINT: 3
+      LEVEL: 62
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 589
+      POINT: 4
+      LEVEL: 63
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 590
+      POINT: 5
+      LEVEL: 64
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 591
+      POINT: 6
+      LEVEL: 65
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 592
+      POINT: 7
+      LEVEL: 66
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 593
+      POINT: 8
+      LEVEL: 67
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 594
+      POINT: 9
+      LEVEL: 68
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 595
+      POINT: 10
+      LEVEL: 69
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 596
+      POINT: 11
+      LEVEL: 70
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 597
+      POINT: 12
+      LEVEL: 71
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 643
+      POINT: 13
+      LEVEL: 72
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 644
+      POINT: 14
+      LEVEL: 73
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 645
+      POINT: 15
+      LEVEL: 74
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 63
+   NAME: Chiêu Furiizukatto
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 1548
+   DESCRIPTION: Tạo ra hai vòng băng từ trong thân kẻ địch gây ra sát thương cực lớn đồng thời có tỉ lệ khiến kẻ địch bị đóng băng.
+      ID: 681
+      POINT: 0
+      LEVEL: 70
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 47
+      DY: 45
+      MAX FIGHT: 1
+..........................
+
+      ID: 682
+      POINT: 1
+      LEVEL: 70
+      MANA USE: 95
+      COOLDOWN: 700
+      DX: 47
+      DY: 45
+      MAX FIGHT: 1
+..........................
+
+      ID: 683
+      POINT: 2
+      LEVEL: 71
+      MANA USE: 98
+      COOLDOWN: 700
+      DX: 47
+      DY: 45
+      MAX FIGHT: 1
+..........................
+
+      ID: 684
+      POINT: 3
+      LEVEL: 72
+      MANA USE: 101
+      COOLDOWN: 650
+      DX: 47
+      DY: 45
+      MAX FIGHT: 1
+..........................
+
+      ID: 685
+      POINT: 4
+      LEVEL: 73
+      MANA USE: 104
+      COOLDOWN: 650
+      DX: 47
+      DY: 45
+      MAX FIGHT: 2
+..........................
+
+      ID: 686
+      POINT: 5
+      LEVEL: 74
+      MANA USE: 107
+      COOLDOWN: 600
+      DX: 47
+      DY: 45
+      MAX FIGHT: 2
+..........................
+
+      ID: 687
+      POINT: 6
+      LEVEL: 75
+      MANA USE: 110
+      COOLDOWN: 600
+      DX: 47
+      DY: 45
+      MAX FIGHT: 2
+..........................
+
+      ID: 688
+      POINT: 7
+      LEVEL: 76
+      MANA USE: 113
+      COOLDOWN: 550
+      DX: 47
+      DY: 45
+      MAX FIGHT: 3
+..........................
+
+      ID: 689
+      POINT: 8
+      LEVEL: 77
+      MANA USE: 116
+      COOLDOWN: 550
+      DX: 47
+      DY: 45
+      MAX FIGHT: 3
+..........................
+
+      ID: 690
+      POINT: 9
+      LEVEL: 78
+      MANA USE: 119
+      COOLDOWN: 500
+      DX: 47
+      DY: 45
+      MAX FIGHT: 3
+..........................
+
+      ID: 691
+      POINT: 10
+      LEVEL: 79
+      MANA USE: 122
+      COOLDOWN: 450
+      DX: 47
+      DY: 45
+      MAX FIGHT: 4
+..........................
+
+      ID: 692
+      POINT: 11
+      LEVEL: 80
+      MANA USE: 125
+      COOLDOWN: 400
+      DX: 47
+      DY: 45
+      MAX FIGHT: 4
+..........................
+
+      ID: 693
+      POINT: 12
+      LEVEL: 81
+      MANA USE: 128
+      COOLDOWN: 350
+      DX: 47
+      DY: 45
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 69
+   NAME: Nhẫn thuật Kage Bunshin 
+   MAX POINT: 10
+   TYPE: 2
+   ICON ID: 2215
+   DESCRIPTION: Nhẫn thuật cho phép tạo ra một bản sao hoàn hảo từ bản chính.
+      ID: 755
+      POINT: 0
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 756
+      POINT: 1
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 757
+      POINT: 2
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 758
+      POINT: 3
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 759
+      POINT: 4
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 760
+      POINT: 5
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 761
+      POINT: 6
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 762
+      POINT: 7
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 763
+      POINT: 8
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 764
+      POINT: 9
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 765
+      POINT: 10
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 75
+   NAME: Chiêu Saihyoken
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2228
+   DESCRIPTION: Vòng băng sẽ triệu hồi thêm những cục băng lớn rơi trúng kẻ thù.
+      ID: 825
+      POINT: 0
+      LEVEL: 80
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 826
+      POINT: 1
+      LEVEL: 80
+      MANA USE: 100
+      COOLDOWN: 450
+      DX: 90
+      DY: 50
+      MAX FIGHT: 2
+..........................
+
+      ID: 827
+      POINT: 2
+      LEVEL: 81
+      MANA USE: 102
+      COOLDOWN: 440
+      DX: 90
+      DY: 50
+      MAX FIGHT: 2
+..........................
+
+      ID: 828
+      POINT: 3
+      LEVEL: 82
+      MANA USE: 104
+      COOLDOWN: 430
+      DX: 90
+      DY: 50
+      MAX FIGHT: 2
+..........................
+
+      ID: 829
+      POINT: 4
+      LEVEL: 83
+      MANA USE: 106
+      COOLDOWN: 420
+      DX: 90
+      DY: 50
+      MAX FIGHT: 3
+..........................
+
+      ID: 830
+      POINT: 5
+      LEVEL: 84
+      MANA USE: 108
+      COOLDOWN: 410
+      DX: 90
+      DY: 50
+      MAX FIGHT: 3
+..........................
+
+      ID: 831
+      POINT: 6
+      LEVEL: 85
+      MANA USE: 110
+      COOLDOWN: 400
+      DX: 90
+      DY: 50
+      MAX FIGHT: 3
+..........................
+
+      ID: 832
+      POINT: 7
+      LEVEL: 86
+      MANA USE: 112
+      COOLDOWN: 390
+      DX: 90
+      DY: 50
+      MAX FIGHT: 4
+..........................
+
+      ID: 833
+      POINT: 8
+      LEVEL: 87
+      MANA USE: 114
+      COOLDOWN: 380
+      DX: 90
+      DY: 50
+      MAX FIGHT: 4
+..........................
+
+      ID: 834
+      POINT: 9
+      LEVEL: 88
+      MANA USE: 116
+      COOLDOWN: 370
+      DX: 90
+      DY: 50
+      MAX FIGHT: 4
+..........................
+
+      ID: 835
+      POINT: 10
+      LEVEL: 89
+      MANA USE: 118
+      COOLDOWN: 350
+      DX: 90
+      DY: 50
+      MAX FIGHT: 5
+..........................
+
+      ID: 836
+      POINT: 11
+      LEVEL: 90
+      MANA USE: 120
+      COOLDOWN: 330
+      DX: 90
+      DY: 50
+      MAX FIGHT: 5
+..........................
+
+      ID: 837
+      POINT: 12
+      LEVEL: 91
+      MANA USE: 122
+      COOLDOWN: 300
+      DX: 90
+      DY: 50
+      MAX FIGHT: 5
+..........................
+
+=============================
+
+   ID: 81
+   NAME: Chiêu Shabondama
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2229
+   DESCRIPTION: Băng thuật Hổ Khiếu Sơn Hà
+      ID: 903
+      POINT: 0
+      LEVEL: 100
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 904
+      POINT: 1
+      LEVEL: 100
+      MANA USE: 118
+      COOLDOWN: 450
+      DX: 90
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 905
+      POINT: 2
+      LEVEL: 101
+      MANA USE: 120
+      COOLDOWN: 440
+      DX: 90
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 906
+      POINT: 3
+      LEVEL: 102
+      MANA USE: 122
+      COOLDOWN: 430
+      DX: 90
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 907
+      POINT: 4
+      LEVEL: 103
+      MANA USE: 124
+      COOLDOWN: 420
+      DX: 90
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 908
+      POINT: 5
+      LEVEL: 104
+      MANA USE: 126
+      COOLDOWN: 410
+      DX: 90
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 909
+      POINT: 6
+      LEVEL: 105
+      MANA USE: 128
+      COOLDOWN: 400
+      DX: 90
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 910
+      POINT: 7
+      LEVEL: 106
+      MANA USE: 130
+      COOLDOWN: 390
+      DX: 90
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 911
+      POINT: 8
+      LEVEL: 107
+      MANA USE: 132
+      COOLDOWN: 380
+      DX: 90
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 912
+      POINT: 9
+      LEVEL: 108
+      MANA USE: 134
+      COOLDOWN: 370
+      DX: 90
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+      ID: 913
+      POINT: 10
+      LEVEL: 109
+      MANA USE: 136
+      COOLDOWN: 350
+      DX: 90
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+      ID: 914
+      POINT: 11
+      LEVEL: 110
+      MANA USE: 138
+      COOLDOWN: 330
+      DX: 90
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+      ID: 915
+      POINT: 12
+      LEVEL: 111
+      MANA USE: 140
+      COOLDOWN: 300
+      DX: 90
+      DY: 46
+      MAX FIGHT: 6
+..........................
+
+=============================
+
+-----------------------------
+
+   ID: 28
+   NAME: Chiêu Uzusa
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 586
+   DESCRIPTION: Cung thuật nhập môn - bắn một mũi tên gây sát thương lên một mục tiêu nhất định
+      ID: 280
+      POINT: 0
+      LEVEL: 10
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 281
+      POINT: 1
+      LEVEL: 10
+      MANA USE: 2
+      COOLDOWN: 750
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 282
+      POINT: 2
+      LEVEL: 11
+      MANA USE: 4
+      COOLDOWN: 700
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 283
+      POINT: 3
+      LEVEL: 12
+      MANA USE: 6
+      COOLDOWN: 700
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 284
+      POINT: 4
+      LEVEL: 13
+      MANA USE: 8
+      COOLDOWN: 700
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 285
+      POINT: 5
+      LEVEL: 14
+      MANA USE: 10
+      COOLDOWN: 650
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 286
+      POINT: 6
+      LEVEL: 15
+      MANA USE: 12
+      COOLDOWN: 650
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 287
+      POINT: 7
+      LEVEL: 16
+      MANA USE: 14
+      COOLDOWN: 650
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 288
+      POINT: 8
+      LEVEL: 17
+      MANA USE: 16
+      COOLDOWN: 600
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 289
+      POINT: 9
+      LEVEL: 18
+      MANA USE: 18
+      COOLDOWN: 600
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 290
+      POINT: 10
+      LEVEL: 19
+      MANA USE: 20
+      COOLDOWN: 550
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 291
+      POINT: 11
+      LEVEL: 20
+      MANA USE: 22
+      COOLDOWN: 550
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 292
+      POINT: 12
+      LEVEL: 21
+      MANA USE: 25
+      COOLDOWN: 500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 29
+   NAME: Chiêu Washihitomi
+   MAX POINT: 6
+   TYPE: 0
+   ICON ID: 613
+   DESCRIPTION: Nhẫn thuật tâm pháp - nâng cao sức tấn công và độ chính xác bản thân
+      ID: 293
+      POINT: 0
+      LEVEL: 15
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 294
+      POINT: 1
+      LEVEL: 15
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 295
+      POINT: 2
+      LEVEL: 16
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 296
+      POINT: 3
+      LEVEL: 17
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 297
+      POINT: 4
+      LEVEL: 18
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 298
+      POINT: 5
+      LEVEL: 19
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 299
+      POINT: 6
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 30
+   NAME: Chiêu Kinkinsa
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 587
+   DESCRIPTION: Bắn ra một mũi tên băng vào mục tiêu gây sát thương ngay lập tức
+      ID: 300
+      POINT: 0
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 1000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 301
+      POINT: 1
+      LEVEL: 20
+      MANA USE: 32
+      COOLDOWN: 1000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 302
+      POINT: 2
+      LEVEL: 21
+      MANA USE: 34
+      COOLDOWN: 1000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 303
+      POINT: 3
+      LEVEL: 22
+      MANA USE: 36
+      COOLDOWN: 1000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 304
+      POINT: 4
+      LEVEL: 23
+      MANA USE: 38
+      COOLDOWN: 1000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 305
+      POINT: 5
+      LEVEL: 24
+      MANA USE: 40
+      COOLDOWN: 1000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 306
+      POINT: 6
+      LEVEL: 25
+      MANA USE: 42
+      COOLDOWN: 900
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 307
+      POINT: 7
+      LEVEL: 26
+      MANA USE: 44
+      COOLDOWN: 800
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 308
+      POINT: 8
+      LEVEL: 27
+      MANA USE: 46
+      COOLDOWN: 700
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 309
+      POINT: 9
+      LEVEL: 28
+      MANA USE: 48
+      COOLDOWN: 600
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 310
+      POINT: 10
+      LEVEL: 29
+      MANA USE: 50
+      COOLDOWN: 500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 311
+      POINT: 11
+      LEVEL: 30
+      MANA USE: 52
+      COOLDOWN: 500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 312
+      POINT: 12
+      LEVEL: 31
+      MANA USE: 55
+      COOLDOWN: 500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 31
+   NAME: Chiêu Sogekihei
+   MAX POINT: 6
+   TYPE: 2
+   ICON ID: 614
+   DESCRIPTION: Nhẫn thuật tiêu tốn MP giảm sức sát thương của quái vật lên bản thân
+      ID: 313
+      POINT: 0
+      LEVEL: 25
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 314
+      POINT: 1
+      LEVEL: 25
+      MANA USE: 100
+      COOLDOWN: 120000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 315
+      POINT: 2
+      LEVEL: 26
+      MANA USE: 110
+      COOLDOWN: 100000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 316
+      POINT: 3
+      LEVEL: 27
+      MANA USE: 120
+      COOLDOWN: 80000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 317
+      POINT: 4
+      LEVEL: 28
+      MANA USE: 130
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 318
+      POINT: 5
+      LEVEL: 29
+      MANA USE: 140
+      COOLDOWN: 40000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 319
+      POINT: 6
+      LEVEL: 30
+      MANA USE: 150
+      COOLDOWN: 20000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 32
+   NAME: Chiêu Nikinkinsa
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 588
+   DESCRIPTION: Bắn ra 2 mũi tên băng gây sát thương trong một phạm vi nhất định, sát thương tối đa 3 mục tiêu
+      ID: 320
+      POINT: 0
+      LEVEL: 30
+      MANA USE: 0
+      COOLDOWN: 750
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 321
+      POINT: 1
+      LEVEL: 30
+      MANA USE: 58
+      COOLDOWN: 750
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 322
+      POINT: 2
+      LEVEL: 31
+      MANA USE: 60
+      COOLDOWN: 750
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 323
+      POINT: 3
+      LEVEL: 32
+      MANA USE: 62
+      COOLDOWN: 750
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 324
+      POINT: 4
+      LEVEL: 33
+      MANA USE: 64
+      COOLDOWN: 750
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 325
+      POINT: 5
+      LEVEL: 34
+      MANA USE: 66
+      COOLDOWN: 750
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 326
+      POINT: 6
+      LEVEL: 35
+      MANA USE: 68
+      COOLDOWN: 600
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 327
+      POINT: 7
+      LEVEL: 36
+      MANA USE: 70
+      COOLDOWN: 600
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 328
+      POINT: 8
+      LEVEL: 37
+      MANA USE: 74
+      COOLDOWN: 600
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 329
+      POINT: 9
+      LEVEL: 38
+      MANA USE: 78
+      COOLDOWN: 600
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 330
+      POINT: 10
+      LEVEL: 39
+      MANA USE: 82
+      COOLDOWN: 550
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 331
+      POINT: 11
+      LEVEL: 40
+      MANA USE: 86
+      COOLDOWN: 550
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 332
+      POINT: 12
+      LEVEL: 41
+      MANA USE: 90
+      COOLDOWN: 550
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+=============================
+
+   ID: 33
+   NAME: Chiêu Joutenhitomi
+   MAX POINT: 6
+   TYPE: 2
+   ICON ID: 615
+   DESCRIPTION: Sử dụng băng tâm thuật gia tăng mạnh mẽ sức tấn công nhưng bản thân phải chịu tổn thương
+      ID: 333
+      POINT: 0
+      LEVEL: 35
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 334
+      POINT: 1
+      LEVEL: 35
+      MANA USE: 100
+      COOLDOWN: 45000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 335
+      POINT: 2
+      LEVEL: 36
+      MANA USE: 120
+      COOLDOWN: 40000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 336
+      POINT: 3
+      LEVEL: 37
+      MANA USE: 140
+      COOLDOWN: 35000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 337
+      POINT: 4
+      LEVEL: 38
+      MANA USE: 160
+      COOLDOWN: 30000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 338
+      POINT: 5
+      LEVEL: 39
+      MANA USE: 180
+      COOLDOWN: 25000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 339
+      POINT: 6
+      LEVEL: 40
+      MANA USE: 200
+      COOLDOWN: 20000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 34
+   NAME: Chiêu Kogosa
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 589
+   DESCRIPTION: Băng thuật cô đọng hơi nước xung quanh tạo ra mũi tên băng bắn vào kẻ địch, gây sát thương cực lớn
+      ID: 340
+      POINT: 0
+      LEVEL: 40
+      MANA USE: 0
+      COOLDOWN: 21000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 341
+      POINT: 1
+      LEVEL: 40
+      MANA USE: 420
+      COOLDOWN: 20000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 342
+      POINT: 2
+      LEVEL: 41
+      MANA USE: 440
+      COOLDOWN: 19500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 343
+      POINT: 3
+      LEVEL: 42
+      MANA USE: 460
+      COOLDOWN: 19500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 344
+      POINT: 4
+      LEVEL: 43
+      MANA USE: 480
+      COOLDOWN: 19000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 345
+      POINT: 5
+      LEVEL: 44
+      MANA USE: 500
+      COOLDOWN: 19000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 346
+      POINT: 6
+      LEVEL: 45
+      MANA USE: 520
+      COOLDOWN: 18500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 347
+      POINT: 7
+      LEVEL: 46
+      MANA USE: 540
+      COOLDOWN: 18500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 348
+      POINT: 8
+      LEVEL: 47
+      MANA USE: 560
+      COOLDOWN: 18000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 349
+      POINT: 9
+      LEVEL: 48
+      MANA USE: 570
+      COOLDOWN: 18000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 350
+      POINT: 10
+      LEVEL: 49
+      MANA USE: 580
+      COOLDOWN: 17500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 351
+      POINT: 11
+      LEVEL: 50
+      MANA USE: 590
+      COOLDOWN: 17500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 352
+      POINT: 12
+      LEVEL: 51
+      MANA USE: 600
+      COOLDOWN: 17000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 35
+   NAME: Chiêu Kyshouma
+   MAX POINT: 6
+   TYPE: 0
+   ICON ID: 616
+   DESCRIPTION: Tăng khả năng kháng hỏa đồng thời giúp bản thân nhanh chóng hồi phục khi bị bỏng
+      ID: 353
+      POINT: 0
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 354
+      POINT: 1
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 355
+      POINT: 2
+      LEVEL: 46
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 356
+      POINT: 3
+      LEVEL: 47
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 357
+      POINT: 4
+      LEVEL: 48
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 358
+      POINT: 5
+      LEVEL: 49
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 359
+      POINT: 6
+      LEVEL: 50
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 36
+   NAME: Chiêu Chousoukinkinsa
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 590
+   DESCRIPTION: Bắn ra 3 mũi tên băng về phía mục tiêu đồng thời gây ra sát thương lên các mục tiêu lân cận, tối đa 4 mục tiêu
+      ID: 360
+      POINT: 0
+      LEVEL: 50
+      MANA USE: 0
+      COOLDOWN: 1100
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 361
+      POINT: 1
+      LEVEL: 50
+      MANA USE: 114
+      COOLDOWN: 1000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 362
+      POINT: 2
+      LEVEL: 51
+      MANA USE: 115
+      COOLDOWN: 900
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 363
+      POINT: 3
+      LEVEL: 52
+      MANA USE: 116
+      COOLDOWN: 850
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 364
+      POINT: 4
+      LEVEL: 53
+      MANA USE: 117
+      COOLDOWN: 800
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 365
+      POINT: 5
+      LEVEL: 54
+      MANA USE: 118
+      COOLDOWN: 750
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 366
+      POINT: 6
+      LEVEL: 55
+      MANA USE: 119
+      COOLDOWN: 700
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 367
+      POINT: 7
+      LEVEL: 56
+      MANA USE: 120
+      COOLDOWN: 650
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 368
+      POINT: 8
+      LEVEL: 57
+      MANA USE: 121
+      COOLDOWN: 600
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 369
+      POINT: 9
+      LEVEL: 58
+      MANA USE: 122
+      COOLDOWN: 550
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 370
+      POINT: 10
+      LEVEL: 59
+      MANA USE: 123
+      COOLDOWN: 500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 371
+      POINT: 11
+      LEVEL: 60
+      MANA USE: 124
+      COOLDOWN: 450
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 372
+      POINT: 12
+      LEVEL: 61
+      MANA USE: 125
+      COOLDOWN: 400
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 58
+   NAME: Chiêu Totaaigo
+   MAX POINT: 15
+   TYPE: 2
+   ICON ID: 1296
+   DESCRIPTION: Triệu tập tất cả nguyên tố băng ngưng tụ thành vòng bảo vệ bản thân trong một thời gian nhất định
+      ID: 598
+      POINT: 0
+      LEVEL: 60
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 599
+      POINT: 1
+      LEVEL: 60
+      MANA USE: 400
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 600
+      POINT: 2
+      LEVEL: 61
+      MANA USE: 420
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 601
+      POINT: 3
+      LEVEL: 62
+      MANA USE: 440
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 602
+      POINT: 4
+      LEVEL: 63
+      MANA USE: 460
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 603
+      POINT: 5
+      LEVEL: 64
+      MANA USE: 480
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 604
+      POINT: 6
+      LEVEL: 65
+      MANA USE: 500
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 605
+      POINT: 7
+      LEVEL: 66
+      MANA USE: 520
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 606
+      POINT: 8
+      LEVEL: 67
+      MANA USE: 540
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 607
+      POINT: 9
+      LEVEL: 68
+      MANA USE: 560
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 608
+      POINT: 10
+      LEVEL: 69
+      MANA USE: 580
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 609
+      POINT: 11
+      LEVEL: 70
+      MANA USE: 600
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 610
+      POINT: 12
+      LEVEL: 71
+      MANA USE: 620
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 646
+      POINT: 13
+      LEVEL: 72
+      MANA USE: 640
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 647
+      POINT: 14
+      LEVEL: 73
+      MANA USE: 660
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 648
+      POINT: 15
+      LEVEL: 74
+      MANA USE: 680
+      COOLDOWN: 50000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 64
+   NAME: Chiêu Furoozunkyuusen
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 1549
+   DESCRIPTION: Bắn hai Cự Băng Tiễn vào kẻ thù gây ra sát thương thủy hệ đồng thời có tỉ lệ khiến kẻ địch bị đóng băng.
+      ID: 694
+      POINT: 0
+      LEVEL: 70
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 695
+      POINT: 1
+      LEVEL: 70
+      MANA USE: 120
+      COOLDOWN: 750
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 696
+      POINT: 2
+      LEVEL: 71
+      MANA USE: 124
+      COOLDOWN: 700
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 697
+      POINT: 3
+      LEVEL: 72
+      MANA USE: 128
+      COOLDOWN: 700
+      DX: 140
+      DY: 140
+      MAX FIGHT: 1
+..........................
+
+      ID: 698
+      POINT: 4
+      LEVEL: 73
+      MANA USE: 132
+      COOLDOWN: 650
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 699
+      POINT: 5
+      LEVEL: 74
+      MANA USE: 136
+      COOLDOWN: 650
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 700
+      POINT: 6
+      LEVEL: 75
+      MANA USE: 140
+      COOLDOWN: 600
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 701
+      POINT: 7
+      LEVEL: 76
+      MANA USE: 144
+      COOLDOWN: 600
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 702
+      POINT: 8
+      LEVEL: 77
+      MANA USE: 148
+      COOLDOWN: 550
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 703
+      POINT: 9
+      LEVEL: 78
+      MANA USE: 152
+      COOLDOWN: 550
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 704
+      POINT: 10
+      LEVEL: 79
+      MANA USE: 156
+      COOLDOWN: 500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 705
+      POINT: 11
+      LEVEL: 80
+      MANA USE: 160
+      COOLDOWN: 500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 706
+      POINT: 12
+      LEVEL: 81
+      MANA USE: 164
+      COOLDOWN: 450
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 70
+   NAME: Nhẫn thuật Kage Bunshin 
+   MAX POINT: 10
+   TYPE: 2
+   ICON ID: 2215
+   DESCRIPTION: Nhẫn thuật cho phép tạo ra một bản sao hoàn hảo từ bản chính.
+      ID: 766
+      POINT: 0
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 767
+      POINT: 1
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 768
+      POINT: 2
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 769
+      POINT: 3
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 770
+      POINT: 4
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 771
+      POINT: 5
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 772
+      POINT: 6
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 773
+      POINT: 7
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 774
+      POINT: 8
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 775
+      POINT: 9
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 776
+      POINT: 10
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 76
+   NAME: Chiêu Aisu Meiku
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2230
+   DESCRIPTION: Bắn liên tục những mũi tên băng về phía kẻ thù tạo ra những vòng xoáy băng.
+      ID: 838
+      POINT: 0
+      LEVEL: 80
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 839
+      POINT: 1
+      LEVEL: 80
+      MANA USE: 140
+      COOLDOWN: 550
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 840
+      POINT: 2
+      LEVEL: 81
+      MANA USE: 143
+      COOLDOWN: 540
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 841
+      POINT: 3
+      LEVEL: 82
+      MANA USE: 146
+      COOLDOWN: 530
+      DX: 140
+      DY: 140
+      MAX FIGHT: 2
+..........................
+
+      ID: 842
+      POINT: 4
+      LEVEL: 83
+      MANA USE: 149
+      COOLDOWN: 520
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 843
+      POINT: 5
+      LEVEL: 84
+      MANA USE: 152
+      COOLDOWN: 510
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 844
+      POINT: 6
+      LEVEL: 85
+      MANA USE: 155
+      COOLDOWN: 500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 845
+      POINT: 7
+      LEVEL: 86
+      MANA USE: 158
+      COOLDOWN: 490
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 846
+      POINT: 8
+      LEVEL: 87
+      MANA USE: 161
+      COOLDOWN: 480
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 847
+      POINT: 9
+      LEVEL: 88
+      MANA USE: 164
+      COOLDOWN: 470
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 848
+      POINT: 10
+      LEVEL: 89
+      MANA USE: 167
+      COOLDOWN: 450
+      DX: 140
+      DY: 140
+      MAX FIGHT: 5
+..........................
+
+      ID: 849
+      POINT: 11
+      LEVEL: 90
+      MANA USE: 170
+      COOLDOWN: 430
+      DX: 140
+      DY: 140
+      MAX FIGHT: 5
+..........................
+
+      ID: 850
+      POINT: 12
+      LEVEL: 91
+      MANA USE: 173
+      COOLDOWN: 400
+      DX: 140
+      DY: 140
+      MAX FIGHT: 5
+..........................
+
+=============================
+
+   ID: 82
+   NAME: Chiêu Kogoraseru
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2231
+   DESCRIPTION: Tiễn thuật Long Tiễn Vong Nhân
+      ID: 916
+      POINT: 0
+      LEVEL: 100
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 917
+      POINT: 1
+      LEVEL: 100
+      MANA USE: 157
+      COOLDOWN: 550
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 918
+      POINT: 2
+      LEVEL: 101
+      MANA USE: 160
+      COOLDOWN: 540
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 919
+      POINT: 3
+      LEVEL: 102
+      MANA USE: 163
+      COOLDOWN: 530
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 920
+      POINT: 4
+      LEVEL: 103
+      MANA USE: 166
+      COOLDOWN: 520
+      DX: 140
+      DY: 140
+      MAX FIGHT: 3
+..........................
+
+      ID: 921
+      POINT: 5
+      LEVEL: 104
+      MANA USE: 169
+      COOLDOWN: 510
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 922
+      POINT: 6
+      LEVEL: 105
+      MANA USE: 172
+      COOLDOWN: 500
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 923
+      POINT: 7
+      LEVEL: 106
+      MANA USE: 175
+      COOLDOWN: 490
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 924
+      POINT: 8
+      LEVEL: 107
+      MANA USE: 178
+      COOLDOWN: 480
+      DX: 140
+      DY: 140
+      MAX FIGHT: 4
+..........................
+
+      ID: 925
+      POINT: 9
+      LEVEL: 108
+      MANA USE: 181
+      COOLDOWN: 470
+      DX: 140
+      DY: 140
+      MAX FIGHT: 5
+..........................
+
+      ID: 926
+      POINT: 10
+      LEVEL: 109
+      MANA USE: 184
+      COOLDOWN: 450
+      DX: 140
+      DY: 140
+      MAX FIGHT: 5
+..........................
+
+      ID: 927
+      POINT: 11
+      LEVEL: 110
+      MANA USE: 187
+      COOLDOWN: 430
+      DX: 140
+      DY: 140
+      MAX FIGHT: 5
+..........................
+
+      ID: 928
+      POINT: 12
+      LEVEL: 111
+      MANA USE: 190
+      COOLDOWN: 400
+      DX: 140
+      DY: 140
+      MAX FIGHT: 6
+..........................
+
+=============================
+
+-----------------------------
+
+   ID: 37
+   NAME: Chiêu Enchokuto
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 581
+   DESCRIPTION: Đao pháp nhập môn - dùng đao chém mạnh vào một mục tiêu gây sát thương lên mục tiêu đó
+      ID: 373
+      POINT: 0
+      LEVEL: 10
+      MANA USE: 0
+      COOLDOWN: 550
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 374
+      POINT: 1
+      LEVEL: 10
+      MANA USE: 1
+      COOLDOWN: 500
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 375
+      POINT: 2
+      LEVEL: 11
+      MANA USE: 2
+      COOLDOWN: 500
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 376
+      POINT: 3
+      LEVEL: 12
+      MANA USE: 3
+      COOLDOWN: 500
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 377
+      POINT: 4
+      LEVEL: 13
+      MANA USE: 4
+      COOLDOWN: 500
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 378
+      POINT: 5
+      LEVEL: 14
+      MANA USE: 5
+      COOLDOWN: 500
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 379
+      POINT: 6
+      LEVEL: 15
+      MANA USE: 6
+      COOLDOWN: 450
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 380
+      POINT: 7
+      LEVEL: 16
+      MANA USE: 7
+      COOLDOWN: 450
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 381
+      POINT: 8
+      LEVEL: 17
+      MANA USE: 8
+      COOLDOWN: 450
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 382
+      POINT: 9
+      LEVEL: 18
+      MANA USE: 9
+      COOLDOWN: 450
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 383
+      POINT: 10
+      LEVEL: 19
+      MANA USE: 10
+      COOLDOWN: 450
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 384
+      POINT: 11
+      LEVEL: 20
+      MANA USE: 12
+      COOLDOWN: 450
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 385
+      POINT: 12
+      LEVEL: 21
+      MANA USE: 15
+      COOLDOWN: 450
+      DX: 44
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 38
+   NAME: Chiêu Konoitoame
+   MAX POINT: 6
+   TYPE: 0
+   ICON ID: 609
+   DESCRIPTION: Nhẫn thuật tâm pháp - nâng cao sức tấn công, HP và tốc độ di chuyển
+      ID: 386
+      POINT: 0
+      LEVEL: 15
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 387
+      POINT: 1
+      LEVEL: 15
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 388
+      POINT: 2
+      LEVEL: 16
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 389
+      POINT: 3
+      LEVEL: 17
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 390
+      POINT: 4
+      LEVEL: 18
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 391
+      POINT: 5
+      LEVEL: 19
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 392
+      POINT: 6
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 39
+   NAME: Chiêu Maroyakato
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 582
+   DESCRIPTION: Chém 2 nhát Đao liên tiếp vào mục tiêu gây sát thương lên mục tiêu đó
+      ID: 393
+      POINT: 0
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 1000
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 394
+      POINT: 1
+      LEVEL: 20
+      MANA USE: 31
+      COOLDOWN: 900
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 395
+      POINT: 2
+      LEVEL: 21
+      MANA USE: 32
+      COOLDOWN: 850
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 396
+      POINT: 3
+      LEVEL: 22
+      MANA USE: 33
+      COOLDOWN: 800
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 397
+      POINT: 4
+      LEVEL: 23
+      MANA USE: 34
+      COOLDOWN: 800
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 398
+      POINT: 5
+      LEVEL: 24
+      MANA USE: 35
+      COOLDOWN: 750
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 399
+      POINT: 6
+      LEVEL: 25
+      MANA USE: 36
+      COOLDOWN: 750
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 400
+      POINT: 7
+      LEVEL: 26
+      MANA USE: 37
+      COOLDOWN: 700
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 401
+      POINT: 8
+      LEVEL: 27
+      MANA USE: 38
+      COOLDOWN: 700
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 402
+      POINT: 9
+      LEVEL: 28
+      MANA USE: 39
+      COOLDOWN: 650
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 403
+      POINT: 10
+      LEVEL: 29
+      MANA USE: 40
+      COOLDOWN: 650
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 404
+      POINT: 11
+      LEVEL: 30
+      MANA USE: 42
+      COOLDOWN: 600
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 405
+      POINT: 12
+      LEVEL: 31
+      MANA USE: 45
+      COOLDOWN: 600
+      DX: 58
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 40
+   NAME: Chiêu Magumandari
+   MAX POINT: 6
+   TYPE: 3
+   ICON ID: 610
+   DESCRIPTION: Khiến cho quái vật bị tác động không thể tấn công trong một thời gian nhất định
+      ID: 406
+      POINT: 0
+      LEVEL: 25
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 407
+      POINT: 1
+      LEVEL: 25
+      MANA USE: 30
+      COOLDOWN: 13000
+      DX: 100
+      DY: 50
+      MAX FIGHT: 1
+..........................
+
+      ID: 408
+      POINT: 2
+      LEVEL: 26
+      MANA USE: 40
+      COOLDOWN: 15000
+      DX: 100
+      DY: 50
+      MAX FIGHT: 1
+..........................
+
+      ID: 409
+      POINT: 3
+      LEVEL: 27
+      MANA USE: 50
+      COOLDOWN: 18000
+      DX: 100
+      DY: 50
+      MAX FIGHT: 1
+..........................
+
+      ID: 410
+      POINT: 4
+      LEVEL: 28
+      MANA USE: 60
+      COOLDOWN: 20000
+      DX: 100
+      DY: 50
+      MAX FIGHT: 1
+..........................
+
+      ID: 411
+      POINT: 5
+      LEVEL: 29
+      MANA USE: 70
+      COOLDOWN: 25000
+      DX: 100
+      DY: 50
+      MAX FIGHT: 1
+..........................
+
+      ID: 412
+      POINT: 6
+      LEVEL: 30
+      MANA USE: 80
+      COOLDOWN: 27000
+      DX: 100
+      DY: 50
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 41
+   NAME: Chiêu Chousouto
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 583
+   DESCRIPTION: Kết hợp phong thuật vung đao về phía kẻ địch gây sát thương trong phạm vi nhất định, sát thương tối đa 3 mục tiêu
+      ID: 413
+      POINT: 0
+      LEVEL: 30
+      MANA USE: 0
+      COOLDOWN: 750
+      DX: 53
+      DY: 40
+      MAX FIGHT: 1
+..........................
+
+      ID: 414
+      POINT: 1
+      LEVEL: 30
+      MANA USE: 46
+      COOLDOWN: 750
+      DX: 53
+      DY: 40
+      MAX FIGHT: 2
+..........................
+
+      ID: 415
+      POINT: 2
+      LEVEL: 31
+      MANA USE: 47
+      COOLDOWN: 750
+      DX: 53
+      DY: 40
+      MAX FIGHT: 2
+..........................
+
+      ID: 416
+      POINT: 3
+      LEVEL: 32
+      MANA USE: 48
+      COOLDOWN: 750
+      DX: 53
+      DY: 40
+      MAX FIGHT: 2
+..........................
+
+      ID: 417
+      POINT: 4
+      LEVEL: 33
+      MANA USE: 49
+      COOLDOWN: 700
+      DX: 53
+      DY: 40
+      MAX FIGHT: 2
+..........................
+
+      ID: 418
+      POINT: 5
+      LEVEL: 34
+      MANA USE: 50
+      COOLDOWN: 700
+      DX: 53
+      DY: 40
+      MAX FIGHT: 2
+..........................
+
+      ID: 419
+      POINT: 6
+      LEVEL: 35
+      MANA USE: 51
+      COOLDOWN: 700
+      DX: 53
+      DY: 40
+      MAX FIGHT: 3
+..........................
+
+      ID: 420
+      POINT: 7
+      LEVEL: 36
+      MANA USE: 52
+      COOLDOWN: 600
+      DX: 53
+      DY: 40
+      MAX FIGHT: 3
+..........................
+
+      ID: 421
+      POINT: 8
+      LEVEL: 37
+      MANA USE: 53
+      COOLDOWN: 600
+      DX: 53
+      DY: 40
+      MAX FIGHT: 3
+..........................
+
+      ID: 422
+      POINT: 9
+      LEVEL: 38
+      MANA USE: 54
+      COOLDOWN: 600
+      DX: 53
+      DY: 40
+      MAX FIGHT: 3
+..........................
+
+      ID: 423
+      POINT: 10
+      LEVEL: 39
+      MANA USE: 55
+      COOLDOWN: 600
+      DX: 53
+      DY: 40
+      MAX FIGHT: 3
+..........................
+
+      ID: 424
+      POINT: 11
+      LEVEL: 40
+      MANA USE: 57
+      COOLDOWN: 600
+      DX: 53
+      DY: 40
+      MAX FIGHT: 3
+..........................
+
+      ID: 425
+      POINT: 12
+      LEVEL: 41
+      MANA USE: 60
+      COOLDOWN: 600
+      DX: 53
+      DY: 40
+      MAX FIGHT: 3
+..........................
+
+=============================
+
+   ID: 42
+   NAME: Chiêu Aisubaagu
+   MAX POINT: 6
+   TYPE: 1
+   ICON ID: 611
+   DESCRIPTION: Sử dụng dịch phong thuật nhanh chóng áp sát và tấn công kẻ thù ngay lập tức
+      ID: 426
+      POINT: 0
+      LEVEL: 35
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 427
+      POINT: 1
+      LEVEL: 35
+      MANA USE: 50
+      COOLDOWN: 25000
+      DX: 150
+      DY: 150
+      MAX FIGHT: 1
+..........................
+
+      ID: 428
+      POINT: 2
+      LEVEL: 36
+      MANA USE: 60
+      COOLDOWN: 22000
+      DX: 160
+      DY: 160
+      MAX FIGHT: 1
+..........................
+
+      ID: 429
+      POINT: 3
+      LEVEL: 37
+      MANA USE: 70
+      COOLDOWN: 19000
+      DX: 170
+      DY: 170
+      MAX FIGHT: 1
+..........................
+
+      ID: 430
+      POINT: 4
+      LEVEL: 38
+      MANA USE: 80
+      COOLDOWN: 16000
+      DX: 180
+      DY: 180
+      MAX FIGHT: 1
+..........................
+
+      ID: 431
+      POINT: 5
+      LEVEL: 39
+      MANA USE: 90
+      COOLDOWN: 13000
+      DX: 200
+      DY: 200
+      MAX FIGHT: 1
+..........................
+
+      ID: 432
+      POINT: 6
+      LEVEL: 40
+      MANA USE: 100
+      COOLDOWN: 10000
+      DX: 220
+      DY: 220
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 43
+   NAME: Chiêu Hayateto
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 584
+   DESCRIPTION: Nhát chém kèm thèo gió và sấm sét giáng thẳng vào mục tiêu, gây ra sát thương cực lớn
+      ID: 433
+      POINT: 0
+      LEVEL: 40
+      MANA USE: 0
+      COOLDOWN: 21000
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 434
+      POINT: 1
+      LEVEL: 40
+      MANA USE: 160
+      COOLDOWN: 20000
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 435
+      POINT: 2
+      LEVEL: 41
+      MANA USE: 170
+      COOLDOWN: 19500
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 436
+      POINT: 3
+      LEVEL: 42
+      MANA USE: 180
+      COOLDOWN: 19500
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 437
+      POINT: 4
+      LEVEL: 43
+      MANA USE: 190
+      COOLDOWN: 19000
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 438
+      POINT: 5
+      LEVEL: 44
+      MANA USE: 200
+      COOLDOWN: 19000
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 439
+      POINT: 6
+      LEVEL: 45
+      MANA USE: 210
+      COOLDOWN: 18500
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 440
+      POINT: 7
+      LEVEL: 46
+      MANA USE: 220
+      COOLDOWN: 18500
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 441
+      POINT: 8
+      LEVEL: 47
+      MANA USE: 230
+      COOLDOWN: 18000
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 442
+      POINT: 9
+      LEVEL: 48
+      MANA USE: 240
+      COOLDOWN: 18000
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 443
+      POINT: 10
+      LEVEL: 49
+      MANA USE: 250
+      COOLDOWN: 17500
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 444
+      POINT: 11
+      LEVEL: 50
+      MANA USE: 260
+      COOLDOWN: 17500
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+      ID: 445
+      POINT: 12
+      LEVEL: 51
+      MANA USE: 270
+      COOLDOWN: 17000
+      DX: 50
+      DY: 47
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 44
+   NAME: Chiêu Zenpanteki
+   MAX POINT: 6
+   TYPE: 0
+   ICON ID: 612
+   DESCRIPTION: Tăng khả năng kháng băng đồng thời giúp bản thân nhanh chóng hồi phục khi bị đóng băng
+      ID: 446
+      POINT: 0
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 447
+      POINT: 1
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 448
+      POINT: 2
+      LEVEL: 46
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 449
+      POINT: 3
+      LEVEL: 47
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 450
+      POINT: 4
+      LEVEL: 48
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 451
+      POINT: 5
+      LEVEL: 49
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 452
+      POINT: 6
+      LEVEL: 50
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 45
+   NAME: Chiêu Raikouto
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 585
+   DESCRIPTION: Vung đao xuất ra luồng sét đánh thẳng vào mục tiêu, đồng thời gây sát thương các mục tiêu lân cận, tối đa 4 mục tiêu
+      ID: 453
+      POINT: 0
+      LEVEL: 50
+      MANA USE: 0
+      COOLDOWN: 1100
+      DX: 58
+      DY: 48
+      MAX FIGHT: 1
+..........................
+
+      ID: 454
+      POINT: 1
+      LEVEL: 50
+      MANA USE: 76
+      COOLDOWN: 1000
+      DX: 58
+      DY: 48
+      MAX FIGHT: 2
+..........................
+
+      ID: 455
+      POINT: 2
+      LEVEL: 51
+      MANA USE: 80
+      COOLDOWN: 900
+      DX: 58
+      DY: 48
+      MAX FIGHT: 2
+..........................
+
+      ID: 456
+      POINT: 3
+      LEVEL: 52
+      MANA USE: 84
+      COOLDOWN: 850
+      DX: 58
+      DY: 48
+      MAX FIGHT: 2
+..........................
+
+      ID: 457
+      POINT: 4
+      LEVEL: 53
+      MANA USE: 88
+      COOLDOWN: 800
+      DX: 58
+      DY: 48
+      MAX FIGHT: 2
+..........................
+
+      ID: 458
+      POINT: 5
+      LEVEL: 54
+      MANA USE: 92
+      COOLDOWN: 750
+      DX: 58
+      DY: 48
+      MAX FIGHT: 3
+..........................
+
+      ID: 459
+      POINT: 6
+      LEVEL: 55
+      MANA USE: 96
+      COOLDOWN: 700
+      DX: 58
+      DY: 48
+      MAX FIGHT: 3
+..........................
+
+      ID: 460
+      POINT: 7
+      LEVEL: 56
+      MANA USE: 100
+      COOLDOWN: 650
+      DX: 58
+      DY: 48
+      MAX FIGHT: 3
+..........................
+
+      ID: 461
+      POINT: 8
+      LEVEL: 57
+      MANA USE: 104
+      COOLDOWN: 600
+      DX: 58
+      DY: 48
+      MAX FIGHT: 3
+..........................
+
+      ID: 462
+      POINT: 9
+      LEVEL: 58
+      MANA USE: 108
+      COOLDOWN: 550
+      DX: 58
+      DY: 48
+      MAX FIGHT: 4
+..........................
+
+      ID: 463
+      POINT: 10
+      LEVEL: 59
+      MANA USE: 112
+      COOLDOWN: 500
+      DX: 58
+      DY: 48
+      MAX FIGHT: 4
+..........................
+
+      ID: 464
+      POINT: 11
+      LEVEL: 60
+      MANA USE: 116
+      COOLDOWN: 450
+      DX: 58
+      DY: 48
+      MAX FIGHT: 4
+..........................
+
+      ID: 465
+      POINT: 12
+      LEVEL: 61
+      MANA USE: 120
+      COOLDOWN: 400
+      DX: 58
+      DY: 48
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 59
+   NAME: Chiêu Ikennotto
+   MAX POINT: 15
+   TYPE: 0
+   ICON ID: 1294
+   DESCRIPTION: Huyễn hóa lôi điện nâng cao khả năng giữ chân mục tiêu đồng thời tăng cao HP của bản thân.
+      ID: 611
+      POINT: 0
+      LEVEL: 60
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 612
+      POINT: 1
+      LEVEL: 60
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 613
+      POINT: 2
+      LEVEL: 61
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 614
+      POINT: 3
+      LEVEL: 62
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 615
+      POINT: 4
+      LEVEL: 63
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 616
+      POINT: 5
+      LEVEL: 64
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 617
+      POINT: 6
+      LEVEL: 65
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 618
+      POINT: 7
+      LEVEL: 66
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 619
+      POINT: 8
+      LEVEL: 67
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 620
+      POINT: 9
+      LEVEL: 68
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 621
+      POINT: 10
+      LEVEL: 69
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 622
+      POINT: 11
+      LEVEL: 70
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 623
+      POINT: 12
+      LEVEL: 71
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 649
+      POINT: 13
+      LEVEL: 72
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 650
+      POINT: 14
+      LEVEL: 73
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 651
+      POINT: 15
+      LEVEL: 74
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 65
+   NAME: Chiêu Baasutosutoomu
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 1547
+   DESCRIPTION: Chém một luồng phong quyển về phía kẻ địch gây sát thương phong hệ đồng thời có tỉ lệ gây choáng.
+      ID: 707
+      POINT: 0
+      LEVEL: 70
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 60
+      DY: 30
+      MAX FIGHT: 1
+..........................
+
+      ID: 708
+      POINT: 1
+      LEVEL: 70
+      MANA USE: 100
+      COOLDOWN: 800
+      DX: 60
+      DY: 30
+      MAX FIGHT: 1
+..........................
+
+      ID: 709
+      POINT: 2
+      LEVEL: 71
+      MANA USE: 103
+      COOLDOWN: 750
+      DX: 60
+      DY: 30
+      MAX FIGHT: 1
+..........................
+
+      ID: 710
+      POINT: 3
+      LEVEL: 72
+      MANA USE: 106
+      COOLDOWN: 750
+      DX: 60
+      DY: 30
+      MAX FIGHT: 1
+..........................
+
+      ID: 711
+      POINT: 4
+      LEVEL: 73
+      MANA USE: 109
+      COOLDOWN: 700
+      DX: 60
+      DY: 30
+      MAX FIGHT: 2
+..........................
+
+      ID: 712
+      POINT: 5
+      LEVEL: 74
+      MANA USE: 112
+      COOLDOWN: 700
+      DX: 60
+      DY: 30
+      MAX FIGHT: 2
+..........................
+
+      ID: 713
+      POINT: 6
+      LEVEL: 75
+      MANA USE: 115
+      COOLDOWN: 650
+      DX: 60
+      DY: 30
+      MAX FIGHT: 2
+..........................
+
+      ID: 714
+      POINT: 7
+      LEVEL: 76
+      MANA USE: 118
+      COOLDOWN: 650
+      DX: 60
+      DY: 30
+      MAX FIGHT: 3
+..........................
+
+      ID: 715
+      POINT: 8
+      LEVEL: 77
+      MANA USE: 121
+      COOLDOWN: 600
+      DX: 60
+      DY: 30
+      MAX FIGHT: 3
+..........................
+
+      ID: 716
+      POINT: 9
+      LEVEL: 78
+      MANA USE: 124
+      COOLDOWN: 550
+      DX: 60
+      DY: 30
+      MAX FIGHT: 3
+..........................
+
+      ID: 717
+      POINT: 10
+      LEVEL: 79
+      MANA USE: 127
+      COOLDOWN: 500
+      DX: 60
+      DY: 30
+      MAX FIGHT: 4
+..........................
+
+      ID: 718
+      POINT: 11
+      LEVEL: 80
+      MANA USE: 130
+      COOLDOWN: 450
+      DX: 60
+      DY: 30
+      MAX FIGHT: 4
+..........................
+
+      ID: 719
+      POINT: 12
+      LEVEL: 81
+      MANA USE: 133
+      COOLDOWN: 400
+      DX: 60
+      DY: 30
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 71
+   NAME: Nhẫn thuật Kage Bunshin 
+   MAX POINT: 10
+   TYPE: 2
+   ICON ID: 2215
+   DESCRIPTION: Nhẫn thuật cho phép tạo ra một bản sao hoàn hảo từ bản chính.
+      ID: 777
+      POINT: 0
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 778
+      POINT: 1
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 779
+      POINT: 2
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 780
+      POINT: 3
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 781
+      POINT: 4
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 782
+      POINT: 5
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 783
+      POINT: 6
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 784
+      POINT: 7
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 785
+      POINT: 8
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 786
+      POINT: 9
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 787
+      POINT: 10
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 74
+   NAME: Chiêu Kaminari
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2234
+   DESCRIPTION: Phóng ra những tia lôi điện giáng những đòn chí mạng vào kẻ thù.
+      ID: 851
+      POINT: 0
+      LEVEL: 80
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 60
+      DY: 60
+      MAX FIGHT: 0
+..........................
+
+      ID: 852
+      POINT: 1
+      LEVEL: 80
+      MANA USE: 120
+      COOLDOWN: 550
+      DX: 90
+      DY: 50
+      MAX FIGHT: 2
+..........................
+
+      ID: 853
+      POINT: 2
+      LEVEL: 81
+      MANA USE: 122
+      COOLDOWN: 540
+      DX: 90
+      DY: 50
+      MAX FIGHT: 2
+..........................
+
+      ID: 854
+      POINT: 3
+      LEVEL: 82
+      MANA USE: 124
+      COOLDOWN: 530
+      DX: 90
+      DY: 50
+      MAX FIGHT: 2
+..........................
+
+      ID: 855
+      POINT: 4
+      LEVEL: 83
+      MANA USE: 126
+      COOLDOWN: 520
+      DX: 90
+      DY: 50
+      MAX FIGHT: 3
+..........................
+
+      ID: 856
+      POINT: 5
+      LEVEL: 84
+      MANA USE: 128
+      COOLDOWN: 510
+      DX: 90
+      DY: 50
+      MAX FIGHT: 3
+..........................
+
+      ID: 857
+      POINT: 6
+      LEVEL: 85
+      MANA USE: 130
+      COOLDOWN: 500
+      DX: 90
+      DY: 50
+      MAX FIGHT: 3
+..........................
+
+      ID: 858
+      POINT: 7
+      LEVEL: 86
+      MANA USE: 132
+      COOLDOWN: 490
+      DX: 90
+      DY: 50
+      MAX FIGHT: 4
+..........................
+
+      ID: 859
+      POINT: 8
+      LEVEL: 87
+      MANA USE: 134
+      COOLDOWN: 480
+      DX: 90
+      DY: 50
+      MAX FIGHT: 4
+..........................
+
+      ID: 860
+      POINT: 9
+      LEVEL: 88
+      MANA USE: 136
+      COOLDOWN: 470
+      DX: 90
+      DY: 50
+      MAX FIGHT: 4
+..........................
+
+      ID: 861
+      POINT: 10
+      LEVEL: 89
+      MANA USE: 138
+      COOLDOWN: 450
+      DX: 90
+      DY: 50
+      MAX FIGHT: 5
+..........................
+
+      ID: 862
+      POINT: 11
+      LEVEL: 90
+      MANA USE: 140
+      COOLDOWN: 430
+      DX: 90
+      DY: 50
+      MAX FIGHT: 5
+..........................
+
+      ID: 863
+      POINT: 12
+      LEVEL: 91
+      MANA USE: 142
+      COOLDOWN: 400
+      DX: 90
+      DY: 50
+      MAX FIGHT: 5
+..........................
+
+=============================
+
+   ID: 80
+   NAME: Chiêu Raijin
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2235
+   DESCRIPTION: Lôi thuật Lôi Mã Phong Vân Khởi
+      ID: 929
+      POINT: 0
+      LEVEL: 100
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 60
+      DY: 60
+      MAX FIGHT: 0
+..........................
+
+      ID: 930
+      POINT: 1
+      LEVEL: 100
+      MANA USE: 138
+      COOLDOWN: 550
+      DX: 90
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 931
+      POINT: 2
+      LEVEL: 101
+      MANA USE: 140
+      COOLDOWN: 540
+      DX: 90
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 932
+      POINT: 3
+      LEVEL: 102
+      MANA USE: 142
+      COOLDOWN: 530
+      DX: 90
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 933
+      POINT: 4
+      LEVEL: 103
+      MANA USE: 144
+      COOLDOWN: 520
+      DX: 90
+      DY: 46
+      MAX FIGHT: 3
+..........................
+
+      ID: 934
+      POINT: 5
+      LEVEL: 104
+      MANA USE: 146
+      COOLDOWN: 510
+      DX: 90
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 935
+      POINT: 6
+      LEVEL: 105
+      MANA USE: 148
+      COOLDOWN: 500
+      DX: 90
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 936
+      POINT: 7
+      LEVEL: 106
+      MANA USE: 150
+      COOLDOWN: 490
+      DX: 90
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 937
+      POINT: 8
+      LEVEL: 107
+      MANA USE: 152
+      COOLDOWN: 480
+      DX: 90
+      DY: 46
+      MAX FIGHT: 4
+..........................
+
+      ID: 938
+      POINT: 9
+      LEVEL: 108
+      MANA USE: 154
+      COOLDOWN: 470
+      DX: 90
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+      ID: 939
+      POINT: 10
+      LEVEL: 109
+      MANA USE: 156
+      COOLDOWN: 450
+      DX: 90
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+      ID: 940
+      POINT: 11
+      LEVEL: 110
+      MANA USE: 158
+      COOLDOWN: 430
+      DX: 90
+      DY: 46
+      MAX FIGHT: 5
+..........................
+
+      ID: 941
+      POINT: 12
+      LEVEL: 111
+      MANA USE: 160
+      COOLDOWN: 400
+      DX: 90
+      DY: 46
+      MAX FIGHT: 6
+..........................
+
+=============================
+
+-----------------------------
+
+   ID: 46
+   NAME: Chiêu Ouchia
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 591
+   DESCRIPTION: Quạt mạnh tạo ra luồng gió tấn công thẳng vào một mục tiêu, gây sát thương lên mục tiêu đó
+      ID: 466
+      POINT: 0
+      LEVEL: 10
+      MANA USE: 0
+      COOLDOWN: 750
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 467
+      POINT: 1
+      LEVEL: 10
+      MANA USE: 1
+      COOLDOWN: 750
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 468
+      POINT: 2
+      LEVEL: 11
+      MANA USE: 2
+      COOLDOWN: 750
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 469
+      POINT: 3
+      LEVEL: 12
+      MANA USE: 3
+      COOLDOWN: 750
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 470
+      POINT: 4
+      LEVEL: 13
+      MANA USE: 4
+      COOLDOWN: 750
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 471
+      POINT: 5
+      LEVEL: 14
+      MANA USE: 5
+      COOLDOWN: 650
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 472
+      POINT: 6
+      LEVEL: 15
+      MANA USE: 6
+      COOLDOWN: 650
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 473
+      POINT: 7
+      LEVEL: 16
+      MANA USE: 7
+      COOLDOWN: 650
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 474
+      POINT: 8
+      LEVEL: 17
+      MANA USE: 8
+      COOLDOWN: 600
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 475
+      POINT: 9
+      LEVEL: 18
+      MANA USE: 9
+      COOLDOWN: 600
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 476
+      POINT: 10
+      LEVEL: 19
+      MANA USE: 10
+      COOLDOWN: 600
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 477
+      POINT: 11
+      LEVEL: 20
+      MANA USE: 12
+      COOLDOWN: 550
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+      ID: 478
+      POINT: 12
+      LEVEL: 21
+      MANA USE: 15
+      COOLDOWN: 550
+      DX: 56
+      DY: 29
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 47
+   NAME: Chiêu Suishou
+   MAX POINT: 6
+   TYPE: 2
+   ICON ID: 617
+   DESCRIPTION: Trong mỗi giây hồi phục cho bản thân và đồng đội một lượng máu nhất định
+      ID: 479
+      POINT: 0
+      LEVEL: 15
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 480
+      POINT: 1
+      LEVEL: 15
+      MANA USE: 10
+      COOLDOWN: 9000
+      DX: 90
+      DY: 90
+      MAX FIGHT: 3
+..........................
+
+      ID: 481
+      POINT: 2
+      LEVEL: 25
+      MANA USE: 20
+      COOLDOWN: 10000
+      DX: 100
+      DY: 100
+      MAX FIGHT: 3
+..........................
+
+      ID: 482
+      POINT: 3
+      LEVEL: 35
+      MANA USE: 30
+      COOLDOWN: 12000
+      DX: 110
+      DY: 110
+      MAX FIGHT: 4
+..........................
+
+      ID: 483
+      POINT: 4
+      LEVEL: 45
+      MANA USE: 40
+      COOLDOWN: 13000
+      DX: 120
+      DY: 120
+      MAX FIGHT: 4
+..........................
+
+      ID: 484
+      POINT: 5
+      LEVEL: 55
+      MANA USE: 50
+      COOLDOWN: 15000
+      DX: 130
+      DY: 130
+      MAX FIGHT: 5
+..........................
+
+      ID: 485
+      POINT: 6
+      LEVEL: 65
+      MANA USE: 60
+      COOLDOWN: 17000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 6
+..........................
+
+=============================
+
+   ID: 48
+   NAME: Chiêu Oouchia
+   MAX POINT: 12
+   TYPE: 0
+   ICON ID: 592
+   DESCRIPTION: Nhẫn thuật tâm pháp - nâng cao lượng HP, MP và kinh nghiệm khi đánh quái
+      ID: 486
+      POINT: 0
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 487
+      POINT: 1
+      LEVEL: 20
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 488
+      POINT: 2
+      LEVEL: 21
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 489
+      POINT: 3
+      LEVEL: 22
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 490
+      POINT: 4
+      LEVEL: 23
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 491
+      POINT: 5
+      LEVEL: 24
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 492
+      POINT: 6
+      LEVEL: 25
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 493
+      POINT: 7
+      LEVEL: 26
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 494
+      POINT: 8
+      LEVEL: 27
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 495
+      POINT: 9
+      LEVEL: 28
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 496
+      POINT: 10
+      LEVEL: 29
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 497
+      POINT: 11
+      LEVEL: 30
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 498
+      POINT: 12
+      LEVEL: 31
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 49
+   NAME: Chiêu Kusenmono
+   MAX POINT: 6
+   TYPE: 4
+   ICON ID: 619
+   DESCRIPTION: Trong tích tắc hồi phục cho một mục tiêu đang trong trạng thái kiệt sức, đồng thời gia tăng né tránh
+      ID: 499
+      POINT: 0
+      LEVEL: 25
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 500
+      POINT: 1
+      LEVEL: 25
+      MANA USE: 200
+      COOLDOWN: 800000
+      DX: 80
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+      ID: 501
+      POINT: 2
+      LEVEL: 26
+      MANA USE: 200
+      COOLDOWN: 400000
+      DX: 80
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+      ID: 502
+      POINT: 3
+      LEVEL: 27
+      MANA USE: 200
+      COOLDOWN: 200000
+      DX: 80
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+      ID: 503
+      POINT: 4
+      LEVEL: 28
+      MANA USE: 200
+      COOLDOWN: 100000
+      DX: 80
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+      ID: 504
+      POINT: 5
+      LEVEL: 29
+      MANA USE: 200
+      COOLDOWN: 50000
+      DX: 80
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+      ID: 505
+      POINT: 6
+      LEVEL: 30
+      MANA USE: 200
+      COOLDOWN: 25000
+      DX: 80
+      DY: 80
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 50
+   NAME: Chiêu Bakkuuchiha
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 593
+   DESCRIPTION: Ném quạt xoay vòng trước mắt gây sát thương lên các mục tiêu lân cận, tối đa 3 mục tiêu
+      ID: 506
+      POINT: 0
+      LEVEL: 30
+      MANA USE: 0
+      COOLDOWN: 750
+      DX: 48
+      DY: 31
+      MAX FIGHT: 1
+..........................
+
+      ID: 507
+      POINT: 1
+      LEVEL: 30
+      MANA USE: 61
+      COOLDOWN: 750
+      DX: 48
+      DY: 31
+      MAX FIGHT: 2
+..........................
+
+      ID: 508
+      POINT: 2
+      LEVEL: 31
+      MANA USE: 62
+      COOLDOWN: 750
+      DX: 48
+      DY: 31
+      MAX FIGHT: 2
+..........................
+
+      ID: 509
+      POINT: 3
+      LEVEL: 32
+      MANA USE: 63
+      COOLDOWN: 750
+      DX: 48
+      DY: 31
+      MAX FIGHT: 2
+..........................
+
+      ID: 510
+      POINT: 4
+      LEVEL: 33
+      MANA USE: 64
+      COOLDOWN: 750
+      DX: 48
+      DY: 31
+      MAX FIGHT: 2
+..........................
+
+      ID: 511
+      POINT: 5
+      LEVEL: 34
+      MANA USE: 65
+      COOLDOWN: 750
+      DX: 48
+      DY: 31
+      MAX FIGHT: 2
+..........................
+
+      ID: 512
+      POINT: 6
+      LEVEL: 35
+      MANA USE: 66
+      COOLDOWN: 750
+      DX: 48
+      DY: 31
+      MAX FIGHT: 3
+..........................
+
+      ID: 513
+      POINT: 7
+      LEVEL: 36
+      MANA USE: 67
+      COOLDOWN: 700
+      DX: 48
+      DY: 31
+      MAX FIGHT: 3
+..........................
+
+      ID: 514
+      POINT: 8
+      LEVEL: 37
+      MANA USE: 68
+      COOLDOWN: 700
+      DX: 48
+      DY: 31
+      MAX FIGHT: 3
+..........................
+
+      ID: 515
+      POINT: 9
+      LEVEL: 38
+      MANA USE: 69
+      COOLDOWN: 700
+      DX: 48
+      DY: 31
+      MAX FIGHT: 3
+..........................
+
+      ID: 516
+      POINT: 10
+      LEVEL: 39
+      MANA USE: 70
+      COOLDOWN: 650
+      DX: 48
+      DY: 31
+      MAX FIGHT: 3
+..........................
+
+      ID: 517
+      POINT: 11
+      LEVEL: 40
+      MANA USE: 73
+      COOLDOWN: 650
+      DX: 48
+      DY: 31
+      MAX FIGHT: 3
+..........................
+
+      ID: 518
+      POINT: 12
+      LEVEL: 41
+      MANA USE: 76
+      COOLDOWN: 650
+      DX: 48
+      DY: 31
+      MAX FIGHT: 3
+..........................
+
+=============================
+
+   ID: 51
+   NAME: Chiêu Hayatemi
+   MAX POINT: 6
+   TYPE: 2
+   ICON ID: 618
+   DESCRIPTION: Trong một thời gian nhất định tăng đồng thời khả năng tấn công và phòng thủ cho bản thân và đồng đội
+      ID: 519
+      POINT: 0
+      LEVEL: 35
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 520
+      POINT: 1
+      LEVEL: 35
+      MANA USE: 200
+      COOLDOWN: 90000
+      DX: 90
+      DY: 90
+      MAX FIGHT: 3
+..........................
+
+      ID: 521
+      POINT: 2
+      LEVEL: 36
+      MANA USE: 200
+      COOLDOWN: 80000
+      DX: 100
+      DY: 100
+      MAX FIGHT: 3
+..........................
+
+      ID: 522
+      POINT: 3
+      LEVEL: 37
+      MANA USE: 200
+      COOLDOWN: 70000
+      DX: 110
+      DY: 110
+      MAX FIGHT: 4
+..........................
+
+      ID: 523
+      POINT: 4
+      LEVEL: 38
+      MANA USE: 200
+      COOLDOWN: 60000
+      DX: 120
+      DY: 120
+      MAX FIGHT: 4
+..........................
+
+      ID: 524
+      POINT: 5
+      LEVEL: 39
+      MANA USE: 200
+      COOLDOWN: 50000
+      DX: 130
+      DY: 130
+      MAX FIGHT: 5
+..........................
+
+      ID: 525
+      POINT: 6
+      LEVEL: 40
+      MANA USE: 200
+      COOLDOWN: 45000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 6
+..........................
+
+=============================
+
+   ID: 52
+   NAME: Chiêu Bousouhayate
+   MAX POINT: 12
+   TYPE: 2
+   ICON ID: 594
+   DESCRIPTION: Trong môt khoảng thời gian giảm tất cả các hiệu ứng lên bản thân và đồng đội
+      ID: 526
+      POINT: 0
+      LEVEL: 40
+      MANA USE: 0
+      COOLDOWN: 65000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 0
+..........................
+
+      ID: 527
+      POINT: 1
+      LEVEL: 40
+      MANA USE: 130
+      COOLDOWN: 65000
+      DX: 100
+      DY: 100
+      MAX FIGHT: 2
+..........................
+
+      ID: 528
+      POINT: 2
+      LEVEL: 41
+      MANA USE: 140
+      COOLDOWN: 65000
+      DX: 100
+      DY: 100
+      MAX FIGHT: 2
+..........................
+
+      ID: 529
+      POINT: 3
+      LEVEL: 42
+      MANA USE: 150
+      COOLDOWN: 65000
+      DX: 100
+      DY: 100
+      MAX FIGHT: 2
+..........................
+
+      ID: 530
+      POINT: 4
+      LEVEL: 43
+      MANA USE: 160
+      COOLDOWN: 65000
+      DX: 110
+      DY: 110
+      MAX FIGHT: 3
+..........................
+
+      ID: 531
+      POINT: 5
+      LEVEL: 44
+      MANA USE: 170
+      COOLDOWN: 65000
+      DX: 110
+      DY: 110
+      MAX FIGHT: 3
+..........................
+
+      ID: 532
+      POINT: 6
+      LEVEL: 45
+      MANA USE: 180
+      COOLDOWN: 65000
+      DX: 110
+      DY: 110
+      MAX FIGHT: 3
+..........................
+
+      ID: 533
+      POINT: 7
+      LEVEL: 46
+      MANA USE: 190
+      COOLDOWN: 65000
+      DX: 120
+      DY: 120
+      MAX FIGHT: 4
+..........................
+
+      ID: 534
+      POINT: 8
+      LEVEL: 47
+      MANA USE: 200
+      COOLDOWN: 65000
+      DX: 120
+      DY: 120
+      MAX FIGHT: 4
+..........................
+
+      ID: 535
+      POINT: 9
+      LEVEL: 48
+      MANA USE: 220
+      COOLDOWN: 65000
+      DX: 120
+      DY: 120
+      MAX FIGHT: 4
+..........................
+
+      ID: 536
+      POINT: 10
+      LEVEL: 49
+      MANA USE: 240
+      COOLDOWN: 65000
+      DX: 130
+      DY: 130
+      MAX FIGHT: 5
+..........................
+
+      ID: 537
+      POINT: 11
+      LEVEL: 50
+      MANA USE: 260
+      COOLDOWN: 65000
+      DX: 130
+      DY: 130
+      MAX FIGHT: 5
+..........................
+
+      ID: 538
+      POINT: 12
+      LEVEL: 51
+      MANA USE: 280
+      COOLDOWN: 65000
+      DX: 140
+      DY: 140
+      MAX FIGHT: 6
+..........................
+
+=============================
+
+   ID: 53
+   NAME: Chiêu Toruneedo
+   MAX POINT: 6
+   TYPE: 0
+   ICON ID: 620
+   DESCRIPTION: Sử dụng ảo phong thuật gia tăng tỉ lệ né tránh hoàn toàn tấn công của kẻ địch đồng thời gia tăng khả năng kháng băng của bản thân
+      ID: 539
+      POINT: 0
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 540
+      POINT: 1
+      LEVEL: 45
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 541
+      POINT: 2
+      LEVEL: 46
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 542
+      POINT: 3
+      LEVEL: 47
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 543
+      POINT: 4
+      LEVEL: 48
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 544
+      POINT: 5
+      LEVEL: 49
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 545
+      POINT: 6
+      LEVEL: 50
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 54
+   NAME: Chiêu Tatsumaki
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 595
+   DESCRIPTION: Tạo ra các cơn gió lốc và sấm sét, gây sát thương lớn lên các mục tiêu nhất định, tối đa 4 mục tiêu
+      ID: 546
+      POINT: 0
+      LEVEL: 50
+      MANA USE: 0
+      COOLDOWN: 1000
+      DX: 120
+      DY: 120
+      MAX FIGHT: 1
+..........................
+
+      ID: 547
+      POINT: 1
+      LEVEL: 50
+      MANA USE: 108
+      COOLDOWN: 950
+      DX: 120
+      DY: 120
+      MAX FIGHT: 2
+..........................
+
+      ID: 548
+      POINT: 2
+      LEVEL: 51
+      MANA USE: 110
+      COOLDOWN: 900
+      DX: 120
+      DY: 120
+      MAX FIGHT: 2
+..........................
+
+      ID: 549
+      POINT: 3
+      LEVEL: 52
+      MANA USE: 112
+      COOLDOWN: 850
+      DX: 120
+      DY: 120
+      MAX FIGHT: 2
+..........................
+
+      ID: 550
+      POINT: 4
+      LEVEL: 53
+      MANA USE: 114
+      COOLDOWN: 800
+      DX: 120
+      DY: 120
+      MAX FIGHT: 2
+..........................
+
+      ID: 551
+      POINT: 5
+      LEVEL: 54
+      MANA USE: 116
+      COOLDOWN: 750
+      DX: 120
+      DY: 120
+      MAX FIGHT: 3
+..........................
+
+      ID: 552
+      POINT: 6
+      LEVEL: 55
+      MANA USE: 118
+      COOLDOWN: 700
+      DX: 120
+      DY: 120
+      MAX FIGHT: 3
+..........................
+
+      ID: 553
+      POINT: 7
+      LEVEL: 56
+      MANA USE: 120
+      COOLDOWN: 650
+      DX: 120
+      DY: 120
+      MAX FIGHT: 3
+..........................
+
+      ID: 554
+      POINT: 8
+      LEVEL: 57
+      MANA USE: 122
+      COOLDOWN: 600
+      DX: 120
+      DY: 120
+      MAX FIGHT: 3
+..........................
+
+      ID: 555
+      POINT: 9
+      LEVEL: 58
+      MANA USE: 124
+      COOLDOWN: 550
+      DX: 120
+      DY: 120
+      MAX FIGHT: 4
+..........................
+
+      ID: 556
+      POINT: 10
+      LEVEL: 59
+      MANA USE: 126
+      COOLDOWN: 500
+      DX: 120
+      DY: 120
+      MAX FIGHT: 4
+..........................
+
+      ID: 557
+      POINT: 11
+      LEVEL: 60
+      MANA USE: 128
+      COOLDOWN: 450
+      DX: 120
+      DY: 120
+      MAX FIGHT: 4
+..........................
+
+      ID: 558
+      POINT: 12
+      LEVEL: 61
+      MANA USE: 130
+      COOLDOWN: 400
+      DX: 120
+      DY: 120
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 60
+   NAME: Chiêu Ooenjo
+   MAX POINT: 15
+   TYPE: 0
+   ICON ID: 1298
+   DESCRIPTION: Kêu gọi phong của tự nhiên dung nhập vào thân thể nâng cao hiệu quả hỗ trợ.
+      ID: 624
+      POINT: 0
+      LEVEL: 60
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 625
+      POINT: 1
+      LEVEL: 60
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 626
+      POINT: 2
+      LEVEL: 61
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 627
+      POINT: 3
+      LEVEL: 62
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 628
+      POINT: 4
+      LEVEL: 63
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 629
+      POINT: 5
+      LEVEL: 64
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 630
+      POINT: 6
+      LEVEL: 65
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 631
+      POINT: 7
+      LEVEL: 66
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 632
+      POINT: 8
+      LEVEL: 67
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 633
+      POINT: 9
+      LEVEL: 68
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 634
+      POINT: 10
+      LEVEL: 69
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 635
+      POINT: 11
+      LEVEL: 70
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 636
+      POINT: 12
+      LEVEL: 71
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 652
+      POINT: 13
+      LEVEL: 72
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 653
+      POINT: 14
+      LEVEL: 73
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 654
+      POINT: 15
+      LEVEL: 74
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 66
+   NAME: Chiêu Kougekitenrai
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 1551
+   DESCRIPTION: Sử dụng bí thuật gia tốc phong lôi nguyên tố tạo ra vụ nổ ngay bản thân kẻ địch gây ra sát thương đồng thời có tỉ lệ gây choáng.
+      ID: 720
+      POINT: 0
+      LEVEL: 70
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 95
+      DY: 95
+      MAX FIGHT: 1
+..........................
+
+      ID: 721
+      POINT: 1
+      LEVEL: 70
+      MANA USE: 110
+      COOLDOWN: 800
+      DX: 95
+      DY: 95
+      MAX FIGHT: 1
+..........................
+
+      ID: 722
+      POINT: 2
+      LEVEL: 71
+      MANA USE: 115
+      COOLDOWN: 750
+      DX: 95
+      DY: 95
+      MAX FIGHT: 1
+..........................
+
+      ID: 723
+      POINT: 3
+      LEVEL: 72
+      MANA USE: 120
+      COOLDOWN: 750
+      DX: 95
+      DY: 95
+      MAX FIGHT: 1
+..........................
+
+      ID: 724
+      POINT: 4
+      LEVEL: 73
+      MANA USE: 125
+      COOLDOWN: 700
+      DX: 95
+      DY: 95
+      MAX FIGHT: 2
+..........................
+
+      ID: 725
+      POINT: 5
+      LEVEL: 74
+      MANA USE: 130
+      COOLDOWN: 700
+      DX: 95
+      DY: 95
+      MAX FIGHT: 2
+..........................
+
+      ID: 726
+      POINT: 6
+      LEVEL: 75
+      MANA USE: 135
+      COOLDOWN: 650
+      DX: 95
+      DY: 95
+      MAX FIGHT: 2
+..........................
+
+      ID: 727
+      POINT: 7
+      LEVEL: 76
+      MANA USE: 140
+      COOLDOWN: 650
+      DX: 95
+      DY: 95
+      MAX FIGHT: 3
+..........................
+
+      ID: 728
+      POINT: 8
+      LEVEL: 77
+      MANA USE: 145
+      COOLDOWN: 600
+      DX: 95
+      DY: 95
+      MAX FIGHT: 3
+..........................
+
+      ID: 729
+      POINT: 9
+      LEVEL: 78
+      MANA USE: 150
+      COOLDOWN: 600
+      DX: 95
+      DY: 95
+      MAX FIGHT: 3
+..........................
+
+      ID: 730
+      POINT: 10
+      LEVEL: 79
+      MANA USE: 155
+      COOLDOWN: 550
+      DX: 95
+      DY: 95
+      MAX FIGHT: 4
+..........................
+
+      ID: 731
+      POINT: 11
+      LEVEL: 80
+      MANA USE: 160
+      COOLDOWN: 500
+      DX: 95
+      DY: 95
+      MAX FIGHT: 4
+..........................
+
+      ID: 732
+      POINT: 12
+      LEVEL: 81
+      MANA USE: 165
+      COOLDOWN: 450
+      DX: 95
+      DY: 95
+      MAX FIGHT: 4
+..........................
+
+=============================
+
+   ID: 72
+   NAME: Nhẫn thuật Kage Bunshin 
+   MAX POINT: 10
+   TYPE: 2
+   ICON ID: 2215
+   DESCRIPTION: Nhẫn thuật cho phép tạo ra một bản sao hoàn hảo từ bản chính.
+      ID: 788
+      POINT: 0
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 0
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 789
+      POINT: 1
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 790
+      POINT: 2
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 791
+      POINT: 3
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 792
+      POINT: 4
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 793
+      POINT: 5
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 794
+      POINT: 6
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 795
+      POINT: 7
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 796
+      POINT: 8
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 797
+      POINT: 9
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+      ID: 798
+      POINT: 10
+      LEVEL: 90
+      MANA USE: 2000
+      COOLDOWN: 60000
+      DX: 0
+      DY: 0
+      MAX FIGHT: 1
+..........................
+
+=============================
+
+   ID: 77
+   NAME: Chiêu Kokaze
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2236
+   DESCRIPTION: Triệu hồi lốc xoáy lôi điện ngay tại mục tiêu và hủy diệt chúng.
+      ID: 864
+      POINT: 0
+      LEVEL: 80
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 100
+      DY: 100
+      MAX FIGHT: 0
+..........................
+
+      ID: 865
+      POINT: 1
+      LEVEL: 80
+      MANA USE: 160
+      COOLDOWN: 600
+      DX: 100
+      DY: 100
+      MAX FIGHT: 2
+..........................
+
+      ID: 866
+      POINT: 2
+      LEVEL: 81
+      MANA USE: 163
+      COOLDOWN: 590
+      DX: 100
+      DY: 100
+      MAX FIGHT: 2
+..........................
+
+      ID: 867
+      POINT: 3
+      LEVEL: 82
+      MANA USE: 166
+      COOLDOWN: 580
+      DX: 100
+      DY: 100
+      MAX FIGHT: 2
+..........................
+
+      ID: 868
+      POINT: 4
+      LEVEL: 83
+      MANA USE: 169
+      COOLDOWN: 570
+      DX: 100
+      DY: 100
+      MAX FIGHT: 3
+..........................
+
+      ID: 869
+      POINT: 5
+      LEVEL: 84
+      MANA USE: 172
+      COOLDOWN: 560
+      DX: 100
+      DY: 100
+      MAX FIGHT: 3
+..........................
+
+      ID: 870
+      POINT: 6
+      LEVEL: 85
+      MANA USE: 175
+      COOLDOWN: 550
+      DX: 100
+      DY: 100
+      MAX FIGHT: 3
+..........................
+
+      ID: 871
+      POINT: 7
+      LEVEL: 86
+      MANA USE: 178
+      COOLDOWN: 540
+      DX: 100
+      DY: 100
+      MAX FIGHT: 4
+..........................
+
+      ID: 872
+      POINT: 8
+      LEVEL: 87
+      MANA USE: 181
+      COOLDOWN: 530
+      DX: 100
+      DY: 100
+      MAX FIGHT: 4
+..........................
+
+      ID: 873
+      POINT: 9
+      LEVEL: 88
+      MANA USE: 184
+      COOLDOWN: 520
+      DX: 100
+      DY: 100
+      MAX FIGHT: 4
+..........................
+
+      ID: 874
+      POINT: 10
+      LEVEL: 89
+      MANA USE: 187
+      COOLDOWN: 500
+      DX: 100
+      DY: 100
+      MAX FIGHT: 5
+..........................
+
+      ID: 875
+      POINT: 11
+      LEVEL: 90
+      MANA USE: 190
+      COOLDOWN: 480
+      DX: 100
+      DY: 100
+      MAX FIGHT: 5
+..........................
+
+      ID: 876
+      POINT: 12
+      LEVEL: 91
+      MANA USE: 193
+      COOLDOWN: 450
+      DX: 100
+      DY: 100
+      MAX FIGHT: 5
+..........................
+
+=============================
+
+   ID: 84
+   NAME: Chiêu Kamikaze
+   MAX POINT: 12
+   TYPE: 1
+   ICON ID: 2237
+   DESCRIPTION: Phiến thuật Phong Long Khiếu Thiên
+      ID: 942
+      POINT: 0
+      LEVEL: 100
+      MANA USE: 0
+      COOLDOWN: 0
+      DX: 120
+      DY: 100
+      MAX FIGHT: 0
+..........................
+
+      ID: 943
+      POINT: 1
+      LEVEL: 100
+      MANA USE: 177
+      COOLDOWN: 600
+      DX: 120
+      DY: 100
+      MAX FIGHT: 3
+..........................
+
+      ID: 944
+      POINT: 2
+      LEVEL: 101
+      MANA USE: 180
+      COOLDOWN: 590
+      DX: 120
+      DY: 100
+      MAX FIGHT: 3
+..........................
+
+      ID: 945
+      POINT: 3
+      LEVEL: 102
+      MANA USE: 183
+      COOLDOWN: 580
+      DX: 120
+      DY: 100
+      MAX FIGHT: 3
+..........................
+
+      ID: 946
+      POINT: 4
+      LEVEL: 103
+      MANA USE: 186
+      COOLDOWN: 570
+      DX: 120
+      DY: 100
+      MAX FIGHT: 3
+..........................
+
+      ID: 947
+      POINT: 5
+      LEVEL: 104
+      MANA USE: 189
+      COOLDOWN: 560
+      DX: 120
+      DY: 100
+      MAX FIGHT: 4
+..........................
+
+      ID: 948
+      POINT: 6
+      LEVEL: 105
+      MANA USE: 192
+      COOLDOWN: 550
+      DX: 120
+      DY: 100
+      MAX FIGHT: 4
+..........................
+
+      ID: 949
+      POINT: 7
+      LEVEL: 106
+      MANA USE: 195
+      COOLDOWN: 540
+      DX: 120
+      DY: 100
+      MAX FIGHT: 4
+..........................
+
+      ID: 950
+      POINT: 8
+      LEVEL: 107
+      MANA USE: 198
+      COOLDOWN: 530
+      DX: 120
+      DY: 100
+      MAX FIGHT: 4
+..........................
+
+      ID: 951
+      POINT: 9
+      LEVEL: 108
+      MANA USE: 201
+      COOLDOWN: 520
+      DX: 120
+      DY: 100
+      MAX FIGHT: 5
+..........................
+
+      ID: 952
+      POINT: 10
+      LEVEL: 109
+      MANA USE: 204
+      COOLDOWN: 500
+      DX: 120
+      DY: 100
+      MAX FIGHT: 5
+..........................
+
+      ID: 953
+      POINT: 11
+      LEVEL: 110
+      MANA USE: 207
+      COOLDOWN: 480
+      DX: 120
+      DY: 100
+      MAX FIGHT: 5
+..........................
+
+      ID: 954
+      POINT: 12
+      LEVEL: 111
+      MANA USE: 210
+      COOLDOWN: 450
+      DX: 120
+      DY: 100
+      MAX FIGHT: 6
+..........................
+
+=============================
+
+-----------------------------

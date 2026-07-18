@@ -1,0 +1,12 @@
+[10:46:03] 
+Nhân vật: kxsatthuxk
+Xu giao dịch: 2.000 xu
+Biến động: 85.737 -> 83.737
+Vật phẩm nhận: Tôm hùm (1), 
+==========================================
+[10:45:38] 
+Nhân vật: kxsatthuxk
+Xu giao dịch: 6.000 xu
+Biến động: 91.737 -> 85.737
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), 
+==========================================

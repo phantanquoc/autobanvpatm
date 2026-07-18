@@ -1,0 +1,12 @@
+[10:20:40] 
+Nhân vật: bestnowin
+Xu giao dịch: 10.000 xu
+Biến động: 9.898.821 -> 9.888.821
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), 
+==========================================
+[07:53:03] 
+Nhân vật: kiemprosvi
+Xu giao dịch: 36 xu
+Biến động: 9.898.857 -> 9.898.821
+Vật phẩm nhận: Bình MP cực lớn (6), 
+==========================================

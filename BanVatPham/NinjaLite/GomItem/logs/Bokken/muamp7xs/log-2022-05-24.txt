@@ -1,0 +1,24 @@
+[22:02:18] 
+Nhân vật: anhtadkm
+Xu giao dịch: 5.000 xu
+Biến động: 8.396.819 -> 8.391.819
+Vật phẩm nhận: Bình MP lớn (500), 
+==========================================
+[22:01:04] 
+Nhân vật: nhincctaou
+Xu giao dịch: 136.344 xu
+Biến động: 8.533.163 -> 8.396.819
+Vật phẩm nhận: Bình MP cực lớn (11362), 
+==========================================
+[22:00:55] 
+Nhân vật: nhincctaou
+Xu giao dịch: 120.000 xu
+Biến động: 8.653.163 -> 8.533.163
+Vật phẩm nhận: Bình MP cực lớn (10000), 
+==========================================
+[20:42:29] 
+Nhân vật: suntimee
+Xu giao dịch: 621.280 xu
+Biến động: 9.274.443 -> 8.653.163
+Vật phẩm nhận: Bình MP lớn (15935), Bình MP lớn (16193), Bình MP lớn (15000), Bình MP lớn (15000), 
+==========================================

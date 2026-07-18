@@ -1,0 +1,225 @@
+ID: 0
+TYPE: 0
+NAME: Hiệu quả thức ăn Cơm nắm
+ICON ID: 953
+=============================
+ID: 1
+TYPE: 0
+NAME: Hiệu quả thức ăn Tempura
+ICON ID: 954
+=============================
+ID: 2
+TYPE: 0
+NAME: Hiệu quả thức ăn Katsudon
+ICON ID: 955
+=============================
+ID: 3
+TYPE: 0
+NAME: Hiệu quả thức ăn Sashimi
+ICON ID: 956
+=============================
+ID: 4
+TYPE: 0
+NAME: Hiệu quả thức ăn Gà Quay
+ICON ID: 957
+=============================
+ID: 5
+TYPE: 1
+NAME: Hiệu ứng bỏng
+ICON ID: 1120
+=============================
+ID: 6
+TYPE: 2
+NAME: Hiệu ứng đóng băng
+ICON ID: 1006
+=============================
+ID: 7
+TYPE: 3
+NAME: Hiệu ứng choáng
+ICON ID: 1009
+=============================
+ID: 8
+TYPE: 4
+NAME: Mỗi nữa giây phục hồi HP
+ICON ID: 617
+=============================
+ID: 9
+TYPE: 5
+NAME: Lửa vô hình
+ICON ID: 622
+=============================
+ID: 10
+TYPE: 6
+NAME: Hiệu ứng Mana Shield
+ICON ID: 614
+=============================
+ID: 11
+TYPE: 7
+NAME: Hiệu ứng tăng né tránh
+ICON ID: 619
+=============================
+ID: 12
+TYPE: 8
+NAME: Hiệu ứng tăng kinh nghiệm
+ICON ID: 592
+=============================
+ID: 13
+TYPE: 9
+NAME: Tăng tỉ lệ Hp từ đồng đội
+ICON ID: 592
+=============================
+ID: 14
+TYPE: 10
+NAME: Trạng thái phi chiến đấu
+ICON ID: 1008
+=============================
+ID: 15
+TYPE: 11
+NAME: Trạng thái tàng hình
+ICON ID: 603
+=============================
+ID: 16
+TYPE: 12
+NAME: Trạng thái ẩn thân
+ICON ID: 623
+=============================
+ID: 17
+TYPE: 13
+NAME: Giảm trừ máu và tăng tấn công
+ICON ID: 615
+=============================
+ID: 18
+TYPE: 14
+NAME: Trạng thái bị trói
+ICON ID: 607
+=============================
+ID: 19
+TYPE: 15
+NAME: Tăng kháng cho mình và đồng đội
+ICON ID: 618
+=============================
+ID: 20
+TYPE: 16
+NAME: Giảm trừ thời gian cho mình và đồng đội
+ICON ID: 594
+=============================
+ID: 21
+TYPE: 17
+NAME: Hiệu ứng bom máu
+ICON ID: 1200
+=============================
+ID: 22
+TYPE: 18
+NAME: Hiệu ứng nhân 2 kinh nghiệm
+ICON ID: 1004
+=============================
+ID: 23
+TYPE: 19
+NAME: Hiệu ứng bí dược
+ICON ID: 1225
+=============================
+ID: 24
+TYPE: 20
+NAME: Hiệu ứng tăng chính xác
+ICON ID: 1245
+=============================
+ID: 25
+TYPE: 21
+NAME: Hiệu ứng tăng sức mạnh
+ICON ID: 1248
+=============================
+ID: 26
+TYPE: 22
+NAME: Hiệu ứng tăng kháng
+ICON ID: 1247
+=============================
+ID: 27
+TYPE: 23
+NAME: Hiệu ứng tăng máu
+ICON ID: 1246
+=============================
+ID: 28
+TYPE: 0
+NAME: Hiệu ứng thức ăn 5x
+ICON ID: 1249
+=============================
+ID: 29
+TYPE: 24
+NAME: Hiệu ứng sinh mệnh đan
+ICON ID: 1246
+=============================
+ID: 30
+TYPE: 0
+NAME: Hiệu ứng thức ăn 6x
+ICON ID: 1606
+=============================
+ID: 31
+TYPE: 0
+NAME: Hiệu ứng thức ăn 7x
+ICON ID: 1607
+=============================
+ID: 32
+TYPE: 18
+NAME: Hiệu ứng nhân 3 kinh nghiệm
+ICON ID: 2203
+=============================
+ID: 33
+TYPE: 18
+NAME: Hiệu ứng nhân 4 kinh nghiệm
+ICON ID: 2204
+=============================
+ID: 34
+TYPE: 25
+NAME: Thí luyện
+ICON ID: 2260
+=============================
+ID: 35
+TYPE: 0
+NAME: Hiệu ứng thức ăn 9x
+ICON ID: 2263
+=============================
+ID: 36
+TYPE: 0
+NAME: Hiệu ứng lồng đèn cá chép, nửa giây hồi phục 300 hp mp
+ICON ID: 2402
+=============================
+ID: 37
+TYPE: 25
+NAME: Hiệu ứng lồng đèn ngôi sao, miễn giảm sát thương 50%
+ICON ID: 2263
+=============================
+ID: 38
+TYPE: 25
+NAME: Hiệu ứng lồng đèn tròn, thêm 30% kinh nghiệm khi đánh quái
+ICON ID: 2263
+=============================
+ID: 39
+TYPE: 25
+NAME: Hiệu ứng lồng đèn ông trăng, 20% bỏ qua kháng của đối phương
+ICON ID: 2263
+=============================
+ID: 40
+TYPE: 25
+NAME: Thiên nhãn phù
+ICON ID: 2092
+=============================
+ID: 41
+TYPE: 25
+NAME: Khai nhãn phù
+ICON ID: 2093
+=============================
+ID: 42
+TYPE: 0
+NAME: Hiệu ứng pet Bí rễ hành, nửa giây hồi phục 400 hp mp
+ICON ID: 3018
+=============================
+ID: 43
+TYPE: 0
+NAME: Hiệu ứng bí ma
+ICON ID: 2961
+=============================
+ID: 44
+TYPE: 44
+NAME: Hiệu ứng tự động hồi sinh
+ICON ID: 3373
+=============================

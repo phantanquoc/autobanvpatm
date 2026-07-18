@@ -1,0 +1,18 @@
+[15:40:09] 
+Nhân vật: kingpeper
+Xu giao dịch: 24.000 xu
+Biến động: 5.015.595 -> 4.991.595
+Vật phẩm nhận: Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), 
+==========================================
+[14:03:57] 
+Nhân vật: trumtieu27
+Xu giao dịch: 18.000 xu
+Biến động: 5.033.595 -> 5.015.595
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), 
+==========================================
+[12:53:44] 
+Nhân vật: bossteam77
+Xu giao dịch: 24.000 xu
+Biến động: 5.057.595 -> 5.033.595
+Vật phẩm nhận: Gà Tây (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), 
+==========================================

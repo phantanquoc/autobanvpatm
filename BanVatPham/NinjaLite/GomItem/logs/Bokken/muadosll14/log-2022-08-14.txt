@@ -1,0 +1,30 @@
+[22:24:10] 
+Nhân vật: lysookiu
+Xu giao dịch: 24.000 xu
+Biến động: 9.605.558 -> 9.581.558
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), 
+==========================================
+[22:02:10] 
+Nhân vật: vietan1
+Xu giao dịch: 6.000 xu
+Biến động: 9.611.558 -> 9.605.558
+Vật phẩm nhận: Gà Tây (1), Gà Tây (1), Gà Tây (1), 
+==========================================
+[20:14:26] 
+Nhân vật: lysookiu
+Xu giao dịch: 20.000 xu
+Biến động: 9.631.558 -> 9.611.558
+Vật phẩm nhận: Tôm hùm (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), Gà Tây (1), Tôm hùm (1), 
+==========================================
+[20:03:52] 
+Nhân vật: lysookiu
+Xu giao dịch: 4.000 xu
+Biến động: 9.635.558 -> 9.631.558
+Vật phẩm nhận: Tôm hùm (1), Gà Tây (1), 
+==========================================
+[17:39:53] 
+Nhân vật: pykebuff
+Xu giao dịch: 24.000 xu
+Biến động: 9.659.558 -> 9.635.558
+Vật phẩm nhận: Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Tôm hùm (1), Gà Tây (1), Gà Tây (1), Tôm hùm (1), 
+==========================================

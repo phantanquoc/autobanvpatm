@@ -1,0 +1,1 @@
+copy thư mục ninjalite vào ổ C

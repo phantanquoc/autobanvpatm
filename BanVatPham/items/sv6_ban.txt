@@ -1,0 +1,9 @@
+# File gia ban vat pham - server 6 (Tone)
+# Format: id:don_gia:so_luong_toi_da:ma_vp
+# Bot tu nhan gop/khong-gop theo so luong that trong tui (khong can khai bao).
+# d7=da c7, d8=da c8, d9=da c9 (moi vien 1 o), hp3x=binh HP 3x
+#
+6:20000:999:d7
+7:40000:999:d8
+8:100000:999:d9
+15:100:999:hp3x
