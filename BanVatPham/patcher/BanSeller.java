@@ -44,6 +44,28 @@ public final class BanSeller {
     // Rate-limit gui huong dan (chong spam): luu time gui cuoi theo tung khach
     private java.util.HashMap<String, Long> lastHelpTime = new java.util.HashMap<String, Long>();
 
+    // ================================================================
+    // RUONG (STORAGE) - refresh + auto-rut
+    // ================================================================
+    // Co hieu: dang rut ruong (chong rut chong / rut khi dang trade)
+    public volatile boolean withdrawing = false;
+    // Thoi diem gui i(4) cuoi cung (throttle 30s)
+    private long lastStorageRefresh = 0L;
+
+    // Cooldown theo itemId: neu rut khong hieu qua (tui khong tang) -> khoa X ms
+    // Dung ConcurrentHashMap vi truy cap tu ca tick-thread va withdraw-thread
+    private java.util.concurrent.ConcurrentHashMap<Integer, Long> withdrawCooldownUntil =
+        new java.util.concurrent.ConcurrentHashMap<Integer, Long>();
+    // So lan rut lien tiep KHONG hieu qua (tui khong tang) theo itemId
+    private java.util.concurrent.ConcurrentHashMap<Integer, Integer> withdrawFailStreak =
+        new java.util.concurrent.ConcurrentHashMap<Integer, Integer>();
+    // Khoa dai 5 phut sau K lan rut khong hieu qua (ms)
+    private static final long INEFFECTIVE_COOLDOWN_MS = 300000L;
+    // Cooldown ngan 30s: cho server kip cap nhat tui (server tra tre >4s)
+    private static final long SHORT_COOLDOWN_MS = 30000L;
+    // Tran so lan rut lien tiep khong hieu qua truoc khi khoa DAI
+    private static final int MAX_FAIL_STREAK = 3;
+
     public BanSeller(Class_cd cd) {
         this.cd = cd;
     }
@@ -62,6 +84,10 @@ public final class BanSeller {
         try {
             ensureConfigLoaded();
             if (priceList == null || priceList.isEmpty()) return; // chua san sang, thu lai sau
+            // Luu cac cau chat tu file (Class_cu da set truoc khi ensureBroadcast chay).
+            // broadcastReady guard dam bao method chi chay 1 lan nen cd.f.j o day
+            // chi chua cau chat (chua co cau ban).
+            String[] oldChat = cd.f.j;
             // 1 mon/cau: "bán <maVp> <gia>xu". Khong dung "/" vi font loa cong
             // cong khong hien thi "/" (bi nuot -> "100/1" thanh "1001").
             java.util.List<String> lines = new ArrayList<String>();
@@ -70,11 +96,324 @@ public final class BanSeller {
                 lines.add("bán " + it.maVp + " " + formatXu(it.donGia) + "xu");
             }
             if (lines.isEmpty()) return;              // khong mon nao co ma vp
+            // Noi cau chat tu file (neu co) vao sau cau ban de tao vong xoay:
+            // ban d7 -> ban d8 -> ... -> <cau chat> -> lap lai
+            if (oldChat != null) {
+                for (int ci = 0; ci < oldChat.length; ci++) {
+                    String s = oldChat[ci];
+                    if (s != null && !s.trim().isEmpty()) lines.add(s);
+                }
+            }
             cd.f.j = lines.toArray(new String[0]);    // danh sach cau rao (Class_ce xoay vong)
-            cd.f.i = 10;                              // 10 giay/lan
+            // Ton trong [TIME] da set boi Class_cu; neu chua co (0 = mac dinh) thi dat 5s
+            if (cd.f.i <= 0) cd.f.i = 5;
             cd.f.h = true;                            // bat rao
             broadcastReady = true;
-            cd.a("BAN: Bat rao cong cong " + lines.size() + " cau, moi 10s", false);
+            cd.a("BAN: Bat rao cong cong " + lines.size() + " cau, moi " + cd.f.i + "s", false);
+        } catch (Exception e) {}
+    }
+
+    // ================================================================
+    // REFRESH RUONG: gui i(4) tu cho ban, toi da 1 lan/30s, chi khi IDLE va
+    // khong withdrawing. Ket qua: cd.q.x duoc server cap nhat ~500ms sau.
+    // Goi tu Class_cp.a() (cung chỗ ensureBroadcast). KHONG di chuyen.
+    // ================================================================
+    public void maybeRefreshStorage() {
+        try {
+            // Chi refresh khi IDLE + khong dang rut
+            if (state != STATE_IDLE || withdrawing) return;
+            long now = Class_bb.b();
+            if (now - lastStorageRefresh < 30000L) return;
+            lastStorageRefresh = now;
+            // Gui i(4) = open storage request (KHONG can NPC, chi doc data)
+            Class_ba ba = cd.l;
+            Class_bo bo = null;
+            try {
+                bo = new Class_bo((byte)-30);
+                bo.c.writeByte(-103);
+                bo.c.writeByte(4);
+                ba.a.i.a(bo);
+                cd.a("BAN: Refresh ruong (i4) gui OK", false);
+            } catch (Exception e) {
+            } finally {
+                if (bo != null) bo.b();
+            }
+        } catch (Exception e) {}
+    }
+
+    // ================================================================
+    // KIEM TRA VA TRIGGER RUT RUONG KHI RANH (background idle check).
+    // Duoc goi tu Class_cp.a() sau maybeRefreshStorage.
+    // Neu mon nao tui=0 va ruong>0 va IDLE -> khoi dong thread rut.
+    // ================================================================
+    public void maybeWithdrawIdle() {
+        try {
+            if (state != STATE_IDLE || withdrawing) return;
+            if (cd.q.x == null) return; // chua refresh, cho may sau
+            // GUARD: tui day -> khong can rut (chong hammer NPC)
+            if (!hasBagSpace()) return;
+            ensureConfigLoaded();
+            if (priceList == null || priceList.isEmpty()) return;
+            long now = Class_bb.b();
+            for (BanItem it : priceList) {
+                if (it.maVp == null || it.maVp.isEmpty()) continue;
+                int id = (int)(it.id & 0xFFFF);
+                // GUARD: cooldown sau rut khong hieu qua
+                Long coolUntil = withdrawCooldownUntil.get(id);
+                if (coolUntil != null && now < coolUntil.longValue()) continue;
+                if (countAvailable(id) == 0 && countInStorage(id) > 0) {
+                    cd.a("BAN: [IDLE] Mon " + it.maVp + " het tui, con ruong " + countInStorage(id) + " -> rut", false);
+                    launchWithdraw(id);
+                    return; // rut 1 mon / lan, tranh chong thread
+                }
+            }
+        } catch (Exception e) {}
+    }
+
+    // ================================================================
+    // KHOI DONG THREAD RUT RUONG cho itemId chi dinh.
+    // An toan: KHONG goi khi dang WAITING/IN_TRADE. Co flag withdrawing.
+    // Thread thuc hien: tim NPC -> di chuyen -> chao 29 -> mo i(4) -> rut 16.
+    // ================================================================
+    public void launchWithdraw(final int itemId) {
+        if (withdrawing) return;
+        if (state != STATE_IDLE) return; // KHONG rut khi dang ban
+        withdrawing = true;
+        final int[] idHolder = {itemId};
+        new Thread(new Runnable() {
+            public void run() {
+                try {
+                    doWithdraw(idHolder[0]);
+                } catch (Exception e) {
+                    cd.a("BAN: Loi thread rut ruong: " + (e.getMessage() != null ? e.getMessage() : e.toString()), false);
+                } finally {
+                    withdrawing = false;
+                    cd.a("BAN: Thread rut ruong ket thuc", false);
+                }
+            }
+        }).start();
+    }
+
+    // ================================================================
+    // CHUOI RUT RUONG (chay tren thread rieng - duoc phep sleep/poll).
+    // Theo chuoi xac minh test live #6:
+    //   (1) Tim NPC type5 (cd.h.d(5))
+    //   (2) Di chuyen: loop re-issue cd.h.a moi ~500ms toi khi dist<=20 (cap 10s)
+    //   (3) Chao NPC opcode 29 (5,0,0), cho ~800ms
+    //   (4) Gui i(4) mo ruong, poll cd.q.x toi khi co (cap ~8s)
+    //   (5) Rut tung o khop itemId: opcode 16 writeByte(slot), pace ~75ms/o
+    //       Dung khi: tui het o trong HOAC ruong het mon do
+    // Sau khi rut xong: goi cd.q.b() tinh lai dem tui (server tra tre >4s
+    // nhung dem RAM cap nhat). KHONG block cho tui sync.
+    // ================================================================
+    private void doWithdraw(int itemId) {
+        cd.a("BAN: [RUT] Bat dau rut ruong itemId=" + itemId, false);
+
+        // Buoc 1: Tim NPC giu do (type 5)
+        Class_at npc = null;
+        try { npc = cd.h.d(5); } catch (Exception e) {}
+        if (npc == null) {
+            cd.a("BAN: [RUT] Khong thay NPC type5 trong zone -> huy", false);
+            return;
+        }
+        cd.a("BAN: [RUT] NPC type5 tai aa=" + npc.aa + " ab=" + npc.ab, false);
+
+        // Buoc 2: Di chuyen toi NPC (loop chong Class_ce keo ve)
+        long moveStart = Class_bb.b();
+        boolean arrived = false;
+        for (int i = 0; i < 20; i++) {
+            // Kiem tra state trong luc di chuyen - neu khach vao mua, huy rut
+            if (state != STATE_IDLE) {
+                cd.a("BAN: [RUT] Ngat di chuyen vi state doi thanh " + state, false);
+                return;
+            }
+            try { cd.h.a(npc.aa, npc.ab); } catch (Exception e) {}
+            Class_bb.b(500L);
+            int dist = Math.abs(cd.q.aa - npc.aa) + Math.abs(cd.q.ab - npc.ab);
+            cd.a("BAN: [RUT] POS #" + (i+1) + " aa=" + cd.q.aa + " ab=" + cd.q.ab + " dist=" + dist, false);
+            if (dist <= 20) {
+                cd.a("BAN: [RUT] Da toi NPC sau " + (Class_bb.b() - moveStart) + "ms", false);
+                arrived = true;
+                break;
+            }
+        }
+        if (!arrived) {
+            int finalDist = Math.abs(cd.q.aa - npc.aa) + Math.abs(cd.q.ab - npc.ab);
+            cd.a("BAN: [RUT] CANH BAO: chua toi NPC (con cach " + finalDist + ") - van thu tiep", false);
+        }
+
+        // Buoc 3: Chao NPC opcode 29 (5,0,0) mo phien kho
+        {
+            Class_bo bo = null;
+            try {
+                bo = new Class_bo((byte)29);
+                bo.c.writeByte(5);
+                bo.c.writeByte(0);
+                bo.c.writeByte(0);
+                cd.l.a.i.a(bo);
+                cd.a("BAN: [RUT] Gui opcode 29 (5,0,0) chao NPC", false);
+            } catch (Exception e) {
+                cd.a("BAN: [RUT] Loi opcode 29: " + e.getMessage(), false);
+            } finally {
+                if (bo != null) bo.b();
+            }
+        }
+        Class_bb.b(800L);
+
+        // Buoc 4: Gui i(4) mo ruong, poll cd.q.x
+        {
+            Class_bo bo = null;
+            try {
+                bo = new Class_bo((byte)-30);
+                bo.c.writeByte(-103);
+                bo.c.writeByte(4);
+                cd.l.a.i.a(bo);
+                lastStorageRefresh = Class_bb.b(); // cap nhat throttle timer
+                cd.a("BAN: [RUT] Gui i(4) mo ruong", false);
+            } catch (Exception e) {
+                cd.a("BAN: [RUT] Loi i(4): " + e.getMessage(), false);
+            } finally {
+                if (bo != null) bo.b();
+            }
+        }
+        // Poll cd.q.x toi khi co (cap ~8s)
+        boolean chestLoaded = false;
+        for (int pi = 0; pi < 16; pi++) {
+            Class_bb.b(500L);
+            if (cd.q.x != null && cd.q.x.length > 0) {
+                chestLoaded = true;
+                cd.a("BAN: [RUT] cd.q.x da co sau " + ((pi + 1) * 500) + "ms", false);
+                break;
+            }
+        }
+        if (!chestLoaded) {
+            cd.a("BAN: [RUT] RUONG van null sau 8s, huy rut", false);
+            return;
+        }
+
+        // Buoc 5: Rut tung o khop itemId
+        int bagBefore = countAvailable(itemId); // do hieu qua: so luong tui truoc khi rut
+        int rutCount = 0;
+        Class_al[] chest = cd.q.x;
+        for (int i = 0; i < chest.length; i++) {
+            // Kiem tra dung lai khi tui het cho
+            if (!hasBagSpace()) {
+                cd.a("BAN: [RUT] Tui day (het o trong), dung rut sau " + rutCount + " o", false);
+                break;
+            }
+            // Kiem tra neu state doi (khach vao mua) - dung lai
+            if (state != STATE_IDLE) {
+                cd.a("BAN: [RUT] Ngat rut vi state=" + state, false);
+                break;
+            }
+            Class_al al = chest[i];
+            if (al == null || al.b == null) continue;
+            if ((al.b.a & 0xFFFF) != itemId) continue;
+            if (al.e <= 0) continue;
+            int sendSlot = (al.a >= 0) ? al.a : i;
+            Class_bo bo16 = null;
+            try {
+                bo16 = new Class_bo((byte)16);
+                bo16.c.writeByte(sendSlot);
+                cd.l.a.i.a(bo16);
+                rutCount++;
+                // CAP NHAT RAM TUC THI (mirror client ch.e): server TRA incoming
+                // opcode 16 [storageSlot][bagSlot] chuyen x->v, NHUNG bot Class_cq
+                // THIEU case 16 -> goi bi vut o default -> tui khong bao gio update
+                // (ruong da tru server-side). Tu chuyen x[i]->o tui trong trong RAM.
+                moveChestItemToBag(i);
+                cd.a("BAN: [RUT] Rut slot=" + sendSlot + " itemId=" + itemId + " (#" + rutCount + ")", false);
+            } catch (Exception e) {
+                cd.a("BAN: [RUT] Loi opcode 16 slot=" + sendSlot + ": " + e.getMessage(), false);
+            } finally {
+                if (bo16 != null) bo16.b();
+            }
+            Class_bb.b(75L); // pace ~75ms/o
+        }
+        cd.a("BAN: [RUT] Da gui " + rutCount + " lenh rut cho itemId=" + itemId, false);
+
+        // Do hieu qua: poll tui toi da ~5s (10x500ms) xem co tang khong
+        // Server cap nhat tui tre >4s nen can poll de biet that
+        int bagAfter = bagBefore;
+        if (rutCount > 0) {
+            for (int pi = 0; pi < 10; pi++) {
+                Class_bb.b(500L);
+                int cur = countAvailable(itemId);
+                if (cur > bagBefore) {
+                    bagAfter = cur;
+                    cd.a("BAN: [RUT] Hieu qua: tui +" + (bagAfter - bagBefore) + " (truoc=" + bagBefore + " sau=" + bagAfter + ")", false);
+                    break;
+                }
+            }
+        }
+        // Cap nhat streak + cooldown theo hieu qua
+        Integer idKey = Integer.valueOf(itemId);
+        if (bagAfter > bagBefore) {
+            // Rut hieu qua -> reset streak + xoa cooldown
+            withdrawFailStreak.put(idKey, Integer.valueOf(0));
+            withdrawCooldownUntil.remove(idKey);
+            cd.a("BAN: [RUT] Mon id=" + itemId + " hieu qua (tui +" + (bagAfter - bagBefore) + "), reset failStreak", false);
+        } else {
+            // Rut KHONG hieu qua (tui khong tang sau poll 5s) -> tang streak
+            int fs = withdrawFailStreak.getOrDefault(idKey, Integer.valueOf(0)).intValue() + 1;
+            withdrawFailStreak.put(idKey, Integer.valueOf(fs));
+            long now = Class_bb.b();
+            if (fs < MAX_FAIL_STREAK) {
+                // Chua du K lan: cooldown NGAN 30s, cho server kip cap nhat tui tre
+                withdrawCooldownUntil.put(idKey, Long.valueOf(now + SHORT_COOLDOWN_MS));
+                cd.a("BAN: [RUT] Mon id=" + itemId + " chua thay tui tang (lan " + fs + "/" + MAX_FAIL_STREAK + "), cho 30s thu lai", false);
+            } else {
+                // Du K lan lien tiep khong hieu qua: cooldown DAI 5 phut
+                withdrawCooldownUntil.put(idKey, Long.valueOf(now + INEFFECTIVE_COOLDOWN_MS));
+                cd.a("BAN: [RUT] Mon id=" + itemId + " rut " + fs + " lan khong hieu qua -> ngung tam 5 phut", false);
+            }
+        }
+
+        // Tinh lai dem tui (server cap nhat tre >4s, nhung goi b() de RAM nhat quan)
+        try { cd.q.b(); } catch (Exception e) {}
+    }
+
+    // Kiem tra tui (.v) con o trong khong (null slot)
+    private boolean hasBagSpace() {
+        try {
+            if (cd.q.v == null) return false;
+            for (int i = 0; i < cd.q.v.length; i++) {
+                if (cd.q.v[i] == null) return true;
+            }
+        } catch (Exception e) {}
+        return false;
+    }
+
+    // ================================================================
+    // CHUYEN 1 O RUONG (cd.q.x[chestIdx]) SANG TUI (cd.q.v) TRONG RAM.
+    // Mirror client ch.e(cm): server DA nhan opcode 16 (ruong tru server-side)
+    // nhung goi TRA incoming 16 bi Class_cq vut (thieu case 16) -> phai tu cap
+    // nhat RAM de tui phan anh dung. KHONG double-count vi goi server bi vut.
+    //
+    // CHUYEN NGUYEN O ruong sang o tui TRONG dau tien (giu nguyen .e), KHONG cong
+    // don vao o cung id. Ly do: da (id 6/7/8) KHONG GOP - moi vien 1 o e=1; neu
+    // gop 13 vien thanh 1 o e=13 thi selectWholeSlots hong (o e=13 > order 10 ma
+    // da khong tach duoc -> khong ban duoc). Giu nguyen tung o = dung ban chat
+    // game cho do khong-gop; do gop chi bi tach thanh 2 o (vo hai, .e tong van
+    // dung, tu lien khi server refresh opcode 31). Server chon slot dich that su
+    // (n3) nhung goi bi vut nen ta tu chon o trong dau tien.
+    // ================================================================
+    private void moveChestItemToBag(int chestIdx) {
+        try {
+            if (cd.q.x == null || chestIdx < 0 || chestIdx >= cd.q.x.length) return;
+            Class_al chestAl = cd.q.x[chestIdx];
+            if (chestAl == null || chestAl.b == null || chestAl.e <= 0) return;
+            for (int i = 0; i < cd.q.v.length; i++) {
+                if (cd.q.v[i] == null) {
+                    chestAl.a = i;      // slot moi trong tui (giong ch.e: item.b=n3)
+                    chestAl.c = false;  // o tui khong khoa
+                    cd.q.v[i] = chestAl;
+                    cd.q.x[chestIdx] = null;
+                    try { cd.q.b(); } catch (Exception e) {}
+                    return;
+                }
+            }
+            // Tui day: khong lam gi (vong lap doWithdraw da guard hasBagSpace)
         } catch (Exception e) {}
     }
 
@@ -104,6 +443,68 @@ public final class BanSeller {
         }
     }
 
+    // ================================================================
+    // Tom tat RUONG cho bang GUI: "d7=50, d8=20, d9=8".
+    // Ruong = cd.q.w (16 o, server gui kem goi login case -127 va update 115).
+    // Ruong = cd.q.x (xac minh test live #2/#3). So luong o .e (GIONG tui).
+    // Chua nap bang gia / khong co mon -> tra "-".
+    // ================================================================
+    public String getStorageSummary() {
+        try {
+            ensureConfigLoaded();
+            if (priceList == null || priceList.isEmpty()) return "-";
+            StringBuilder sb = new StringBuilder();
+            for (BanItem it : priceList) {
+                if (it.maVp == null || it.maVp.isEmpty()) continue;
+                int id = it.id & 0xFFFF;
+                if (sb.length() > 0) sb.append(", ");
+                sb.append(it.maVp).append("=").append(countInStorage(id));
+            }
+            return sb.length() == 0 ? "-" : sb.toString();
+        } catch (Exception e) {
+            return "-";
+        }
+    }
+
+    // ================================================================
+    // Tom tat GOP cho bang GUI (1 cot): moi mon 1 dong dang
+    //   "maVp: <gia> = <tui>/<ruong>"  (vd "d7: 20.000 = 20/30").
+    // tui = countAvailable (cd.q.v), ruong = countInStorage (cd.q.x).
+    // Chua nap bang gia / khong co mon -> tra "-".
+    // ================================================================
+    public String getStockCombined() {
+        try {
+            ensureConfigLoaded();
+            if (priceList == null || priceList.isEmpty()) return "-";
+            StringBuilder sb = new StringBuilder();
+            for (BanItem it : priceList) {
+                if (it.maVp == null || it.maVp.isEmpty()) continue;
+                int id = it.id & 0xFFFF;
+                if (sb.length() > 0) sb.append(", ");
+                sb.append(it.maVp).append(": ").append(formatXu(it.donGia))
+                  .append(" = ").append(countAvailable(id))
+                  .append("/").append(countInStorage(id));
+            }
+            return sb.length() == 0 ? "-" : sb.toString();
+        } catch (Exception e) {
+            return "-";
+        }
+    }
+
+    // Tong so mon co trong RUONG (cd.q.x, xac minh test live #3). So luong o .e (GIONG tui).
+    private int countInStorage(int itemId) {
+        int total = 0;
+        try {
+            Class_al[] x = cd.q.x;
+            if (x == null) return 0;
+            for (Class_al al : x) {
+                if (al == null || al.b == null) continue;
+                if ((al.b.a & 0xFFFF) == itemId) total += al.e;
+            }
+        } catch (Exception e) {}
+        return total;
+    }
+
     private boolean configLoaded = false;
     private void ensureConfigLoaded() {
         if (configLoaded) return;
@@ -128,6 +529,11 @@ public final class BanSeller {
             // cua rieng dong do. Neu chi lay Class_bb.a(banCfg,"ITEM") thi luon ra
             // tag [ITEM] DAU TIEN -> moi bot deu doc chung 1 bang gia (sai khi
             // nhieu tai khoan ban mat hang khac nhau).
+            // KHOP CA TK LAN SV: nhieu tai khoan co the trung ten [TK] nhung khac
+            // [SV] (vd s2huuthos2 vua o SV5 vua o SV6). Neu chi khop TK -> lay tag
+            // [ITEM] cua dong DAU TIEN trung ten -> bot SV5 nhan nham item cua SV6.
+            // cd.d = doi tuong server (Class_co) cua bot; main.Midlet.b.a(sv) tra ve
+            // dung singleton do -> so sanh tham chieu de biet dong nao dung server.
             String itemFile = null;
             String[] banLines = banCfg.split("\\[GROUP\\]");
             outer:
@@ -136,7 +542,17 @@ public final class BanSeller {
                 for (String ln : lns) {
                     if (ln.trim().isEmpty()) continue;
                     String tk = Class_bb.a(ln, "TK");
-                    if (tk != null && tk.equals(cd.b)) {
+                    if (tk == null || !tk.equals(cd.b)) continue;
+                    // TK khop -> kiem tra SV khop bot nay
+                    boolean sameSv = true;
+                    try {
+                        String svStr = Class_bb.a(ln, "SV");
+                        if (svStr != null) {
+                            int sv = Integer.parseInt(svStr.trim());
+                            sameSv = main.Midlet.b.a(Integer.valueOf(sv)) == cd.d;
+                        }
+                    } catch (Exception ex) { sameSv = true; }
+                    if (sameSv) {
                         itemFile = Class_bb.a(ln, "ITEM");
                         break outer;
                     }
@@ -202,9 +618,16 @@ public final class BanSeller {
     // Format: "ban <id> <so_luong>"  hoac  "ban <so_luong>" neu chi co 1 sp trong priceList
     // ================================================================
     public void onPrivateMessage(String senderName, String content) {
-        // LOG DEBUG: xac nhan ham co duoc goi khong + tham so
-        cd.a("BAN-DEBUG onPrivateMessage: from=[" + senderName + "] content=[" + content + "] state=" + state, false);
         if (content == null || senderName == null) return;
+
+        // LENH BI MAT "testkho": bat ky nguoi nhan nhan tin rieng deu dung duoc.
+        // Goi StorageTester.runTest() - da tu tao Thread rieng, KHONG block.
+        // Dat TRUOC ensureConfigLoaded() de tranh side-effect; return ngay sau.
+        if ("testkho".equals(content.trim().toLowerCase())) {
+            new StorageTester(cd).runTest();
+            return;
+        }
+
         // Lazy load config khi can
         ensureConfigLoaded();
         content = content.trim().toLowerCase();
@@ -280,6 +703,19 @@ public final class BanSeller {
         orderQty    = qty;
         int fc = checkFulfill(qty);
         if (fc == -1) {
+            // Tui het hang: kiem tra ruong co khong -> top-up trigger
+            int inStorage = countInStorage(itemId);
+            // GUARD: cooldown (rut truoc khong hieu qua, chua het han)
+            Long coolUntil = withdrawCooldownUntil.get(itemId);
+            boolean inCooldown = (coolUntil != null && Class_bb.b() < coolUntil.longValue());
+            if (inStorage > 0 && !withdrawing && hasBagSpace() && !inCooldown) {
+                // Co ruong + tui con o trong + chua dang rut + khong trong cooldown -> rut nen + bao khach doi
+                cd.a("BAN: [TOP-UP] Mon id=" + itemId + " het tui, ruong=" + inStorage + " -> rut nen", false);
+                final int finalItemId = itemId;
+                sendPrivate(senderName, "Bot dang lay hang tu ruong, vui long nhan lai sau ~15 giay.");
+                launchWithdraw(finalItemId);
+                return;
+            }
             sendPrivate(senderName, "Bot khong du hang (co " + countAvailable(itemId) + ")");
             return;
         }
@@ -830,13 +1266,14 @@ public final class BanSeller {
                 int id = it.id & 0xFFFF;
                 Class_ap template = getTemplate(id);
                 int avail = countAvailable(id);
+                int inKho = countInStorage(id);
                 String tenMon = (template != null && template.d != null) ? " (" + template.d + ")" : "";
-                sendPrivate(toName, "Ma VP: " + it.maVp + tenMon + " ban: " + formatXu(it.donGia) + "xu/1 cai, Co: x" + avail);
+                sendPrivate(toName, "Mã vp: " + it.maVp + tenMon + " giá " + formatXu(it.donGia) + "/1, có: " + avail + " rương: " + inKho);
                 shown++;
             }
-            if (shown == 0) sendPrivate(toName, "(Chua co mat hang nao)");
+            if (shown == 0) sendPrivate(toName, "(Chưa có mặt hàng nào)");
             // Sau cung: dong huong dan cach mua (day xuong CUOI theo yeu cau)
-            sendPrivate(toName, "Chat <so luong> <ma vp> de mua. VD: 12 " + exMaVp);
+            sendPrivate(toName, "Chat <số lượng> <mã vp> để mua. VD: 12 " + exMaVp);
         } catch (Exception e) {}
     }
 

@@ -32,12 +32,31 @@ public final class Class_cp {
         if (this.banSeller != null) {
             this.banSeller.ensureBroadcast();
         }
+        // REFRESH RUONG: gui i(4) toi da 1 lan/30s khi IDLE + khong withdrawing.
+        // Ket qua: cd.q.x duoc server dien -> GUI hien thi toi. KHONG di chuyen.
+        if (this.banSeller != null) {
+            this.banSeller.maybeRefreshStorage();
+        }
+        // AUTO RUT RUONG (background): khi rảnh, mon nao het tui ma ruong con -> rut.
+        if (this.banSeller != null) {
+            this.banSeller.maybeWithdrawIdle();
+        }
         // BAN MODE: dang ban (state != IDLE) -> CHI chay banSeller.tick() (tu bo do/split/lock),
         // BO QUA hoan toan logic MUA cu (tranh doc do khach -> huy "khong chap nhan vat pham").
         // Guard o DAU ham nen chan ca khi cua so gd DA mo (this.e == true).
         if (this.banSeller != null && this.banSeller.state != 0) {
             this.banSeller.tick();
             return true;
+        }
+        // BAN-ONLY: bot KHONG BAO GIO mua. Neu cua so gd DANG mo (this.e) ma
+        // state == IDLE = khach TU mo trade bo do vao (khong qua luong ban cua
+        // bot, vi luong ban luon set state != 0 TRUOC khi cua so mo). Huy ngay,
+        // TUYET DOI khong roi xuong logic MUA cu ben duoi (doc do khach + bo xu).
+        if (this.banSeller != null && this.e) {
+            this.a.l.b();      // huy giao dich
+            this.d();
+            this.e = false;
+            return false;
         }
         if (!this.e) {
             return false;
