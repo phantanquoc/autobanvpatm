@@ -44,7 +44,7 @@ public final class Class_cp {
         // BAN MODE: dang ban (state != IDLE) -> CHI chay banSeller.tick() (tu bo do/split/lock),
         // BO QUA hoan toan logic MUA cu (tranh doc do khach -> huy "khong chap nhan vat pham").
         // Guard o DAU ham nen chan ca khi cua so gd DA mo (this.e == true).
-        if (this.banSeller != null && this.banSeller.state != 0) {
+        if (this.banSeller != null && (this.banSeller.state != 0 || this.banSeller.withdrawing)) {
             this.banSeller.tick();
             return true;
         }

@@ -65,6 +65,8 @@ public final class BanSeller {
     private static final long SHORT_COOLDOWN_MS = 30000L;
     // Tran so lan rut lien tiep khong hieu qua truoc khi khoa DAI
     private static final int MAX_FAIL_STREAK = 3;
+    // Cooldown cho tu-sat travel: neu tu sat/hoi sinh that bai -> khoa 5 phut
+    private long travelFailCooldownUntil = 0L;
 
     public BanSeller(Class_cd cd) {
         this.cd = cd;
@@ -149,6 +151,8 @@ public final class BanSeller {
     public void maybeWithdrawIdle() {
         try {
             if (state != STATE_IDLE || withdrawing) return;
+            // Cooldown sau tu-sat that bai
+            if (Class_bb.b() < travelFailCooldownUntil) return;
             if (cd.q.x == null) return; // chua refresh, cho may sau
             // GUARD: tui day -> khong can rut (chong hammer NPC)
             if (!hasBagSpace()) return;
@@ -213,8 +217,15 @@ public final class BanSeller {
         Class_at npc = null;
         try { npc = cd.h.d(5); } catch (Exception e) {}
         if (npc == null) {
-            cd.a("BAN: [RUT] Khong thay NPC type5 trong zone -> huy", false);
-            return;
+            // KHONG CO NPC TYPE 5 TRONG ZONE -> DI DEN LANG/TRUONG GAN NHAT DE RUT
+            cd.a("BAN: [RUT] Khong thay NPC type5 -> di den lang/truong gan nhat", false);
+            npc = travelToNearestVillage();
+            if (npc == null) {
+                cd.a("BAN: [RUT] Di lang/truong that bai -> huy + cooldown 5 phut", false);
+                travelFailCooldownUntil = Class_bb.b() + 300000L;
+                return;
+            }
+            cd.a("BAN: [RUT] Da ve lang, tim thay NPC type5 tai aa=" + npc.aa + " ab=" + npc.ab, false);
         }
         cd.a("BAN: [RUT] NPC type5 tai aa=" + npc.aa + " ab=" + npc.ab, false);
 
@@ -371,6 +382,116 @@ public final class BanSeller {
 
         // Tinh lai dem tui (server cap nhat tre >4s, nhung goi b() de RAM nhat quan)
         try { cd.q.b(); } catch (Exception e) {}
+    }
+
+    // ================================================================
+    // DI DEN LANG/TRUONG GAN NHAT: khi khong co NPC type 5 trong zone
+    // hien tai, doc do thi map tu Class_cn.g, BFS tim lang/truong gan
+    // nhat, roi dung cd.n.c() pathfinding toi do. Sau khi toi noi,
+    // tim NPC type 5 de rut ruong.
+    // Tra ve NPC type 5 neu thanh cong, null neu that bai.
+    // ================================================================
+    private Class_at travelToNearestVillage() {
+        int currentMap = cd.r.a;
+        cd.a("BAN: [DI-LANG] Tim lang/truong gan nhat tu map=" + currentMap, false);
+
+        // Buoc 1: Doc do thi adjacency tu Class_cn.g (private static short[][])
+        short[][] graph = null;
+        try {
+            java.lang.reflect.Field f = Class_cn.class.getDeclaredField("g");
+            f.setAccessible(true);
+            graph = (short[][]) f.get(null);
+        } catch (Exception e) {
+            cd.a("BAN: [DI-LANG] Loi doc graph: " + e.getMessage(), false);
+            return null;
+        }
+        if (graph == null) {
+            cd.a("BAN: [DI-LANG] Graph null -> huy", false);
+            return null;
+        }
+
+        // Buoc 2: BFS tim lang/truong gan nhat
+        // Lang: 10,17,22,32,38,43,48. Truong: 1,27,72
+        int[] targets = {10, 17, 22, 32, 38, 43, 48, 1, 27, 72};
+        boolean[] visited = new boolean[160];
+        int[] dist = new int[160];
+        int[] queue = new int[160];
+        int head = 0, tail = 0;
+
+        for (int i = 0; i < 160; i++) dist[i] = Integer.MAX_VALUE;
+        dist[currentMap] = 0;
+        visited[currentMap] = true;
+        queue[tail++] = currentMap;
+
+        int nearestTarget = -1;
+        int nearestDist = Integer.MAX_VALUE;
+
+        while (head < tail) {
+            int node = queue[head++];
+            // BFS dam bao node dau tien la target = gan nhat
+            boolean isTarget = false;
+            for (int i = 0; i < targets.length; i++) {
+                if (node == targets[i]) { isTarget = true; break; }
+            }
+            if (isTarget) {
+                nearestTarget = node;
+                nearestDist = dist[node];
+                break;
+            }
+            if (graph[node] == null) continue;
+            for (int i = 0; i < graph[node].length; i++) {
+                int nb = graph[node][i];
+                if (nb >= 0 && nb < 160 && !visited[nb]) {
+                    visited[nb] = true;
+                    dist[nb] = dist[node] + 1;
+                    queue[tail++] = nb;
+                }
+            }
+        }
+
+        if (nearestTarget == -1) {
+            cd.a("BAN: [DI-LANG] Khong tim duoc lang/truong nao -> huy", false);
+            return null;
+        }
+        cd.a("BAN: [DI-LANG] Nearest: map=" + nearestTarget + " dist=" + nearestDist + " buoc", false);
+
+        // Buoc 3: Pathfinding toi lang/truong (cd.n.c() block cho toi khi den)
+        try {
+            cd.n.c(nearestTarget);
+        } catch (Exception e) {
+            cd.a("BAN: [DI-LANG] Loi navigate: " + e.getMessage(), false);
+            return null;
+        }
+
+        // Buoc 4: Xac nhan da den noi (cho map load xong)
+        boolean arrived = false;
+        for (int i = 0; i < 60; i++) {  // 30s max
+            if (state != STATE_IDLE) {
+                cd.a("BAN: [DI-LANG] Ngat vi state=" + state, false);
+                return null;
+            }
+            Class_bb.b(500L);
+            if (cd.h.b == 1 && cd.r.a == nearestTarget) {
+                arrived = true;
+                cd.a("BAN: [DI-LANG] Den map=" + cd.r.a + " zone=" + cd.r.c, false);
+                break;
+            }
+        }
+        if (!arrived) {
+            cd.a("BAN: [DI-LANG] Khong den duoc map=" + nearestTarget + " sau 30s -> huy", false);
+            return null;
+        }
+
+        // Buoc 5: Cho NPC list load day du, roi tim NPC type 5
+        Class_bb.b(1000L);
+        Class_at npc = null;
+        try { npc = cd.h.d(5); } catch (Exception e) {}
+        if (npc == null) {
+            cd.a("BAN: [DI-LANG] Den lang/truong nhung khong thay NPC type5 -> huy", false);
+            return null;
+        }
+        cd.a("BAN: [DI-LANG] Tim thay NPC type5 tai aa=" + npc.aa + " ab=" + npc.ab, false);
+        return npc;
     }
 
     // Kiem tra tui (.v) con o trong khong (null slot)
@@ -628,6 +749,12 @@ public final class BanSeller {
             return;
         }
 
+        // Dang di rut ruong (tu sat / hoi sinh / dang rut) -> tu choi nhan don
+        if (withdrawing) {
+            sendPrivate(senderName, "Bot đang lấy hàng từ rương, vui lòng thử lại sau ~30 giây.");
+            return;
+        }
+
         // Lazy load config khi can
         ensureConfigLoaded();
         content = content.trim().toLowerCase();
@@ -708,7 +835,7 @@ public final class BanSeller {
             // GUARD: cooldown (rut truoc khong hieu qua, chua het han)
             Long coolUntil = withdrawCooldownUntil.get(itemId);
             boolean inCooldown = (coolUntil != null && Class_bb.b() < coolUntil.longValue());
-            if (inStorage > 0 && !withdrawing && hasBagSpace() && !inCooldown) {
+            if (inStorage > 0 && !withdrawing && hasBagSpace() && !inCooldown && Class_bb.b() >= travelFailCooldownUntil) {
                 // Co ruong + tui con o trong + chua dang rut + khong trong cooldown -> rut nen + bao khach doi
                 cd.a("BAN: [TOP-UP] Mon id=" + itemId + " het tui, ruong=" + inStorage + " -> rut nen", false);
                 final int finalItemId = itemId;

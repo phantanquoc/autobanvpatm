@@ -1,2 +1,9 @@
 # Backup jar sinh ra moi lan rebuild (khong can luu lich su)
 *.jar.bak-*
+
+# Build rac - khong commit
+BanVatPham/*.class
+BanVatPham/META-INF/
+BanVatPham/_verify_tmp/
+decompiled/
+decompiled_ban/
