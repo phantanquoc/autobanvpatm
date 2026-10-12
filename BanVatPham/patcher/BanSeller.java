@@ -68,8 +68,36 @@ public final class BanSeller {
     // Cooldown cho tu-sat travel: neu tu sat/hoi sinh that bai -> khoa 5 phut
     private long travelFailCooldownUntil = 0L;
 
+    // NICK flag per bot line: [NICK]1 => nick-only (disable vat-pham branch)
+    public boolean nickOnly = false;
+
+    // NIK branch runs in parallel with BanItem branch; no exclusive guard
+
+    // NIK seller (Phase 1): shares same cd, shared NikStore
+    public NikSeller nikSeller;
+    private static NikStore sharedNikStore;
+
     public BanSeller(Class_cd cd) {
         this.cd = cd;
+        try {
+            if (sharedNikStore == null) {
+                sharedNikStore = new NikStore();
+                String wd = Class_cu.g;
+                if (wd != null) sharedNikStore.load(wd);
+            }
+            this.nikSeller = new NikSeller(cd, sharedNikStore);
+        } catch (Exception ignored) {}
+    }
+
+    public static NikStore getSharedNikStore() {
+        if (sharedNikStore == null) {
+            try {
+                sharedNikStore = new NikStore();
+                String wd = Class_cu.g;
+                if (wd != null) sharedNikStore.load(wd);
+            } catch (Exception ignored) {}
+        }
+        return sharedNikStore;
     }
 
     // ================================================================
@@ -82,6 +110,7 @@ public final class BanSeller {
     // ================================================================
     private boolean broadcastReady = false;
     public void ensureBroadcast() {
+        if (nickOnly) return;
         if (broadcastReady) return;
         try {
             ensureConfigLoaded();
@@ -121,6 +150,7 @@ public final class BanSeller {
     // Goi tu Class_cp.a() (cung chỗ ensureBroadcast). KHONG di chuyen.
     // ================================================================
     public void maybeRefreshStorage() {
+        if (nickOnly) return;
         try {
             // Chi refresh khi IDLE + khong dang rut
             if (state != STATE_IDLE || withdrawing) return;
@@ -149,6 +179,7 @@ public final class BanSeller {
     // Neu mon nao tui=0 va ruong>0 va IDLE -> khoi dong thread rut.
     // ================================================================
     public void maybeWithdrawIdle() {
+        if (nickOnly) return;
         try {
             if (state != STATE_IDLE || withdrawing) return;
             // Cooldown sau tu-sat that bai
@@ -550,6 +581,7 @@ public final class BanSeller {
     public String getStockSummary() {
         try {
             ensureConfigLoaded();
+            if (nickOnly) return "-";
             if (priceList == null || priceList.isEmpty()) return "-";
             StringBuilder sb = new StringBuilder();
             for (BanItem it : priceList) {
@@ -573,6 +605,7 @@ public final class BanSeller {
     public String getStorageSummary() {
         try {
             ensureConfigLoaded();
+            if (nickOnly) return "-";
             if (priceList == null || priceList.isEmpty()) return "-";
             StringBuilder sb = new StringBuilder();
             for (BanItem it : priceList) {
@@ -596,6 +629,7 @@ public final class BanSeller {
     public String getStockCombined() {
         try {
             ensureConfigLoaded();
+            if (nickOnly) return "-";
             if (priceList == null || priceList.isEmpty()) return "-";
             StringBuilder sb = new StringBuilder();
             for (BanItem it : priceList) {
@@ -636,6 +670,31 @@ public final class BanSeller {
             if (workDir == null || workDir.isEmpty()) return;
             // Doc banvatpham.txt de lay ten item file
             String banCfg = Class_cq.d(workDir + "\\banvatpham.txt");
+            // Parse [NICK] flag for this bot line (TK+SV match), default false
+            try {
+                if (banCfg != null) {
+                    String[] banLines2 = banCfg.split("\\[GROUP\\]");
+                    outerNick:
+                    for (String block : banLines2) {
+                        String[] lns2 = block.split("\r\n|\n");
+                        for (String ln : lns2) {
+                            if (ln.trim().isEmpty()) continue;
+                            String tk2 = Class_bb.a(ln, "TK");
+                            if (tk2 == null || !tk2.equals(cd.b)) continue;
+                            boolean sameSv2 = true;
+                            try {
+                                String svStr2 = Class_bb.a(ln, "SV");
+                                if (svStr2 != null) { int sv2 = Integer.parseInt(svStr2.trim()); sameSv2 = main.Midlet.b.a(Integer.valueOf(sv2)) == cd.d; }
+                            } catch (Exception ex) { sameSv2 = true; }
+                            if (sameSv2) {
+                                String nickVal = Class_bb.a(ln, "NICK");
+                                nickOnly = nickVal != null && nickVal.trim().equals("1");
+                                break outerNick;
+                            }
+                        }
+                    }
+                }
+            } catch (Exception ignored) {}
             if (banCfg == null) {
                 // Fallback: dung file items cua cd neu co (giong muado.txt)
                 // Tim trong Class_ch.a cache
@@ -740,7 +799,30 @@ public final class BanSeller {
     // ================================================================
     public void onPrivateMessage(String senderName, String content) {
         if (content == null || senderName == null) return;
-
+        ensureConfigLoaded();
+        String lowerForRouting = content.trim().toLowerCase();
+        boolean containsNick = lowerForRouting.contains("nick");
+        if (nickOnly) {
+            // nick-only bot: delegate nick flow, ignore vat-pham
+            if (containsNick) {
+                try {
+                    if (nikSeller != null) {
+                        boolean handled = nikSeller.handlePrivateMessage(senderName, content);
+                        if (handled) return;
+                    }
+                } catch (Exception ignored) {}
+                // if not handled, fall through to allow NikSeller help logic to reply; if still not, return silent?
+                // Delegate already handles help/mua; if not handled, still treat as nick intent - avoid vat-pham help
+                return;
+            }
+            // nick-only bot ignores non-nick messages (no vat-pham)
+            // still allow testkho?
+            if ("testkho".equals(lowerForRouting)) { new StorageTester(cd).runTest(); return; }
+            return;
+        } else {
+            // normal bot: silent on nick to avoid confusion
+            if (containsNick) return;
+        }
         // LENH BI MAT "testkho": bat ky nguoi nhan nhan tin rieng deu dung duoc.
         // Goi StorageTester.runTest() - da tu tao Thread rieng, KHONG block.
         // Dat TRUOC ensureConfigLoaded() de tranh side-effect; return ngay sau.
@@ -1000,6 +1082,8 @@ public final class BanSeller {
     // (onInviteAccept) de set IN_TRADE -> phai set o day.
     // ================================================================
     public void onTradeWindowOpened() {
+        // delegate to NIK if NIK is waiting
+        try { if (nikSeller != null && nikSeller.state == NikSeller.STATE_WAITING) { nikSeller.onTradeWindowOpened(); return; } } catch (Exception ignored) {}
         if (state == STATE_WAITING) {
             prevXu = cd.q.s;               // xu bot truoc gd, de tinh delta khi log
             state = STATE_IN_TRADE;
@@ -1014,6 +1098,8 @@ public final class BanSeller {
     // Duoc goi tu Class_cq case 45
     // ================================================================
     public void onTradeOffer(int xuKhach) {
+        // route to NIK if NIK is in trade
+        try { if (nikSeller != null && nikSeller.state == NikSeller.STATE_IN_TRADE) { nikSeller.onTradeOffer(xuKhach); return; } } catch (Exception ignored) {}
         if (state != STATE_IN_TRADE) return;
 
         // Bot da bỏ do vao (duoc goi tu a() loop), bay gio nhan xu
@@ -1035,6 +1121,8 @@ public final class BanSeller {
     // Duoc goi tu Class_cq case 58
     // ================================================================
     public void onTradeComplete(int xuNhan) {
+        // route to NIK if NIK trade pending
+        try { if (nikSeller != null && (nikSeller.state == NikSeller.STATE_CONFIRMED || nikSeller.state == NikSeller.STATE_IN_TRADE)) { nikSeller.onTradeComplete(xuNhan); return; } } catch (Exception ignored) {}
         if (state == STATE_CONFIRMED || state == STATE_IN_TRADE) {
             logSale(xuNhan);
             // Xoa cac o da ban khoi tui RAM (server KHONG tu gui cap nhat tui sau trade ban).
@@ -1060,16 +1148,14 @@ public final class BanSeller {
     // Khi giao dich bi huy (opcode 57)
     // ================================================================
     public void onTradeCancelled() {
+        try { if (nikSeller != null && nikSeller.state != NikSeller.STATE_IDLE) { nikSeller.onTradeCancelled(); return; } } catch (Exception ignored) {}
         if (state != STATE_IDLE) {
             cd.a("BAN: Giao dich bi huy", false);
         }
         reset();
     }
 
-    // ================================================================
-    // Tick logic ban: duoc goi tu vong lap chinh (Class_cp.a() hoac
-    // Class_ce.run()) moi 50ms
-    // Phan cong viec: neu dang STATE_IN_TRADE va chua put do -> put do
+    // Tick logic ban: duoc goi tu vong lap chinh
     // ================================================================
     public void tick() {
         if (state == STATE_IDLE) return;
@@ -1364,6 +1450,29 @@ public final class BanSeller {
             return true;
         }
         return false;
+    }
+
+    private void sendHelpNik(String toName) {
+        try {
+            if (toName == null) return;
+            long now = Class_bb.b();
+            Long last = lastHelpTime.get(toName);
+            if (last != null && now - last.longValue() < 15000L) return;
+            lastHelpTime.put(toName, now);
+            NikStore st = sharedNikStore != null ? sharedNikStore : (nikSeller != null ? nikSeller.getStore() : null);
+            if (st == null || st.chuaBanCount() == 0) { sendPrivate(toName, "Chua co nick dang ban."); return; }
+            java.util.LinkedHashMap<String,Integer> counts = new java.util.LinkedHashMap<String,Integer>();
+            for (NikEntry e : st.getChuaBan()) {
+                String key = e.vatPham != null ? e.vatPham.trim() : "";
+                if (key.isEmpty()) key = "(khac)";
+                Integer cur = counts.get(key);
+                counts.put(key, cur == null ? 1 : cur + 1);
+            }
+            if (counts.isEmpty()) { sendPrivate(toName, "Chua co nick dang ban."); return; }
+            for (java.util.Map.Entry<String,Integer> en : counts.entrySet()) {
+                sendPrivate(toName, "nick ban " + en.getKey() + " sl: " + en.getValue());
+            }
+        } catch (Exception e) {}
     }
 
     private void sendHelp(String toName) {

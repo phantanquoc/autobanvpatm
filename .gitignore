@@ -7,3 +7,7 @@ BanVatPham/META-INF/
 BanVatPham/_verify_tmp/
 decompiled/
 decompiled_ban/
+.codex/config.toml
+opencode.json
+.claude/settings.local.json
+.mcp.json

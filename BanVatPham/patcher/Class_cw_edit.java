@@ -1,19 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
+import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Container;
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import javax.swing.JButton;
+import javax.swing.JPanel;
 import javax.swing.JTextPane;
+import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 
-final class Class_cw
-implements ActionListener {
-    private /* synthetic */ Class_cu a;
+final class Class_cw implements ActionListener {
+    private Class_cu a;
     private JTextPane xuBox;
+    private boolean nikBtnInit = false;
 
     private JTextPane findTextPane(Container c) {
         Component[] comps = c.getComponents();
@@ -26,14 +28,37 @@ implements ActionListener {
         }
         return null;
     }
+    Class_cw(Class_cu class_cu) { this.a = class_cu; }
 
-    Class_cw(Class_cu class_cu) {
-        this.a = class_cu;
+    private void ensureNikButton() {
+        if (nikBtnInit) return;
+        try {
+            if (a == null || a.a == null) return;
+            Container cp = a.a.getContentPane();
+            JTextPane tp = findTextPane(cp);
+            if (tp == null) { nikBtnInit = true; return; }
+            Container parent = tp.getParent();
+            if (parent == null) { nikBtnInit = true; return; }
+            xuBox = tp;
+            // Wrap xuBox + button, keep parent layout intact
+            parent.remove(tp);
+            JPanel wrapper = new JPanel(new BorderLayout(4, 4));
+            wrapper.add(xuBox, BorderLayout.CENTER);
+            JButton btnNik = new JButton("Quan ly NICK");
+            btnNik.addActionListener(new ActionListener() { public void actionPerformed(ActionEvent e) { NikFrame.showFrame(); } });
+            wrapper.add(btnNik, BorderLayout.SOUTH);
+            // parent may have BorderLayout or something else - force BorderLayout and add wrapper
+            try { parent.setLayout(new BorderLayout()); } catch (Exception ignored) {}
+            parent.add(wrapper, BorderLayout.CENTER);
+            try { a.a.revalidate(); a.a.repaint(); } catch (Exception ignored2) {}
+            nikBtnInit = true;
+        } catch (Exception ex) { nikBtnInit = true; }
     }
 
     @Override
     public final void actionPerformed(ActionEvent actionEvent) {
         try {
+            ensureNikButton();
             Object object;
             if (Class_cd.a == null) {
                 Object object2;
@@ -51,9 +76,6 @@ implements ActionListener {
                 Class_cd.a = null;
             }
             object = this.a;
-            // Gop 2 cot VAT PHAM BAN + RUONG thanh 1 (giu header "VAT PHAM BAN"),
-            // dua cot do VAO TRONG (truoc BAG/STATUS) -> day BAG + STATUS ra ngoai.
-            // Thu tu moi: SERVER, USERNAME, MAP, POS_X_Y, XU, VAT PHAM BAN, BAG, STATUS.
             Object[] objectArray = new String[]{"SERVER", "USERNAME", "MAP", "POS_X_Y", "XU", "VAT PHAM BAN", "BAG", "STATUS"};
             Object[][] objectArray2 = new Object[((Class_cu)object).d.size()][8];
             int n = 0;
@@ -67,13 +89,8 @@ implements ActionListener {
                 } else {
                     objectArray2[n][1] = ((Class_cd)object3).b;
                 }
-                // Cot 5: VAT PHAM BAN gop gia + tui/ruong (vd "d7: 20.000 = 20/30")
                 String stock = "-";
-                try {
-                    if (((Class_cd)object3).p != null && ((Class_cd)object3).p.banSeller != null) {
-                        stock = ((Class_cd)object3).p.banSeller.getStockCombined();
-                    }
-                } catch (Exception ex) {}
+                try { if (((Class_cd)object3).p != null && ((Class_cd)object3).p.banSeller != null) stock = ((Class_cd)object3).p.banSeller.getStockCombined(); } catch (Exception ex) {}
                 objectArray2[n][5] = stock;
                 objectArray2[n][6] = "[BAG]";
                 objectArray2[n][7] = ((Class_cd)object3).w > 0 ? "[ON]" : "[OFF]";
@@ -102,9 +119,6 @@ implements ActionListener {
             ((Class_cu)object).b.getColumnModel().getColumn(7).setPreferredWidth(65);
             ((Class_cu)object).c.setText("Account running: " + objectArray2.length);
             try {
-                if (this.xuBox == null && ((Class_cu)object).a != null) {
-                    this.xuBox = this.findTextPane(((Class_cu)object).a.getContentPane());
-                }
                 if (this.xuBox != null) {
                     Map<String, Long> totals = new LinkedHashMap<String, Long>();
                     for (Object b : ((Class_cu)object).d) {
@@ -117,24 +131,14 @@ implements ActionListener {
                         totals.put(sv, cur == null ? add : cur.longValue() + add);
                     }
                     StringBuilder html = new StringBuilder();
-                    html.append("<html><body style=\"text-align: center;\"><p><b>Tổng Xu</b></p>");
-                    if (totals.isEmpty()) {
-                        html.append("<p>-</p>");
-                    } else {
-                        for (Map.Entry<String, Long> e : totals.entrySet()) {
-                            html.append("<p>").append(e.getKey()).append(": ")
-                                .append(Class_bb.a(e.getValue().longValue())).append("</p>");
-                        }
-                    }
+                    html.append("<html><body style=\"text-align: center;\"><p><b>Tong Xu</b></p>");
+                    if (totals.isEmpty()) html.append("<p>-</p>");
+                    else for (Map.Entry<String, Long> e : totals.entrySet()) html.append("<p>").append(e.getKey()).append(": ").append(Class_bb.a(e.getValue().longValue())).append("</p>");
                     html.append("</body></html>");
                     this.xuBox.setText(html.toString());
                 }
             } catch (Exception exXu) {}
             return;
-        }
-        catch (Exception exception) {
-            return;
-        }
+        } catch (Exception exception) { return; }
     }
 }
-
