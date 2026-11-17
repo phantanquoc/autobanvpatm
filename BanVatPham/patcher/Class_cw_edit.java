@@ -15,7 +15,6 @@ import javax.swing.table.DefaultTableModel;
 final class Class_cw implements ActionListener {
     private Class_cu a;
     private JTextPane xuBox;
-    private boolean nikBtnInit = false;
 
     private JTextPane findTextPane(Container c) {
         Component[] comps = c.getComponents();
@@ -30,35 +29,18 @@ final class Class_cw implements ActionListener {
     }
     Class_cw(Class_cu class_cu) { this.a = class_cu; }
 
-    private void ensureNikButton() {
-        if (nikBtnInit) return;
+    private void captureXuBox() {
         try {
-            if (a == null || a.a == null) return;
+            if (xuBox != null || a == null || a.a == null) return;
             Container cp = a.a.getContentPane();
-            JTextPane tp = findTextPane(cp);
-            if (tp == null) { nikBtnInit = true; return; }
-            Container parent = tp.getParent();
-            if (parent == null) { nikBtnInit = true; return; }
-            xuBox = tp;
-            // Wrap xuBox + button, keep parent layout intact
-            parent.remove(tp);
-            JPanel wrapper = new JPanel(new BorderLayout(4, 4));
-            wrapper.add(xuBox, BorderLayout.CENTER);
-            JButton btnNik = new JButton("Quan ly NICK");
-            btnNik.addActionListener(new ActionListener() { public void actionPerformed(ActionEvent e) { NikFrame.showFrame(); } });
-            wrapper.add(btnNik, BorderLayout.SOUTH);
-            // parent may have BorderLayout or something else - force BorderLayout and add wrapper
-            try { parent.setLayout(new BorderLayout()); } catch (Exception ignored) {}
-            parent.add(wrapper, BorderLayout.CENTER);
-            try { a.a.revalidate(); a.a.repaint(); } catch (Exception ignored2) {}
-            nikBtnInit = true;
-        } catch (Exception ex) { nikBtnInit = true; }
+            xuBox = findTextPane(cp);
+        } catch (Exception ignored) {}
     }
 
     @Override
     public final void actionPerformed(ActionEvent actionEvent) {
         try {
-            ensureNikButton();
+            captureXuBox();
             Object object;
             if (Class_cd.a == null) {
                 Object object2;

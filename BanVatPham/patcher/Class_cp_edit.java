@@ -61,63 +61,11 @@ public final class Class_cp {
         if (!this.e) {
             return false;
         }
-        if (this.c != 2 && this.i != 0L && Class_bb.b() - this.i > 60000L) {
-            this.a.l.a(this.b, "qu\u00e1 th\u1eddi gian thao t\u00e1c (t\u1ed1i \u0111a 1 ph\u00fat)");
-            this.a.l.b();
-            this.d();
-            this.e = false;
-            return false;
-        }
-        if (this.a.aa) {
-            if (this.a.h.r) {
-                if (this.g == 0) {
-                    int n = 0;
-                    int n2 = 29999;
-                    for (int i = 0; i < this.a.q.v.length && n < 12; ++i) {
-                        Class_al class_al = this.a.q.v[i];
-                        if (class_al == null || class_al.c || !this.a(class_al.b.a) || class_al.b.b == 16 && class_al.e > n2) continue;
-                        this.j[n] = class_al;
-                        ++n;
-                        if (class_al.b.b == 16) {
-                            n2 -= class_al.e;
-                        }
-                        this.a.a("SELECT ITEM: " + class_al.b.d + " = " + class_al.e, false);
-                    }
-                    this.a.l.a(0, this.j);
-                    this.g = 1;
-                    this.b();
-                } else if (this.g == 1 && this.c > 0 && Class_bb.b() - this.h > 5000L) {
-                    this.a.l.c();
-                    this.h = Class_bb.b();
-                }
-            } else if (this.g == 0 && this.c == 1) {
-                Class_cp class_cp = this;
-                int n = class_cp.a(class_cp.d);
-                if (n == 0) {
-                    this.a.l.a(this.b, "kh\u00f4ng ch\u1ea5p nh\u1eadn v\u1eadt ph\u1ea9m kh\u00f4ng h\u1ee3p l\u1ec7");
-                    this.a.l.b();
-                    this.d();
-                    this.e = false;
-                    return false;
-                }
-                this.k = n;
-                this.a.l.a(n, this.j);
-                this.g = 1;
-                this.b();
-            } else if (this.g == 1 && this.c >= 2 && Class_bb.b() - this.h > 5000L) {
-                this.a.l.c();
-                this.h = Class_bb.b();
-            }
-        } else if (this.a.b()) {
-            if (this.g == 0) {
-                this.a.l.a(0, this.j);
-                this.g = 1;
-                this.b();
-            } else if (this.g == 1 && this.c > 0 && Class_bb.b() - this.h > 5000L) {
-                this.a.l.c();
-                this.h = Class_bb.b();
-            }
-        }
+        // SELL-ONLY LOCK: toan bo logic MUA/GOM DO cu (doc do khach, bo xu mua,
+        // tu xac nhan mua) da bi loai bo. Moi trade hop le deu do BanSeller khoi
+        // tao (state != IDLE -> da xu ly o guard BAN phia tren); cua so gd mo khi
+        // state == IDLE da bi huy ngay o guard BAN-ONLY. Den duoc day chi con
+        // tick cua BanSeller.
         this.banSeller.tick();
         return true;
     }
@@ -193,29 +141,11 @@ public final class Class_cp {
             this.banSeller.onInviteAccept(class_ai);
             return;
         }
-        if (this.a.b()) {
-            boolean bl;
-            block10: {
-                object = class_ai.i;
-                for (int i = 0; i < Class_cu.a().d.size(); ++i) {
-                    Class_cd class_cd = (Class_cd)Class_cu.a().d.elementAt(i);
-                    if (class_cd == null || !class_cd.a() || !class_cd.q.i.equals(object)) continue;
-                    bl = true;
-                    break block10;
-                }
-                bl = false;
-            }
-            if (bl) {
-                this.a.a("INVITE ACCEPT DUNG DO", false);
-                this.a.l.a(class_ai.e);
-                return;
-            }
-        }
-        if (this.a.aa && !this.a.h.r) {
-            this.a.a("INVITE ACCEPT GOM DO", false);
-            this.a.l.a(class_ai.e);
-            return;
-        }
+        // SELL-ONLY LOCK: da loai bo 2 nhanh chap nhan loi moi phuc vu MUA/GOM DO
+        // ("INVITE ACCEPT DUNG DO" khi this.a.b(), "INVITE ACCEPT GOM DO" khi
+        // this.a.aa). Bot ban CHI chap nhan loi moi cua khach dang mua qua
+        // BanSeller (shouldAcceptInviteFrom o tren); moi loi moi khac bi tu choi
+        // o khoi reject ben duoi.
         object = this.a.l;
         ((Class_ba)object).a.a("HUY LOI MOI GIAO DICH", false);
         Class_bo class_bo = null;

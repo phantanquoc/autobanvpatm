@@ -11,3 +11,13 @@ decompiled_ban/
 opencode.json
 .claude/settings.local.json
 .mcp.json
+
+# Config chua tai khoan/mat khau + du lieu runtime - khong commit
+BanVatPham/banvatpham.txt
+BanVatPham/muado.txt
+BanVatPham/wallets.txt
+BanVatPham/wallets.txt.old
+BanVatPham/atm_seen.log
+BanVatPham/logs/
+BanVatPham/rms_data/
+BanVatPham/nik_ban.txt

@@ -26,16 +26,47 @@ public final class BanSeller {
     private Class_cd cd;
 
     // Config ban: List cac BanItem {id, donGia, maxSoLuong}
-    private List<BanItem> priceList = new ArrayList<BanItem>();
+    private volatile List<BanItem> priceList = new ArrayList<BanItem>();
+    private volatile String currentItemFile = null;
+    private volatile boolean pendingReload = false;
+    private String[] broadcastChatLines = null;
+
+    public String getCurrentItemFile() { return currentItemFile; }
+    public boolean isReloadable() { return currentItemFile != null; }
+
+    /** Reload price file now if idle via reloadConfig(); if mid-trade defer to reset(). Returns true if applied now. */
+    public boolean requestReload() {
+        if (currentItemFile == null) return false;
+        if (state != STATE_IDLE) { pendingReload = true; return false; }
+        return reloadConfig();
+    }
+
+    public synchronized boolean reloadConfig() {
+        String file = currentItemFile;
+        if (file == null) return false;
+        try {
+            String workDir = Class_cu.g;
+            if (workDir == null || workDir.isEmpty()) return false;
+            String content = Class_cq.d(workDir + "\\items\\" + file + ".txt");
+            if (content == null) return false;
+            loadConfig(content);
+            broadcastReady = false;
+            try { ensureBroadcast(); } catch (Exception ignored) {}
+            try { cd.a("BAN: Reloaded " + priceList.size() + " items tu " + file + ".txt", false); } catch (Exception ignored) {}
+            return true;
+        } catch (Exception e) { return false; }
+    }
 
     // Trang thai giao dich hien tai
     public int state = STATE_IDLE;
     public String buyerName = null;    // Ten khach hang dang giao dich
     public int orderQty   = 0;         // So luong khach yeu cau
     public int orderItemId = 0;        // Item id dang ban
-    public int expectedXu  = 0;        // Tong gia can nhan
     public long tradeStartTime = 0;    // Time bat dau giao dich (cho timeout)
     public int prevXu = 0;             // Xu bot truoc giao dich, de tinh delta khi log
+    public long expectedVnd = 0L;      // Tong gia VND cua don dang ban (wallet)
+    public String walletHoldId = null; // Hold dang giu cho don hien tai
+    public String walletCode = null;   // Ma vi cua khach dang mua
 
     // Slots trong bag bot se bo vao trade
     private Class_al[] tradeSlots = null;
@@ -68,37 +99,43 @@ public final class BanSeller {
     // Cooldown cho tu-sat travel: neu tu sat/hoi sinh that bai -> khoa 5 phut
     private long travelFailCooldownUntil = 0L;
 
-    // NICK flag per bot line: [NICK]1 => nick-only (disable vat-pham branch)
-    public boolean nickOnly = false;
+    // Shared wallet across all bots in JVM
+    private static WalletStore sharedWalletStore;
+    private static boolean walletInitDone = false;
+    private static boolean adminInitDone = false;
+    // Unique suffix for hold ids: same-ms purchases by same char via two bots must not collide
+    private static final java.util.concurrent.atomic.AtomicLong HOLD_SEQ = new java.util.concurrent.atomic.AtomicLong(0L);
 
-    // NIK branch runs in parallel with BanItem branch; no exclusive guard
-
-    // NIK seller (Phase 1): shares same cd, shared NikStore
-    public NikSeller nikSeller;
-    private static NikStore sharedNikStore;
+    public static synchronized WalletStore getSharedWalletStore() {
+        if (sharedWalletStore == null) {
+            sharedWalletStore = new WalletStore();
+            String wd = null;
+            try { wd = Class_cu.g; } catch (Exception ignored) {}
+            sharedWalletStore.load(wd);
+        }
+        return sharedWalletStore;
+    }
 
     public BanSeller(Class_cd cd) {
         this.cd = cd;
+        lastInstance = this;
         try {
-            if (sharedNikStore == null) {
-                sharedNikStore = new NikStore();
-                String wd = Class_cu.g;
-                if (wd != null) sharedNikStore.load(wd);
+            final WalletStore store = getSharedWalletStore();
+            WalletService ws = WalletService.getInstance();
+            ws.registerNotifier(new WalletService.Notifier() {
+                public boolean deliver(String to, String msg) {
+                    try { BanSeller.this.cd.l.a(to, msg); return true; } catch (Exception e) { return false; }
+                }
+            });
+            synchronized (BanSeller.class) {
+                if (!walletInitDone) { walletInitDone = true; ws.maybeStartAtmService(store); }
+                else { try { AtmPaymentService.getInstance().updateWalletService(ws, store); } catch (Exception ignored) {} }
+                if (!adminInitDone) { adminInitDone = true; try { AdminWebServer.getInstance().startIfConfigured(store); } catch (Exception ignored) {} }
             }
-            this.nikSeller = new NikSeller(cd, sharedNikStore);
         } catch (Exception ignored) {}
     }
 
-    public static NikStore getSharedNikStore() {
-        if (sharedNikStore == null) {
-            try {
-                sharedNikStore = new NikStore();
-                String wd = Class_cu.g;
-                if (wd != null) sharedNikStore.load(wd);
-            } catch (Exception ignored) {}
-        }
-        return sharedNikStore;
-    }
+    private static BanSeller lastInstance;
 
     // ================================================================
     // RAO LOA CONG CONG: sinh cau rao tu priceList roi bat may rao co san
@@ -109,24 +146,41 @@ public final class BanSeller {
     // Goi tu dau Class_cp.a() moi vong; chi thuc su set up 1 lan.
     // ================================================================
     private boolean broadcastReady = false;
+    private boolean broadcastActive = false; // true while cd.f.j contains sell lines installed by ensureBroadcast
+    // Clear sell lines installed earlier, restoring only the original chat lines.
+    // Uses the existing Class_ce mechanism: cd.f.j is the rotating line list and
+    // cd.f.h enables it. With no chat lines left, disable it (cd.f.h=false) so
+    // Class_ce cannot quote stale prices.
+    private void clearStaleBroadcast() {
+        if (!broadcastActive) return;
+        try {
+            java.util.List<String> chat = new ArrayList<String>();
+            if (broadcastChatLines != null) for (String s : broadcastChatLines) if (s != null && !s.trim().isEmpty()) chat.add(s);
+            cd.f.j = chat.toArray(new String[0]);
+            cd.f.h = !chat.isEmpty();
+            broadcastActive = false;
+            try { cd.a("BAN: Xoa cau rao cu (bang gia rong)", false); } catch (Exception ignored) {}
+        } catch (Exception ignored) {}
+    }
     public void ensureBroadcast() {
-        if (nickOnly) return;
         if (broadcastReady) return;
         try {
             ensureConfigLoaded();
-            if (priceList == null || priceList.isEmpty()) return; // chua san sang, thu lai sau
+            if (priceList == null || priceList.isEmpty()) { clearStaleBroadcast(); return; }
             // Luu cac cau chat tu file (Class_cu da set truoc khi ensureBroadcast chay).
             // broadcastReady guard dam bao method chi chay 1 lan nen cd.f.j o day
             // chi chua cau chat (chua co cau ban).
             String[] oldChat = cd.f.j;
+            if (broadcastChatLines == null) broadcastChatLines = oldChat;
+            else oldChat = broadcastChatLines;
             // 1 mon/cau: "bán <maVp> <gia>xu". Khong dung "/" vi font loa cong
             // cong khong hien thi "/" (bi nuot -> "100/1" thanh "1001").
             java.util.List<String> lines = new ArrayList<String>();
             for (BanItem it : priceList) {
                 if (it.maVp == null || it.maVp.isEmpty()) continue; // bo mon khong co ma vp
-                lines.add("bán " + it.maVp + " " + formatXu(it.donGia) + "xu");
+                lines.add("bán " + it.maVp + " " + formatXu(it.donGia) + "VND");
             }
-            if (lines.isEmpty()) return;              // khong mon nao co ma vp
+            if (lines.isEmpty()) { clearStaleBroadcast(); return; } // khong mon nao co ma vp
             // Noi cau chat tu file (neu co) vao sau cau ban de tao vong xoay:
             // ban d7 -> ban d8 -> ... -> <cau chat> -> lap lai
             if (oldChat != null) {
@@ -140,6 +194,7 @@ public final class BanSeller {
             if (cd.f.i <= 0) cd.f.i = 5;
             cd.f.h = true;                            // bat rao
             broadcastReady = true;
+            broadcastActive = true;
             cd.a("BAN: Bat rao cong cong " + lines.size() + " cau, moi " + cd.f.i + "s", false);
         } catch (Exception e) {}
     }
@@ -150,7 +205,6 @@ public final class BanSeller {
     // Goi tu Class_cp.a() (cung chỗ ensureBroadcast). KHONG di chuyen.
     // ================================================================
     public void maybeRefreshStorage() {
-        if (nickOnly) return;
         try {
             // Chi refresh khi IDLE + khong dang rut
             if (state != STATE_IDLE || withdrawing) return;
@@ -179,7 +233,6 @@ public final class BanSeller {
     // Neu mon nao tui=0 va ruong>0 va IDLE -> khoi dong thread rut.
     // ================================================================
     public void maybeWithdrawIdle() {
-        if (nickOnly) return;
         try {
             if (state != STATE_IDLE || withdrawing) return;
             // Cooldown sau tu-sat that bai
@@ -581,7 +634,6 @@ public final class BanSeller {
     public String getStockSummary() {
         try {
             ensureConfigLoaded();
-            if (nickOnly) return "-";
             if (priceList == null || priceList.isEmpty()) return "-";
             StringBuilder sb = new StringBuilder();
             for (BanItem it : priceList) {
@@ -605,7 +657,6 @@ public final class BanSeller {
     public String getStorageSummary() {
         try {
             ensureConfigLoaded();
-            if (nickOnly) return "-";
             if (priceList == null || priceList.isEmpty()) return "-";
             StringBuilder sb = new StringBuilder();
             for (BanItem it : priceList) {
@@ -629,7 +680,6 @@ public final class BanSeller {
     public String getStockCombined() {
         try {
             ensureConfigLoaded();
-            if (nickOnly) return "-";
             if (priceList == null || priceList.isEmpty()) return "-";
             StringBuilder sb = new StringBuilder();
             for (BanItem it : priceList) {
@@ -670,31 +720,6 @@ public final class BanSeller {
             if (workDir == null || workDir.isEmpty()) return;
             // Doc banvatpham.txt de lay ten item file
             String banCfg = Class_cq.d(workDir + "\\banvatpham.txt");
-            // Parse [NICK] flag for this bot line (TK+SV match), default false
-            try {
-                if (banCfg != null) {
-                    String[] banLines2 = banCfg.split("\\[GROUP\\]");
-                    outerNick:
-                    for (String block : banLines2) {
-                        String[] lns2 = block.split("\r\n|\n");
-                        for (String ln : lns2) {
-                            if (ln.trim().isEmpty()) continue;
-                            String tk2 = Class_bb.a(ln, "TK");
-                            if (tk2 == null || !tk2.equals(cd.b)) continue;
-                            boolean sameSv2 = true;
-                            try {
-                                String svStr2 = Class_bb.a(ln, "SV");
-                                if (svStr2 != null) { int sv2 = Integer.parseInt(svStr2.trim()); sameSv2 = main.Midlet.b.a(Integer.valueOf(sv2)) == cd.d; }
-                            } catch (Exception ex) { sameSv2 = true; }
-                            if (sameSv2) {
-                                String nickVal = Class_bb.a(ln, "NICK");
-                                nickOnly = nickVal != null && nickVal.trim().equals("1");
-                                break outerNick;
-                            }
-                        }
-                    }
-                }
-            } catch (Exception ignored) {}
             if (banCfg == null) {
                 // Fallback: dung file items cua cd neu co (giong muado.txt)
                 // Tim trong Class_ch.a cache
@@ -747,6 +772,7 @@ public final class BanSeller {
                 return;
             }
             cd.a("BAN: TK=" + cd.b + " dung item file: " + itemFile, false);
+            currentItemFile = itemFile;
             String itemContent = Class_cq.d(workDir + "\\items\\" + itemFile + ".txt");
             if (itemContent != null) {
                 loadConfig(itemContent);
@@ -761,19 +787,21 @@ public final class BanSeller {
      */
     private void loadFromPriceList() {
         try {
-            priceList.clear();
+            currentItemFile = null;
+            List<BanItem> nl = new ArrayList<BanItem>();
             for (int i = 0; i < cd.f.g.size(); i++) {
                 Class_am am = (Class_am) cd.f.g.get(i);
                 if (am != null) {
-                    priceList.add(new BanItem(am.a, am.b, 999, ""));
+                    nl.add(new BanItem(am.a, am.b, 999, ""));
                 }
             }
+            priceList = nl;
             cd.a("BAN: Loaded " + priceList.size() + " items tu muado price list", false);
         } catch (Exception e) {}
     }
     public void loadConfig(String configContent) {
-        priceList.clear();
-        if (configContent == null) return;
+        List<BanItem> nl = new ArrayList<BanItem>();
+        if (configContent == null) { priceList = nl; return; }
         String[] lines = configContent.split("\r\n|\n");
         for (String line : lines) {
             line = line.trim();
@@ -785,51 +813,85 @@ public final class BanSeller {
                     int donGia = Integer.parseInt(parts[1].trim());
                     int maxQty = parts.length >= 3 ? Integer.parseInt(parts[2].trim()) : 999;
                     String maVp = parts.length >= 4 ? parts[3].trim() : "";
-                    priceList.add(new BanItem(id, donGia, maxQty, maVp));
+                    nl.add(new BanItem(id, donGia, maxQty, maVp));
                 }
             } catch (Exception e) {
                 // bo qua dong loi
             }
         }
+        priceList = nl;
     }
 
     // ================================================================
     // Xu ly tin nhan rieng tu khach (opcode -22 nhan)
     // Format: "ban <id> <so_luong>"  hoac  "ban <so_luong>" neu chi co 1 sp trong priceList
     // ================================================================
+    // Wallet chat commands. Returns true if handled.
+    private boolean handleWalletCommand(String senderName, String raw) {
+        try {
+            String c = raw.trim().toLowerCase();
+            WalletStore store = getSharedWalletStore();
+            if (c.equals("vi") || c.equals("xem vi") || c.equals("xemvi")) {
+                WalletStore.Wallet w = store.getOrCreate(senderName);
+                StringBuilder sb = new StringBuilder();
+                sb.append("Vi ").append(w.code).append(" | So du: ").append(formatXu(w.balance)).append(" VND")
+                  .append(" | Kha dung: ").append(formatXu(store.available(w))).append(" VND")
+                  .append(" | Chinh: ").append(w.primary).append(" | Lien ket:");
+                if (w.linked.isEmpty()) sb.append(" (chua co)");
+                else for (String s : w.linked) sb.append(" ").append(s);
+                sendPrivate(senderName, sb.toString());
+                return true;
+            }
+            if (c.equals("nap") || c.equals("nap tien") || c.equals("naptien") || c.equals("napvi")) {
+                WalletStore.Wallet w = store.getOrCreate(senderName);
+                sendPrivate(senderName, WalletService.getInstance().depositInfo(w));
+                return true;
+            }
+            if (c.equals("xacnhanlink") || c.equals("xac nhan link") || c.equals("dongy link") || c.equals("dongylink")) {
+                String err = store.confirmLink(senderName);
+                sendPrivate(senderName, err != null ? err : "Lien ket thanh cong! Ban co the dung vi chung.");
+                return true;
+            }
+            String[] toks = c.split("\\s+");
+            if (toks.length >= 2 && toks[0].equals("link")) {
+                store.getOrCreate(senderName);
+                String err = store.invite(senderName, toks[1]);
+                if (err != null) sendPrivate(senderName, err);
+                else sendPrivate(senderName, "Da moi " + toks[1] + " lien ket. Nguoi do chat 'xac nhan link' trong 15 phut.");
+                return true;
+            }
+            if (toks.length >= 2 && (toks[0].equals("unlink") || toks[0].equals("huylink"))) {
+                String err = store.unlink(senderName, toks[1]);
+                sendPrivate(senderName, err != null ? err : ("Da huy lien ket " + toks[1]));
+                return true;
+            }
+            if (toks.length >= 3 && toks[0].equals("chuyen")) {
+                long amt = 0; String recip = null;
+                for (int i = 1; i < toks.length; i++) {
+                    try { long v = Long.parseLong(toks[i]); if (v > 0) { amt = v; continue; } } catch (Exception ignored) {}
+                    recip = toks[i];
+                }
+                if (recip == null || amt <= 0) { sendPrivate(senderName, "Sai cu phap. VD: chuyen 50000 TenNhanVat"); return true; }
+                WalletStore.Wallet[] out = new WalletStore.Wallet[1];
+                String err = store.transfer(senderName, recip, amt, out);
+                if (err != null) { sendPrivate(senderName, err); return true; }
+                WalletStore.Wallet from = store.findByChar(senderName);
+                sendPrivate(senderName, "Da chuyen " + formatXu(amt) + " VND cho " + recip + ". So du con: " + formatXu(from != null ? from.balance : 0) + " VND");
+                try { WalletService.getInstance().notifyCustomer(recip, "Ban nhan " + formatXu(amt) + " VND tu " + senderName + ". So du vi: " + formatXu(out[0] != null ? out[0].balance : 0) + " VND"); } catch (Exception ignored) {}
+                return true;
+            }
+        } catch (Exception ignored) {}
+        return false;
+    }
+
     public void onPrivateMessage(String senderName, String content) {
         if (content == null || senderName == null) return;
         ensureConfigLoaded();
-        String lowerForRouting = content.trim().toLowerCase();
-        boolean containsNick = lowerForRouting.contains("nick");
-        if (nickOnly) {
-            // nick-only bot: delegate nick flow, ignore vat-pham
-            if (containsNick) {
-                try {
-                    if (nikSeller != null) {
-                        boolean handled = nikSeller.handlePrivateMessage(senderName, content);
-                        if (handled) return;
-                    }
-                } catch (Exception ignored) {}
-                // if not handled, fall through to allow NikSeller help logic to reply; if still not, return silent?
-                // Delegate already handles help/mua; if not handled, still treat as nick intent - avoid vat-pham help
-                return;
-            }
-            // nick-only bot ignores non-nick messages (no vat-pham)
-            // still allow testkho?
-            if ("testkho".equals(lowerForRouting)) { new StorageTester(cd).runTest(); return; }
-            return;
-        } else {
-            // normal bot: silent on nick to avoid confusion
-            if (containsNick) return;
-        }
-        // LENH BI MAT "testkho": bat ky nguoi nhan nhan tin rieng deu dung duoc.
-        // Goi StorageTester.runTest() - da tu tao Thread rieng, KHONG block.
-        // Dat TRUOC ensureConfigLoaded() de tranh side-effect; return ngay sau.
         if ("testkho".equals(content.trim().toLowerCase())) {
             new StorageTester(cd).runTest();
             return;
         }
+        if (handleWalletCommand(senderName, content)) return;
 
         // Dang di rut ruong (tu sat / hoi sinh / dang rut) -> tu choi nhan don
         if (withdrawing) {
@@ -889,7 +951,7 @@ public final class BanSeller {
 
         // Khong khop ma vp nao -> gui huong dan (neu khong phai spam)
         if (banItem == null) {
-            if (!isSpamMessage(content)) sendHelp(senderName);
+            if (!isSpamMessage(content) || content.contains("nick")) sendHelp(senderName);
             return;
         }
         // Co ma vp nhung thieu so luong
@@ -933,18 +995,35 @@ public final class BanSeller {
             return;
         }
 
-        // Tinh gia
-        int totalXu = banItem.donGia * qty;
+        // Tinh gia VND truc tiep tu items/*.txt
+        long totalVnd = (long) banItem.donGia * (long) qty;
 
-        // Bao gia (khong con doi xac nhan - tu moi trade sau 1s)
-        sendPrivate(senderName, "S/L " + qty + " x " + formatXu(banItem.donGia) + " = " + formatXu(totalXu) + " xu. Dang moi giao dich...");
+        // Wallet: auto-create, check available (balance - holds), place hold
+        WalletStore wstore = getSharedWalletStore();
+        WalletStore.Wallet wallet = wstore.getOrCreate(senderName);
+        long avail = wstore.available(wallet);
+        if (avail < totalVnd) {
+            long shortage = totalVnd - avail;
+            sendPrivate(senderName, "Vi khong du. Can " + formatXu(totalVnd) + " VND, kha dung " + formatXu(avail) + " VND, thieu " + formatXu(shortage) + " VND.");
+            sendPrivate(senderName, WalletService.getInstance().depositInfo(wallet));
+            return;
+        }
+        String holdId = wallet.code + "-" + Class_bb.b() + "-" + senderName + "-" + HOLD_SEQ.incrementAndGet() + "-" + java.util.UUID.randomUUID().toString();
+        if (!wstore.placeHold(holdId, wallet, totalVnd)) {
+            sendPrivate(senderName, "Vi khong du. Kha dung " + formatXu(wstore.available(wallet)) + " VND.");
+            sendPrivate(senderName, WalletService.getInstance().depositInfo(wallet));
+            return;
+        }
 
-        // Luu trang thai (phai set truoc khi goi sendInviteOpcode43 vi no yeu cau STATE_WAITING)
+        sendPrivate(senderName, "S/L " + qty + " x " + formatXu(banItem.donGia) + " = " + formatXu(totalVnd) + " VND (vi). Dang moi giao dich...");
+
         state        = STATE_WAITING;
         buyerName    = senderName;
         orderQty     = qty;
         orderItemId  = (int)(banItem.id & 0xFFFF);
-        expectedXu   = totalXu;
+        expectedVnd  = totalVnd;
+        walletHoldId = holdId;
+        walletCode   = wallet.code;
         tradeStartTime = Class_bb.b();
 
         // Bo qua buoc xac nhan: cho 1s roi tu dong moi giao dich (opcode 43).
@@ -1082,8 +1161,6 @@ public final class BanSeller {
     // (onInviteAccept) de set IN_TRADE -> phai set o day.
     // ================================================================
     public void onTradeWindowOpened() {
-        // delegate to NIK if NIK is waiting
-        try { if (nikSeller != null && nikSeller.state == NikSeller.STATE_WAITING) { nikSeller.onTradeWindowOpened(); return; } } catch (Exception ignored) {}
         if (state == STATE_WAITING) {
             prevXu = cd.q.s;               // xu bot truoc gd, de tinh delta khi log
             state = STATE_IN_TRADE;
@@ -1098,19 +1175,16 @@ public final class BanSeller {
     // Duoc goi tu Class_cq case 45
     // ================================================================
     public void onTradeOffer(int xuKhach) {
-        // route to NIK if NIK is in trade
-        try { if (nikSeller != null && nikSeller.state == NikSeller.STATE_IN_TRADE) { nikSeller.onTradeOffer(xuKhach); return; } } catch (Exception ignored) {}
         if (state != STATE_IN_TRADE) return;
-
-        // Bot da bỏ do vao (duoc goi tu a() loop), bay gio nhan xu
-        if (xuKhach >= expectedXu) {
-            // Du xu -> xac nhan
+        // Wallet-paid order: bot confirms when buyer locks, regardless of xu.
+        if (walletHoldId != null) {
+            try { getSharedWalletStore().ledgerCaptureIntent(walletHoldId); } catch (Exception ignored) {}
             cd.l.c();
-            cd.a("BAN: Xac nhan giao dich " + buyerName + " xu=" + formatXu(xuKhach), false);
+            cd.a("BAN: Xac nhan giao dich vi " + buyerName + " tong=" + formatXu(expectedVnd) + " VND", false);
             state = STATE_CONFIRMED;
         } else {
-            // Thieu xu -> bao va huy
-            sendPrivate(buyerName, "Thieu xu! Can " + formatXu(expectedXu) + " nhung chi nhan " + formatXu(xuKhach));
+            // Trade not initiated through wallet purchase: xu is never accepted.
+            sendPrivate(buyerName, "Bot chi nhan thanh toan qua vi. Chat <so luong> <ma vp> de mua.");
             cd.l.b();
             reset();
         }
@@ -1121,9 +1195,13 @@ public final class BanSeller {
     // Duoc goi tu Class_cq case 58
     // ================================================================
     public void onTradeComplete(int xuNhan) {
-        // route to NIK if NIK trade pending
-        try { if (nikSeller != null && (nikSeller.state == NikSeller.STATE_CONFIRMED || nikSeller.state == NikSeller.STATE_IN_TRADE)) { nikSeller.onTradeComplete(xuNhan); return; } } catch (Exception ignored) {}
         if (state == STATE_CONFIRMED || state == STATE_IN_TRADE) {
+            // Capture hold exactly once, before reset clears it
+            String holdToCapture = walletHoldId;
+            walletHoldId = null;
+            if (holdToCapture != null) {
+                try { getSharedWalletStore().captureHold(holdToCapture); } catch (Exception ignored) {}
+            }
             logSale(xuNhan);
             // Xoa cac o da ban khoi tui RAM (server KHONG tu gui cap nhat tui sau trade ban).
             // Phai lam TRUOC reset() vi reset() se set tradeSlots = null.
@@ -1148,7 +1226,6 @@ public final class BanSeller {
     // Khi giao dich bi huy (opcode 57)
     // ================================================================
     public void onTradeCancelled() {
-        try { if (nikSeller != null && nikSeller.state != NikSeller.STATE_IDLE) { nikSeller.onTradeCancelled(); return; } } catch (Exception ignored) {}
         if (state != STATE_IDLE) {
             cd.a("BAN: Giao dich bi huy", false);
         }
@@ -1452,29 +1529,6 @@ public final class BanSeller {
         return false;
     }
 
-    private void sendHelpNik(String toName) {
-        try {
-            if (toName == null) return;
-            long now = Class_bb.b();
-            Long last = lastHelpTime.get(toName);
-            if (last != null && now - last.longValue() < 15000L) return;
-            lastHelpTime.put(toName, now);
-            NikStore st = sharedNikStore != null ? sharedNikStore : (nikSeller != null ? nikSeller.getStore() : null);
-            if (st == null || st.chuaBanCount() == 0) { sendPrivate(toName, "Chua co nick dang ban."); return; }
-            java.util.LinkedHashMap<String,Integer> counts = new java.util.LinkedHashMap<String,Integer>();
-            for (NikEntry e : st.getChuaBan()) {
-                String key = e.vatPham != null ? e.vatPham.trim() : "";
-                if (key.isEmpty()) key = "(khac)";
-                Integer cur = counts.get(key);
-                counts.put(key, cur == null ? 1 : cur + 1);
-            }
-            if (counts.isEmpty()) { sendPrivate(toName, "Chua co nick dang ban."); return; }
-            for (java.util.Map.Entry<String,Integer> en : counts.entrySet()) {
-                sendPrivate(toName, "nick ban " + en.getKey() + " sl: " + en.getValue());
-            }
-        } catch (Exception e) {}
-    }
-
     private void sendHelp(String toName) {
         try {
             cd.a("BAN-DEBUG sendHelp: to=[" + toName + "] priceListSize=" + priceList.size(), false);
@@ -1504,12 +1558,12 @@ public final class BanSeller {
                 int avail = countAvailable(id);
                 int inKho = countInStorage(id);
                 String tenMon = (template != null && template.d != null) ? " (" + template.d + ")" : "";
-                sendPrivate(toName, "Mã vp: " + it.maVp + tenMon + " giá " + formatXu(it.donGia) + "/1, có: " + avail + " rương: " + inKho);
+                sendPrivate(toName, "Mã vp: " + it.maVp + tenMon + " giá " + formatXu(it.donGia) + " VND/1, có: " + avail + " rương: " + inKho);
                 shown++;
             }
             if (shown == 0) sendPrivate(toName, "(Chưa có mặt hàng nào)");
-            // Sau cung: dong huong dan cach mua (day xuong CUOI theo yeu cau)
-            sendPrivate(toName, "Chat <số lượng> <mã vp> để mua. VD: 12 " + exMaVp);
+            sendPrivate(toName, "Chat <số lượng> <mã vp> để mua (trả bằng ví VND). VD: 12 " + exMaVp);
+            sendPrivate(toName, "Vi: chat 'vi' xem vi, 'nap' nap tien, 'chuyen <tien> <ten>' chuyen vi, 'link <ten>' lien ket.");
         } catch (Exception e) {}
     }
 
@@ -1524,14 +1578,21 @@ public final class BanSeller {
     }
 
     public void reset() {
+        // Release any active wallet hold (cancel/timeout/failure paths). Capture clears walletHoldId first.
+        if (walletHoldId != null) {
+            try { getSharedWalletStore().releaseHold(walletHoldId); } catch (Exception ignored) {}
+            walletHoldId = null;
+        }
+        walletCode = null;
         state      = STATE_IDLE;
         buyerName  = null;
         orderQty   = 0;
         orderItemId = 0;
-        expectedXu = 0;
+        expectedVnd = 0;
         tradeStartTime = 0;
         prevXu     = 0;
         tradeSlots = null;
+        if (pendingReload) { pendingReload = false; reloadConfig(); }
     }
 
     // ================================================================
@@ -1545,7 +1606,7 @@ public final class BanSeller {
             log += "\r\nNhan vat: " + cd.q.i;
             log += "\r\nKhach: " + buyerName;
             log += "\r\nItem ban: " + orderItemId + " x " + orderQty;
-            log += "\r\nXu nhan: " + formatXu(delta) + " xu (tong xu: " + formatXu(postXu) + ")";
+            log += "\r\nVi nhan: " + formatXu(expectedVnd) + " VND (ma vi: " + walletCode + ")";
             log += "\r\n==========================================\r\n";
 
             Calendar cal = Calendar.getInstance();
