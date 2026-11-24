@@ -21,3 +21,7 @@ BanVatPham/atm_seen.log
 BanVatPham/logs/
 BanVatPham/rms_data/
 BanVatPham/nik_ban.txt
+
+# Chung chi HTTPS web admin (chua khoa rieng) - khong commit
+BanVatPham/admin_keystore.p12
+BanVatPham/admin_keystore.pass
