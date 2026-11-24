@@ -22,4 +22,4 @@ CD /D "%~dp0"
 ECHO NDTPRO
 ECHO NINJA_BAN_AUTO_BAN_VAT_PHAM
 
-java -jar ninja_ban.jar
+java -jar ninja_ban_new.jar

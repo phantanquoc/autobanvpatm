@@ -38,18 +38,206 @@ public final class AdminWebServer {
         if (server != null) return;
         if (pass == null || pass.trim().isEmpty()) return;
         this.port = p; this.adminPass = pass;
+        String bind = cfgTag("ADMIN_BIND");
         try {
-            server = HttpServer.create(new InetSocketAddress(p), 0);
+            InetSocketAddress addr = bind.isEmpty() ? new InetSocketAddress(p) : new InetSocketAddress(bind, p);
+            if (httpsWanted()) {
+                javax.net.ssl.SSLContext ssl = buildSslContext();
+                if (ssl == null) { log("!!! Admin web KHONG khoi dong: HTTPS bat nhung khong tao/doc duoc chung chi. Xem loi phia tren. (Dat [ADMIN_HTTPS]0[/ADMIN_HTTPS] neu muon chay HTTP) !!!"); return; }
+                com.sun.net.httpserver.HttpsServer hs = com.sun.net.httpserver.HttpsServer.create(addr, 0);
+                hs.setHttpsConfigurator(new com.sun.net.httpserver.HttpsConfigurator(ssl));
+                server = hs; https = true;
+            } else {
+                server = HttpServer.create(addr, 0); https = false;
+                log("!!! WARNING: Admin web dang chay HTTP (khong ma hoa) vi [ADMIN_HTTPS]0 !!!");
+            }
             server.createContext("/", new Handler());
             server.setExecutor(Executors.newCachedThreadPool(new java.util.concurrent.ThreadFactory() {
                 public Thread newThread(Runnable r) { Thread t = new Thread(r); t.setDaemon(true); return t; }
             }));
             server.start();
-            log("Admin web started on port " + p);
+            log("Admin web started on " + (bind.isEmpty() ? "*" : bind) + ":" + p + (https ? " (HTTPS)" : " (HTTP)"));
         } catch (Exception e) { log("Admin web start failed port " + p + ": " + e.getMessage()); server = null; }
     }
 
     public synchronized void stop() { if (server != null) { try { server.stop(0); } catch (Exception ignored) {} server = null; } }
+
+    // ---------- HTTPS ----------
+    private volatile boolean https = false;
+    private static String cfgTag(String tag) { try { String v = WalletService.tagValue(WalletService.readConfigContent(), tag); return v == null ? "" : v.trim(); } catch (Exception e) { return ""; } }
+    /** HTTPS mac dinh BAT; chi tat khi [ADMIN_HTTPS]0[/ADMIN_HTTPS]. */
+    private static boolean httpsWanted() { return !cfgTag("ADMIN_HTTPS").equals("0"); }
+
+    /**
+     * Neu co [ADMIN_CERT]duong_dan.p12[/ADMIN_CERT] + [ADMIN_CERT_PASS] thi dung chung chi do.
+     * Neu khong: tu tao chung chi tu ky admin_keystore.p12 (mat khau ngau nhien luu o admin_keystore.pass)
+     * trong thu muc lam viec bang keytool cua chinh JVM dang chay.
+     */
+    private javax.net.ssl.SSLContext buildSslContext() {
+        try {
+            String certPath = cfgTag("ADMIN_CERT");
+            char[] pw;
+            File ksFile;
+            if (!certPath.isEmpty()) {
+                ksFile = new File(certPath);
+                if (!ksFile.isAbsolute() && workDir() != null) ksFile = new File(workDir(), certPath);
+                if (!ksFile.exists()) { log("HTTPS: khong thay file chung chi " + ksFile.getAbsolutePath()); return null; }
+                pw = cfgTag("ADMIN_CERT_PASS").toCharArray();
+            } else {
+                String wd = workDir(); if (wd == null) { log("HTTPS: khong co thu muc lam viec"); return null; }
+                ksFile = new File(wd, "admin_keystore.p12");
+                File passFile = new File(wd, "admin_keystore.pass");
+                if (!ksFile.exists()) {
+                    // Ghi mat khau TRUOC, tao keystore vao file tam roi moi doi ten.
+                    // Neu tat giua chung: lan sau chua co .p12 -> tu tao lai ca hai (khong ket).
+                    writeAtomic(passFile, newToken());
+                    File tmp = new File(wd, "admin_keystore.p12.tmp");
+                    if (tmp.exists()) tmp.delete();
+                    if (!genSelfSigned(tmp, passFile)) { tmp.delete(); return null; }
+                    if (!tmp.renameTo(ksFile)) { tmp.delete(); log("HTTPS: khong doi ten duoc " + tmp.getAbsolutePath()); return null; }
+                    log("HTTPS: da tao chung chi tu ky " + ksFile.getAbsolutePath());
+                } else if (!passFile.exists()) {
+                    log("HTTPS: thieu admin_keystore.pass -> xoa admin_keystore.p12 roi khoi dong lai de tao moi"); return null;
+                }
+                List<String> pl = readLines(passFile, 0);
+                pw = (pl.isEmpty() ? "" : pl.get(0).trim()).toCharArray();
+            }
+            KeyStore ks = KeyStore.getInstance("PKCS12");
+            InputStream in = new FileInputStream(ksFile);
+            try { ks.load(in, pw); } finally { in.close(); }
+            javax.net.ssl.KeyManagerFactory kmf = javax.net.ssl.KeyManagerFactory.getInstance(javax.net.ssl.KeyManagerFactory.getDefaultAlgorithm());
+            kmf.init(ks, pw);
+            javax.net.ssl.SSLContext ctx = javax.net.ssl.SSLContext.getInstance("TLS");
+            ctx.init(kmf.getKeyManagers(), null, null);
+            try {
+                Enumeration<String> al = ks.aliases();
+                while (al.hasMoreElements()) {
+                    java.security.cert.Certificate c = ks.getCertificate(al.nextElement());
+                    if (c == null) continue;
+                    byte[] d = MessageDigest.getInstance("SHA-256").digest(c.getEncoded());
+                    StringBuilder sb = new StringBuilder(); for (int i = 0; i < d.length; i++) { if (i > 0) sb.append(':'); sb.append(String.format("%02X", d[i])); }
+                    log("HTTPS: SHA-256 chung chi = " + sb); break;
+                }
+            } catch (Exception ignored) {}
+            return ctx;
+        } catch (Exception e) { log("HTTPS: loi nap chung chi: " + e); return null; }
+    }
+    private boolean genSelfSigned(File ksFile, File passFile) {
+        File outLog = new File(ksFile.getAbsolutePath() + ".log");
+        try {
+            String home = System.getProperty("java.home");
+            File kt = new File(home, "bin" + File.separator + "keytool.exe");
+            if (!kt.exists()) kt = new File(home, "bin" + File.separator + "keytool");
+            String exe = kt.exists() ? kt.getAbsolutePath() : "keytool";
+            // Mat khau doc tu file (-storepass:file) -> khong lo tren dong lenh tien trinh.
+            ProcessBuilder pb = new ProcessBuilder(exe, "-genkeypair", "-noprompt", "-alias", "admin", "-keyalg", "RSA", "-keysize", "2048",
+                "-validity", "3650", "-storetype", "PKCS12", "-keystore", ksFile.getAbsolutePath(),
+                "-storepass:file", passFile.getAbsolutePath(), "-keypass:file", passFile.getAbsolutePath(),
+                "-dname", "CN=NinjaBan Admin", "-ext", "SAN=dns:localhost,ip:127.0.0.1");
+            pb.redirectErrorStream(true);
+            pb.redirectOutput(outLog); // ghi ra file -> waitFor co timeout that, khong bi chan khi doc pipe
+            Process pr = pb.start();
+            try { pr.getOutputStream().close(); } catch (Exception ignored) {} // dong stdin: keytool khong the treo cho nhap
+            if (!pr.waitFor(60, java.util.concurrent.TimeUnit.SECONDS)) { pr.destroyForcibly(); log("HTTPS: keytool qua thoi gian 60s"); return false; }
+            if (pr.exitValue() != 0 || !ksFile.exists()) {
+                String msg = ""; for (String l : readLines(outLog, 20)) msg += l.trim() + " ";
+                log("HTTPS: keytool loi (exit " + pr.exitValue() + "): " + msg.trim()); return false;
+            }
+            return true;
+        } catch (Exception e) { log("HTTPS: khong chay duoc keytool: " + e); return false; }
+        finally { try { outLog.delete(); } catch (Exception ignored) {} }
+    }
+
+    // ---------- chong do mat khau ----------
+    static final int MAX_FAILS = 5;
+    static final long LOCK_MS = 30L * 60 * 1000;
+    static final int MAX_TRACKED = 5000;
+    static final class FailInfo { int count; long lastFail; long lockedUntil; }
+    private final Map<String, FailInfo> fails = new HashMap<String, FailInfo>();
+
+    /** Chuan hoa chuoi IP tu header; null neu khong phai IP hop le (chong gia mao/chen log). */
+    private static String parseIpLiteral(String s) {
+        if (s == null) return null;
+        s = s.trim();
+        if (s.matches("\\d{1,3}(\\.\\d{1,3}){3}")) {
+            for (String o : s.split("\\.")) if (Integer.parseInt(o) > 255) return null;
+            return s;
+        }
+        // co dau ':' -> Java parse nhu IPv6 literal, KHONG tra DNS
+        if (s.indexOf(':') >= 0 && s.length() <= 45 && s.matches("[0-9a-fA-F:.]+")) {
+            try { return ipKey(InetAddress.getByName(s)); } catch (Exception e) { return null; }
+        }
+        return null;
+    }
+    /** IPv4 giu nguyen; IPv6 gop theo /64 (1 nguoi thuong so huu ca dai /64 -> khong lach khoa bang doi dia chi). */
+    private static String ipKey(InetAddress a) {
+        if (a instanceof Inet6Address && !a.isLoopbackAddress()) {
+            byte[] b = a.getAddress(); StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < 8; i += 2) { if (i > 0) sb.append(':'); sb.append(Integer.toHexString(((b[i] & 0xff) << 8) | (b[i + 1] & 0xff))); }
+            return sb.append("::/64").toString();
+        }
+        return a.getHostAddress();
+    }
+    /**
+     * Chi tin header IP khi ket noi den tu chinh VPS (proxy chay cung may).
+     * - [ADMIN_PROXY]cloudflare[/ADMIN_PROXY]: dung CF-Connecting-IP (Cloudflare ghi de, client khong gia duoc).
+     * - Mac dinh: dung phan tu CUOI cua X-Forwarded-For (do proxy them vao; phan dau client tu gui).
+     * Ket noi tu ngoai vao truc tiep -> bo qua moi header.
+     */
+    private static String clientIp(HttpExchange ex) {
+        try {
+            InetAddress a = ex.getRemoteAddress().getAddress();
+            if (a.isLoopbackAddress()) {
+                if (cfgTag("ADMIN_PROXY").equalsIgnoreCase("cloudflare")) {
+                    String cf = parseIpLiteral(ex.getRequestHeaders().getFirst("CF-Connecting-IP"));
+                    if (cf != null) return cf;
+                }
+                String xff = ex.getRequestHeaders().getFirst("X-Forwarded-For");
+                if (xff != null && !xff.trim().isEmpty()) {
+                    String[] parts = xff.split(",");
+                    String last = parseIpLiteral(parts[parts.length - 1]);
+                    if (last != null) return last;
+                }
+            }
+            return ipKey(a);
+        } catch (Exception e) { return "?"; }
+    }
+    /** >0 = so ms con bi khoa. */
+    private long lockRemaining(String ip) {
+        synchronized (fails) {
+            FailInfo f = fails.get(ip); long now = System.currentTimeMillis();
+            return (f != null && f.lockedUntil > now) ? f.lockedUntil - now : 0;
+        }
+    }
+    /**
+     * Giu cho 1 lan thu TRUOC khi so mat khau (chong gui song song vuot gioi han).
+     * Tra ve -1 neu dang bi khoa, -2 neu bang theo doi da day (dang bi tan cong dien rong),
+     * nguoc lai so lan thu con lai SAU lan nay.
+     */
+    private int reserveAttempt(String ip) {
+        synchronized (fails) {
+            long now = System.currentTimeMillis();
+            FailInfo f = fails.get(ip);
+            if (f == null) {
+                if (fails.size() >= MAX_TRACKED) {
+                    Iterator<Map.Entry<String, FailInfo>> it = fails.entrySet().iterator();
+                    while (it.hasNext()) { FailInfo o = it.next().getValue(); if (o.lockedUntil < now && now - o.lastFail > LOCK_MS) it.remove(); }
+                    if (fails.size() >= MAX_TRACKED) return -2; // khong cho bang phinh vo han
+                }
+                f = new FailInfo(); fails.put(ip, f);
+            }
+            if (f.lockedUntil > now) return -1;
+            if (f.count > 0 && now - f.lastFail > LOCK_MS) f.count = 0; // lan sai cu da qua lau
+            f.count++; f.lastFail = now;
+            if (f.count >= MAX_FAILS) { f.lockedUntil = now + LOCK_MS; f.count = 0; return 0; }
+            return MAX_FAILS - f.count;
+        }
+    }
+    private void clearFails(String ip) { synchronized (fails) { fails.remove(ip); } }
+    private String lockMsg(long remainMs) {
+        long min = (remainMs + 59999) / 60000;
+        return "IP của bạn đang bị khóa đăng nhập do nhập sai mật khẩu " + MAX_FAILS + " lần. Thử lại sau khoảng " + min + " phút.";
+    }
 
     private void log(String m) { System.out.println(m); try { WalletService.getInstance().logAtm(m); } catch (Exception ignored) {} }
     private String workDir() { try { return Class_cu.g; } catch (Exception e) { return null; } }
@@ -170,20 +358,33 @@ public final class AdminWebServer {
 
         if (path.equals("/") ) { redirect(ex, "/admin"); return; }
         if (path.equals("/admin/login")) {
-            if ("GET".equalsIgnoreCase(method)) { sendHtml(ex, 200, loginPage(q.get("err"))); return; }
+            String ip = clientIp(ex);
+            if ("GET".equalsIgnoreCase(method)) {
+                long rem = lockRemaining(ip);
+                sendHtml(ex, 200, loginPage(rem > 0 ? lockMsg(rem) : q.get("err"))); return;
+            }
             if ("POST".equalsIgnoreCase(method)) {
+                int left = reserveAttempt(ip);
+                if (left == -2) { log("ADMIN_LOGIN_BUSY: bang chong do day, tu choi ip=" + ip); redirect(ex, "/admin/login?err=" + urlEnc("Hệ thống đang tạm từ chối đăng nhập do có quá nhiều lần thử sai. Thử lại sau ít phút.")); return; }
+                if (left < 0) { redirect(ex, "/admin/login"); return; }
                 String pw = form.get("password"); if (pw == null) pw = "";
                 boolean ok;
                 try { ok = MessageDigest.isEqual(pw.getBytes("UTF-8"), adminPass.getBytes("UTF-8")); } catch (Exception e) { ok = false; }
                 if (!ok) {
-                    try { if (store != null) store.ledger("ADMIN_LOGIN_FAIL", "ip=" + ex.getRemoteAddress()); } catch (Exception ignored) {}
-                    log("ADMIN_LOGIN_FAIL ip=" + ex.getRemoteAddress());
-                    redirect(ex, "/admin/login?err=" + urlEnc("Sai mật khẩu. Vui lòng thử lại.")); return;
+                    try { if (store != null) store.ledger("ADMIN_LOGIN_FAIL", "ip=" + ip); } catch (Exception ignored) {}
+                    log("ADMIN_LOGIN_FAIL ip=" + ip);
+                    if (left == 0) {
+                        try { if (store != null) store.ledger("ADMIN_LOGIN_LOCKED", "ip=" + ip + " minutes=" + (LOCK_MS / 60000)); } catch (Exception ignored) {}
+                        log("ADMIN_LOGIN_LOCKED ip=" + ip + " trong " + (LOCK_MS / 60000) + " phut");
+                        redirect(ex, "/admin/login"); return;
+                    }
+                    redirect(ex, "/admin/login?err=" + urlEnc("Sai mật khẩu. Còn " + left + " lần thử trước khi bị khóa " + (LOCK_MS / 60000) + " phút.")); return;
                 }
+                clearFails(ip);
                 purge();
                 String token = newToken(); Session s = new Session(); s.csrf = newToken(); s.expiresAt = System.currentTimeMillis() + 8L*3600*1000;
                 sessions.put(token, s);
-                ex.getResponseHeaders().add("Set-Cookie", "AdminSession=" + token + "; HttpOnly; Path=/; Max-Age=28800");
+                ex.getResponseHeaders().add("Set-Cookie", "AdminSession=" + token + "; HttpOnly; Path=/; Max-Age=28800; SameSite=Lax" + (https ? "; Secure" : ""));
                 redirect(ex, "/admin"); return;
             }
             return;
@@ -201,7 +402,7 @@ public final class AdminWebServer {
 
         if (path.equals("/admin/logout") && "POST".equalsIgnoreCase(method)) {
             String t = tokenOf(ex); if (t != null) sessions.remove(t);
-            ex.getResponseHeaders().add("Set-Cookie", "AdminSession=; HttpOnly; Path=/; Max-Age=0");
+            ex.getResponseHeaders().add("Set-Cookie", "AdminSession=; HttpOnly; Path=/; Max-Age=0" + (https ? "; Secure" : ""));
             redirect(ex, "/admin/login"); return;
         } else if (path.equals("/admin")) { sendHtml(ex, 200, dashboard(sess, flash, err)); }
         else if (path.equals("/admin/wallets")) { sendHtml(ex, 200, walletsPage(sess, q.get("q"), flash, err)); }
@@ -211,6 +412,7 @@ public final class AdminWebServer {
         else if (path.equals("/admin/bots")) { sendHtml(ex, 200, botsPage(sess, q, flash, err)); }
         else if (path.equals("/admin/bots/save") && "POST".equalsIgnoreCase(method)) { doBotSave(ex, form); }
         else if (path.equals("/admin/bots/delete") && "POST".equalsIgnoreCase(method)) { doBotDelete(ex, form); }
+        else if (path.equals("/admin/bots/power") && "POST".equalsIgnoreCase(method)) { doPower(ex, form); }
         else if (path.equals("/admin/items")) { sendHtml(ex, 200, itemsPage(sess, q, flash, err)); }
         else if (path.equals("/admin/items/save") && "POST".equalsIgnoreCase(method)) { doItemsSave(ex, body); }
         else if (path.equals("/admin/logs")) { sendHtml(ex, 200, logsPage(sess, flash, err)); }
@@ -313,7 +515,7 @@ public final class AdminWebServer {
             + "<form method=\"post\" action=\"/admin/login\"><label>Mật khẩu<input id=\"pwField\" type=\"password\" name=\"password\" autocomplete=\"current-password\"></label>"
             + "<div class=\"row\" style=\"margin-bottom:12px\"><button type=\"button\" class=\"ghost\" onclick=\"togglePw('pwField')\">Hiện / ẩn mật khẩu</button></div>"
             + "<button type=\"submit\" class=\"primary\" style=\"width:100%\">Đăng nhập</button></form>"
-            + "<p class=\"muted\">Chỉ mở cổng này cho IP của người vận hành (firewall) hoặc qua HTTPS reverse proxy. Phiên đăng nhập hết hạn sau 8 giờ.</p></div></div>";
+            + "<p class=\"muted\">Nhập sai mật khẩu " + MAX_FAILS + " lần liên tiếp sẽ bị khóa " + (LOCK_MS / 60000) + " phút. Phiên đăng nhập hết hạn sau 8 giờ.</p></div></div>";
         return page("Đăng nhập", body, null, null);
     }
     private String msgs(String flash, String err) {
@@ -329,6 +531,8 @@ public final class AdminWebServer {
         }
         String rt = botRuntime(bl);
         if (rt != null && rt.startsWith("online")) return "<span class=\"badge info\">● Đang chạy</span>";
+        if (rt != null && rt.startsWith("connecting")) return "<span class=\"badge info\">◌ Đang đăng nhập</span>";
+        if (rt != null && rt.startsWith("offline")) return "<span class=\"badge muted\">Đã tắt</span>";
         if (rt != null && rt.contains("no-seller")) return "<span class=\"badge muted\">Chưa có seller</span>";
         return "<span class=\"badge muted\">Chưa chạy</span>";
     }
@@ -417,7 +621,7 @@ public final class AdminWebServer {
         }
         return out.toString();
     }
-    private BanSeller liveSeller(BotLine bl) {
+    private Class_cd findCd(BotLine bl) {
         try {
             Object vec = Class_cu.a().d;
             if (vec instanceof java.util.Vector) {
@@ -427,10 +631,24 @@ public final class AdminWebServer {
                     Class_cd cd = (Class_cd) o;
                     if (cd.b == null || !cd.b.equalsIgnoreCase(bl.tk)) continue;
                     if (!serverMatches(bl, cd)) continue;
-                    if (cd.p != null) return cd.p.banSeller;
-                    return null;
+                    return cd;
                 }
             }
+        } catch (Exception ignored) {}
+        return null;
+    }
+    private boolean threadsAlive(Class_cd cd) {
+        try {
+            if (cd == null || !cd.u) return false;
+            boolean sAlive = cd.s != null && cd.s.isAlive();
+            boolean tAlive = cd.t != null && cd.t.isAlive();
+            return sAlive || tAlive;
+        } catch (Exception e) { return false; }
+    }
+    private BanSeller liveSeller(BotLine bl) {
+        try {
+            Class_cd cd = findCd(bl);
+            if (cd != null && cd.p != null) return cd.p.banSeller;
         } catch (Exception ignored) {}
         return null;
     }
@@ -447,6 +665,8 @@ public final class AdminWebServer {
                     BanSeller bs = cd.p != null ? cd.p.banSeller : null;
                     String st = bs == null ? "no-seller" : ("state=" + bs.state);
                     String stock = bs == null ? "-" : bs.getStockCombined();
+                    if (!threadsAlive(cd)) return "offline (đã tắt — bấm Bật để chạy)";
+                    if (cd.h == null || cd.h.b != 1) return "connecting " + st + " stock: " + stock;
                     return "online w=" + cd.w + " " + st + " stock: " + stock;
                 }
             }
@@ -460,7 +680,7 @@ public final class AdminWebServer {
         if (bots.isEmpty()) return "<div class=\"card empty\">Chưa có bot nào.</div>";
         StringBuilder b = new StringBuilder("<div class=\"table-wrap\"><table><thead><tr>");
         if (compact) b.append("<th>SV</th><th>TK</th><th>Trạng thái</th><th>Tồn kho</th>");
-        else b.append("<th>SV</th><th>TK</th><th>NV</th><th>MAP</th><th>POS</th><th>ITEM</th><th>Trạng thái</th><th>Sửa</th><th>Xóa</th>");
+        else b.append("<th>SV</th><th>TK</th><th>NV</th><th>MAP</th><th>POS</th><th>ITEM</th><th>Trạng thái</th><th>Nguồn</th><th>Sửa</th><th>Xóa</th>");
         b.append("</tr></thead><tbody>");
         // need session csrf for delete forms in full mode; handled by caller via botsPage separate actions if no session here
         for (BotLine bl : bots) {
@@ -475,6 +695,7 @@ public final class AdminWebServer {
             } else {
                 b.append("<td>").append(esc(bl.nv)).append("</td><td>").append(esc(bl.map)).append("</td><td>").append(esc(bl.pos)).append("</td><td>").append(esc(bl.item)).append("</td>");
                 b.append("<td>").append(botBadge(bl)).append("<div class=\"muted\">").append(esc(rt)).append("</div></td>");
+                b.append("<td>").append(botPowerForm(bl, rt)).append("</td>");
                 b.append("<td><a class=\"btn ghost\" href=\"/admin/bots?edit=").append(bl.index).append("\">Sửa</a></td>");
                 b.append("<td>").append(botDeleteForm(bl)).append("</td>");
             }
@@ -489,16 +710,30 @@ public final class AdminWebServer {
         String confirm = "Xóa bot SV " + bl.sv + " / TK " + bl.tk + "?";
         return "<form class=\"inline-form\" method=\"post\" action=\"/admin/bots/delete\" data-confirm=\"" + esc(confirm) + "\">" + csrf(botTableSession) + "<input type=\"hidden\" name=\"index\" value=\"" + bl.index + "\"><button type=\"submit\" class=\"danger\">Xóa</button></form>";
     }
+    private String botPowerForm(BotLine bl, String rt) {
+        if (botTableSession == null) return "";
+        boolean isOff = rt != null && rt.startsWith("offline");
+        String action = isOff ? "on" : "off";
+        String label = isOff ? "Bật" : "Tắt";
+        String cls = isOff ? "primary" : "danger";
+        String confirmAttr = "";
+        if (!isOff) confirmAttr = " data-confirm=\"" + esc("Tắt bot SV " + bl.sv + " / TK " + bl.tk + "? (giao dịch đang dở sẽ bị hủy)") + "\"";
+        return "<form class=\"inline-form\" method=\"post\" action=\"/admin/bots/power\"" + confirmAttr + ">" + csrf(botTableSession) + "<input type=\"hidden\" name=\"index\" value=\"" + bl.index + "\"><input type=\"hidden\" name=\"action\" value=\"" + action + "\"><button type=\"submit\" class=\"" + cls + "\">" + label + "</button></form>";
+    }
 
     private String botsPage(Session sess, Map<String,String> q, String flash, String err) {
         File f = configFile(); List<BotLine> bots = f == null ? new ArrayList<BotLine>() : parseBots(readLines(f, 0));
         StringBuilder b = new StringBuilder(msgs(flash, err));
         b.append("<h1>Bot bán</h1>");
         b.append("<div class=\"banner warn\">Lưu ý: Thay đổi bot chỉ có hiệu lực sau khi restart tiến trình bot.</div>");
+        b.append("<p><a class=\"btn primary\" href=\"/admin/bots?add=1\">Thêm bot mới</a></p>");
         botTableSession = sess;
         try { b.append(botTableHtml(false)); } finally { botTableSession = null; }
         BotLine edit = null;
         if (q.get("edit") != null) { try { int idx = Integer.parseInt(q.get("edit")); for (BotLine bl : bots) if (bl.index == idx) edit = bl; } catch (Exception ignored) {} }
+        boolean addMode = edit == null && q.get("add") != null;
+        if (edit == null && !addMode) return page("Bot bán", b.toString(), sess, null, "bots");
+        b.append("<p><a class=\"btn ghost\" href=\"/admin/bots\">← Quay lại danh sách</a></p>");
         b.append("<div class=\"card\"><h3 style=\"margin-top:0\">").append(edit == null ? "Thêm bot" : "Sửa bot").append("</h3><form method=\"post\" action=\"/admin/bots/save\">").append(csrf(sess));
         b.append("<input type=\"hidden\" name=\"origIndex\" value=\"").append(edit == null ? -1 : edit.index).append("\">");
         b.append("<input type=\"hidden\" name=\"origSv\" value=\"").append(esc(edit == null ? "" : edit.sv)).append("\"><input type=\"hidden\" name=\"origTk\" value=\"").append(esc(edit == null ? "" : edit.tk)).append("\">");
@@ -526,14 +761,15 @@ public final class AdminWebServer {
     private void doBotSave(HttpExchange ex, Map<String,String> form) throws IOException {
         String sv=form.get("sv"), tk=form.get("tk"), mk=form.get("mk"), nv=nz(form.get("nv")), map=form.get("map"), pos=form.get("pos"), item=form.get("item"), chat=nz(form.get("chat")), nick=nz(form.get("nick"));
         int origIndex = -1; try { origIndex = Integer.parseInt(nz(form.get("origIndex"))); } catch (Exception ignored) {}
+        String modeSuffix = origIndex >= 0 ? "&edit=" + origIndex : "&add=1";
         String errMsg = validateBot(sv, tk, mk, nv, map, pos, item, chat, nick);
-        if (errMsg != null) { redirect(ex, "/admin/bots?err=" + urlEnc(errMsg)); return; }
-        if (!safeName(item.trim())) { redirect(ex, "/admin/bots?err=" + urlEnc("Tên ITEM chưa hợp lệ.")); return; }
-        File f = configFile(); if (f == null) { redirect(ex, "/admin/bots?err=" + urlEnc("Không có thư mục làm việc.")); return; }
+        if (errMsg != null) { redirect(ex, "/admin/bots?err=" + urlEnc(errMsg) + modeSuffix); return; }
+        if (!safeName(item.trim())) { redirect(ex, "/admin/bots?err=" + urlEnc("Tên ITEM chưa hợp lệ.") + modeSuffix); return; }
+        File f = configFile(); if (f == null) { redirect(ex, "/admin/bots?err=" + urlEnc("Không có thư mục làm việc.") + modeSuffix); return; }
         synchronized (AdminWebServer.class) {
             List<String> lines = readLines(f, 0);
             List<BotLine> bots = parseBots(lines);
-            for (BotLine bl : bots) { if (bl.index != origIndex && bl.sv.equals(sv.trim()) && bl.tk.equals(tk.trim())) { redirect(ex, "/admin/bots?err=" + urlEnc("Đã có bot SV " + sv.trim() + " / TK " + tk.trim() + " — hãy Sửa thay vì Thêm mới.")); return; } }
+            for (BotLine bl : bots) { if (bl.index != origIndex && bl.sv.equals(sv.trim()) && bl.tk.equals(tk.trim())) { redirect(ex, "/admin/bots?err=" + urlEnc("Đã có bot SV " + sv.trim() + " / TK " + tk.trim() + " — hãy Sửa thay vì Thêm mới.") + modeSuffix); return; } }
             StringBuilder line = new StringBuilder();
             line.append("[SV]").append(sv.trim()).append("[/SV][TK]").append(tk.trim()).append("[/TK][MK]").append(mk.trim()).append("[/MK][NV]").append(nv.trim()).append("[/NV][MAP]").append(map.trim()).append("[/MAP][POS]").append(pos.trim()).append("[/POS]");
             if (!nick.trim().isEmpty()) line.append("[NICK]").append(nick.trim()).append("[/NICK]");
@@ -543,7 +779,7 @@ public final class AdminWebServer {
             if (origIndex >= 0 && origIndex < lines.size()) line.append(unknownTags(lines.get(origIndex)));
             // Create/validate the items file BEFORE writing banvatpham.txt so a
             // failure here leaves the config file unchanged.
-            String wd = workDir(); if (wd == null) { redirect(ex, "/admin/bots?err=" + urlEnc("Không có thư mục làm việc.")); return; }
+            String wd = workDir(); if (wd == null) { redirect(ex, "/admin/bots?err=" + urlEnc("Không có thư mục làm việc.") + modeSuffix); return; }
             File itemFile = new File(wd + "\\items\\" + item.trim() + ".txt");
             boolean createdItemFile = false;
             try {
@@ -552,7 +788,7 @@ public final class AdminWebServer {
                     writeAtomic(itemFile, "# Format: id:don_gia:so_luong_toi_da:ma_vp\r\n");
                     createdItemFile = true;
                 }
-            } catch (Exception e) { redirect(ex, "/admin/bots?err=" + urlEnc("Không tạo được file hàng (chưa thay đổi cấu hình): " + e.getMessage())); return; }
+            } catch (Exception e) { redirect(ex, "/admin/bots?err=" + urlEnc("Không tạo được file hàng (chưa thay đổi cấu hình): " + e.getMessage()) + modeSuffix); return; }
             try {
                 backup(f);
                 if (origIndex >= 0 && origIndex < lines.size()) lines.set(origIndex, line.toString()); else lines.add(line.toString());
@@ -560,7 +796,7 @@ public final class AdminWebServer {
                 writeAtomic(f, content.toString());
             } catch (Exception e) {
                 if (createdItemFile) { try { itemFile.delete(); } catch (Exception ignored) {} }
-                redirect(ex, "/admin/bots?err=" + urlEnc("Ghi thất bại (chưa thay đổi cấu hình): " + e.getMessage())); return;
+                redirect(ex, "/admin/bots?err=" + urlEnc("Ghi thất bại (chưa thay đổi cấu hình): " + e.getMessage()) + modeSuffix); return;
             }
         }
         redirect(ex, "/admin/bots?flash=" + urlEnc("Đã lưu bot SV " + sv.trim() + " / " + tk.trim() + ". Hiệu lực sau khi restart tiến trình bot."));
@@ -588,6 +824,48 @@ public final class AdminWebServer {
             catch (Exception e) { redirect(ex, "/admin/bots?err=" + urlEnc("Ghi thất bại: " + e.getMessage())); return; }
         }
         redirect(ex, "/admin/bots?flash=" + urlEnc("Đã xóa bot" + deletedInfo + ". Hiệu lực sau khi restart."));
+    }
+    private void doPower(HttpExchange ex, Map<String,String> form) throws IOException {
+        int idx = -1; try { idx = Integer.parseInt(nz(form.get("index"))); } catch (Exception ignored) {}
+        String action = nz(form.get("action"));
+        File f = configFile();
+        BotLine target = null;
+        if (f != null && idx >= 0) for (BotLine bl : parseBots(readLines(f, 0))) if (bl.index == idx) target = bl;
+        if (target == null || (!action.equals("on") && !action.equals("off"))) { redirect(ex, "/admin/bots?err=" + urlEnc("Không hợp lệ.")); return; }
+        synchronized (AdminWebServer.class) {
+            Class_cd cd = findCd(target);
+            if (cd == null) { redirect(ex, "/admin/bots?err=" + urlEnc("Bot SV " + target.sv + " / " + target.tk + " chưa được load (cần restart tiến trình bot).")); return; }
+            BanSeller bs = (cd.p != null) ? cd.p.banSeller : null;
+            if (action.equals("on")) {
+                if (threadsAlive(cd)) { redirect(ex, "/admin/bots?flash=" + urlEnc("Bot SV " + target.sv + " / " + target.tk + " đang chạy rồi.")); return; }
+                try {
+                    // Ngat that: Class_bg (cd.e) moi la ket noi socket (close + reset);
+                    // Class_be (cd.g) chi la wait/notify, goi nham se khong off.
+                    try { if (cd.e != null) cd.e.c(); } catch (Exception ignored) {}
+                    cd.u = true;
+                    if (cd.s == null || !cd.s.isAlive()) { try { cd.s = new Thread(new Class_ce(cd)); } catch (Exception ignored) {} }
+                    if (cd.t == null || !cd.t.isAlive()) { try { cd.t = new Thread(new Class_cf(cd)); } catch (Exception ignored) {} }
+                    try { if (cd.s != null && !cd.s.isAlive()) cd.s.start(); } catch (Exception ignored) {}
+                    try { if (cd.t != null && !cd.t.isAlive()) cd.t.start(); } catch (Exception ignored) {}
+                    try { cd.m.d = 1; cd.m.c = Class_bb.b(); } catch (Exception ignored) {}
+                } catch (Exception e) { redirect(ex, "/admin/bots?err=" + urlEnc("Bật thất bại: " + e.getMessage())); return; }
+                try { if (store != null) store.ledger("BOT_POWER_ON", "sv=" + target.sv + " tk=" + target.tk); } catch (Exception ignored) {}
+                redirect(ex, "/admin/bots?flash=" + urlEnc("Đã BẬT bot SV " + target.sv + " / " + target.tk + ". Đang đăng nhập..."));
+            } else {
+                boolean midTrade = bs != null && bs.state != BanSeller.STATE_IDLE;
+                try {
+                    if (midTrade) { try { cd.l.b(); } catch (Exception ignored) {} }
+                    if (bs != null) { try { bs.reset(); } catch (Exception ignored) {} bs.withdrawing = false; }
+                    cd.u = false;
+                    try { Class_bb.b(500L); } catch (Exception ignored) {}
+                    try { if (cd.e != null) cd.e.c(); } catch (Exception ignored) {}
+                    try { cd.m.d = -1; } catch (Exception ignored) {}
+                    try { cd.a("WEB: Admin tat bot, da ngat ket noi", false); } catch (Exception ignored) {}
+                } catch (Exception e) { redirect(ex, "/admin/bots?err=" + urlEnc("Tắt thất bại: " + e.getMessage())); return; }
+                try { if (store != null) store.ledger("BOT_POWER_OFF", "sv=" + target.sv + " tk=" + target.tk + (midTrade ? " midTrade=1" : "")); } catch (Exception ignored) {}
+                redirect(ex, "/admin/bots?flash=" + urlEnc("Đã TẮT bot SV " + target.sv + " / " + target.tk + "." + (midTrade ? " (đang giữa giao dịch — hold đã giải phóng)" : "")));
+            }
+        }
     }
 
     // ---------- wallets ----------
