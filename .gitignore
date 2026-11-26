@@ -21,7 +21,18 @@ BanVatPham/atm_seen.log
 BanVatPham/logs/
 BanVatPham/rms_data/
 BanVatPham/nik_ban.txt
+# Cau hinh chung (SePay, mat khau admin, STK) + ban sao luu/tam khi tach cau hinh
+BanVatPham/cauhinh.txt
+BanVatPham/cauhinh.txt.tmp-*
+BanVatPham/banvatpham.txt.bak*
+BanVatPham/banvatpham.txt.tmp-*
+# Ban sao luu bang gia do web admin tao
+BanVatPham/items/*.bak-*
 
 # Chung chi HTTPS web admin (chua khoa rieng) - khong commit
 BanVatPham/admin_keystore.p12
 BanVatPham/admin_keystore.pass
+
+# Goi phat hanh do build_release.ps1 tao ra + cache JRE tai ve - khong commit
+release/
+.cache/

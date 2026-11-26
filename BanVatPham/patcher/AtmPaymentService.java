@@ -26,8 +26,11 @@ public final class AtmPaymentService {
         if (server != null) return;
         this.port = port;
         this.sepaySecret = sepaySecret != null ? sepaySecret : "";
-        if (this.sepaySecret.isEmpty()) {
-            log("!!! WARNING: SEPAY_SECRET is EMPTY while ATM=1 - webhook on port " + port + " will accept UNAUTHENTICATED requests! Set [SEPAY_SECRET] in banvatpham.txt !!!");
+        if (this.sepaySecret.trim().isEmpty()) {
+            // Khong co khoa -> webhook se nhan request KHONG xac thuc (ai cung cong tien duoc).
+            // Tu choi khoi dong thay vi chi canh bao; server giu null nen khong lang nghe port nao.
+            log("!!! ATM webhook KHONG khoi dong: [SEPAY_SECRET] dang trong trong cauhinh.txt. Dien khoa API cua SePay roi khoi dong lai !!!");
+            return;
         }
         try {
             server = HttpServer.create(new InetSocketAddress(port), 0);
@@ -101,6 +104,15 @@ public final class AtmPaymentService {
                 log("ATM webhook raw: " + body);
 
                 Parsed p = parseBody(body);
+                // SePay gui ca giao dich tien ra (transferType="out") -> khong bao gio cong vi.
+                // Kiem tra truoc moi buoc khac (ke ca thieu field) de giao dich ra luon tra 200 "ignored"
+                // va KHONG danh dau seen. Thieu transferType -> giu hanh vi cu.
+                String transferType = extractString(body, "transferType");
+                if (transferType != null && !transferType.trim().equalsIgnoreCase("in")) {
+                    log("ATM webhook bo qua giao dich khong phai tien vao transferType=" + transferType.trim() + " tx=" + (p != null ? p.transactionId : null));
+                    send(ex, 200, "{\"status\":\"ignored\"}");
+                    return;
+                }
                 if (p == null || p.transactionId == null || p.transactionId.isEmpty() || p.amount == null) {
                     log("ATM webhook missing fields: " + body);
                     send(ex, 400, "{\"error\":\"missing fields\"}");
@@ -194,7 +206,9 @@ public final class AtmPaymentService {
             int colon = json.indexOf(":", idx);
             if (colon == -1) return null;
             int i = colon + 1;
-            while (i < json.length() && json.charAt(i) == ' ') i++;
+            // Bo qua MOI khoang trang (ke ca xuong dong/tab cua JSON pretty-print) - neu khong,
+            // "transferType":\n "out" doc ra null va giao dich tien ra bi cong vi.
+            while (i < json.length() && Character.isWhitespace(json.charAt(i))) i++;
             if (i >= json.length()) return null;
             if (json.charAt(i) == '"' || json.charAt(i) == '\'') {
                 char q = json.charAt(i);

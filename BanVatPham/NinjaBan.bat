@@ -22,4 +22,7 @@ CD /D "%~dp0"
 ECHO NDTPRO
 ECHO NINJA_BAN_AUTO_BAN_VAT_PHAM
 
-java -jar ninja_ban_new.jar
+:: Uu tien Java kem theo goi (BanVatPham\jre), khong co thi dung java trong PATH
+set "JAVA_EXE=java"
+if exist "%~dp0jre\bin\java.exe" set "JAVA_EXE=%~dp0jre\bin\java.exe"
+"%JAVA_EXE%" -jar ninja_ban_new.jar

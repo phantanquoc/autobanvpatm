@@ -415,6 +415,8 @@ public final class AdminWebServer {
         else if (path.equals("/admin/bots/power") && "POST".equalsIgnoreCase(method)) { doPower(ex, form); }
         else if (path.equals("/admin/items")) { sendHtml(ex, 200, itemsPage(sess, q, flash, err)); }
         else if (path.equals("/admin/items/save") && "POST".equalsIgnoreCase(method)) { doItemsSave(ex, body); }
+        else if (path.equals("/admin/items/create") && "POST".equalsIgnoreCase(method)) { doItemsCreate(ex, form); }
+        else if (path.equals("/admin/items/delete") && "POST".equalsIgnoreCase(method)) { doItemsDelete(ex, form); }
         else if (path.equals("/admin/logs")) { sendHtml(ex, 200, logsPage(sess, flash, err)); }
         else { sendHtml(ex, 404, page("404", "<div class=\"card\"><p>Không tìm thấy trang.</p></div>", sess, flash)); }
     }
@@ -956,15 +958,46 @@ public final class AdminWebServer {
     }
 
     // ---------- items ----------
+    /** Dem so bot dang dung tung file gia (ten file khong co ".txt"); doc banvatpham.txt 1 lan cho ca trang. */
+    private Map<String, Integer> botCountsByItemFile() {
+        Map<String, Integer> counts = new HashMap<String, Integer>();
+        File cf = configFile();
+        if (cf == null) return counts;
+        for (BotLine bl : parseBots(readLines(cf, 0))) {
+            String item = bl.item == null ? "" : bl.item.trim();
+            if (item.isEmpty()) continue;
+            Integer c = counts.get(item);
+            counts.put(item, Integer.valueOf(c == null ? 1 : c.intValue() + 1));
+        }
+        return counts;
+    }
+    private static int botCountOf(Map<String, Integer> counts, String fileName) {
+        if (fileName == null) return 0;
+        String base = fileName.endsWith(".txt") ? fileName.substring(0, fileName.length() - 4) : fileName;
+        Integer c = counts.get(base);
+        return c == null ? 0 : c.intValue();
+    }
     private String itemsPage(Session sess, Map<String,String> q, String flash, String err) {
         String wd = workDir(); StringBuilder b = new StringBuilder(msgs(flash, err));
-        b.append("<h1>Bảng giá</h1><div class=\"chips\">");
+        b.append("<h1>Bảng giá</h1>");
+        Map<String, Integer> botCounts = botCountsByItemFile();
+        b.append("<div class=\"card\"><h3 style=\"margin-top:0\">Tạo file giá mới</h3>");
+        b.append("<form method=\"post\" action=\"/admin/items/create\">").append(csrf(sess));
+        b.append("<div class=\"row\"><input name=\"name\" placeholder=\"VD: sv7_vk\" required><button type=\"submit\" class=\"primary\">Tạo file</button></div>");
+        b.append("<p class=\"muted small\">Tên file viết thường, không dấu (chỉ chữ cái, số, dấu chấm, gạch dưới, gạch ngang). File được tạo rỗng và mở ngay để bạn nhập giá.</p>");
+        b.append("</form></div>");
+        b.append("<div class=\"chips\">");
         File dir = wd == null ? null : new File(wd + "\\items");
         List<String> files = new ArrayList<String>();
         if (dir != null && dir.exists()) { File[] fs = dir.listFiles(); if (fs != null) for (File f : fs) if (f.getName().endsWith(".txt")) files.add(f.getName()); }
         Collections.sort(files);
         String sel = q.get("file");
-        for (String fn : files) b.append("<a class=\"chip").append(fn.equals(sel) ? " active" : "").append("\" href=\"/admin/items?file=").append(urlEnc(fn)).append("\">").append(esc(fn)).append("</a>");
+        for (String fn : files) {
+            int using = botCountOf(botCounts, fn);
+            b.append("<a class=\"chip").append(fn.equals(sel) ? " active" : "").append("\" href=\"/admin/items?file=").append(urlEnc(fn)).append("\">").append(esc(fn));
+            if (using > 0) b.append(" · <b>").append(using).append(" bot</b>");
+            b.append("</a>");
+        }
         b.append("</div>");
         if (files.isEmpty()) b.append("<div class=\"card empty\">Chưa có file giá nào.</div>");
         if (sel != null && safeName(sel) && sel.endsWith(".txt")) {
@@ -980,6 +1013,16 @@ public final class AdminWebServer {
             }
             for (int i = 0; i < 3; i++) { b.append("<tr><td><input name=\"id\"></td><td><input name=\"price\"></td><td><input name=\"maxQty\"></td><td><input name=\"code\"></td><td></td></tr>"); row++; }
             b.append("</tbody></table></div><p class=\"muted\">Tổng số dòng: <span id=\"rowCount\">").append(row).append("</span>. Thêm dòng: dùng dòng trống bên dưới hoặc nút Thêm dòng. Xóa: tick ô Xóa.</p><div class=\"row\"><button type=\"button\" class=\"ghost\" onclick=\"addItemRow()\">Thêm dòng</button><button type=\"submit\" class=\"primary\">Lưu giá</button></div></form></div>");
+            int using = botCountOf(botCounts, sel);
+            b.append("<div class=\"card danger-zone\"><h3 style=\"margin-top:0\">Khu vực nguy hiểm</h3>");
+            b.append("<p>").append(using == 0
+                ? "Hiện không có bot nào dùng file này."
+                : "Đang có <b>" + using + " bot</b> dùng file này.").append("</p>");
+            if (using > 0) b.append("<p class=\"muted small\">Xóa file sẽ KHÔNG dừng các bot đó: chúng vẫn chạy bằng bảng giá đang giữ trong bộ nhớ cho tới khi restart tiến trình bot. Nếu restart mà file đã mất, bot sẽ không có bảng giá.</p>");
+            String confirm = "Xóa file giá " + sel + "? Thao tác này sẽ tạo bản sao .bak rồi xóa file.";
+            b.append("<form class=\"inline-form\" method=\"post\" action=\"/admin/items/delete\" data-confirm=\"").append(esc(confirm)).append("\">").append(csrf(sess));
+            b.append("<input type=\"hidden\" name=\"file\" value=\"").append(esc(sel)).append("\">");
+            b.append("<button type=\"submit\" class=\"danger\">Xóa file</button></form></div>");
         }
         return page("Bảng giá", b.toString(), sess, null, "items");
     }
@@ -1039,6 +1082,56 @@ public final class AdminWebServer {
         }
         String flashMsg = "Đã lưu giá " + file + ". Tải lại ngay: " + reloaded + " bot • hoãn (đang bán): " + deferred + " bot • bỏ qua (không có file hàng): " + skippedNoItemFile + " bot.";
         redirect(ex, "/admin/items?file=" + urlEnc(file) + "&flash=" + urlEnc(flashMsg));
+    }
+    private void doItemsCreate(HttpExchange ex, Map<String,String> form) throws IOException {
+        String name = form.get("name");
+        if (name == null || name.trim().isEmpty()) {
+            redirect(ex, "/admin/items?err=" + urlEnc("Vui lòng nhập tên file giá.")); return;
+        }
+        String base = name.trim();
+        if (base.endsWith(".txt")) base = base.substring(0, base.length() - 4);
+        if (!safeName(base)) {
+            redirect(ex, "/admin/items?err=" + urlEnc("Tên file không hợp lệ. Chỉ dùng chữ cái, số, dấu chấm (.), gạch dưới (_), gạch ngang (-); không dùng dấu cách hay dấu tiếng Việt. Ví dụ: sv7_vk")); return;
+        }
+        String file = base + ".txt";
+        String wd = workDir();
+        if (wd == null) { redirect(ex, "/admin/items?err=" + urlEnc("Không có thư mục làm việc.")); return; }
+        File f = new File(wd + "\\items\\" + file);
+        synchronized (AdminWebServer.class) {
+            if (f.exists()) {
+                redirect(ex, "/admin/items?err=" + urlEnc("File " + file + " đã tồn tại — không ghi đè. Chọn tên khác hoặc mở file trong danh sách để sửa.")); return;
+            }
+            try {
+                if (f.getParentFile() != null) f.getParentFile().mkdirs();
+                writeAtomic(f, "# Format: id:don_gia:so_luong_toi_da:ma_vp\r\n");
+            } catch (Exception e) {
+                redirect(ex, "/admin/items?err=" + urlEnc("Tạo file thất bại: " + e.getMessage())); return;
+            }
+        }
+        redirect(ex, "/admin/items?file=" + urlEnc(file) + "&flash=" + urlEnc("Đã tạo file giá " + file + " (rỗng). Nhập giá bên dưới rồi bấm Lưu giá."));
+    }
+    private void doItemsDelete(HttpExchange ex, Map<String,String> form) throws IOException {
+        String file = form.get("file");
+        if (file == null || !safeName(file) || !file.endsWith(".txt")) {
+            redirect(ex, "/admin/items?err=" + urlEnc("File không hợp lệ.")); return;
+        }
+        String wd = workDir();
+        if (wd == null) { redirect(ex, "/admin/items?err=" + urlEnc("Không có thư mục làm việc.")); return; }
+        File f = new File(wd + "\\items\\" + file);
+        if (!f.exists() || !f.isFile()) {
+            redirect(ex, "/admin/items?err=" + urlEnc("Không tìm thấy file " + file + ".")); return;
+        }
+        int using = botCountOf(botCountsByItemFile(), file);
+        synchronized (AdminWebServer.class) {
+            try { backup(f); }
+            catch (Exception e) { redirect(ex, "/admin/items?err=" + urlEnc("Sao lưu thất bại nên chưa xóa file " + file + ": " + e.getMessage())); return; }
+            if (!f.delete()) {
+                redirect(ex, "/admin/items?err=" + urlEnc("Không xóa được file " + file + " (đã có bản sao .bak).")); return;
+            }
+        }
+        String flashMsg = "Đã xóa file giá " + file + " (đã tạo bản sao lưu .bak-* trong thư mục items).";
+        if (using > 0) flashMsg += " CẢNH BÁO: " + using + " bot đang dùng file này — bot vẫn chạy bằng bảng giá cũ trong bộ nhớ cho tới khi restart tiến trình bot.";
+        redirect(ex, "/admin/items?flash=" + urlEnc(flashMsg));
     }
 
     // ---------- logs ----------
