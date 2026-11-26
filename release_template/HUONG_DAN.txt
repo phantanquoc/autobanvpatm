@@ -1,0 +1,161 @@
+﻿HƯỚNG DẪN CÀI ĐẶT BOT BÁN VẬT PHẨM
+===================================
+
+Trong hướng dẫn này, <domain-cua-ban> là tên miền của bạn đã thêm vào Cloudflare
+(ví dụ: shopcuatoi.com). <IP-VPS> là địa chỉ IP công khai của VPS.
+
+
+1) YÊU CẦU
+----------
+- Một VPS hoặc máy Windows chạy liên tục (Windows 10/11 hoặc Windows Server), truy cập bằng Remote Desktop (RDP).
+- Java đã kèm sẵn trong thư mục BanVatPham\jre, KHÔNG cần cài Java.
+- Một tên miền đã quản lý trên Cloudflare (để dùng Cloudflare Tunnel).
+- Tài khoản SePay đã liên kết tài khoản ngân hàng nhận tiền.
+
+
+2) CÀI ĐẶT
+----------
+1. Giải nén toàn bộ file zip vào một thư mục cố định, ví dụ C:\BotBanVatPham
+   (không chạy trực tiếp bên trong file zip).
+2. Chạy cai_dat.bat. Script chép dữ liệu game vào C:\NinjaLite\GomItem,
+   chỉ chép những file chưa có, không ghi đè file đã có.
+   Thấy dòng "Cai dat thanh cong" là xong.
+
+
+3) ĐIỀN FILE BanVatPham\banvatpham.txt
+--------------------------------------
+Mở bằng Notepad. Mỗi dòng là một bot (một tài khoản game), gồm các thẻ:
+  [SV]6[/SV]                 máy chủ (server) của tài khoản
+  [TK]taikhoan1[/TK]         tên đăng nhập
+  [MK]matkhau1[/MK]          mật khẩu
+  [NV][/NV]                  để trống
+  [MAP]22:23[/MAP]           bản đồ và khu đứng bán
+  [POS]800:216[/POS]         tọa độ đứng bán
+  [ITEM]vi_du[/ITEM]         tên file bảng giá trong thư mục items (không ghi .txt)
+  [CHAT]vi_du[/CHAT]         tên file câu chat trong thư mục chat (không ghi .txt), có thể bỏ thẻ này
+  [NICK]1[/NICK]             (tùy chọn) bot chỉ dùng để bán nick
+
+File bảng giá items\<tên>.txt: mỗi dòng  id:don_gia:so_luong_toi_da:ma_vp
+  dòng bắt đầu bằng # là ghi chú. Xem mẫu items\vi_du.txt.
+File chat chat\<tên>.txt: thẻ [TIME]..[/TIME] rồi các câu chat nằm giữa [TXT] và [/TXT].
+  Xem mẫu chat\vi_du.txt.
+
+LƯU Ý cho banvatpham.txt:
+- Mỗi dòng là MỘT bot. Thêm bot mới thì thêm dòng mới bên dưới; xóa bot thì xóa
+  dòng của bot đó.
+- Không để dòng ghi chú hay dòng nào khác ngoài dòng bot: bot đọc mọi dòng như một
+  tài khoản và sẽ báo lỗi "Không thể load danh sách tài khoản".
+- KHÔNG đặt các thẻ cấu hình chung (mục 3b) vào banvatpham.txt.
+
+
+3b) ĐIỀN FILE BanVatPham\cauhinh.txt (CẤU HÌNH CHUNG)
+-----------------------------------------------------
+Mở bằng Notepad. Mỗi dòng MỘT thẻ (file mẫu đã có sẵn các dòng, chỉ cần điền giá trị):
+  [ATM]0[/ATM]                         1 = bật nhận tiền chuyển khoản tự động
+  [ATM_PORT]8089[/ATM_PORT]            giữ nguyên
+  [SEPAY_SECRET]...[/SEPAY_SECRET]     chuỗi ngẫu nhiên tối thiểu 32 ký tự (chữ và số),
+                                       dùng làm API Key khi cấu hình webhook SePay (mục 5)
+  [BANK_CODE]...[/BANK_CODE]           mã ngân hàng, ví dụ MB, VCB, TCB, ACB
+  [BANK_STK]...[/BANK_STK]             số tài khoản nhận tiền
+  [BANK_NAME]...[/BANK_NAME]           tên chủ tài khoản (viết hoa không dấu)
+  [ADMIN_PORT]8092[/ADMIN_PORT]        giữ nguyên
+  [ADMIN_PASS]...[/ADMIN_PASS]         mật khẩu trang quản trị, tối thiểu 20 ký tự ngẫu nhiên.
+                                       Để trống thì trang quản trị không chạy.
+  [ADMIN_BIND]127.0.0.1[/ADMIN_BIND]   GIỮ NGUYÊN 127.0.0.1
+  [ADMIN_PROXY]cloudflare[/ADMIN_PROXY] GIỮ NGUYÊN cloudflare
+
+LƯU Ý QUAN TRỌNG:
+- Dòng bắt đầu bằng # là ghi chú. KHÔNG viết dấu ngoặc vuông [ ] trong dòng ghi chú.
+- Mỗi thẻ chỉ ghi một lần; mỗi thẻ phải có đủ thẻ mở và thẻ đóng trên cùng một dòng.
+- Cài đặt cũ (các thẻ chung nằm cuối dòng bot trong banvatpham.txt): lần chạy đầu
+  tiên với bản bot mới, bot TỰ chuyển các thẻ chung sang cauhinh.txt và xóa chúng
+  khỏi banvatpham.txt. Bản gốc được sao lưu thành banvatpham.txt.bak-tachcauhinh-<thời gian>.
+  Log bot sẽ có dòng "Da tach cau hinh sang cauhinh.txt".
+  Nếu log báo "KHONG tach duoc cau hinh": sửa banvatpham.txt theo hướng dẫn trong log
+  rồi chạy lại bot (trong lúc đó bot vẫn đọc cấu hình cũ trong banvatpham.txt).
+- Khi đã có cauhinh.txt, bot CHỈ đọc cấu hình chung từ cauhinh.txt. Thẻ chung còn sót
+  trong banvatpham.txt bị bỏ qua (log báo "CANH BAO: tag ... bi bo qua").
+- Chỉ đặt [ATM]1[/ATM] SAU KHI đã điền SEPAY_SECRET. Nếu SEPAY_SECRET trống,
+  webhook nhận tiền sẽ từ chối khởi động (log báo "ATM webhook KHONG khoi dong").
+- Tạo chuỗi ngẫu nhiên: mở PowerShell, chạy lệnh sau (mỗi lần cho ra một chuỗi 40 ký tự):
+    -join ((48..57)+(65..90)+(97..122) | Get-Random -Count 40 | % {[char]$_})
+
+
+4) CLOUDFLARE TUNNEL
+--------------------
+Tunnel giúp SePay và bạn truy cập bot qua HTTPS mà KHÔNG cần mở cổng trên VPS.
+1. Vào Cloudflare Zero Trust -> Networks -> Tunnels -> Create a tunnel -> chọn Cloudflared,
+   đặt tên tunnel -> chọn môi trường Windows.
+2. Cloudflare hiện lệnh có dạng: cloudflared.exe service install <token>
+   Tải cloudflared cho Windows theo hướng dẫn trên trang đó, mở PowerShell bằng
+   "Run as Administrator" và chạy lệnh trên. Tunnel sẽ chạy như một dịch vụ Windows.
+3. Thêm Public Hostname:
+   a) Subdomain: pay     Domain: <domain-cua-ban>    Path: webhook/sepay
+      Service: HTTP  ->  localhost:8089
+   b) Subdomain: admin   Domain: <domain-cua-ban>    Path: để trống
+      Service: HTTPS ->  localhost:8092
+      Mở "Additional application settings" -> TLS -> bật "No TLS Verify" (ON),
+      vì trang quản trị dùng chứng chỉ tự ký.
+4. KHÔNG mở cổng 8089 và 8092 trên Windows Firewall hay tường lửa của nhà cung cấp VPS.
+   Khi Windows Firewall hỏi cấp quyền mạng cho Java, chọn Cancel (không cho phép).
+
+
+5) SEPAY
+--------
+Trong trang quản lý SePay -> Tích hợp Webhooks -> Thêm webhook:
+- URL nhận webhook:      https://pay.<domain-cua-ban>/webhook/sepay
+- Sự kiện:               Chỉ có tiền vào
+- Kiểu chứng thực:       API Key, giá trị = đúng chuỗi SEPAY_SECRET trong cauhinh.txt
+- Content type:          application/json
+- Chọn đúng tài khoản ngân hàng trùng với BANK_STK.
+
+
+6) CHẠY BOT
+-----------
+1. Chạy BanVatPham\NinjaBan.bat (chọn Yes khi Windows hỏi quyền Administrator).
+2. Lần chạy đầu: trên cửa sổ bot bấm nút "Duyệt", chọn file BanVatPham\banvatpham.txt,
+   sau đó bấm "Đăng nhập". Bot nhớ đường dẫn này cho các lần sau.
+3. Trong log cần thấy:
+     ATM webhook started on port 8089
+     Admin web started on 127.0.0.1:8092 (HTTPS)
+4. Khi thoát Remote Desktop, bấm dấu X (Disconnect) để bot tiếp tục chạy.
+   KHÔNG chọn Sign out (đăng xuất sẽ tắt bot).
+5. Tự chạy lại khi VPS khởi động lại:
+   - Dùng Sysinternals Autologon (tải từ trang Microsoft) để Windows tự đăng nhập.
+   - Nhấn Win+R, gõ shell:startup, Enter, rồi tạo shortcut tới BanVatPham\NinjaBan.bat
+     trong thư mục vừa mở.
+
+
+7) KIỂM TRA SAU KHI CÀI
+-----------------------
+1. Mở https://admin.<domain-cua-ban> và đăng nhập bằng ADMIN_PASS.
+2. Dùng điện thoại 4G nhập sai mật khẩu 5 lần: chỉ riêng điện thoại đó bị khóa 30 phút,
+   máy khác vẫn đăng nhập bình thường.
+3. Trong SePay bấm gửi thử webhook: log bot phải có dòng "ATM webhook raw:".
+   Nếu SePay báo lỗi 403: vào Cloudflare -> Security -> WAF -> Custom rules -> tạo rule
+   "URI Path equals /webhook/sepay" với hành động Skip (bỏ qua Bot Fight Mode và các
+   kiểm tra bảo mật khác), lưu rồi gửi thử lại.
+4. Chuyển thử 10.000đ với nội dung chứa mã ví của bạn và kiểm tra ví được cộng tiền.
+5. Từ máy bên ngoài mở http://<IP-VPS>:8089 : phải KHÔNG truy cập được.
+
+
+8) CẬP NHẬT BOT
+---------------
+1. Tắt bot.
+2. Đặt file ninja_ban_new.jar mới vào thư mục BanVatPham\update\
+3. Chạy BanVatPham\update.bat. Bản cũ được giữ lại thành ninja_ban_new.jar.old,
+   sau đó bot tự khởi động lại.
+Quay lại bản cũ (rollback): tắt bot, xóa ninja_ban_new.jar, đổi tên
+ninja_ban_new.jar.old thành ninja_ban_new.jar.
+LƯU Ý: KHÔNG xóa wallets.txt, atm_seen.log, banvatpham.txt, cauhinh.txt, thư mục items\ và chat\
+khi cập nhật (đây là dữ liệu ví tiền và cấu hình của bạn). Khi cập nhật chỉ thay file jar,
+KHÔNG chép cauhinh.txt hay banvatpham.txt mẫu của gói mới đè lên file đang dùng.
+
+
+9) SAO LƯU
+----------
+Sao lưu định kỳ (ví dụ mỗi ngày) ra nơi khác ngoài VPS các file trong BanVatPham:
+  wallets.txt       số dư ví của khách
+  atm_seen.log      danh sách giao dịch đã cộng tiền (chống cộng trùng)
+  banvatpham.txt    danh sách bot
+  cauhinh.txt       cấu hình chung (ATM, SePay, ngân hàng, trang quản trị)

@@ -1,0 +1,2 @@
+Dat file ninja_ban_new.jar moi vao thu muc nay (BanVatPham\update\),
+tat bot, roi chay BanVatPham\update.bat.

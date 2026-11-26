@@ -1,0 +1,24 @@
+# Cau hinh chung cua bot: ATM, SePay, ngan hang, web admin. Moi dong mot tag.
+# Danh sach bot nam trong banvatpham.txt, moi dong mot bot. KHONG dat cac tag duoi day vao banvatpham.txt.
+# Dong bat dau bang dau thang la ghi chu. Khong dat dau ngoac vuong trong dong ghi chu.
+#
+# ATM: 1 bat nap tien qua SePay, 0 tat. Chi bat sau khi dien SEPAY_SECRET.
+# ATM_PORT: cong nhan webhook SePay, giu nguyen 8089.
+# SEPAY_SECRET: chuoi ngau nhien toi thieu 32 ky tu chu va so, dung lam API Key webhook SePay.
+# BANK_CODE: ma ngan hang, vi du MB, VCB, TCB, ACB.
+# BANK_STK: so tai khoan nhan tien.
+# BANK_NAME: ten chu tai khoan, viet hoa khong dau.
+# ADMIN_PORT: cong trang quan tri, giu nguyen 8092.
+# ADMIN_PASS: mat khau trang quan tri, toi thieu 20 ky tu ngau nhien. De trong thi trang quan tri khong chay.
+# ADMIN_BIND: giu nguyen 127.0.0.1.
+# ADMIN_PROXY: giu nguyen cloudflare.
+[ATM]0[/ATM]
+[ATM_PORT]8089[/ATM_PORT]
+[SEPAY_SECRET][/SEPAY_SECRET]
+[BANK_CODE][/BANK_CODE]
+[BANK_STK][/BANK_STK]
+[BANK_NAME][/BANK_NAME]
+[ADMIN_PORT]8092[/ADMIN_PORT]
+[ADMIN_PASS][/ADMIN_PASS]
+[ADMIN_BIND]127.0.0.1[/ADMIN_BIND]
+[ADMIN_PROXY]cloudflare[/ADMIN_PROXY]

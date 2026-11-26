@@ -1,0 +1,4 @@
+# Bang gia cho bot co [ITEM]vi_du[/ITEM] trong banvatpham.txt
+# Format: id:don_gia:so_luong_toi_da:ma_vp
+# Dong bat dau bang # la ghi chu, bot bo qua
+15:100:999:hp3x

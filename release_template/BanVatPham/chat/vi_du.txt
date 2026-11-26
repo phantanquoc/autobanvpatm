@@ -1,0 +1,4 @@
+﻿[TIME]5[/TIME]
+[TXT]
+Shop bán vật phẩm tự động, nhắn tin riêng để xem bảng giá
+[/TXT]
